@@ -1,23 +1,18 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Padding ekleyince genişliğin taşmasını engeller */
-}
-
-
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; 
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  max-width: none; 
-  text-align: left;
+  isolation: isolate;
+}
+
+/* custom */
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
