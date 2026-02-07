@@ -16,3 +16,12 @@ html, body {
 @utility no-scrollbar {
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
+
+@theme {
+  --color-background: #FAF9F6; 
+  --color-card: #F2F0E9;       
+  --color-primary: #3F3D39;    
+  --color-secondary: #85827C;
+  --color-accent: #D4C5A9;
+  --color-border: #E6E2D8;
+}
