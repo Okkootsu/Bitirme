@@ -17,8 +17,8 @@ export const ChatInput = ({
   return (
     <div
       className={cn(
-        "bottom-0 sticky w-full pb-8 pt-5 backdrop-blur-3xl bg-background/30 border-border/20",
-        isChatStarted && "border-3",
+        "bottom-0 z-10 w-full h-15 pb-8 pt-5 backdrop-blur-3xl bg-background/30 border-border/20",
+        isChatStarted && "border-t-3",
       )}
     >
       <PlaceholdersAndVanishInput

@@ -13,14 +13,19 @@ export const ChatInterface = () => {
     endOfMessagesRef,
   } = useChat();
 
-  const maxWidthClass = "w-xl";
+  const maxWidthClass = "w-2xl";
 
   return (
-    <div className="relative flex-1 flex flex-col items-center justify-center bg-background gap-8">
+    <div
+      className={cn(
+        "relative flex-1 flex flex-col bg-background ",
+        isChatStarted ? "justify-between" : "items-center justify-center gap-8",
+      )}
+    >
       <h1
         className={cn(
-          "text-4xl font-extrabold backdrop-blur-3xl flex justify-center text-gray-800 tracking-tight py-2 sticky top-0 w-full bg-background/30 border-border/20",
-          isChatStarted && "border-3",
+          "z-10 h-16 text-4xl font-extrabold backdrop-blur-3xl flex justify-center text-gray-800 tracking-tight py-2 top-0 w-full bg-background/30 border-border/20",
+          isChatStarted && "border-b-3",
         )}
       >
         Asistan.ai

@@ -14,9 +14,16 @@ export const ChatList = ({
   endOfMessagesRef,
 }: ChatListProps) => {
   return (
-    <div className={cn(maxWidthClass, "no-scrollbar min-h-126")}>
+    <div
+      className={cn(
+        maxWidthClass,
+        "absolute z-0 no-scrollbar w-full mt-0 flex flex-col pt-20 pb-34 items-center flex-1 h-screen overflow-y-auto",
+      )}
+    >
       {messages.map((msg, index) => (
-        <ChatMessage key={index} message={msg} isUser={index % 2 === 0} />
+        <div className={cn(maxWidthClass)}>
+          <ChatMessage key={index} message={msg} isUser={index % 2 === 0} />
+        </div>
       ))}
       <div ref={endOfMessagesRef} />
     </div>
