@@ -1,11 +1,17 @@
 import { Button } from "@/components/Button";
+import { Dialog } from "@/components/Dialog";
+import { FormModal } from "@/features/auth/components/FormModal";
+import { SettingsModal } from "@/features/settings";
 import { cn } from "@/utils/cn";
+import { useState } from "react";
 
 type UserCardProps = {
   isOpen: boolean;
 };
 
 export const UserCard = ({ isOpen }: UserCardProps) => {
+  const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
+
   return (
     <div className="p-3 flex justify-center items-center h-15 bg-background border-border/40 border-t-3 ">
       <Button
@@ -21,6 +27,7 @@ export const UserCard = ({ isOpen }: UserCardProps) => {
             className="w-12 h-12 rounded-3xl border border-gray-500"
           />
         }
+        onClick={() => setIsDialogOpen(!isDialogOpen)}
       >
         <span
           className={cn(
@@ -28,9 +35,18 @@ export const UserCard = ({ isOpen }: UserCardProps) => {
             isOpen ? "w-auto opacity-100" : "w-0 opacity-0",
           )}
         >
-          Test
+          John Doe
         </span>
       </Button>
+
+      <Dialog
+        title="Ayarlar"
+        isLocked={false}
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(!isDialogOpen)}
+      >
+        <FormModal />
+      </Dialog>
     </div>
   );
 };
