@@ -24,9 +24,18 @@ dist-ssr
 *.sw?
 
 # other stuff
-api/bin/
-api/obj/
+[Bb]in/
+[Oo]bj/
 
 *.db
 *.db-shm
 *.db-wal
+
+.vscode/
+.vs/
+
+*.user
+*.suo
+
+appsettings.Development.json
+.env
