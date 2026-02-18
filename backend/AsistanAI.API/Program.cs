@@ -1,5 +1,9 @@
 
-using AsistanAI.Infrastructure.Data; 
+using AsistanAI.Core.Interfaces;
+using AsistanAI.Infrastructure.Data;
+using AsistanAI.Infrastructure.Mappings;
+using AsistanAI.Infrastructure.Repositories;
+using AsistanAI.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore; 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
+builder.Services.AddScoped<IJwtService, JwtService>();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 builder.Services.AddControllers();
 
