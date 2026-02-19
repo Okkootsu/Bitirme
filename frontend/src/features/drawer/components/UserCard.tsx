@@ -1,6 +1,5 @@
 import { Button } from "@/components/Button";
 import { Dialog } from "@/components/Dialog";
-import { FormModal } from "@/features/auth/components/FormModal";
 import { SettingsModal } from "@/features/settings";
 import { cn } from "@/utils/cn";
 import { useState } from "react";
@@ -45,7 +44,7 @@ export const UserCard = ({ isOpen }: UserCardProps) => {
         isOpen={isDialogOpen}
         onClose={() => setIsDialogOpen(!isDialogOpen)}
       >
-        <FormModal />
+        <SettingsModal />
       </Dialog>
     </div>
   );
