@@ -2,6 +2,9 @@ import { useChat } from "../hooks/useChat";
 import { cn } from "@/utils/cn";
 import { ChatList } from "./ChatList";
 import { ChatInput } from "./ChatInput";
+import { Dialog } from "@/components/Dialog";
+import { FormModal } from "@/features/auth/components/FormModal";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 export const ChatInterface = () => {
   const {
@@ -12,6 +15,8 @@ export const ChatInterface = () => {
     handleSendMessage,
     endOfMessagesRef,
   } = useChat();
+
+  const { isDialogOpen, setIsDialogOpen } = useAuth();
 
   const maxWidthClass = "w-2xl";
 
@@ -46,6 +51,15 @@ export const ChatInterface = () => {
         setInput={setInput}
         handleSendMessage={handleSendMessage}
       />
+
+      {/* Giriş yapma ekranı */}
+      <Dialog
+        isLocked={true}
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(!isDialogOpen)}
+      >
+        <FormModal />
+      </Dialog>
     </div>
   );
 };

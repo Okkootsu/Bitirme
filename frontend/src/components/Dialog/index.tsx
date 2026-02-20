@@ -38,7 +38,7 @@ export const Dialog = ({
          animate-in fade-in duration-200`,
         !isLocked ? "bg-black/10" : "bg-black/30 backdrop-blur-2xl",
       )}
-      onClick={handleOverlayClick}
+      // onClick={handleOverlayClick}
     >
       {/* Asıl dialog'u oluşturan kısım */}
       <div className={cn("bg-card shadow-xl rounded-xl ")}>
