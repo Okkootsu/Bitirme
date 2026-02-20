@@ -3,6 +3,8 @@ import { validateLoginForm, validateRegisterForm } from "@/utils/validators";
 import axios from "axios";
 import { useState } from "react";
 import { useAuthStore } from "../store/authStore";
+import { jwtDecode } from "jwt-decode";
+import { useUserStore, type User } from "@/store/userStore";
 
 export type AuthForm = {
   username: string;
@@ -15,6 +17,12 @@ type ResponseMessageCard = {
   isHidden: boolean;
   className: string;
   message: string;
+};
+
+export type MyJwtPayload = {
+  sub: string;
+  email: string;
+  username: string;
 };
 
 export const useAuth = () => {
@@ -38,6 +46,7 @@ export const useAuth = () => {
     useState<ResponseMessageCard>(INITIAL_CARD_STATE);
 
   const { isDialogOpen, setIsDialogOpen } = useAuthStore();
+  const setUser = useUserStore((state) => state.setUser);
 
   const handleCheckboxClick = () => {
     setShowPassword(!showPassword);
@@ -106,6 +115,18 @@ export const useAuth = () => {
     window.location.href = "/";
   };
 
+  const createUser = (token: string) => {
+    const decodedToken = jwtDecode<MyJwtPayload>(token);
+
+    const newUser: User = {
+      id: parseInt(decodedToken.sub),
+      email: decodedToken.email,
+      username: decodedToken.username,
+    };
+
+    setUser(newUser);
+  };
+
   const handleLogin = async () => {
     const validation = validateLoginForm(formValues);
 
@@ -122,6 +143,8 @@ export const useAuth = () => {
 
       const token = response.data.data.token;
       localStorage.setItem("token", token);
+      createUser(token);
+
       setIsDialogOpen(false);
     } catch (err) {
       setFormValues(INITIAL_FORM_STATE);

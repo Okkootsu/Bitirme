@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { Dialog } from "@/components/Dialog";
 import { SettingsModal } from "@/features/settings";
+import { useUserStore } from "@/store/userStore";
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 
@@ -10,6 +11,7 @@ type UserCardProps = {
 
 export const UserCard = ({ isOpen }: UserCardProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false);
+  const user = useUserStore((state) => state.user);
 
   return (
     <div className="p-3 flex justify-center items-center h-15 bg-background border-border/40 border-t-3 ">
@@ -34,7 +36,7 @@ export const UserCard = ({ isOpen }: UserCardProps) => {
             isOpen ? "w-auto opacity-100" : "w-0 opacity-0",
           )}
         >
-          John Doe
+          {user?.username}
         </span>
       </Button>
 
