@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AsistanAI.Core.Entities;
+namespace AsistanAI.Core.DTOs.ChatSession;
 
-public abstract class BaseEntity
+public class GetChatSessionMessagesDto
 {
     public int Id { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public int UserId { get; set; }
 }

@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AsistanAI.Core.Entities
-{
-    public class ChatSession : BaseEntity
-    {
-        public string Title { get; set; } = "Yeni Sohbet";
-        
-        // Foreign Key ilişkisi
-        public int UserId { get; set; }
-        public User User { get; set; } = null!;
+namespace AsistanAI.Core.Entities;
 
-        // Bir sohbetin içinde birden çok mesaj olabilir
-        public ICollection<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
-    }
+public class ChatSession : BaseEntity
+{
+    public string Title { get; set; } = "Yeni Sohbet";
+    
+    // Foreign Key ilişkisi
+    public int UserId { get; set; }
+    public User User { get; set; } = null!;
+
+    // Bir sohbetin içinde birden çok mesaj olabilir
+    public ICollection<ChatMessage> Messages { get; set; } = new List<ChatMessage>();
 }
