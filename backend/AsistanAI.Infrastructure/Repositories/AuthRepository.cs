@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AsistanAI.Infrastructure.Repositories;
 
-public class UserRepository : IUserRepository
+public class AuthRepository : IAuthRepository
 {   
     private readonly AppDbContext _context;
-    public UserRepository(AppDbContext context)
+    public AuthRepository(AppDbContext context)
     {
         _context = context;
     }

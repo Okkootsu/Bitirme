@@ -8,18 +8,18 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AsistanAI.API.Controllers;
 
-public class UserController : BaseController
+public class AuthController : BaseController
 {   
-    private readonly IUserService _userService;
-    public UserController(IUserService userService)
+    private readonly IAuthService _authService;
+    public AuthController(IAuthService authService)
     {
-        _userService = userService;
+        _authService = authService;
     }
 
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequestDto requestDto)
     {
-        var result = await _userService.RegisterAsync(requestDto);
+        var result = await _authService.RegisterAsync(requestDto);
 
         return CreateActionResult(result);
     }
@@ -27,7 +27,7 @@ public class UserController : BaseController
     [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequestDto requestDto)
     {
-        var result = await _userService.LoginAsync(requestDto);
+        var result = await _authService.LoginAsync(requestDto);
 
         return CreateActionResult(result);
     }

@@ -16,9 +16,7 @@ public class MappingProfile : Profile
     {
         CreateMap<User, RegisterRequestDto>().ReverseMap();
         CreateMap<ChatMessage, CreateChatMessageDto>().ReverseMap();
-        CreateMap<ChatSession, CreateChatSessionDto>().ReverseMap();
         
         CreateMap<ChatSession, ChatSessionMessagesDto>();
-        // CreateMap<List<ChatSession>, ChatSessionsDto>();
     }
 }

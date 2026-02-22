@@ -11,12 +11,12 @@ using AutoMapper;
 
 namespace AsistanAI.Infrastructure.Services;
 
-public class UserService : IUserService
+public class AuthService : IAuthService
 {   
-    private readonly IUserRepository _userRepository;
+    private readonly IAuthRepository _userRepository;
     private readonly IMapper _mapper;
     private readonly IJwtService _jwtService;
-    public UserService(IUserRepository userRepository, IMapper mapper, IJwtService jwtService)
+    public AuthService(IAuthRepository userRepository, IMapper mapper, IJwtService jwtService)
     {
         _userRepository = userRepository;
         _mapper = mapper;
@@ -50,7 +50,7 @@ public class UserService : IUserService
         if (user == null)
             return ServiceResponse<LoginResponseDto>.Fail("Kullanıcı adı veya şifre hatalı", ServiceResultType.Unauthorized);
 
-        var isValidPassword = AuthenticationService.VerifyPassword(requestDto.Password, user.PasswordHash);
+        var isValidPassword = PasswordService.VerifyPassword(requestDto.Password, user.PasswordHash);
 
         if (!isValidPassword)
             return ServiceResponse<LoginResponseDto>.Fail("Kullanıcı adı veya şifre hatalı", ServiceResultType.Unauthorized);
@@ -72,7 +72,7 @@ public class UserService : IUserService
             return ServiceResponse.Fail("Bu E-postaya sahip bir kullanıcı zaten var!", ServiceResultType.Conflict);
         
         var newUser = _mapper.Map<User>(requestDto);
-        newUser.PasswordHash = AuthenticationService.HashPassword(requestDto.Password);
+        newUser.PasswordHash = PasswordService.HashPassword(requestDto.Password);
 
         await _userRepository.AddUserAsync(newUser);
         await _userRepository.SaveChangesAsync();

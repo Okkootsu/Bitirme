@@ -14,11 +14,9 @@ namespace AsistanAI.Infrastructure.Services;
 public class ChatSessionService : IChatSessionService
 {   
     private readonly IChatSessionRepository _sessionRepository;
-    private readonly IMapper _mapper;
-    public ChatSessionService(IChatSessionRepository sessionRepository, IMapper mapper)
+    public ChatSessionService(IChatSessionRepository sessionRepository)
     {
         _sessionRepository = sessionRepository;
-        _mapper = mapper;
     }
 
     public async Task<ServiceResponse> CreateChatSessionAsync(int userId)
@@ -27,7 +25,7 @@ public class ChatSessionService : IChatSessionService
         {
           UserId = userId,  
         };
-        // var chatSession = _mapper.Map<ChatSession>(sessionDto);
+
         await _sessionRepository.CreateSessionAsync(chatSession);
 
         var isSuccess = await _sessionRepository.SaveChangesAsync();
@@ -50,7 +48,6 @@ public class ChatSessionService : IChatSessionService
         {
           Messages = chatMessages,  
         };
-        // var resultDto = _mapper.Map<ChatSessionMessagesDto>(chatSession);
 
         return ServiceResponse<ChatSessionMessagesDto>.Success(chatMessagesDto, ServiceResultType.Success);
     }
@@ -59,7 +56,6 @@ public class ChatSessionService : IChatSessionService
     {
         var sessions = await _sessionRepository.GetChatSessionsAsync(userId);
 
-        // var sessionsDto = _mapper.Map<ChatSessionsDto>(sessions);
         var sessionsDto = new ChatSessionsDto
         {
           ChatSessions = sessions  
