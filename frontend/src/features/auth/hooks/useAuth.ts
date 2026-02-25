@@ -1,7 +1,7 @@
 import api from "@/utils/axios";
 import { validateLoginForm, validateRegisterForm } from "@/utils/validators";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuthStore } from "../store/authStore";
 import { jwtDecode } from "jwt-decode";
 import { useUserStore, type User } from "@/store/userStore";
@@ -48,6 +48,16 @@ export const useAuth = () => {
   const { isDialogOpen, setIsDialogOpen } = useAuthStore();
   const setUser = useUserStore((state) => state.setUser);
 
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      setIsDialogOpen(true);
+    } else {
+      createUser(token);
+    }
+  }, []);
+
   const handleCheckboxClick = () => {
     setShowPassword(!showPassword);
   };
@@ -91,7 +101,7 @@ export const useAuth = () => {
     }
 
     try {
-      const response = await api.post("/User/register", formValues);
+      const response = await api.post("/Auth/register", formValues);
       setFormValues(INITIAL_FORM_STATE);
 
       showResponseMessage(true, "Başarıyla kayıt olundu. Giriş yapabilirsiniz");
@@ -111,6 +121,7 @@ export const useAuth = () => {
 
   const handleLogout = async () => {
     localStorage.removeItem("token");
+    setUser(null);
 
     window.location.href = "/";
   };
@@ -136,7 +147,7 @@ export const useAuth = () => {
     }
 
     try {
-      const response = await api.post("/User/login", formValues);
+      const response = await api.post("/Auth/login", formValues);
 
       setFormValues(INITIAL_FORM_STATE);
       setResponseMessageCard(INITIAL_CARD_STATE);

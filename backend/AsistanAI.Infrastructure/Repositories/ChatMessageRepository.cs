@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AsistanAI.Core.DTOs.ChatMessage;
 using AsistanAI.Core.Entities;
 using AsistanAI.Core.Interfaces;
 using AsistanAI.Infrastructure.Data;
@@ -9,27 +10,27 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AsistanAI.Infrastructure.Repositories;
 
-public class UserRepository : IUserRepository
+public class ChatMessageRepository : IChatMessageRepository
 {   
     private readonly AppDbContext _context;
-    public UserRepository(AppDbContext context)
+    public ChatMessageRepository(AppDbContext context)
     {
         _context = context;
     }
 
-    public async Task AddUserAsync(User user)
+    public async Task CreateMessageAsync(ChatMessage message)
     {
-        await _context.Users.AddAsync(user);
+        await _context.ChatMessages.AddAsync(message);
     }
 
-    public async Task<User?> GetByEmailAsync(string email)
+    public void DeleteMessageAsync(ChatMessage message)
     {
-        return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        _context.ChatMessages.Remove(message);
     }
 
-    public async Task<User?> GetByIdAsync(int id)
+    public async Task<ChatMessage?> GetMessageAsync(int id)
     {
-        return await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+        return await _context.ChatMessages.FirstOrDefaultAsync(m => m.Id == id);
     }
 
     public async Task<bool> SaveChangesAsync()

@@ -5,11 +5,10 @@ import { ChatInput } from "./ChatInput";
 import { Dialog } from "@/components/Dialog";
 import { FormModal } from "@/features/auth/components/FormModal";
 import { useAuth } from "@/features/auth/hooks/useAuth";
+import { useConversations } from "@/hooks/useConversations";
 
 export const ChatInterface = () => {
   const {
-    messages,
-    input,
     setInput,
     isChatStarted,
     handleSendMessage,
@@ -17,6 +16,7 @@ export const ChatInterface = () => {
   } = useChat();
 
   const { isDialogOpen, setIsDialogOpen } = useAuth();
+  const { currentMessages } = useConversations();
 
   const maxWidthClass = "w-2xl";
 
@@ -40,7 +40,7 @@ export const ChatInterface = () => {
       {isChatStarted && (
         <ChatList
           maxWidthClass={maxWidthClass}
-          messages={messages}
+          messages={currentMessages}
           endOfMessagesRef={endOfMessagesRef}
         />
       )}
