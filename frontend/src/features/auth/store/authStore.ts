@@ -6,6 +6,6 @@ type AuthStore = {
 };
 
 export const useAuthStore = create<AuthStore>((set) => ({
-  isDialogOpen: true,
+  isDialogOpen: false,
   setIsDialogOpen: (value) => set({ isDialogOpen: value }),
 }));

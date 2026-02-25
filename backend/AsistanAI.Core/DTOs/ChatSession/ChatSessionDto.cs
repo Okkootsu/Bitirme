@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace AsistanAI.Core.DTOs.ChatSession;
 
-public class ChatSessionsDto
+public class ChatSessionDto
 {
-    public List<ChatSessionDto>? ChatSessions { get; set; }
+    public int Id { get; set; }
+    public string Title { get; set; } = null!;
 }

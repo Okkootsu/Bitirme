@@ -21,7 +21,7 @@ public class ChatMessageSevice : IChatMessageService
         _mapper = mapper;
     }
 
-    public async Task<ServiceResponse> SendMessageAsync(CreateChatMessageDto messageDto)
+    public async Task<ServiceResponse<ChatMessageDto>> SendMessageAsync(CreateChatMessageDto messageDto)
     {   
         var message = _mapper.Map<ChatMessage>(messageDto);
 
@@ -29,8 +29,10 @@ public class ChatMessageSevice : IChatMessageService
         var isSuccess = await _messageRepo.SaveChangesAsync();
 
         if (!isSuccess)
-            return ServiceResponse.Fail("Mesaj veri tabanına eklenemedi", ServiceResultType.Failure);
+            return ServiceResponse<ChatMessageDto>.Fail("Mesaj veri tabanına eklenemedi", ServiceResultType.Failure);
+        
+        var dto = _mapper.Map<ChatMessageDto>(message);
 
-        return ServiceResponse.Success(ServiceResultType.SuccessNoContent);
+        return ServiceResponse<ChatMessageDto>.Success(dto, ServiceResultType.Success);
     }
 }

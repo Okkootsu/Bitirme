@@ -14,12 +14,14 @@ namespace AsistanAI.Infrastructure.Services;
 public class ChatSessionService : IChatSessionService
 {   
     private readonly IChatSessionRepository _sessionRepository;
-    public ChatSessionService(IChatSessionRepository sessionRepository)
+    private readonly IMapper _mapper;
+    public ChatSessionService(IChatSessionRepository sessionRepository, IMapper mapper)
     {
         _sessionRepository = sessionRepository;
+        _mapper = mapper;
     }
 
-    public async Task<ServiceResponse> CreateChatSessionAsync(int userId)
+    public async Task<ServiceResponse<ChatSessionDto>> CreateChatSessionAsync(int userId)
     {   
         var chatSession = new ChatSession
         {
@@ -31,9 +33,11 @@ public class ChatSessionService : IChatSessionService
         var isSuccess = await _sessionRepository.SaveChangesAsync();
 
         if (!isSuccess)
-            return ServiceResponse.Fail("Yeni sohbet oluşturulurken bir hata meydana geldi", ServiceResultType.Failure);
+            return ServiceResponse<ChatSessionDto>.Fail("Yeni sohbet oluşturulurken bir hata meydana geldi", ServiceResultType.Failure);
         
-        return ServiceResponse.Success(ServiceResultType.SuccessNoContent);
+        var dto = _mapper.Map<ChatSessionDto>(chatSession);
+        
+        return ServiceResponse<ChatSessionDto>.Success(dto, ServiceResultType.Success);
     }
 
     public async Task<ServiceResponse<ChatSessionMessagesDto>> GetChatMessagesAsync(int sessionId, int userId)
