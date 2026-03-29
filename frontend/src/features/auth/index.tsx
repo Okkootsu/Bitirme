@@ -1,1 +1,1 @@
-export { LoginModal } from "./components/LoginModal";
+export { FormModal } from "./components/FormModal";

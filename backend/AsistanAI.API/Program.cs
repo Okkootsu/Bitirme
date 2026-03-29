@@ -42,7 +42,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("ReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173") // React adresi
+        policy.WithOrigins("http://localhost:3000") // React adresi
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials(); 
@@ -128,6 +128,12 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
 
 app.Run();
 
