@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Proje Adı (Buraya Projenin Adını Yazın)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, modern web teknolojileri kullanılarak geliştirilmiş tam yığın (full-stack) bir uygulamadır. Tüm mimari Docker kullanılarak konteynerize edilmiş olup, geliştirme ve canlı ortamlarda sorunsuz çalışacak şekilde tasarlanmıştır.
 
-Currently, two official plugins are available:
+## 🚀 Teknolojiler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Frontend:** React (TypeScript) + Vite
+* **Backend:** .NET 9 (ASP.NET Core Web API) - Çok Katmanlı Mimari
+* **Veritabanı:** PostgreSQL
+* **Orkestrasyon:** Docker & Docker Compose
 
-## React Compiler
+## 📋 Gereksinimler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Projeyi kendi bilgisayarınızda çalıştırmak için sisteminizde sadece aşağıdaki aracın kurulu olması yeterlidir (Node.js, .NET SDK veya PostgreSQL kurmanıza gerek **yoktur**):
 
-## Expanding the ESLint configuration
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (veya Docker CLI & Docker Compose)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Kurulum Adımları
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**1. Çevresel Değişkenleri Ayarlayın**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Güvenlik gereği veritabanı şifreleri versiyon kontrol sistemine (Git) dahil edilmemiştir. Projeyi çalıştırmadan önce ana dizinde (bu dosyanın bulunduğu yerde) bir `.env` dosyası oluşturun ve içine şu bilgileri kendi belirleyeceğiniz şifrelerle ekleyin:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```env
+DB_USER=root
+DB_PASSWORD=kendi_guvenli_sifrenizi_yazin
+DB_NAME=projedb
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Projeyi Çalıştırma
+Terminalinizi proje ana dizininde açın ve durumunuza uygun komutu çalıştırın:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* **İlk Kurulum veya Kod Güncellemesi Sonrası:**
+Kodu ilk kez indirdiğinizde veya projede (C# veya React tarafında) bir değişiklik yaptığınızda, imajların baştan derlenmesi için aşağıdaki komutu kullanın:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  ```bash
+  docker compose up --build
+  ```
+
+* **Normal Çalıştırma (Kodda değişiklik yoksa):**
+Sistemi daha hızlı ayağa kaldırmak için:
+
+  ```bash
+  docker compose up
+  ```
+
+* **Arka Planda Çalıştırma (Terminali meşgul etmemek için):**
+Komutların sonuna -d parametresini ekleyebilirsiniz (örn: docker compose up -d). Sistemi durdurmak için ise docker compose down komutunu kullanabilirsiniz.
+
+## 🌐 Erişilebilirlik
+Konteynerler başarıyla ayağa kalktıktan sonra uygulamaya şu adreslerden erişebilirsiniz:
+
+* **Web Arayüzü (Frontend): http://localhost:3000**
+
+* **API Dökümantasyonu (Swagger): http://localhost:8080/swagger**
