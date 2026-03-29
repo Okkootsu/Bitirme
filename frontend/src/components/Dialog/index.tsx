@@ -22,11 +22,11 @@ export const Dialog = ({
 
   if (!isOpen) return null;
 
-  const handleOverlayClick = () => {
-    if (!isLocked) {
-      onClose();
-    }
-  };
+  // const handleOverlayClick = () => {
+  //   if (!isLocked) {
+  //     onClose();
+  //   }
+  // };
 
   // en önde ve doğru yerde gözüksün diye portal kullandık, bu sayede diğer div'lere sıkışmayacak
   return createPortal(

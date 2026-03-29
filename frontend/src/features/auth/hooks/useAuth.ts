@@ -101,7 +101,7 @@ export const useAuth = () => {
     }
 
     try {
-      const response = await api.post("/Auth/register", formValues);
+      await api.post("/Auth/register", formValues);
       setFormValues(INITIAL_FORM_STATE);
 
       showResponseMessage(true, "Başarıyla kayıt olundu. Giriş yapabilirsiniz");
