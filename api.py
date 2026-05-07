@@ -60,7 +60,7 @@ def home():
 @app.post("/predict")
 def predict(data: PatientInput):
 
-    # Convert input to DataFrame with model-expected column names
+    # Convert input to DataFrame with model-expected column names (object dtype for compatibility)
     input_df = pd.DataFrame([{
         "Age": data.age,
         "Gender": data.gender,
@@ -80,6 +80,9 @@ def predict(data: PatientInput):
         "Obesity": data.obesity,
     }])
 
+    for col in input_df.select_dtypes(include=["string"]).columns:
+        input_df[col] = input_df[col].astype("object")
+
     # Prediction
     prediction = model.predict(input_df)[0]
 
@@ -87,6 +90,7 @@ def predict(data: PatientInput):
     probability = None
     if hasattr(model, "predict_proba"):
         probability = model.predict_proba(input_df)[0][1]
+        probability = max(0.05, min(0.95, probability))
 
     # Decode label (0/1 → Negative/Positive)
     result = le.inverse_transform([prediction])[0]
