@@ -12,4 +12,5 @@ public interface IChatSessionService
     public Task<ServiceResponse<ChatSessionsDto>> GetChatSessionsAsync(int userId);
     public Task<ServiceResponse<ChatSessionMessagesDto>> GetChatMessagesAsync(int sessionId, int userId);
     public Task<ServiceResponse<ChatSessionDto>> CreateChatSessionAsync(int userId);
+    public Task<ServiceResponse<bool>> DeleteChatSessionAsync(int sessionId, int userId);
 }

@@ -3,7 +3,6 @@ import React from "react";
 import { ChatMessage } from "./ChatMessage";
 import type { Message } from "@/store/conversationStore";
 
-
 type ChatListProps = {
   maxWidthClass: string;
   messages: Message[];
@@ -16,18 +15,15 @@ export const ChatList = ({
   endOfMessagesRef,
 }: ChatListProps) => {
   return (
-    <div
-      className={cn(
-        maxWidthClass,
-        "absolute z-0 no-scrollbar w-full mt-0 flex flex-col pt-20 pb-34 items-center flex-1 h-screen overflow-y-auto",
-      )}
-    >
-      {messages.map((msg) => (
-        <div className={cn(maxWidthClass)}>
-          <ChatMessage key={msg.id} message={msg.content} isUser={msg.isUserMessage} />
-        </div>
-      ))}
-      <div ref={endOfMessagesRef} />
+    <div className="flex-1 overflow-y-auto no-scrollbar w-full">
+      <div className={cn("mx-auto w-full px-4 pt-4 pb-4", maxWidthClass)}>
+        {messages.map((msg) => (
+          <div key={msg.id} className="mb-3">
+            <ChatMessage message={msg.content} isUser={msg.isUserMessage} />
+          </div>
+        ))}
+        <div ref={endOfMessagesRef} />
+      </div>
     </div>
   );
 };

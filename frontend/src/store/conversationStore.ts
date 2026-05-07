@@ -22,6 +22,7 @@ type ConversationStore = {
   setSelectedConversation: (value: number | null) => void;
   setConversations: (conversations: Conversation[]) => void;
   addConversation: (newConvo: Conversation) => void;
+  removeConversation: (id: number) => void;
   setCurrentMessages: (messages: Message[]) => void;
   addMessage: (message: Message) => void;
 };
@@ -38,6 +39,10 @@ export const useConversationStore = create<ConversationStore>((set) => ({
   addConversation: (newConvo) =>
     set((state) => ({
       conversations: [newConvo, ...state.conversations],
+    })),
+  removeConversation: (id) =>
+    set((state) => ({
+      conversations: state.conversations.filter((c) => c.id !== id),
     })),
   setCurrentMessages: (messages) => set({ currentMessages: messages }),
   addMessage: (message) =>

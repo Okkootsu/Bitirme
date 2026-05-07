@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using AsistanAI.Core.Interfaces;
+using AsistanAI.Core.Interfaces.AI;
+using AsistanAI.Core.Interfaces.Prediction;
 using AsistanAI.Infrastructure.Data;
 using AsistanAI.Infrastructure.Mappings;
 using AsistanAI.Infrastructure.Repositories;
@@ -25,6 +27,10 @@ builder.Services.AddScoped<IChatSessionRepository, ChatSessionRepository>();
 builder.Services.AddScoped<IChatSessionService, ChatSessionService>();
 
 builder.Services.AddScoped<IJwtService, JwtService>();
+
+builder.Services.AddHttpClient<IPredictionService, PredictionService>();
+
+builder.Services.AddScoped<IAIService, AIService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 

@@ -9,5 +9,6 @@ namespace AsistanAI.Core.Interfaces;
 
 public interface IChatMessageService
 {
-    public Task<ServiceResponse<ChatMessageDto>> SendMessageAsync(CreateChatMessageDto messageDto);
+    public Task<ServiceResponse<SendMessageResponseDto>> SendMessageAsync(CreateChatMessageDto messageDto, int userId);
+    public Task<ServiceResponse<ChatMessageDto>> SaveMessageAsync(CreateChatMessageDto messageDto);
 }

@@ -39,11 +39,19 @@ public class ChatSessionController : BaseController
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetChatMessages(int id)
-    {   
+    {
         var userId = GetUserId();
 
         var result = await _chatSessionService.GetChatMessagesAsync(id, userId);
 
+        return CreateActionResult(result);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteChatSession(int id)
+    {
+        var userId = GetUserId();
+        var result = await _chatSessionService.DeleteChatSessionAsync(id, userId);
         return CreateActionResult(result);
     }
 }

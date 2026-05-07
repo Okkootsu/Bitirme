@@ -21,7 +21,7 @@ export const useChat = () => {
   const handleSendMessage = () => {
     if (!input.trim()) return;
 
-    sendMessage(input, true);
+    sendMessage(input);
 
     if (!isChatStarted) setIsChatStarted(true);
 

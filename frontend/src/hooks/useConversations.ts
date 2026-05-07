@@ -12,6 +12,7 @@ export const useConversations = () => {
     setSelectedConversation,
     setConversations,
     addConversation,
+    removeConversation,
     setCurrentMessages,
     addMessage,
     conversations,
@@ -47,14 +48,10 @@ export const useConversations = () => {
   const fetchConversationList = async () => {
     try {
       const response = await api.get("/ChatSession/sessions");
-
       setConversations(response.data.data.chatSessions);
     } catch (err) {
       if (axios.isAxiosError(err) && err.response) {
-        const backendErrorMessage =
-          err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.";
-
-        alert(backendErrorMessage);
+        alert(err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.");
       } else {
         alert("Sunucuya bağlanılamadı");
       }
@@ -72,14 +69,10 @@ export const useConversations = () => {
       return newConvo.id;
     } catch (err) {
       if (axios.isAxiosError(err) && err.response) {
-        const backendErrorMessage =
-          err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.";
-
-        alert(backendErrorMessage);
+        alert(err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.");
       } else {
         alert("Sunucuya bağlanılamadı");
       }
-
       return null;
     }
   };
@@ -93,81 +86,72 @@ export const useConversations = () => {
   const fetchMessages = async (sessionId: number) => {
     try {
       const response = await api.get(`/ChatSession/${sessionId}`);
-      const messages = response.data.data.messages;
-      setCurrentMessages(messages);
+      setCurrentMessages(response.data.data.messages);
     } catch (err) {
       if (axios.isAxiosError(err) && err.response) {
-        const backendErrorMessage =
-          err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.";
-
-        alert(backendErrorMessage);
+        alert(err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.");
       } else {
         alert("Sunucuya bağlanılamadı");
       }
     }
   };
 
-  const sendMessage = async (
-    content: string,
-    isUserMessage: boolean,
-    providedSessionId?: number | null,
-  ) => {
+  const deleteConversation = async (sessionId: number) => {
     try {
-      let activeSessionId = providedSessionId || selectedConversation;
+      await api.delete(`/ChatSession/${sessionId}`);
+      removeConversation(sessionId);
 
-      if (
-        !isChatStarted &&
-        isUserMessage &&
-        !activeSessionId &&
-        currentMessages.length === 0
-      ) {
+      if (selectedConversation === sessionId) {
+        setSelectedConversation(null);
+        setCurrentMessages([]);
+        setIsChatStarted(false);
+      }
+    } catch (err) {
+      if (axios.isAxiosError(err) && err.response) {
+        alert(err.response.data.errorMessage || "Sohbet silinemedi.");
+      } else {
+        alert("Sunucuya bağlanılamadı");
+      }
+    }
+  };
+
+  // Kullanıcı mesajını gönderir; backend GPT yanıtını üretir ve döndürür.
+  const sendMessage = async (content: string, providedSessionId?: number | null) => {
+    try {
+      let activeSessionId = providedSessionId ?? selectedConversation;
+
+      if (!isChatStarted && !activeSessionId && currentMessages.length === 0) {
         const newSessionId = await createConversation();
-
         if (!newSessionId) return;
-
         activeSessionId = newSessionId;
       }
 
       setIsChatStarted(true);
 
-      const messageObj = {
-        content: content,
-        isUserMessage: isUserMessage,
+      const response = await api.post("/ChatMessage/send", {
+        content,
+        isUserMessage: true,
         chatSessionId: activeSessionId,
-      };
+      });
 
-      const response = await api.post("/ChatMessage/send", messageObj);
-      const message = response.data.data;
-
-      addMessage(message);
-
-      if (isUserMessage) {
-        getAIResponse(activeSessionId);
-      }
+      const { userMessage, aiMessage } = response.data.data;
+      addMessage(userMessage);
+      addMessage(aiMessage);
     } catch (err) {
       if (axios.isAxiosError(err) && err.response) {
-        const backendErrorMessage =
-          err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.";
-
-        alert(backendErrorMessage);
+        alert(err.response.data.errorMessage || "Bilinmeyen bir hata oluştu.");
       } else {
         alert("Sunucuya bağlanılamadı");
       }
     }
-  };
-
-  const getAIResponse = (sessionId: number | null) => {
-    const message = "AI Cevabı";
-
-    setTimeout(() => {
-      sendMessage(message, false, sessionId);
-    }, 500);
   };
 
   return {
     conversations,
     currentMessages,
     sendMessage,
+    createConversation,
+    deleteConversation,
     handleCreateConversationClick,
     setSelectedConversation,
     selectedConversation,
