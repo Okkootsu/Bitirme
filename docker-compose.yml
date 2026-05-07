@@ -19,7 +19,16 @@ services:
       timeout: 5s
       retries: 5
 
-  # 2. .NET 9 Backend
+  # 2. Python FastAPI ML Servisi
+  ml:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml
+    container_name: proje_ml
+    ports:
+      - "8000:8000"
+
+  # 3. .NET 9 Backend
   backend:
     build:
       context: ./backend
@@ -30,13 +39,17 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=${DB_NAME};Username=${DB_USER};Password=${DB_PASSWORD};
+      - MLServiceUrl=http://ml:8000
+      - Gemini__ApiKey=${GEMINI_API_KEY}
     depends_on:
       # Sadece db konteynerinin başlamasını değil,
       # "sağlıklı" (healthcheck'ten geçmiş) olmasını bekle
       db:
         condition: service_healthy
+      ml:
+        condition: service_started
 
-  # 3. React Frontend
+  # 4. React Frontend
   frontend:
     build:
       context: ./frontend

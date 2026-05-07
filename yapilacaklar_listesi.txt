@@ -1,0 +1,108 @@
+================================================================================
+  YAPAY ZEKA DESTEKLI DIYABET SAGLIK ASISTANI - DURUM RAPORU
+  TUBiTAK 2209-A | Proje Degerlendirme
+================================================================================
+
+
+1. VERI TOPLAMA VE ON ISLEME (%10) — TAMAMLANDI
+--------------------------------------------------------------------------------
+[X] Veri seti temin edildi (diabetes_risk_prediction_dataset.csv)
+[X] On isleme (eksik veri, kategorik donusum, normalizasyon) — SimpleImputer, StandardScaler, OneHotEncoder
+[X] LLM'in dogal dil -> yapilandirilmis veri donusumu — Function Calling ile 16 parametre cikariliyor
+[X] Bagimsiz degiskenler (yas, cinsiyet, 14 semptom) tanimlandi
+[X] Bagimli degisken (diyabet olasiligi) belirlendi
+
+
+2. MAKINE OGRENMESI ILE RISK TAHMINI (%20) — BUYUK OLCUDE TAMAMLANDI
+--------------------------------------------------------------------------------
+[X] Lojistik Regresyon modeli egitildi ve performansi olculdu
+[X] Naive Bayes modeli egitildi ve performansi olculdu
+[ ] Decision Tree modeli egitildi ve performansi olculdu — YOK, model.py'de hic kodlanmamis
+[ ] Linear SVM modeli egitildi ve performansi olculdu — YOK, model.py'de hic kodlanmamis
+[X] Ensemble model (Voting Classifier: LogReg + NB) olusturuldu
+[X] Hiperparametre optimizasyonu (GridSearchCV) yapildi
+[X] Accuracy %94.2, F1 %95.2, Recall %93.7
+[ ] AUC metrigi hesaplanmamis
+[X] Model pickle dosyasi olusturuldu (diabetes_model.pkl)
+[X] Label encoder kaydedildi (label_encoder.pkl)
+[X] FastAPI ile ML tahmin servisi (api.py) gelistirildi
+
+
+3. LLM + ML ENTEGRASYONU (%25) — BUYUK OLCUDE TAMAMLANDI
+--------------------------------------------------------------------------------
+[X] LLM secimi yapildi (Gemini 2.5 Flash)
+[X] LLM sistem prompt'u olusturuldu (diyabet asistani rolu)
+[X] Function Calling tanimi yapildi (assess_diabetes_risk, 16 parametre)
+[X] LLM'in dogal dilden yapilandirilmis veri cikarma yetenegini test edildi
+[X] LLM -> ML veri akisi kuruldu (function call -> PredictionService -> ML API)
+[X] ML sonucunun LLM'e geri iletilmesi ve yorumlanmasi saglandi
+[X] LLM'in risk skorunu kullaniciya dogal dilde sunmasi test edildi
+[ ] API cagrilari arasinda veri butunlugu dogrulama mekanizmasi — YOK
+[X] Retry ve hata yonetimi mekanizmasi eklendi (429/503 hatalari, exponential backoff)
+
+
+4. RAG MIMARISI VE BILGI ZENGINLESTIRME (%20) — HIC YAPILMADI
+--------------------------------------------------------------------------------
+[ ] 100+ dogrulanmis bilimsel dokuman derlenmedi
+[ ] Dokumanlarin embedding vektorleri olusturulmadi
+[ ] FAISS tabanli vektor veri tabani kurulmadi
+[ ] RAG islem hatti olusturulmadi
+[ ] RAG entegrasyonu LLM pipeline'ina baglanmadi
+[ ] Halusinasyon azaltma testleri yapilmadi
+[ ] RAG'in bilimsel kaynaklara dayali tavsiyeleri test edilmedi
+
+NOT: Bu bolum sifir ilerleme. Proje basari katkisinin %20'si.
+
+
+5. KULLANICI ARAYUZU VE DEGERLENDIRME (%15) — TAMAMLANDI
+--------------------------------------------------------------------------------
+[X] React/TypeScript ile web arayuzu gelistirildi
+[X] Kullanici kayit ve giris sistemi (JWT Authentication)
+[X] Sohbet arayuzu (mesajlasma ekrani)
+[X] Diyabet Risk Testi formu (16 parametreli semptom formu)
+[X] Sohbet gecmisi yonetimi (olusturma, listeleme, silme)
+[X] Responsive tasarim (mobil uyumluluk)
+[X] Backend API ile asenkron iletisim
+[X] Etik uyari mesajlari eklendi ("Bu degerlendirme tibbi tani yerine gecmez")
+[X] Docker Compose ile tum servislerin ayaga kaldirilmasi (PostgreSQL, ML, Backend, Frontend)
+
+
+6. ISTATISTIKSEL DOGRULAMA VE PERFORMANS ANALIZI (%10) — KISMI
+--------------------------------------------------------------------------------
+[X] 5-Fold Stratified Cross Validation
+[X] Holdout test seti degerlendirmesi
+[ ] Confusion Matrix — classification_report var ama confusion matrix yazdirilmamis
+[X] Classification Report
+[X] Senaryo 1: "Diyabet nedir?" -> normal metin yaniti (LLM) — calisiyor
+[X] Senaryo 2: Semptom -> function call -> ML -> kisisel yanit — calisiyor
+[X] Senaryo 3: Risk testi formu -> ML tahmini -> sonuc mesaji — calisiyor
+[ ] Senaryo 4: RAG destekli beslenme/yasam tarzi tavsiyeleri — RAG yok
+[ ] Literatur karsilastirmasi (%85-90 dogruluk hedefi) — yapilmadi
+[ ] Performans metrikleri raporu — yapilmadi
+
+
+7. ETIK VE GUVENLIK — TAMAMLANDI
+--------------------------------------------------------------------------------
+[X] Tum ciktilar "bilgilendirme amacli" uyarisi iceriyor
+[X] "Tibbi tani niteliginde degildir" mesaji gosteriliyor
+[X] Kullanici verileri anonimlestirilmis ve yerel ortamda depolaniyor
+[X] Disa acik sunucu kullanilmiyor (sadece yerel Docker ortami)
+
+
+================================================================================
+  KRITIK EKSIKLER
+================================================================================
+
+1. RAG MIMARISI — Projenin %20'si, sifir ilerleme
+   Vektor veritabani, embedding, dokuman havuzu, RAG pipeline hicbiri yok.
+
+2. DECISION TREE VE SVM MODEL EGITIMI — Listede var ama hic kodlanmamis
+   model.py'de sadece LogisticRegression ve GaussianNB var.
+
+3. PERFORMANS RAPORU — Confusion matrix, AUC, literatur karsilastirmasi yok
+   classification_report disinda detayli analiz yapilmamis.
+
+4. UCTAN UCA TEST DOKUMANTASYONU — Senaryolar calisiyor ama raporlanmamis
+   Test sonuclari kayit altina alinmamis, resmi rapor hazirlanmamis.
+
+================================================================================

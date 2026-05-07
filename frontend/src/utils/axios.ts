@@ -13,16 +13,15 @@ api.interceptors.request.use((config) => {
 });
 
 // token'in süresi bittiyse sil ve kullanıcıyı başlangıca at
-// api.interceptors.response.use(
-//   (response) => response,
-//   (error) => {
-//     // 401 Unauthorized
-//     if (error.response && error.response.status === 401) {
-//       localStorage.removeItem("token");
-//       window.location.href = "/login";
-//     }
-//     return Promise.reject(error);
-//   },
-// );
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response && error.response.status === 401) {
+      localStorage.removeItem("token");
+      window.location.href = "/";
+    }
+    return Promise.reject(error);
+  },
+);
 
 export default api;

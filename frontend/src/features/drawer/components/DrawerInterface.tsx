@@ -11,6 +11,7 @@ export const DrawerInterface = () => {
   const {
     conversations,
     handleCreateConversationClick,
+    deleteConversation,
     setSelectedConversation,
     selectedConversation,
     isCreateConversationClicked,
@@ -19,7 +20,7 @@ export const DrawerInterface = () => {
   return (
     <div
       className={cn(
-        "flex flex-col transition-all h-screen duration-300 ease-in-out bg-drawer",
+        "flex flex-col transition-all h-screen sticky top-0 duration-300 ease-in-out bg-drawer shrink-0",
         isOpen ? "w-64" : "w-20",
       )}
     >
@@ -35,6 +36,7 @@ export const DrawerInterface = () => {
         conversations={conversations}
         isOpen={isOpen}
         onClick={setSelectedConversation}
+        onDelete={deleteConversation}
         selectedConversation={selectedConversation}
       />
 

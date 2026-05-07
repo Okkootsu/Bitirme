@@ -56,6 +56,21 @@ public class ChatSessionService : IChatSessionService
         return ServiceResponse<ChatSessionMessagesDto>.Success(chatMessagesDto, ServiceResultType.Success);
     }
 
+    public async Task<ServiceResponse<bool>> DeleteChatSessionAsync(int sessionId, int userId)
+    {
+        var session = await _sessionRepository.GetSessionByIdAsync(sessionId, userId);
+        if (session == null)
+            return ServiceResponse<bool>.Fail("Sohbet bulunamadı.", ServiceResultType.NotFound);
+
+        _sessionRepository.DeleteSession(session);
+        var isSuccess = await _sessionRepository.SaveChangesAsync();
+
+        if (!isSuccess)
+            return ServiceResponse<bool>.Fail("Sohbet silinirken bir hata oluştu.", ServiceResultType.Failure);
+
+        return ServiceResponse<bool>.Success(true, ServiceResultType.Success);
+    }
+
     public async Task<ServiceResponse<ChatSessionsDto>> GetChatSessionsAsync(int userId)
     {
         var sessions = await _sessionRepository.GetChatSessionsAsync(userId);

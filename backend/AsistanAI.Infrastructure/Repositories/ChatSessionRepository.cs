@@ -24,9 +24,15 @@ public class ChatSessionRepository : IChatSessionRepository
         await _context.ChatSessions.AddAsync(session);
     }
 
-    public void DeleteSessionAsync(ChatSession session)
+    public void DeleteSession(ChatSession session)
     {
         _context.Remove(session);
+    }
+
+    public async Task<ChatSession?> GetSessionByIdAsync(int sessionId, int userId)
+    {
+        return await _context.ChatSessions
+            .FirstOrDefaultAsync(s => s.Id == sessionId && s.UserId == userId);
     }
 
     public async Task<List<ChatSessionDto>> GetChatSessionsAsync(int userId)

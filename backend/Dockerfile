@@ -3,9 +3,9 @@ WORKDIR /src
 
 COPY . .
 
-RUN dotnet restore
+RUN dotnet restore AsistanAI.API/AsistanAI.API.csproj
 
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish AsistanAI.API/AsistanAI.API.csproj -c Release -o /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
