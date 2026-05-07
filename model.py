@@ -18,14 +18,19 @@ from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import VotingClassifier
+from sklearn.calibration import CalibratedClassifierCV
 
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, brier_score_loss
 
 
 # =========================
 # 2. LOAD DATA
 # =========================
 df = pd.read_csv("diabetes_risk_prediction_dataset.csv")
+
+# Pandas 3.x StringDtype uyumlulugu: string kolonlari object'e cevir
+for col in df.select_dtypes(include=["string"]).columns:
+    df[col] = df[col].astype("object")
 
 target_column = "class"
 
@@ -153,12 +158,13 @@ print("Best Recall:", grid.best_score_)
 
 
 # =========================
-# 11. FINAL MODEL (ENSEMBLE)
+# 11. FINAL MODEL (ENSEMBLE + CALIBRATION)
 # =========================
 best_k = grid.best_params_["feature_selection__k"]
 best_c = grid.best_params_["model__C"]
 
-final_model = Pipeline([
+# Kalibrasyon oncesi model (karsilastirma icin)
+uncalibrated_model = Pipeline([
     ("preprocess", preprocess),
     ("feature_selection",
      SelectKBest(mutual_info_classif, k=best_k)),
@@ -168,6 +174,26 @@ final_model = Pipeline([
             ("nb", GaussianNB())
         ],
         voting="soft"
+    ))
+])
+
+uncalibrated_model.fit(X_train, y_train)
+
+# Kalibre edilmis model (sigmoid / Platt scaling)
+final_model = Pipeline([
+    ("preprocess", preprocess),
+    ("feature_selection",
+     SelectKBest(mutual_info_classif, k=best_k)),
+    ("model", CalibratedClassifierCV(
+        VotingClassifier(
+            estimators=[
+                ("lr", LogisticRegression(C=best_c, max_iter=1000)),
+                ("nb", GaussianNB())
+            ],
+            voting="soft"
+        ),
+        method="sigmoid",
+        cv=5
     ))
 ])
 
@@ -181,6 +207,16 @@ y_pred = final_model.predict(X_test)
 
 print("\nFINAL REPORT")
 print(classification_report(y_test, y_pred))
+
+# Brier Score karsilastirmasi (dusuk = daha iyi kalibrasyon)
+uncal_proba = uncalibrated_model.predict_proba(X_test)[:, 1]
+cal_proba = final_model.predict_proba(X_test)[:, 1]
+
+print(f"Brier Score (kalibrasyon oncesi): {brier_score_loss(y_test, uncal_proba):.4f}")
+print(f"Brier Score (kalibrasyon sonrasi): {brier_score_loss(y_test, cal_proba):.4f}")
+
+print(f"\nOlasilik dagilimi (oncesi): min={uncal_proba.min():.4f}, max={uncal_proba.max():.4f}")
+print(f"Olasilik dagilimi (sonrasi): min={cal_proba.min():.4f}, max={cal_proba.max():.4f}")
 
 
 # =========================
