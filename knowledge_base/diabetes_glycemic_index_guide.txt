@@ -1,0 +1,38 @@
+Glycemic Index and Glycemic Load Guide for Diabetes Management
+Source: American Diabetes Association (ADA); International Tables of Glycemic Index (2021); Harvard T.H. Chan School of Public Health
+
+WHAT IS GLYCEMIC INDEX
+
+The Glycemic Index (GI) is a ranking system that measures how quickly a carbohydrate-containing food raises blood glucose levels after consumption. Pure glucose is used as the reference point and assigned a GI value of 100. Foods are categorized as low GI (55 or below), medium GI (56-69), or high GI (70 or above). Research published in the American Journal of Clinical Nutrition confirms that consistent consumption of low-GI foods leads to a 0.5% reduction in HbA1c over 12 weeks. The GI concept was first introduced by Dr. David Jenkins at the University of Toronto in 1981 and has since become a cornerstone of diabetes nutrition therapy.
+
+GLYCEMIC LOAD EXPLAINED
+
+While GI measures the quality of carbohydrates, Glycemic Load (GL) accounts for both quality and quantity. GL is calculated by multiplying the GI of a food by the grams of carbohydrates in a serving, then dividing by 100. A GL of 10 or below is considered low, 11-19 is medium, and 20 or above is high. For example, watermelon has a high GI of 76 but a low GL of 4 per serving because a typical serving contains only about 6 grams of carbohydrate. This makes GL a more practical tool for meal planning.
+
+LOW GI FOOD TABLE
+
+Legumes are among the best low-GI choices: lentils (GI 32), chickpeas (GI 28), kidney beans (GI 24), and black beans (GI 30). Non-starchy vegetables such as broccoli, spinach, peppers, and tomatoes have negligible GI values. Among grains, barley (GI 28), bulgur wheat (GI 48), and steel-cut oats (GI 42) are excellent options. Most nuts have very low GI values: almonds (GI 0), walnuts (GI 15), and peanuts (GI 14). Fruits with low GI include cherries (GI 22), grapefruit (GI 25), dried apricots (GI 31), and apples (GI 36). Dairy products are generally low GI: plain yogurt (GI 14), whole milk (GI 27), and skim milk (GI 32).
+
+MEDIUM GI FOOD TABLE
+
+Basmati rice (GI 58), brown rice (GI 68), sweet potato (GI 63), whole wheat bread (GI 69), banana (GI 51), pineapple (GI 59), and mango (GI 56) all fall in the medium range. These foods can be included in a diabetes diet but should be paired with protein or healthy fat to slow glucose absorption.
+
+HIGH GI FOODS TO LIMIT
+
+White bread (GI 75), white rice (GI 73), instant oatmeal (GI 79), cornflakes (GI 81), baked russet potato (GI 85), rice cakes (GI 82), and pretzels (GI 83) cause rapid blood sugar spikes. These should be consumed sparingly and always combined with lower GI foods.
+
+FACTORS AFFECTING GI VALUES
+
+Cooking method significantly impacts GI. Al dente pasta has a lower GI (45) than overcooked pasta (55). Ripeness increases GI: a green banana has a GI of 30 while a ripe banana reaches 51. Food processing raises GI: whole oats (GI 42) versus instant oats (GI 79). Acidity lowers GI, which is why adding vinegar or lemon juice to meals can reduce the glycemic response by up to 30%. Fat and protein consumed alongside carbohydrates slow gastric emptying and reduce the overall glycemic response.
+
+PRACTICAL MEAL PLANNING WITH GI
+
+Aim for an average daily GL below 80-100. Pair high-GI foods with low-GI foods: white rice with lentils, bread with hummus. Choose whole grains over refined grains at every meal. Start meals with a salad dressed in olive oil and vinegar to reduce the glycemic impact of subsequent courses. Consume fruits whole rather than juiced. Replace white potatoes with sweet potatoes or legumes. Use the plate method: fill half the plate with non-starchy vegetables (very low GI), one quarter with lean protein, and one quarter with a low-GI carbohydrate source.
+
+GI AND TURKISH CUISINE
+
+Traditional Turkish bulgur pilav (GI 48) is far superior to white rice pilav (GI 73) for blood sugar control. Turkish red lentil soup (mercimek corbasi) has an excellent GI of approximately 30-35. Whole wheat pide is preferable to white flour pide. Bean dishes like kuru fasulye have low GI values around 28-33. Incorporating more legume-based dishes from Turkish cuisine naturally lowers the overall glycemic load of the diet.
+
+MONITORING AND INDIVIDUAL RESPONSE
+
+Individual glycemic responses vary by up to 20-25% from published GI values due to genetics, gut microbiome composition, and metabolic health. Using a continuous glucose monitor (CGM) for 2-4 weeks can help identify personal responses to specific foods. Keeping a food diary alongside blood glucose readings helps establish personal GI patterns.

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+pandas<3
+scikit-learn==1.8.0
+joblib
+numpy
+faiss-cpu
+onnxruntime
+tokenizers
+pdfplumber
+shap

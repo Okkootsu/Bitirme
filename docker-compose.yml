@@ -1,0 +1,84 @@
+services:
+  # 1. PostgreSQL Veritabanı
+  db:
+    image: postgres:15-alpine
+    container_name: proje_db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. Python FastAPI ML + RAG Servisi
+  ml:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml
+    container_name: proje_ml
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./knowledge_base:/app/knowledge_base
+      - ml_models:/app/onnx_model
+      - ml_faiss:/app/faiss_index
+    cpus: 1.5
+    mem_limit: 1536m
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 300s
+
+  # 3. .NET 9 Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: proje_backend
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=${DB_NAME};Username=${DB_USER};Password=${DB_PASSWORD};
+      - MLServiceUrl=http://ml:8000
+      - Gemini__ApiKey=${GEMINI_API_KEY}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    depends_on:
+      db:
+        condition: service_healthy
+      ml:
+        condition: service_started
+    cpus: 1.0
+    mem_limit: 1024m
+
+  # 4. React Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: proje_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    cpus: 0.5
+    mem_limit: 256m
+
+volumes:
+  pgdata:
+  ml_models:
+  ml_faiss:

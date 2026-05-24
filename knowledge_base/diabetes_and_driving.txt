@@ -1,0 +1,30 @@
+Diyabet ve Arac Kullanimi: Guvenlik Rehberi
+Source: American Diabetes Association Position Statement on Diabetes and Driving; European Commission Driving Licence Directive; Turkiye Ehliyet Yonetmeligi
+
+HIPOGLISEMI VE TRAFIK GUVENLIGI
+
+Hipoglisemi (kan sekeri 70 mg/dL altina dusmesi), arac kullanirken en ciddi risk faktorudur. Kan sekeri 54 mg/dL altina dustugunde bilissel fonksiyonlar belirgin olarak bozulur: reaksiyon suresi %30-40 yavasilar, gorsel dikkat azalir ve karar verme yetisi zayiflar. Bu durum, 0.08 g/dL kan alkol duzeyindeki surus bozukluguyla karsilastirabilir duzeydedir. Arastirmalar, insulin kullanan diyabetlilerin yilda 1-2 hipoglisemik surus olayiyla karsilastigini gostermektedir. Ciddi hipoglisemi geciren bireylerde trafik kazasi riski %2-4 kat artar. Bu nedenle hipoglisemiyi tanima ve onleme becerileri, guvenli surus icin hayati onem tasir.
+
+ARAC KULLANMADAN ONCE YAPILMASI GEREKENLER
+
+Her surus oncesinde kan sekerini olcun. Kan sekeri 90 mg/dL altindaysa arac kullanmayin; once 15-20 gram hizli etkili karbonhidrat alin ve 15 dakika bekledikten sonra tekrar olcum yapin. Guvenli surus icin kan sekerinin en az 90 mg/dL (tercihen 100 mg/dL uzerinde) olmasi onerilir. Uzun yolculuklarda her 2 saatte bir mola verin ve kan sekerini kontrol edin. Aracta her zaman hizli etkili glikoz kaynaklari (glikoz tabletleri, meyve suyu kutusu, sekerli icecek) bulundurun. Bu malzemeleri surucu koltugu yanindaki cepde veya kolay erisilebilir bir yerde saklaayin, bagaj bolumunde degil.
+
+SURUS SIRASINDA HIPOGLISEMI BELIRTILERI
+
+Surus sirasinda asagidaki belirtilerden herhangi birini hissederseniz derhal guvenlü bir sekilde yol kenarinda durun: terleme, titreme, cok acikma hissi, gorme bulanikligi, konsantrasyon guclu, uyusukluk, sinirlilik veya konfuzyon. Aracinizi guvenlü bir noktada park edin, motoru kapatin ve kontagi cikartin. Hizli etkili karbonhidrat tuketin (15-20 gram). 15 dakika bekleyin ve tekrar olcum yapin. Kan sekeri 90 mg/dL uzerine cikmadan araci kullanmaya devam etmeyin. Ciddi hipoglisemide (bilinc bulanikligi veya kaybi) yolculariniz 112'yi aramalidirr.
+
+YASAL GEREKLILIKLER VE EHLIYET DUZENLEMELERI
+
+Turkiye'de ehliyet almak veya yenilemek icin saglik raporu gerekliligi diyabetli bireyleri de kapsar. Insulin kullanan bireyler ozel saglik kurulu degerlendirilmesinden gecmek zorundadir. Agir hipoglisemi ataklari geciren bireyler, son 12 aydaki hipoglisemi sikligi ve siddetine gore degerlendirilir. Avrupa Birligi duzenlemelerine gore, son 12 ayda ciddi hipoglisemi atagi geciren bireyler C ve D sinifi (ticari) ehliyet alamaz. B sinifi (ozel) ehliyet icin doktor raporu ve duzenli takip gerekir. ABD'de eyaletler arasi farkliliklar bulunmaktadir; bazi eyaletler insulin kullanan bireylerin ticari arac kullanmasina izin verirken digerleri kisitlama uygulamaktadir.
+
+GECE SURUSU VE OZEL DURUMLAR
+
+Gece surusu, hipoglisemi farkindaliginin azalmasi nedeniyle ek risk tasir. Noktturnal hipoglisemi, gunduz hipoglisemisine kiyasla daha zor fark edilir. Gece uzun yolculuk planlayan diyabetli bireyler, yola cikmadan once kan sekerinin 120 mg/dL uzerinde olmasini saglamalidir. CGM (surekli glikoz monitoru) kullanan surculer, hipoglisemi alarmi ayarlamalari ozellikle faydalidir. Cok sicak veya cok soguk hava kosullarinda aracta birakilan insulin ve glukometre seritlerinin hasar gorebilecegini unutmayin; bu malzemeleri asiri sicak veya soguktan koruyun.
+
+INSULIN POMPASI VE CGM KULLANAN SURUCULAR
+
+Insulin pompasi kullanan surucular, pompanin bolus verdigi sirada dikkat daginigligi yasayabilir. Bolus islemleri yol kenarinda durarak yapilmalidir. CGM alarmlari surus sirasinda calabilir; bu durumda guvenlü bir noktada durup alarmi degerlendirin. Bazi CGM uygulamalari akilli telefon uyarisi gonderir; surus sirasinda telefon kullanimi yasak oldugundan, CGM alicisini kullanmak veya arac ici Bluetooth entegrasyonu tercih edilmelidir. Uzun yolculuklarda CGM verileri egilim oklarini gosterir; dusus egilimi gorurseniz erken mudahale edin.
+
+PRATIK GUVENLIK KONTROL LISTESI
+
+Surucu koltugu yanindan hizli glikoz kaynagi, glukometre ve test stripleri, surucu kimlik karti uzerinde diyabet bilgisi veya tibbi kimlik bilekligi, yedek gozluk (diyabetik retinopati olan bireyler icin), aracta gorunur yerde "Diyabetli surucuyum" yazisi veya karti. Yilda en az bir kez goz muayenesi ve periferik nöropati taramasi yaptirilmalidir cunku azalmis ayak hissi pedal kontrolunu etkileyebilir.

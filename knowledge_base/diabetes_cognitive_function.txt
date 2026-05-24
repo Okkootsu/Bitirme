@@ -1,0 +1,78 @@
+Diabetes and Cognitive Function: Dementia Risk, Brain Glucose, Cognitive Decline Prevention
+Source: ADA Cognitive Impairment Position Statement; Lancet Diabetes Commission; Alzheimer's Association Research
+
+OVERVIEW
+
+The relationship between diabetes and cognitive function has become one of the most
+actively researched areas in medicine. Individuals with Type 2 diabetes have a 50-100%
+increased risk of developing dementia, including both Alzheimer's disease and vascular
+dementia. This association is so strong that some researchers have proposed calling
+Alzheimer's disease "Type 3 diabetes." Globally, as both diabetes and aging populations
+grow, the convergence of these conditions represents a major public health challenge.
+In Turkey, where diabetes prevalence is approximately 15% and the elderly population is
+rapidly expanding, understanding and addressing this connection is critically important.
+
+MECHANISMS LINKING DIABETES AND COGNITIVE DECLINE
+
+Several biological mechanisms connect diabetes to brain dysfunction. Insulin resistance
+in the brain impairs neuronal glucose uptake, energy metabolism, and synaptic plasticity.
+Chronic hyperglycemia causes cerebral microvascular damage, reducing blood flow to
+critical brain regions. Advanced glycation end products (AGEs) accumulate in brain tissue,
+promoting neuroinflammation and oxidative stress. Hyperinsulinemia competes with amyloid
+beta clearance, as insulin-degrading enzyme processes both insulin and amyloid beta.
+Hypoglycemic episodes cause direct neuronal damage, with severe hypoglycemia doubling
+dementia risk. Cerebral small vessel disease from diabetes leads to white matter lesions
+and silent strokes that cumulatively impair cognition.
+
+TYPES OF COGNITIVE IMPAIRMENT IN DIABETES
+
+Diabetes-associated cognitive decline manifests across a spectrum. Diabetes-associated
+cognitive decrements involve subtle slowing of mental processing speed and executive
+function, often detectable only with neuropsychological testing. Mild cognitive impairment
+(MCI) represents a transitional stage with noticeable memory and thinking difficulties that
+do not yet interfere significantly with daily life. Dementia involves severe cognitive decline
+affecting independent function. Type 2 diabetes increases Alzheimer's risk by 50-65% and
+vascular dementia risk by 100-150%. Type 1 diabetes is more associated with processing
+speed reduction than memory impairment.
+
+RISK FACTORS FOR ACCELERATED COGNITIVE DECLINE
+
+Not all diabetic individuals develop cognitive impairment. Key modifiable risk factors for
+accelerated decline include poor glycemic control (HbA1c consistently above 8-9%),
+frequent severe hypoglycemia, uncontrolled hypertension, dyslipidemia, depression,
+physical inactivity, social isolation, and smoking. Duration of diabetes is also important;
+each additional year of diabetes modestly increases dementia risk. Midlife diabetes carries
+higher dementia risk than diabetes developing after age 65.
+
+PREVENTION AND BRAIN PROTECTION STRATEGIES
+
+Evidence-based strategies to protect cognitive function in diabetes include optimal glycemic
+control targeting HbA1c 7-8% in older adults (avoiding both hyperglycemia and hypoglycemia),
+cardiovascular risk factor management (blood pressure below 130/80, statin therapy),
+regular aerobic exercise (150 minutes per week has been shown to improve brain volume and
+cognitive scores), Mediterranean diet pattern (associated with 20-30% reduced cognitive
+decline), cognitive stimulation through reading, puzzles, learning new skills, and social
+engagement, treatment of depression and sleep disorders, limiting alcohol consumption,
+and management of hearing loss which independently accelerates cognitive decline.
+
+MENTAL EXERCISES AND COGNITIVE TRAINING
+
+Structured cognitive training can improve specific cognitive domains. Effective approaches
+include memory training exercises (word lists, visual memory tasks), attention and processing
+speed training (computer-based programs), problem-solving and reasoning tasks, learning
+new languages or musical instruments, social cognitive activities (group discussions, teaching
+others), and dual-task training combining physical and cognitive challenges.
+
+SCREENING AND MONITORING
+
+ADA recommends cognitive screening for adults with diabetes aged 65 and older, especially
+those with recurrent hypoglycemia or complaints of cognitive difficulty. Brief screening tools
+include the Mini-Mental State Examination (MMSE), Montreal Cognitive Assessment (MoCA),
+and the Mini-Cog. When cognitive impairment is detected, diabetes treatment should be
+simplified, hypoglycemia risk minimized, and caregiver involvement increased.
+
+CONCLUSION
+
+Diabetes significantly increases cognitive decline and dementia risk through multiple
+mechanisms. Proactive management of glycemia, cardiovascular risks, and lifestyle factors
+combined with cognitive stimulation offers the best protection for brain health.

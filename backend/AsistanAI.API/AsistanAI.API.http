@@ -1,0 +1,6 @@
+@AsistanAI.API_HostAddress = http://localhost:5258
+
+GET {{AsistanAI.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

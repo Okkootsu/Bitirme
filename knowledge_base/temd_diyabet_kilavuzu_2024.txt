@@ -1,0 +1,113 @@
+TEMD (Türkiye Endokrinoloji ve Metabolizma Derneği) Diyabet Tanı ve Tedavi Kılavuzu Özeti
+Kaynak: TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2024, Ankara
+
+TANI KRİTERLERİ
+
+Diyabet tanı kriterleri (herhangi birinin varlığı):
+- Açlık plazma glukozu (APG) ≥126 mg/dL (en az 8 saat açlık)
+- 75 g OGTT'de 2. saat plazma glukozu ≥200 mg/dL
+- HbA1c ≥%6.5
+- Rastgele plazma glukozu ≥200 mg/dL + klasik diyabet semptomları (poliüri, polidipsi, kilo kaybı)
+- Kesin hiperglisemi yoksa tanı iki ayrı testle doğrulanmalıdır
+
+Prediyabet kriterleri:
+- Bozulmuş açlık glukozu (BAG): APG 100-125 mg/dL
+- Bozulmuş glukoz toleransı (BGT): OGTT 2. saat 140-199 mg/dL
+- HbA1c: %5.7-6.4
+
+TEMD TARAMA ÖNERİLERİ
+
+Taranması gereken kişiler:
+- 40 yaş ve üzeri tüm yetişkinler (her 3 yılda bir)
+- Herhangi bir yaşta aşağıdaki risk faktörlerinden biri varsa:
+  * BKİ ≥25 kg/m² (veya bel çevresi erkek >94 cm, kadın >80 cm)
+  * Birinci derece akrabada diyabet öyküsü
+  * Gestasyonel diyabet öyküsü veya >4 kg bebek doğurma
+  * Hipertansiyon (≥140/90 mmHg veya tedavi altında)
+  * Dislipidemi (HDL <35 mg/dL veya trigliserit >250 mg/dL)
+  * Polikistik over sendromu (PKOS)
+  * Kardiyovasküler hastalık öyküsü
+  * Daha önce BAG, BGT veya HbA1c %5.7-6.4 saptanmış olması
+
+TEDAVİ ALGORİTMASI (Tip 2 Diyabet)
+
+Birinci basamak:
+- Yaşam tarzı değişikliği (beslenme + egzersiz) + Metformin
+- Metformin: 500 mg/gün başla, tolere edilirse 2000 mg/gün'e titre et
+- Kontrendikasyonlar: eGFR <30 mL/dk, akut böbrek hasarı, ağır karaciğer yetmezliği
+
+İkinci basamak (HbA1c hedefine ulaşılamazsa, 3 ay sonra değerlendir):
+- ASKH veya yüksek KV risk varsa → GLP-1 RA veya SGLT2i (kanıtlanmış KV yararlı)
+- Kalp yetmezliği varsa → SGLT2i
+- Kronik böbrek hastalığı varsa → SGLT2i ve/veya finerenon, GLP-1 RA
+- Kilo kontrolü öncelikli → GLP-1 RA > SGLT2i
+- Hipoglisemiden kaçınma öncelikli → DPP-4i, GLP-1 RA, SGLT2i
+- Maliyet sorunu varsa → Sülfonilüre (SU) veya tiazolidindion (TZD)
+
+Üçüncü basamak:
+- Üçlü oral kombinasyon veya GLP-1 RA eklenmesi
+- Hedef HbA1c'ye ulaşılamazsa bazal insülin başla
+
+İNSÜLİN BAŞLAMA KRİTERLERİ
+
+- HbA1c ≥%10 veya APG ≥300 mg/dL (başlangıçta düşünülmeli)
+- Semptomatik hiperglisemi (poliüri, polidipsi, açıklanamayan kilo kaybı)
+- Oral ajanlarla yeterli kontrol sağlanamadığında
+- Başlangıç dozu: 10 Ü/gün veya 0.1-0.2 Ü/kg/gün bazal insülin
+- Titrasyon: APG hedefine göre her 3 günde 2 Ü artır
+- Bazal insülinle yeterli kontrol sağlanamazsa prandiyal insülin ekle
+
+GLİSEMİK HEDEFLER
+
+Genel yetişkin (gebe olmayan):
+- HbA1c: <%7 (çoğu hasta için)
+- APG: 80-130 mg/dL
+- Tokluk glukozu (yemekten 1-2 saat sonra): <180 mg/dL
+
+Daha sıkı hedef (HbA1c <%6.5):
+- Kısa süreli diyabet, genç yaş, hipoglisemi riski düşükse
+
+Daha esnek hedef (HbA1c <%8 veya <%8.5):
+- İleri yaş, hipoglisemi öyküsü, ileri komplikasyonlar, sınırlı yaşam beklentisi
+
+KOMPLİKASYON TARAMA TAKVİMİ
+
+Göz muayenesi (retinopati):
+- Tip 2: Tanı anında, sonra yıllık
+- Tip 1: Tanıdan 5 yıl sonra, sonra yıllık
+- İyi kontrol ve retinopati yoksa 2 yılda bir kabul edilebilir
+
+Böbrek taraması (nefropati):
+- Yıllık: İdrar albümin/kreatinin oranı (UACR) + eGFR
+- Tip 2: Tanıdan itibaren
+- Tip 1: Tanıdan 5 yıl sonra
+
+Nöropati taraması:
+- Tip 2: Tanı anında, sonra yıllık
+- Tip 1: Tanıdan 5 yıl sonra, sonra yıllık
+- Yıllık kapsamlı ayak muayenesi (monofilaman, tuning fork, ayak nabızları)
+
+Kardiyovasküler risk değerlendirmesi:
+- Kan basıncı: Her vizitte ölçüm, hedef <130/80 mmHg
+- Lipid profili: Tanıda ve sonra yıllık
+- Statin: 40-75 yaş tüm diyabet hastalarında, ASKH varsa yüksek yoğunlukta statin
+
+BESLENME ÖNERİLERİ (TEMD)
+
+- Bireyselleştirilmiş tıbbi beslenme tedavisi (diyetisyen eşliğinde)
+- Toplam enerjinin %45-60'ı karbonhidratlardan (kompleks, düşük glisemik indeksli)
+- Protein: %15-20
+- Yağ: %25-35 (doymuş yağ <%7, trans yağ minimuma indirilmeli)
+- Posa: 25-30 g/gün
+- Tuz: <5 g/gün (hipertansiyon varsa <3 g/gün)
+- Akdeniz tipi beslenme modeli önerilir
+- Şeker içerikli içeceklerden kaçınma
+
+EGZERSİZ ÖNERİLERİ (TEMD)
+
+- Haftada en az 150 dakika orta yoğunlukta aerobik egzersiz
+- En az 3 güne yayılmış, art arda 2 günden fazla egzersizsiz kalınmamalı
+- Haftada 2-3 seans direnç egzersizi
+- Uzun süreli oturma her 30 dakikada kesilmeli
+- Egzersiz öncesi kan şekeri kontrolü: 100-250 mg/dL ideal aralık
+- Hipoglisemi riski olan hastalarda ek karbonhidrat alımı planlanmalı

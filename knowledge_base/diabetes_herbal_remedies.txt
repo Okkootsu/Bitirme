@@ -1,0 +1,30 @@
+Herbal Remedies and Natural Supplements for Diabetes: Evidence Review
+Source: Cochrane Database of Systematic Reviews; National Center for Complementary and Integrative Health (NCCIH); European Medicines Agency Herbal Monographs
+
+OVERVIEW AND CRITICAL SAFETY WARNING
+
+Herbal remedies and dietary supplements are widely used by people with diabetes, with prevalence studies indicating 30 to 50 percent of diabetes patients use some form of complementary medicine. However, the evidence base for most herbal interventions is limited by small study sizes, short durations, lack of standardization, and potential for publication bias. Critically, herbal products can interact with diabetes medications, potentiate hypoglycemia risk when combined with insulin or sulfonylureas, and may be contaminated with heavy metals, pesticides, or undeclared pharmaceutical agents. No herbal remedy should replace prescribed diabetes medication. All supplement use must be disclosed to the treating physician to prevent dangerous interactions and ensure safe care.
+
+BITTER MELON (MOMORDICA CHARANTIA)
+
+Bitter melon, known as kudret narı in Turkish, contains charantin, vicine, and polypeptide-p, compounds with demonstrated in vitro insulin-mimetic and hypoglycemic activity. A Cochrane review of 9 trials found that bitter melon modestly reduces fasting glucose by 15 to 25 mg/dL in some studies, but evidence quality is low and results are inconsistent. The most studied forms are fruit juice (50 to 100 mL daily), dried powder capsules (1 to 2 grams daily), and aqueous extract. Side effects include gastrointestinal discomfort, diarrhea, and abdominal pain. Bitter melon may potentiate the effect of sulfonylureas and insulin, increasing hypoglycemia risk. It is contraindicated in pregnancy due to abortifacient properties documented in animal studies.
+
+FENUGREEK (TRIGONELLA FOENUM-GRAECUM)
+
+Fenugreek seeds, called cemen in Turkish, contain soluble fiber (galactomannan) and the amino acid 4-hydroxyisoleucine, which stimulates insulin secretion in a glucose-dependent manner. A meta-analysis of 12 trials found that fenugreek supplementation (5 to 50 grams of seed powder daily or 500 to 1,000 mg of standardized extract) reduces fasting glucose by 17.6 mg/dL and HbA1c by 0.30 percentage points. The soluble fiber component slows carbohydrate absorption from the gut. Fenugreek has the strongest evidence base among herbal diabetes remedies. Common side effects include a maple syrup odor in sweat and urine, bloating, and diarrhea. Fenugreek may interact with anticoagulants and potentiate hypoglycemia with insulin therapy.
+
+CINNAMON (CINNAMOMUM CASSIA)
+
+Cinnamon, particularly Cassia cinnamon, contains cinnamaldehyde and type-A procyanidins that may enhance insulin receptor phosphorylation and improve insulin sensitivity. A 2019 meta-analysis of 16 randomized trials found that cinnamon supplementation (1 to 6 grams daily) reduces fasting glucose by 8 to 25 mg/dL and modestly improves lipid profiles. However, the ADA does not recommend cinnamon supplementation due to inconsistent results across trials and concerns about coumarin content in Cassia cinnamon, which may cause liver toxicity at high doses. Ceylon cinnamon (Cinnamomum verum) contains negligible coumarin but has less glycemic evidence. Cinnamon should not be considered a substitute for diabetes medication.
+
+ALOE VERA
+
+Aloe vera gel and juice have been traditionally used for blood sugar management, with proposed mechanisms including stimulation of insulin secretion, improved insulin sensitivity, and reduced intestinal glucose absorption. A meta-analysis of 8 trials showed fasting glucose reductions of 30 to 46 mg/dL with aloe vera supplementation, but study quality was generally low with high risk of bias. Doses ranged from 100 to 300 mg of aloe vera gel extract daily. Aloe vera latex (the yellow substance beneath the leaf skin) is a potent laxative and should be avoided; only the inner gel is used for glycemic purposes. Potential side effects include electrolyte imbalance from diarrhea, hepatotoxicity with long-term use, and interaction with digoxin and diuretics.
+
+OTHER COMMONLY USED HERBS
+
+Berberine, an alkaloid found in goldenseal and barberry, has substantial evidence showing HbA1c reductions of 0.47 percentage points and fasting glucose reductions of 15 to 20 mg/dL, comparable to metformin in some head-to-head trials. Dosing is typically 500 mg two to three times daily. Gymnema sylvestre (gurmar) may reduce sugar cravings and has shown modest glucose-lowering effects in small trials. Turmeric (curcumin) has anti-inflammatory properties but limited direct glycemic evidence. Ginseng (Panax ginseng) shows mixed results with modest postprandial glucose reductions in some studies.
+
+SAFETY WARNINGS AND DRUG INTERACTIONS
+
+Combining multiple herbal supplements with oral diabetes medications or insulin can cause unpredictable hypoglycemia. Herbal products are not regulated as medicines in most countries, including Turkey, and may contain variable concentrations of active ingredients between batches. The Turkish Medicines and Medical Devices Agency (TITCK) has issued warnings about herbal diabetes products found to contain undeclared metformin or glibenclamide. Patients should purchase supplements only from reputable sources, inform all healthcare providers about supplement use, and never discontinue prescribed medications in favor of herbal alternatives. Regular monitoring of liver and kidney function is advisable during long-term supplement use.

@@ -1,0 +1,152 @@
+ADA Standards of Care in Diabetes - 2024 Summary
+Source: American Diabetes Association, Standards of Care in Diabetes — 2024 (Diabetes Care, Volume 47, Supplement 1)
+
+CLASSIFICATION AND DIAGNOSIS
+
+Diagnostic criteria for diabetes (any one of the following):
+- Fasting Plasma Glucose (FPG) ≥126 mg/dL (7.0 mmol/L) — fasting = no caloric intake for ≥8 hours
+- 2-hour plasma glucose ≥200 mg/dL (11.1 mmol/L) during 75g OGTT
+- HbA1c ≥6.5% (48 mmol/mol)
+- Random plasma glucose ≥200 mg/dL (11.1 mmol/L) with classic hyperglycemic symptoms
+- In the absence of unequivocal hyperglycemia, diagnosis requires two abnormal test results from the same sample or two separate test samples
+
+Prediabetes criteria:
+- IFG: FPG 100-125 mg/dL (5.6-6.9 mmol/L)
+- IGT: 2-hour OGTT 140-199 mg/dL (7.8-11.0 mmol/L)
+- HbA1c: 5.7-6.4% (39-47 mmol/mol)
+
+GLYCEMIC TARGETS
+
+Adults (non-pregnant):
+- HbA1c: <7.0% for most adults
+- Pre-meal glucose: 80-130 mg/dL
+- Post-meal glucose (1-2 hours after start of meal): <180 mg/dL
+- CGM Time in Range (70-180 mg/dL): >70%
+
+More stringent targets (HbA1c <6.5%):
+- If achievable without significant hypoglycemia
+- Short duration of diabetes, no significant CVD, younger age
+
+Less stringent targets (HbA1c <8.0% or <8.5%):
+- History of severe hypoglycemia
+- Limited life expectancy
+- Advanced complications
+- Extensive comorbidities
+- Long-standing diabetes with difficulty achieving tighter control
+
+COMPREHENSIVE MEDICAL EVALUATION
+
+Initial evaluation should include:
+- Complete medical history (diabetes history, family history, complications, medications)
+- Physical examination (BMI, blood pressure, foot exam, fundoscopic exam)
+- Laboratory tests: HbA1c, fasting lipid panel, liver function, UACR, serum creatinine/eGFR, TSH (in T1DM)
+- Referrals: Eye exam, dental exam, diabetes education, nutrition counseling, mental health screening
+
+LIFESTYLE MANAGEMENT
+
+Medical Nutrition Therapy (MNT):
+- Individualized nutrition plan by registered dietitian
+- No single ideal macronutrient distribution; focus on overall dietary pattern quality
+- Reduce added sugars and refined grains
+- Emphasize non-starchy vegetables, whole grains, legumes, nuts, seeds
+- Mediterranean, DASH, and plant-based dietary patterns recommended
+- Carbohydrate counting or consistent carbohydrate intake for insulin users
+
+Physical Activity:
+- 150+ min/week moderate-to-vigorous aerobic activity (spread over ≥3 days, no more than 2 consecutive days without)
+- 2-3 sessions/week resistance training on non-consecutive days
+- Reduce prolonged sedentary time (interrupt every 30 minutes)
+- Pre-exercise glucose: 100-250 mg/dL ideal for most activities
+- Flexibility and balance exercises for older adults (fall prevention)
+
+Weight Management:
+- 5% weight loss improves glycemic control, lipids, blood pressure
+- 7-10% weight loss provides additional benefit
+- 15%+ weight loss may lead to diabetes remission in some T2DM patients
+- Metabolic surgery (bariatric surgery) recommended for BMI ≥40 or BMI ≥35 with uncontrolled diabetes
+
+Smoking Cessation:
+- Advise all patients not to smoke or use tobacco products
+- Include e-cigarettes in smoking cessation counseling
+- Offer pharmacotherapy and behavioral support
+
+PHARMACOLOGICAL THERAPY (T2DM)
+
+First-line: Metformin + lifestyle modification
+
+Second-line selection based on compelling indications:
+- Established ASCVD or high CV risk → GLP-1 RA or SGLT2i with proven CV benefit
+- Heart failure (HFrEF or HFpEF) → SGLT2i
+- CKD (albuminuria or eGFR 20-60) → SGLT2i, and/or finerenone (if albuminuria), GLP-1 RA
+- Need to minimize hypoglycemia → GLP-1 RA, SGLT2i, DPP-4i, TZD
+- Need to minimize weight gain or promote weight loss → GLP-1 RA > SGLT2i > DPP-4i
+- Cost is a major issue → Sulfonylurea, TZD, insulin
+
+Insulin initiation:
+- Consider early if HbA1c >10%, blood glucose >300 mg/dL, or symptoms of hyperglycemia
+- Start with basal insulin (typically 10 units or 0.1-0.2 U/kg/day)
+- Titrate to fasting glucose target (usually increase by 2 units every 3 days)
+- Add prandial insulin if needed for postprandial control
+
+CARDIOVASCULAR RISK MANAGEMENT
+
+Blood Pressure:
+- Target: <130/80 mmHg
+- First-line: ACE inhibitor or ARB (especially if albuminuria present)
+- Lifestyle: DASH diet, sodium restriction (<2300 mg/day), weight loss, exercise, moderate alcohol
+
+Lipids:
+- Moderate-intensity statin: All patients 40-75 without ASCVD
+- High-intensity statin: Patients with ASCVD, or age 40-75 with risk factors
+- Add ezetimibe if LDL not at goal, then consider PCSK9 inhibitor
+- Triglycerides ≥500: Fibrate or omega-3 for pancreatitis prevention
+
+Antiplatelet:
+- Aspirin 75-162 mg: Secondary prevention (established ASCVD)
+- Primary prevention: Consider if high CV risk and low bleeding risk
+
+MICROVASCULAR COMPLICATIONS SCREENING SCHEDULE
+
+Diabetic Retinopathy:
+- T1DM: Within 5 years of diagnosis, then annually
+- T2DM: At diagnosis, then annually
+- Every 2 years acceptable if no retinopathy and good glycemic control
+
+Diabetic Kidney Disease:
+- Annual UACR and eGFR for all patients
+- T1DM: Start 5 years after diagnosis
+- T2DM: Start at diagnosis
+
+Diabetic Neuropathy:
+- T1DM: 5 years after diagnosis, then annually
+- T2DM: At diagnosis, then annually
+- Annual comprehensive foot exam for all
+
+SPECIAL POPULATIONS
+
+Older Adults (≥65 years):
+- Individualize glycemic targets based on functional status and comorbidities
+- Healthy: HbA1c <7.0-7.5%
+- Complex/intermediate: HbA1c <8.0%
+- Very complex/poor health: HbA1c <8.5%, avoid symptomatic hyperglycemia
+- Simplify treatment regimens, avoid hypoglycemia
+- Screen for cognitive impairment, depression, falls
+
+Children and Adolescents:
+- T1DM: HbA1c <7.0% (previously <7.5%, updated 2024)
+- T2DM in youth: Metformin first-line, liraglutide approved for ages ≥10
+- Screen for complications starting 5 years after T1DM diagnosis or at T2DM diagnosis
+- Psychosocial support critical during adolescence
+
+Pregnancy:
+- Pre-existing diabetes: Optimize HbA1c <6.5% before conception
+- Insulin is the preferred treatment during pregnancy
+- Target glucose: Fasting <95, 1h post-meal <140, 2h post-meal <120 mg/dL
+
+DIABETES SELF-MANAGEMENT EDUCATION AND SUPPORT (DSMES)
+
+- All people with diabetes should receive DSMES at diagnosis, annually, when complications develop, and during transitions of care
+- Four critical time points: At diagnosis, annually, when new complications arise, when transitions in care occur
+- Topics: Disease process, nutrition, physical activity, medication management, monitoring, prevention of complications, problem solving, psychosocial adjustment
+- Delivered by certified diabetes educators (CDCES)
+- Associated with improved HbA1c (0.5-1% reduction), reduced hospitalizations, improved quality of life

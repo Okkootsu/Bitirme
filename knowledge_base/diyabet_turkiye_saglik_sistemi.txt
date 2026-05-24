@@ -1,0 +1,64 @@
+Türkiye'de Diyabet Tedavi Hakları ve Sağlık Sistemi
+Kaynak: Sosyal Güvenlik Kurumu (SGK); T.C. Sağlık Bakanlığı; Türkiye Diyabet Vakfı
+
+SGK KAPSAMINDA DİYABET TEDAVİSİ
+
+Türkiye'de diyabet tanısı alan hastalar Sosyal Güvenlik Kurumu (SGK) kapsamında geniş tedavi haklarına sahiptir. Genel sağlık sigortası kapsamında diyabet ilaçları, insülin, test malzemeleri ve komplikasyon tedavileri büyük ölçüde karşılanır.
+
+SGK'nın karşıladığı diyabet giderleri:
+- Oral antidiyabetik ilaçlar (metformin, gliclazide, sitagliptin vb.)
+- İnsülin preparatları (hızlı etkili, uzun etkili, karışım insülinler)
+- Kan şekeri ölçüm cihazı (3 yılda bir yenileme hakkı)
+- Kan şekeri test stripleri (tip 1: günde 4-6, tip 2 insülin kullanan: günde 2-4, tip 2 oral tedavi: günde 1-2)
+- İnsülin enjeksiyon iğneleri ve kalem uçları
+- İnsülin pompası (belirli endikasyonlarla, özellikle tip 1 diyabet)
+- HbA1c testi (yılda en az 2 kez)
+- Göz dibi muayenesi, böbrek fonksiyon testleri
+- Diyabetik ayak bakımı ve özel ayakkabı (endikasyonla)
+
+MUAYENE VE SEVk SİSTEMİ
+
+Diyabet hastalarının tedavi basamakları:
+1. Aile Hekimi: İlk başvuru noktası. Diyabet taraması, temel tedavi, ilaç yazımı, düzenli kontrol.
+2. Devlet Hastanesi / Şehir Hastanesi: İç hastalıkları veya endokrinoloji polikliniği. Komplikasyon taraması, tedavi ayarlaması, insülin başlanması.
+3. Üniversite Hastanesi: Karmaşık vakalar, insülin pompası, ileri komplikasyonlar, araştırma tedavileri.
+
+Sevk zinciri: Aile hekiminden sevk almadan doğrudan hastaneye başvurulabilir ancak muayene ücreti farkı ödenir. Acil durumlarda (hipoglisemi, DKA) sevk gerekmez.
+
+ÜCRETSİZ HİZMETLER VE HAKLAR
+
+Diyabet hastalarının ücretsiz yararlanabileceği hizmetler:
+- Diyabet eğitimi: Devlet hastanelerinde diyabet hemşiresi ve diyetisyen eğitimi
+- Beslenme danışmanlığı: SGK kapsamında diyetisyen muayenesi
+- Ayak bakımı: Diyabetik ayak polikliniği olan hastanelerde ücretsiz bakım
+- Göz taraması: Yıllık retinopati taraması SGK kapsamında
+- Psikolojik destek: Diyabet ve depresyon tanısı olan hastalara psikoloji/psikiyatri desteği
+- Diyabet kampları: Çocuk ve gençler için ücretsiz diyabet kampları (Türkiye Diyabet Vakfı)
+
+İLAÇ TEMİNİ VE REÇETE
+
+Diyabet ilaçları için reçete kuralları:
+- Endokrinoloji veya iç hastalıkları uzmanı 3 aylık reçete yazabilir
+- Aile hekimi uzman raporuyla 3 aylık reçete yenileyebilir
+- İnsülin reçeteleri 3 aylık yazılır
+- GLP-1 agonistleri (semaglutid vb.) endokrinoloji uzmanı raporu gerektirir
+- SGK bazı yeni nesil ilaçları (SGLT2 inhibitörleri, GLP-1 agonistleri) belirli koşullarla karşılar
+- İlaç katkı payları küçük miktarlardadır (%0-20 arası)
+
+DİYABET DESTEK KURULUŞLARI
+
+Türkiye Diyabet Vakfı: Eğitim programları, farkındalık kampanyaları, çocuk kampları. Web: turkdiab.org
+Türk Diyabet Cemiyeti: Hasta eğitimi, bilgilendirme materyalleri.
+Türkiye Endokrinoloji ve Metabolizma Derneği (TEMD): Klinik kılavuzlar, hekim eğitimi.
+Diyabet dernekleri: İl bazında faaliyet gösteren yerel dernekler, hasta destek grupları.
+e-Nabız: Sağlık Bakanlığı dijital sağlık platformu. İlaç takibi, randevu, test sonuçları.
+
+ÇALIŞAN DİYABET HASTALARININ HAKLARI
+
+İş yerinde diyabet yönetimi hakları:
+- İş yerinde kan şekeri ölçümü ve insülin enjeksiyonu için zaman ve uygun mekan hakkı
+- Hipoglisemi riski olan işlerde (ağır makine kullanımı, yüksekte çalışma) iş düzenlemesi
+- Düzenli yemek molaları ve ara öğün hakkı
+- Diyabet kontrolleri için izin hakkı (SGK vizite kağıdı ile)
+- İşe alımda diyabet nedeniyle ayrımcılık yasaktır (İş Kanunu md. 5)
+- Engelli sağlık kurulu raporu: Komplikasyonlu diyabet hastalarına %40 ve üzeri engel oranı verilebilir, bu ek haklar sağlar (vergi indirimi, erken emeklilik)

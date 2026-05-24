@@ -1,0 +1,98 @@
+Diabetes Complications and Prevention
+Source: WHO, IDF, ADA Standards of Medical Care 2023
+
+OVERVIEW
+
+Chronic hyperglycemia (high blood sugar) over time leads to damage of various organ systems. Diabetes complications are broadly categorized as microvascular (affecting small blood vessels) and macrovascular (affecting large blood vessels). Proper glycemic control, blood pressure management, and lipid control can significantly reduce the risk of complications.
+
+MICROVASCULAR COMPLICATIONS
+
+1. Diabetic Retinopathy (Eye Disease):
+- Most common cause of new cases of blindness in adults aged 20-74
+- Prevalence: Affects approximately 35% of people with diabetes
+- Types: Non-proliferative (NPDR) and Proliferative (PDR)
+- Risk factors: Duration of diabetes, poor glycemic control, hypertension, pregnancy
+- Prevention: Tight glycemic control (every 1% reduction in HbA1c reduces risk by 35%), blood pressure control, annual dilated eye exams
+- Treatment: Laser photocoagulation, anti-VEGF injections, vitrectomy
+- Symptoms: Often asymptomatic until advanced; blurred vision, floaters, vision loss
+
+2. Diabetic Nephropathy (Kidney Disease):
+- Leading cause of end-stage renal disease (ESRD) globally
+- Affects 20-40% of people with diabetes
+- Stages: Hyperfiltration → microalbuminuria → macroalbuminuria → declining GFR → ESRD
+- Risk factors: Poor glycemic control, hypertension, smoking, genetic factors
+- Prevention: ACE inhibitors/ARBs for those with albuminuria, blood pressure < 130/80, glycemic control
+- Monitoring: Annual urine albumin-to-creatinine ratio (UACR) and eGFR
+- SGLT2 inhibitors have shown significant renal protection beyond glucose lowering
+
+3. Diabetic Neuropathy (Nerve Disease):
+- Most common diabetes complication, affecting up to 50% of patients
+- Types:
+  a) Distal symmetric polyneuropathy (DSPN): Most common; affects feet/hands first
+  b) Autonomic neuropathy: Affects cardiovascular, gastrointestinal, genitourinary systems
+  c) Focal neuropathies: Carpal tunnel, cranial neuropathies
+- Symptoms: Tingling, numbness, burning pain, loss of sensation in extremities
+- Prevention: Optimal glycemic control is the only proven strategy
+- Treatment: Pain management (gabapentin, pregabalin, duloxetine), foot care
+- Foot complications: Neuropathy → loss of protective sensation → injury → ulceration → infection → amputation
+
+MACROVASCULAR COMPLICATIONS
+
+1. Cardiovascular Disease (CVD):
+- Leading cause of death in people with diabetes (2-4x increased risk)
+- Includes: Coronary artery disease, myocardial infarction, stroke, peripheral arterial disease
+- Risk factors: Hyperglycemia, hypertension, dyslipidemia, smoking, obesity
+- Prevention: Multifactorial risk reduction (glucose, BP, lipids, antiplatelet therapy)
+- People with diabetes have equivalent cardiovascular risk to non-diabetic individuals who have had a heart attack
+
+2. Cerebrovascular Disease (Stroke):
+- 2-4 times increased risk in diabetes
+- Both ischemic and hemorrhagic stroke risk increased
+- Prevention: Blood pressure control, anticoagulation for atrial fibrillation, statin therapy
+- Risk is higher with longer diabetes duration and poor glycemic control
+
+3. Peripheral Arterial Disease (PAD):
+- Affects blood vessels in legs and feet
+- Symptoms: Claudication (leg pain when walking), cold feet, weak pulses
+- Increases risk of diabetic foot ulcers and amputations
+- Screening: Ankle-brachial index (ABI) in symptomatic patients
+- Treatment: Exercise therapy, antiplatelet agents, revascularization if needed
+
+DIABETIC FOOT COMPLICATIONS
+
+- Diabetes is the leading cause of non-traumatic lower limb amputations
+- Every 30 seconds, a lower limb is amputated somewhere in the world due to diabetes
+- Risk factors: Neuropathy, PAD, foot deformities, history of ulcers, poor glycemic control
+- Prevention:
+  - Daily foot inspection
+  - Proper footwear (avoid walking barefoot)
+  - Regular podiatric care
+  - Prompt treatment of any foot injury
+  - Smoking cessation
+  - Good glycemic and blood pressure control
+
+MENTAL HEALTH AND DIABETES
+
+- Depression is 2-3 times more common in people with diabetes
+- Diabetes distress affects 18-45% of people with diabetes
+- Anxiety disorders are more prevalent
+- Eating disorders (especially in type 1 diabetes)
+- Impact: Poor self-management, worse glycemic control, increased complications
+- Screening: Annual screening for diabetes distress and depression recommended
+- Treatment: Psychotherapy (CBT), medication, diabetes-specific support groups
+
+PREVENTION OF COMPLICATIONS
+
+The DCCT/EDIC (Type 1) and UKPDS (Type 2) studies proved that intensive glycemic control significantly reduces microvascular complications:
+- Retinopathy risk reduced by 76% (DCCT)
+- Nephropathy risk reduced by 50% (DCCT)
+- Neuropathy risk reduced by 60% (DCCT)
+- Every 1% reduction in HbA1c reduces microvascular complications by ~37%
+
+Multifactorial approach (Steno-2 study):
+- Combined management of glucose, blood pressure, lipids, and lifestyle
+- Reduced cardiovascular events by 53%
+- Reduced microvascular events by 61%
+- Increased life expectancy by 7.9 years
+
+KEY MESSAGE: Most diabetes complications are preventable or can be significantly delayed through proper management of blood glucose, blood pressure, cholesterol, regular screening, and healthy lifestyle choices.

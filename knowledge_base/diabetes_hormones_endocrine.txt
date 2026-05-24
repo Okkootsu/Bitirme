@@ -1,0 +1,46 @@
+Diabetes and the Endocrine System: Hormonal Interactions
+Source: Endocrine Society Guidelines; Journal of Clinical Endocrinology and Metabolism; Diabetes Care
+
+INSULIN AND COUNTER-REGULATORY HORMONES
+
+Diabetes is fundamentally a hormonal disorder. While insulin lowers blood sugar, several counter-regulatory hormones raise it. Understanding these interactions is key to effective diabetes management.
+
+Insulin: Produced by beta cells in the pancreas. Primary function: moves glucose from blood into cells. In type 1 diabetes: autoimmune destruction of beta cells means no insulin production. In type 2 diabetes: cells become resistant to insulin, and beta cells gradually fail.
+
+Glucagon: Produced by alpha cells in the pancreas. Raises blood sugar by stimulating liver to release stored glucose. In diabetes, glucagon regulation is impaired, contributing to fasting hyperglycemia. New medications (dual agonists) target both insulin and glucagon pathways.
+
+CORTISOL AND STRESS HORMONES
+
+Cortisol (the stress hormone) directly opposes insulin action. It stimulates liver glucose production and reduces insulin sensitivity. Chronic stress leads to chronically elevated cortisol, which worsens blood sugar control.
+
+Dawn phenomenon: Cortisol naturally rises between 4-8 AM, causing early morning blood sugar spikes. Affects 50% of type 2 and most type 1 patients. Management: evening long-acting insulin adjustment, or early morning medication timing.
+
+Cushing's syndrome: Excess cortisol from adrenal tumors or chronic steroid use. Causes significant insulin resistance and "steroid diabetes." Blood sugar may normalize when cortisol levels are corrected.
+
+THYROID HORMONES AND DIABETES
+
+Thyroid disorders are 2-3 times more common in diabetic patients, especially type 1. Both conditions are autoimmune in nature and share genetic risk factors.
+
+Hypothyroidism (underactive thyroid): Affects 10-15% of type 2 diabetic patients. Slows metabolism, promotes weight gain, raises cholesterol. Can increase insulin resistance and make blood sugar harder to control. Symptoms overlap with diabetes: fatigue, weight gain, cold intolerance. Treatment with levothyroxine may improve blood sugar control.
+
+Hyperthyroidism (overactive thyroid): Accelerates glucose absorption and hepatic glucose production. Can dramatically worsen blood sugar control. May unmask latent diabetes. Weight loss despite increased appetite may mask diabetes weight management efforts.
+
+Screening recommendation: TSH test at diabetes diagnosis and every 1-2 years thereafter.
+
+PCOS AND INSULIN RESISTANCE
+
+Polycystic ovary syndrome (PCOS) affects 6-12% of women of reproductive age. Strong link with insulin resistance: 50-70% of women with PCOS have insulin resistance. Women with PCOS have 4-7 times higher risk of developing type 2 diabetes.
+
+Connection: Excess insulin stimulates ovaries to produce more androgens (male hormones). This causes irregular periods, acne, excess hair growth, and infertility. Metformin is used in PCOS specifically to address insulin resistance.
+
+GROWTH HORMONE
+
+Growth hormone (GH) is a counter-regulatory hormone that raises blood sugar. Excess GH (acromegaly) causes diabetes in 20-56% of patients. GH deficiency in adults is associated with increased abdominal fat and insulin resistance.
+
+MENOPAUSE AND DIABETES
+
+Estrogen decline during menopause affects insulin sensitivity. Postmenopausal women have increased diabetes risk. Hormone replacement therapy (HRT) may modestly improve insulin sensitivity but has cardiovascular considerations. Blood sugar patterns may change during perimenopause: increased variability and unpredictability. Medication adjustments may be needed during this transition.
+
+TESTOSTERONE AND DIABETES IN MEN
+
+Low testosterone affects 25-40% of men with type 2 diabetes. Bidirectional relationship: diabetes lowers testosterone, low testosterone worsens insulin resistance. Symptoms: fatigue, decreased libido, erectile dysfunction, reduced muscle mass. Testosterone replacement therapy may improve insulin sensitivity and HbA1c in hypogonadal men with diabetes.

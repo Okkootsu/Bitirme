@@ -1,0 +1,71 @@
+Diabetes Symptoms, Risk Factors and Early Detection
+Source: American Diabetes Association (ADA) Standards of Care, 2023; WHO Guidelines
+
+COMMON SYMPTOMS OF TYPE 2 DIABETES
+
+Type 2 diabetes frequently goes undiagnosed for many years because hyperglycemia develops gradually and at earlier stages is often not severe enough for the patient to notice any of the classic symptoms of diabetes.
+
+Classic symptoms include:
+- Polyuria (frequent urination): Excess glucose in the blood causes the kidneys to work harder to filter and absorb it. When the kidneys cannot keep up, the excess glucose is excreted into the urine, dragging along fluids from tissues, which makes you dehydrated and causes frequent urination.
+
+- Polydipsia (excessive thirst): As the body loses more fluids through frequent urination, dehydration triggers excessive thirst. This creates a cycle of drinking more fluids and urinating more frequently.
+
+- Polyphagia (excessive hunger): Without enough insulin to move sugar into cells, muscles and organs become depleted of energy. This triggers intense hunger, even after eating.
+
+- Unexplained weight loss: Despite eating more than usual to relieve hunger, weight loss may occur. Without the ability to metabolize glucose, the body uses alternative fuels stored in muscle and fat. Calories are also lost as excess glucose is released in the urine.
+
+- Fatigue and weakness: When cells are deprived of sugar, fatigue and irritability become common. Dehydration from frequent urination can also contribute to feeling tired.
+
+- Blurred vision: High levels of blood sugar pull fluid from tissues, including the lenses of the eyes. This affects the ability to focus and causes blurred vision.
+
+- Slow-healing wounds: High blood sugar impairs blood flow and damages nerves, making it difficult for the body to heal cuts and wounds naturally.
+
+- Frequent infections: Diabetes affects the immune system. Genital thrush (yeast infections) and urinary tract infections are more common in people with uncontrolled diabetes.
+
+- Tingling or numbness: Excess sugar can lead to nerve damage (neuropathy), causing tingling, numbness, or pain in the hands and feet. This usually starts in the fingers and toes and gradually spreads.
+
+- Skin changes: Dark patches of skin (acanthosis nigricans) in the folds and creases of the body, usually in the armpits, neck, and groin, can be a sign of insulin resistance.
+
+RISK FACTORS
+
+Modifiable risk factors:
+- Overweight/obesity (BMI ≥ 25 kg/m², or ≥ 23 kg/m² in Asian populations)
+- Physical inactivity (less than 150 min/week of moderate activity)
+- Unhealthy diet (high in processed foods, sugary drinks, saturated fats)
+- Smoking
+- Excessive alcohol consumption
+- High blood pressure (≥ 140/90 mmHg)
+- Dyslipidemia (high triglycerides, low HDL cholesterol)
+
+Non-modifiable risk factors:
+- Age ≥ 45 years (risk increases with age)
+- Family history of diabetes (first-degree relative)
+- Ethnicity (higher risk in African, Hispanic, Asian, Pacific Islander populations)
+- History of gestational diabetes
+- Polycystic ovary syndrome (PCOS)
+- History of cardiovascular disease
+
+EARLY DETECTION
+
+Screening criteria (ADA recommendations):
+- All adults aged 35 and older should be screened
+- Adults of any age who are overweight/obese AND have one or more additional risk factors
+- Women who were diagnosed with gestational diabetes should have lifelong testing at least every 3 years
+- People with prediabetes (HbA1c 5.7-6.4%) should be tested yearly
+
+Diagnostic tests:
+- Fasting Plasma Glucose (FPG): ≥ 126 mg/dL (7.0 mmol/L) indicates diabetes
+- Oral Glucose Tolerance Test (OGTT): ≥ 200 mg/dL (11.1 mmol/L) at 2 hours
+- HbA1c: ≥ 6.5% (48 mmol/mol) indicates diabetes
+- Random Plasma Glucose: ≥ 200 mg/dL with symptoms
+
+PREDIABETES
+
+Prediabetes is a condition where blood sugar levels are higher than normal but not yet high enough to be diagnosed as type 2 diabetes. Without intervention, prediabetes is likely to become type 2 diabetes in 10 years or less.
+
+Criteria for prediabetes:
+- FPG: 100-125 mg/dL (5.6-6.9 mmol/L) - Impaired Fasting Glucose (IFG)
+- OGTT: 140-199 mg/dL (7.8-11.0 mmol/L) at 2 hours - Impaired Glucose Tolerance (IGT)
+- HbA1c: 5.7-6.4% (39-47 mmol/mol)
+
+Lifestyle interventions can reduce the risk of progression from prediabetes to diabetes by 58%.

@@ -1,0 +1,26 @@
+.git
+__pycache__
+*.pyc
+*.db
+*.log
+.env
+.vscode
+.vs
+.idea
+.pytest_cache
+.docker
+
+# ML build context doesn't need backend or frontend (they have their own Dockerfiles)
+backend/
+frontend/
+
+# Test/dev files
+test_ml.py
+conftest.py
+model.py
+
+# Large datasets
+*.csv
+
+# Node artifacts (safety net)
+node_modules

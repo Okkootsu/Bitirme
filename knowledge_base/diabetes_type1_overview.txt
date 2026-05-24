@@ -1,0 +1,89 @@
+Type 1 Diabetes Mellitus - Comprehensive Overview
+Sources: American Diabetes Association (ADA) Standards of Care 2024, WHO, JDRF, Endocrine Society
+
+DEFINITION AND PATHOPHYSIOLOGY
+
+Type 1 diabetes mellitus (T1DM) is a chronic autoimmune disease characterized by the destruction of insulin-producing beta cells in the pancreatic islets of Langerhans. This destruction is mediated by autoreactive T lymphocytes and leads to absolute insulin deficiency. Without exogenous insulin replacement, T1DM is fatal.
+
+The autoimmune process involves:
+- CD4+ and CD8+ T-cell mediated destruction of beta cells
+- Presence of autoantibodies: GAD65 (glutamic acid decarboxylase), IA-2 (insulinoma-associated antigen-2), ZnT8 (zinc transporter 8), and insulin autoantibodies (IAA)
+- Genetic susceptibility linked to HLA-DR3, HLA-DR4, and HLA-DQ genotypes
+- Environmental triggers suspected: viral infections (Coxsackie B, enteroviruses), early cow's milk exposure, vitamin D deficiency
+
+The preclinical phase can last months to years. Clinical symptoms appear when approximately 80-90% of beta cells are destroyed.
+
+EPIDEMIOLOGY
+
+- Accounts for 5-10% of all diabetes cases worldwide
+- Peak incidence in children aged 10-14 years, but can occur at any age
+- Incidence is increasing globally by approximately 3-4% per year
+- Highest incidence rates in Finland (>60 per 100,000/year) and Sardinia
+- In Turkey, the incidence of T1DM in children (0-14 years) is approximately 10-12 per 100,000/year (Turkish Society of Endocrinology and Metabolism data)
+
+CLASSIFICATION
+
+- Type 1A (Immune-mediated): Most common form, positive autoantibodies
+- Type 1B (Idiopathic): No evidence of autoimmunity, more common in African and Asian populations
+- Latent Autoimmune Diabetes in Adults (LADA): Slowly progressive autoimmune diabetes in adults, often initially misdiagnosed as Type 2
+
+CLINICAL PRESENTATION
+
+Classic symptoms (often acute onset):
+- Polyuria (excessive urination)
+- Polydipsia (excessive thirst)
+- Polyphagia (excessive hunger) with weight loss
+- Fatigue and weakness
+- Blurred vision
+
+Diabetic Ketoacidosis (DKA) at presentation:
+- Occurs in 20-40% of children at diagnosis
+- Symptoms: nausea, vomiting, abdominal pain, Kussmaul breathing (deep rapid breathing), fruity breath odor, altered consciousness
+- DKA criteria: blood glucose >250 mg/dL, arterial pH <7.3, serum bicarbonate <18 mEq/L, ketonemia/ketonuria
+- Medical emergency requiring immediate treatment with IV fluids and insulin
+
+DIAGNOSIS
+
+Diagnostic criteria (same as Type 2, but context differs):
+- Fasting Plasma Glucose ≥126 mg/dL (7.0 mmol/L)
+- 2-hour OGTT ≥200 mg/dL (11.1 mmol/L)
+- HbA1c ≥6.5%
+- Random glucose ≥200 mg/dL with classic symptoms
+
+Distinguishing from Type 2:
+- Autoantibody testing (GAD65, IA-2, ZnT8, IAA)
+- C-peptide levels (low or undetectable in T1DM)
+- Age of onset (typically younger, but not exclusively)
+- Absence of obesity-related features (though obesity can coexist)
+
+TREATMENT
+
+Insulin Therapy (required for survival):
+- Basal-bolus regimen: Long-acting insulin (glargine, detemir, degludec) + rapid-acting insulin (lispro, aspart, glulisine) before meals
+- Insulin pump therapy (CSII - Continuous Subcutaneous Insulin Infusion): Delivers rapid-acting insulin continuously with boluses for meals
+- Hybrid closed-loop systems ("artificial pancreas"): Automated insulin delivery based on CGM readings
+
+Blood Glucose Monitoring:
+- Self-monitoring of blood glucose (SMBG): 4-10 times daily
+- Continuous Glucose Monitoring (CGM): Real-time glucose readings every 1-5 minutes
+- Key metrics: Time in Range (TIR 70-180 mg/dL, target >70%), Time Below Range (<70 mg/dL, target <4%)
+
+Glycemic Targets:
+- HbA1c <7.0% for most adults (ADA recommendation)
+- HbA1c <7.5% for children and adolescents
+- Individualized targets based on hypoglycemia risk, life expectancy, comorbidities
+
+COMPLICATIONS SPECIFIC TO T1DM
+
+- Hypoglycemia: Most common acute complication of insulin therapy
+- Diabetic Ketoacidosis (DKA): Can occur with illness, insulin omission, or pump failure
+- Higher risk of celiac disease (6-8% prevalence vs 1% general population)
+- Higher risk of autoimmune thyroid disease (15-30%)
+- Increased cardiovascular risk (2-4x compared to general population)
+
+EMERGING THERAPIES
+
+- Teplizumab (FDA-approved 2022): Anti-CD3 monoclonal antibody that can delay onset of clinical T1DM by approximately 2 years in high-risk individuals
+- Islet cell transplantation: Can restore insulin production but requires immunosuppression
+- Stem cell-derived beta cells: Under clinical investigation
+- Immunotherapy combinations: Targeting multiple immune pathways to preserve beta cell function

@@ -1,0 +1,130 @@
+Insulin Resistance and Type 2 Diabetes Pathophysiology
+Sources: DeFronzo RA "From the Triumvirate to the Ominous Octet" (Diabetes 2009), ADA Position Statement, Endocrine Reviews
+
+INSULIN RESISTANCE - DEFINITION
+
+Insulin resistance (IR) is a pathological condition in which cells fail to respond normally to the hormone insulin. Higher-than-normal levels of insulin are needed to maintain normal blood glucose levels. Insulin resistance is the hallmark feature of Type 2 diabetes and precedes the development of overt hyperglycemia by years to decades.
+
+THE OMINOUS OCTET (DeFronzo Model)
+
+Professor Ralph DeFronzo described eight pathophysiological defects contributing to hyperglycemia in T2DM:
+
+1. Decreased insulin secretion (Beta cell dysfunction):
+- Progressive loss of beta cell function is the primary determinant of disease progression
+- At diagnosis, approximately 50% of beta cell function is already lost
+- Mechanisms: glucotoxicity, lipotoxicity, amyloid deposition (islet amyloid polypeptide/IAPP), oxidative stress, ER stress, inflammatory cytokines
+- Beta cell mass decreases by approximately 1-2% per year
+
+2. Increased hepatic glucose production (Liver):
+- The liver produces excessive glucose via gluconeogenesis and glycogenolysis
+- Insulin normally suppresses hepatic glucose output; in IR, this suppression is impaired
+- Contributes significantly to fasting hyperglycemia
+- Metformin primarily targets this defect
+
+3. Decreased peripheral glucose uptake (Muscle):
+- Skeletal muscle is responsible for ~75-80% of insulin-stimulated glucose disposal
+- GLUT4 transporter translocation to cell surface is impaired
+- Reduced glycogen synthesis
+- Major contributor to postprandial hyperglycemia
+- Exercise and TZDs improve muscle glucose uptake
+
+4. Increased lipolysis (Adipose tissue):
+- Insulin normally suppresses lipolysis; in IR, free fatty acid (FFA) release is increased
+- Elevated FFAs worsen insulin resistance in muscle and liver (Randle cycle/lipotoxicity)
+- Ectopic fat deposition (liver, muscle, pancreas) further impairs insulin signaling
+- Visceral adiposity is more metabolically harmful than subcutaneous fat
+
+5. Decreased incretin effect (GI tract):
+- Incretin hormones (GLP-1, GIP) are responsible for 50-70% of postprandial insulin secretion
+- In T2DM, GLP-1 secretion may be reduced, and the insulinotropic effect of GIP is diminished
+- This "incretin defect" reduces meal-stimulated insulin response
+- GLP-1 receptor agonists and DPP-4 inhibitors target this pathway
+
+6. Increased glucagon secretion (Alpha cells):
+- Paradoxical hyperglucagonemia in T2DM (glucagon is not appropriately suppressed after meals)
+- Stimulates hepatic glucose production
+- GLP-1 suppresses glucagon secretion
+
+7. Increased glucose reabsorption (Kidney):
+- SGLT2 transporters in proximal tubule reabsorb ~90% of filtered glucose
+- In diabetes, SGLT2 expression is upregulated, increasing the renal threshold for glycosuria
+- The kidney effectively "returns" more glucose to the bloodstream
+- SGLT2 inhibitors block this pathway, causing therapeutic glycosuria
+
+8. Neurotransmitter dysfunction (Brain):
+- Central nervous system resistance to insulin and leptin
+- Dysregulated appetite and energy homeostasis
+- Impaired hypothalamic glucose sensing
+- GLP-1 RAs have central appetite-suppressing effects
+
+MOLECULAR MECHANISMS OF INSULIN RESISTANCE
+
+Normal Insulin Signaling:
+Insulin → Insulin Receptor (tyrosine kinase) → IRS-1/IRS-2 phosphorylation → PI3K activation → Akt/PKB activation → GLUT4 translocation → Glucose uptake
+
+Key disruptions:
+- Serine phosphorylation of IRS-1 (instead of tyrosine) → blocks signal
+- Inflammatory cytokines (TNF-α, IL-6) activate JNK and IKKβ pathways → serine phosphorylation
+- Diacylglycerol (DAG) accumulation → activates PKC → serine phosphorylation
+- Ceramide accumulation → inhibits Akt
+- ER stress → activates unfolded protein response (UPR) → insulin resistance
+- Mitochondrial dysfunction → increased reactive oxygen species (ROS)
+
+METABOLIC SYNDROME
+
+Insulin resistance is the central feature of metabolic syndrome, defined by (ATP III criteria, 3 of 5):
+- Waist circumference: >102 cm (men), >88 cm (women)
+- Triglycerides: ≥150 mg/dL
+- HDL cholesterol: <40 mg/dL (men), <50 mg/dL (women)
+- Blood pressure: ≥130/85 mmHg
+- Fasting glucose: ≥100 mg/dL
+
+Metabolic syndrome affects approximately 20-25% of the global adult population and increases the risk of T2DM by 5-fold and cardiovascular disease by 2-fold.
+
+MEASURING INSULIN RESISTANCE
+
+Research methods:
+- Hyperinsulinemic-euglycemic clamp: Gold standard, measures glucose disposal rate under controlled insulin infusion
+- Frequently Sampled IV Glucose Tolerance Test (FSIVGTT): Minimal model analysis
+
+Clinical proxies:
+- HOMA-IR (Homeostatic Model Assessment): Fasting insulin (μU/mL) × Fasting glucose (mg/dL) / 405
+  * Normal: <1.0, IR likely: >2.0, Significant IR: >2.5
+- Triglyceride/HDL ratio: >3.0 suggests insulin resistance
+- Fasting insulin levels: >25 μU/mL suggests significant IR
+
+PROGRESSION FROM INSULIN RESISTANCE TO DIABETES
+
+Stage 1 - Normal glucose tolerance with compensatory hyperinsulinemia:
+- IR is present but beta cells compensate by increasing insulin production
+- Fasting and postprandial glucose remain normal
+- Elevated fasting insulin levels
+
+Stage 2 - Impaired glucose tolerance (Prediabetes):
+- Beta cell compensation begins to fail
+- Fasting glucose: 100-125 mg/dL (Impaired Fasting Glucose)
+- 2-hour OGTT glucose: 140-199 mg/dL (Impaired Glucose Tolerance)
+- HbA1c: 5.7-6.4%
+- Annual conversion rate to diabetes: 5-10%
+
+Stage 3 - Overt Type 2 diabetes:
+- Significant beta cell failure
+- Fasting glucose ≥126 mg/dL and/or HbA1c ≥6.5%
+- Progressive decline in beta cell function if untreated
+
+GENETIC AND ENVIRONMENTAL FACTORS
+
+Genetic susceptibility:
+- Over 400 genetic loci associated with T2DM risk
+- Key genes: TCF7L2 (strongest association), PPARG, KCNJ11, ABCC8, FTO (obesity)
+- Concordance rate in monozygotic twins: 70-90% (much higher than T1DM at 30-50%)
+- Family history: 40% risk if one parent has T2DM, 70% if both parents
+
+Environmental factors:
+- Obesity (especially visceral): Primary modifiable risk factor
+- Physical inactivity: Sedentary lifestyle reduces insulin sensitivity
+- Diet: High-calorie, high-fat, high-sugar diets promote IR
+- Sleep deprivation: <6 hours/night increases IR and diabetes risk
+- Chronic stress: Cortisol elevation promotes IR
+- Gut microbiome: Dysbiosis linked to systemic inflammation and IR
+- Endocrine disruptors: BPA, phthalates may contribute to IR

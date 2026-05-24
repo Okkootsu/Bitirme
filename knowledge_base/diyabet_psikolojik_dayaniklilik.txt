@@ -1,0 +1,68 @@
+Diyabet Yorgunlugu, Motivasyon ve Psikolojik Dayaniklilik
+Source: ADA Psychosocial Care in Diabetes 2024; TEMD Diyabet ve Psikoloji Rehberi; Diabetes Distress Research
+
+GIRIS
+
+Diyabet sadece fiziksel degil, psikolojik açidan da zorlayici bir kronik hastaliktir. Günde
+birçok kez karar verme zorunlulugu (ne yemeli, ne kadar insülin, egzersiz yapilmali mi)
+hasta üzerinde sürekli bir yük olusturur. Bu durum zamanla diyabet yorgunlugu (diabetes
+burnout) olarak adlandirilan motivasyon kaybi ve tükenmislige yol açabilir. Türkiye'de
+diyabet hastalarinin yaklasik %35-45'inin diyabete özgü psikolojik sikinti yasadigi
+tahmin edilmektedir.
+
+DIYABET YORGUNLUGU (DIABETES BURNOUT) NEDIR
+
+Diyabet yorgunlugu hastanin diyabet yönetiminden bıkması, tedaviye uyumu azaltmasi veya
+tamamen birakması durumudur. Klinik depresyondan farklidir; diyabete özgü bir tepkidir.
+Belirtileri arasinda kan sekeri ölçümünü atlama, ilaçlari düzensiz kullanma, sagliksiz beslenme,
+doktor randevularini kaçirma, diyabetle ilgili konulardan kaçinma ve gelecek kaygisi yer alir.
+Araştirmalar diyabet yorgunlugunun HbA1c'de %0.5-1.5 puanlik artisla iliskili oldugunu
+göstermektedir.
+
+DIYABET DISTRESI
+
+Diyabet distresi klinik depresyondan farkli bir kavramdir ve diyabet yönetiminin günlük
+yüklerinden kaynaklanan duygusal sikintiyi ifade eder. Dört alt boyutu vardir: duygusal yük
+(hastalıkla yasama sikintisi), hekim kaynaklı distres (saglik ekibi ile iletisim sorunlari),
+rejim kaynaklı distres (tedavi planlarina uyma zorluğu) ve kisilerarasi distres (çevrenin
+tutumu). Diyabet distresi prevalansi Tip 2 diyabette %18-45, Tip 1 diyabette %20-40
+arasindadir.
+
+MOTIVASYON STRATEJILERI
+
+Motivasyonu artirmak için kanita dayali stratejiler mevcuttur. Küçük ve ulasilabilir hedefler
+belirlemek büyük önem tasir; örnegin HbA1c'yi bir anda %2 düsürmeye çalismak yerine
+%0.5'lik adimlar hedeflemek. Basarilarin kayit altina alinmasi ve kutlanmasi motivasyonu
+arttirir. Düzenli rutinler olusturmak karar yorgunlugunu azaltir. Diyabet destek gruplarina
+katilmak yalnizlik hissini hafifletir. Türkiye'de Diyabet Dernekleri ve hasta örgütleri çesitli
+destek programlari sunmaktadir.
+
+PSIKOLOJIK DAYANIKLILIK (RESILIENCE) GELISTIRME
+
+Psikolojik dayaniklilik zorluklar karsisinda uyum saglama ve toparlanma kapasitesidir.
+Diyabet baglaminda dayaniklilik gelistirmek için öz-sefkat (kendine karsi anlayisli olma)
+pratikleri yapilabilir. Esnek düsünme becerisi gelistirmek önemlidir; bir gün kötü kan sekeri
+sonuçlari almak basarisizlik degil, öğrenme firsatidir. Stres yönetimi teknikleri arasinda
+derin nefes egzersizleri, farkindaliik meditasyonu, progresif kas gevsetme ve günlük tutma
+yer alir.
+
+PROFESYONEL PSIKOLOJIK DESTEK
+
+Her diyabet hastasi yilda en az bir kez psikolojik tarama geçirmelidir. ADA standartlari
+PHQ-9 (depresyon) ve DDS (diyabet distres) ölçeklerinin düzenli uygulanmasini önerir.
+Türkiye'de diyabet merkezlerinde psikolog ve psikiyatrist destegi giderek yayginlasmaktadir.
+Kognitif davranisçi terapi (KDT) diyabet distresinde etkili bir yöntemdir. Gerektiginde
+antidepresan tedavi düsünülmelidir; bazi antidepresanlar kan sekerini ve kiloyu
+etkileyebileceğinden endokrinolog ile koordineli çalisilmalidir.
+
+AILEDE VE IS YERINDE DESTEK
+
+Psikolojik dayaniklilik birey tek basina değil, çevresiyle birlikte güçlenir. Aile bireylerinin
+yargilamadan destek olmasi, is yerinde gerekli düzenlemelerin yapilmasi ve sosyal çevrenin
+bilinçlendirilmesi önemlidir. Türkiye'de toplumsal diyabet farkindaliği son yillarda artmis
+olmakla birlikte stigma hâlâ devam etmektedir.
+
+SONUC
+
+Diyabetin psikolojik boyutu fiziksel tedavi kadar önemlidir. Diyabet yorgunlugu ve distresi
+tanımak, kabul etmek ve profesyonel destek almak tedavi basarisinin anahtaridir.
