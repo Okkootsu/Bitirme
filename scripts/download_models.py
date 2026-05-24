@@ -8,7 +8,7 @@ TAG = "v1.0-models"
 BASE_URL = f"https://github.com/{REPO}/releases/download/{TAG}"
 
 FILES = {
-    "diabetes_model.pkl": "/app/diabetes_model.pkl",
+    "diabetes_model.pkl": "/app/model_cache/diabetes_model.pkl",
     "model.onnx": "/app/onnx_model/model.onnx",
     "model.onnx.data": "/app/onnx_model/model.onnx.data",
     "tokenizer.json": "/app/onnx_model/tokenizer.json",

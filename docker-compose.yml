@@ -29,6 +29,7 @@ services:
       - ./knowledge_base:/app/knowledge_base
       - ml_models:/app/onnx_model
       - ml_faiss:/app/faiss_index
+      - ml_pkl:/app/model_cache
     cpus: 1.5
     mem_limit: 1536m
     healthcheck:
@@ -82,3 +83,4 @@ volumes:
   pgdata:
   ml_models:
   ml_faiss:
+  ml_pkl:
