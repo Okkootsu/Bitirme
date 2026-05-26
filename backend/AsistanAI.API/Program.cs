@@ -48,10 +48,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("ReactApp", policy =>
     {
-        policy.WithOrigins("http://localhost:3000")
-              .WithHeaders("Content-Type", "Authorization")
-              .WithMethods("GET", "POST", "PUT", "DELETE")
-              .AllowCredentials();
+        policy.WithOrigins("http://localhost:3000", "http://localhost:5173") // React adresi
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); 
     });
 });
 
