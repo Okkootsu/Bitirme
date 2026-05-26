@@ -238,6 +238,8 @@ class RetrievedChunk(BaseModel):
     text: str
     source: str
     score: float
+    category: Optional[str] = None
+    source_type: Optional[str] = None
 
 
 # =========================

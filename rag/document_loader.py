@@ -26,17 +26,20 @@ def load_documents(knowledge_base_dir: str) -> List[Dict]:
         if filename == "metadata.json":
             continue
 
-        source_title = metadata.get(filename, {}).get("title", filename)
+        file_meta = metadata.get(filename, {})
+        source_title = file_meta.get("title", filename)
+        category = file_meta.get("category")
+        source_type = file_meta.get("source_type", "educational")
 
         if filename.lower().endswith(".pdf"):
-            documents.extend(_load_pdf(filepath, source_title))
+            documents.extend(_load_pdf(filepath, source_title, category, source_type))
         elif filename.lower().endswith((".txt", ".md")):
-            documents.extend(_load_text(filepath, source_title))
+            documents.extend(_load_text(filepath, source_title, category, source_type))
 
     return documents
 
 
-def _load_pdf(filepath: str, source_title: str) -> List[Dict]:
+def _load_pdf(filepath: str, source_title: str, category: str = None, source_type: str = "educational") -> List[Dict]:
     """Extract text from PDF file page by page."""
     pages = []
     try:
@@ -48,19 +51,21 @@ def _load_pdf(filepath: str, source_title: str) -> List[Dict]:
                         "text": text.strip(),
                         "source": source_title,
                         "page_number": i + 1,
+                        "category": category,
+                        "source_type": source_type,
                     })
     except Exception as e:
         print(f"Warning: Could not load PDF {filepath}: {e}")
     return pages
 
 
-def _load_text(filepath: str, source_title: str) -> List[Dict]:
+def _load_text(filepath: str, source_title: str, category: str = None, source_type: str = "educational") -> List[Dict]:
     """Load a plain text or markdown file."""
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             text = f.read().strip()
         if text:
-            return [{"text": text, "source": source_title, "page_number": 1}]
+            return [{"text": text, "source": source_title, "page_number": 1, "category": category, "source_type": source_type}]
     except Exception as e:
         print(f"Warning: Could not load text file {filepath}: {e}")
     return []

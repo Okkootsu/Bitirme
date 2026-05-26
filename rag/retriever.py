@@ -45,6 +45,8 @@ class RAGRetriever:
                 "text": chunk["text"],
                 "source": chunk["source"],
                 "score": round(score, 4),
+                "category": chunk.get("category"),
+                "source_type": chunk.get("source_type"),
             })
 
         return retrieved

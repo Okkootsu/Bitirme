@@ -1,0 +1,80 @@
+Bu kısımları projede detaylıca incele. Arkadaşım bunların bu şekilde daha iyi olabileceğini söyledi. Sence gerçekten doğru mu? Daha iyi olur aşağıdaki işlemleri yaparsak, revise edersek.
+
+1-FAISS ile bulunan en benzer adayların gerçekten soruyu en doğru şekilde cevaplayıp cevaplamadığını daha isabetli bir modelle yeniden sıralamak için reranker eklenecek bu kaliteyi çok arttırıyor.
+
+2-Neighbor chunk expansion, retrieval sonrası seçilen chunk’ın çevresindeki komşu chunk’ları da ekleyerek bağlam kopmasını önlüyo bu yüzden bunu da eklesek rag çok kaliteli olacak
+
+3-bir de cross validation yapılıyor sonra stacing yapılıyor sonra kalibrasyon yaparken aynı verilerle çok eğitiyorsun bub da sızıntı diye geçiyor dur ai cevabını vereyim direkt onu da prompta yapılır.
+
+## ❌ Problem yaratan satır(lar)
+
+python id="stacking"
+StackingClassifier(
+    estimators=estimators,
+    final_estimator=LogisticRegression(),
+    cv=5
+)
+
+CalibratedClassifierCV(
+    stacking_ensemble,
+    method="isotonic",
+    cv=5
+)
+
+
+---
+
+## ⚠️ Neden problem?
+
+Aynı veriyi:
+
+* önce “hangi model iyi?” diye birkaç kez görüyorsun (stacking CV)
+* sonra “olasılıkları düzelt” diye tekrar görüyorsun (calibration CV)
+
+👉 Yani model aynı veriyi 2-3 farklı aşamada tekrar tekrar öğrenmiş oluyor.
+Bu da sonucu olduğundan daha iyi gösterme (skor şişmesi) riski yaratıyor.
+
+---
+
+## ✅ Çözüm (en temiz hali)
+
+### ✔️ 1. Stacking’i sadece train’de eğit
+
+python id="fix1"
+stacking_ensemble.fit(X_train, y_train)
+
+
+---
+
+### ✔️ 2. Calibration’ı CV ile değil validation ile yap
+
+python id="fix2"
+from sklearn.calibration import CalibratedClassifierCV
+
+calibrated_model = CalibratedClassifierCV(
+    stacking_ensemble,
+    method="sigmoid",
+    cv="prefit"
+)
+
+calibrated_model.fit(X_val, y_val)
+
+
+---
+
+## 🧠 Mantık (çok basit)
+
+* Train → öğrenme
+* Validation → “düzeltme (calibration + threshold)”
+* Test → hiç dokunulmayan gerçek sınav
+
+---
+
+## 🔥 Özet
+
+❌ Problem: aynı veriyi stacking + calibration içinde tekrar tekrar kullanıyorsun
+✔️ Çözüm: calibration’ı ayrı validation set’e taşı, CV’yi orada bırak
+
+---
+
+İstersen bunu sana “tam production-ready tek parça pipeline” haline de getirebilirim.

@@ -1,102 +1,1066 @@
 [
-  {"file": "ada_clinical_guidelines_summary.txt", "title": "ADA Standards of Care in Diabetes 2024", "language": "en"},
-  {"file": "diabetes_acupuncture_alternative.txt", "title": "Alternative Therapies and Acupuncture for Diabetes", "language": "en"},
-  {"file": "diabetes_and_alcohol.txt", "title": "Alcohol and Diabetes: Risks and Safe Limits", "language": "en"},
-  {"file": "diabetes_and_cancer_risk.txt", "title": "Diabetes and Cancer Risk", "language": "en"},
-  {"file": "diabetes_and_depression.txt", "title": "Diabetes and Depression: Bidirectional Relationship", "language": "en"},
-  {"file": "diabetes_and_driving.txt", "title": "Diabetes and Driving Safety", "language": "en"},
-  {"file": "diabetes_and_infections.txt", "title": "Diabetes and Infections", "language": "en"},
-  {"file": "diabetes_and_liver_disease_nafld.txt", "title": "Diabetes and Liver Disease (NAFLD)", "language": "en"},
-  {"file": "diabetes_and_relationships.txt", "title": "Diabetes Impact on Relationships and Sexual Health", "language": "en"},
-  {"file": "diabetes_and_sleep_disorders.txt", "title": "Diabetes and Sleep Disorders", "language": "en"},
-  {"file": "diabetes_and_smoking.txt", "title": "Smoking and Diabetes: Risks and Cessation Benefits", "language": "en"},
-  {"file": "diabetes_and_stress_management.txt", "title": "Stress Management for Diabetes Patients", "language": "en"},
-  {"file": "diabetes_and_thyroid_disorders.txt", "title": "Diabetes and Thyroid Disorders", "language": "en"},
-  {"file": "diabetes_and_work_life.txt", "title": "Diabetes Management at Workplace", "language": "en"},
-  {"file": "diabetes_beverages_guide.txt", "title": "Beverage Guide for Diabetes", "language": "en"},
-  {"file": "diabetes_bone_joint_health.txt", "title": "Diabetes and Bone/Joint Health", "language": "en"},
-  {"file": "diabetes_breakfast_guide.txt", "title": "Diabetes-Friendly Breakfast Guide", "language": "en"},
-  {"file": "diabetes_carb_counting.txt", "title": "Advanced Carbohydrate Counting for Diabetes", "language": "en"},
-  {"file": "diabetes_cardiovascular_risk.txt", "title": "Diabetes and Cardiovascular Risk Management", "language": "en"},
-  {"file": "diabetes_cognitive_function.txt", "title": "Diabetes and Cognitive Function", "language": "en"},
-  {"file": "diabetes_complications.txt", "title": "Diabetes Complications and Prevention", "language": "en"},
-  {"file": "diabetes_continuous_glucose_monitor.txt", "title": "Continuous Glucose Monitoring (CGM) Technology", "language": "en"},
-  {"file": "diabetes_cooking_methods.txt", "title": "Healthy Cooking Methods for Diabetes", "language": "en"},
-  {"file": "diabetes_cultural_food_practices.txt", "title": "Cultural Food Practices and Diabetes", "language": "en"},
-  {"file": "diabetes_dental_health.txt", "title": "Diabetes and Dental Health", "language": "en"},
-  {"file": "diabetes_eating_out.txt", "title": "Diabetes-Friendly Eating Out Guide", "language": "en"},
-  {"file": "diabetes_elderly_geriatric.txt", "title": "Geriatric Diabetes Management", "language": "en"},
-  {"file": "diabetes_emergency_dka_hhs.txt", "title": "Diabetic Emergencies: DKA and HHS", "language": "en"},
-  {"file": "diabetes_emergency_preparedness.txt", "title": "Diabetes Emergency and Disaster Preparedness", "language": "en"},
-  {"file": "diabetes_epidemiology_turkey.txt", "title": "Diabetes Epidemiology in Turkey", "language": "en"},
-  {"file": "diabetes_exercise_recommendations.txt", "title": "Physical Activity Recommendations for Diabetes", "language": "en"},
-  {"file": "diabetes_exercise_safety.txt", "title": "Exercise Safety for Diabetic Patients", "language": "en"},
-  {"file": "diabetes_eye_care_retinopathy.txt", "title": "Diabetic Retinopathy and Eye Care", "language": "en"},
-  {"file": "diabetes_fiber_importance.txt", "title": "Fiber Importance in Diabetes Diet", "language": "en"},
-  {"file": "diabetes_foot_care_daily.txt", "title": "Daily Foot Care for Diabetes", "language": "en"},
-  {"file": "diabetes_genetic_factors.txt", "title": "Genetic Factors in Diabetes", "language": "en"},
-  {"file": "diabetes_glycemic_index_guide.txt", "title": "Glycemic Index and Load Guide", "language": "en"},
-  {"file": "diabetes_gut_microbiome.txt", "title": "Gut Microbiome and Diabetes Connection", "language": "en"},
-  {"file": "diabetes_healthy_fats.txt", "title": "Healthy Fats Guide for Diabetes", "language": "en"},
-  {"file": "diabetes_herbal_remedies.txt", "title": "Herbal Remedies for Diabetes: Evidence Review", "language": "en"},
-  {"file": "diabetes_home_exercises.txt", "title": "Home Exercise Programs for Diabetes", "language": "en"},
-  {"file": "diabetes_hormones_endocrine.txt", "title": "Diabetes and the Endocrine System", "language": "en"},
-  {"file": "diabetes_hydration.txt", "title": "Hydration and Diabetes", "language": "en"},
-  {"file": "diabetes_immune_system.txt", "title": "Diabetes and Immune System Function", "language": "en"},
-  {"file": "diabetes_inflammation_markers.txt", "title": "Chronic Inflammation and Diabetes", "language": "en"},
-  {"file": "diabetes_insulin_pump_therapy.txt", "title": "Insulin Pump Therapy Guide", "language": "en"},
-  {"file": "diabetes_kidney_health.txt", "title": "Diabetic Kidney Disease (Nephropathy)", "language": "en"},
-  {"file": "diabetes_latest_statistics_2024.txt", "title": "Global Diabetes Statistics 2024", "language": "en"},
-  {"file": "diabetes_lgbtq_considerations.txt", "title": "LGBTQ+ Diabetes Care Considerations", "language": "en"},
-  {"file": "diabetes_lifestyle_modifications.txt", "title": "Lifestyle Modifications for Diabetes Prevention", "language": "en"},
-  {"file": "diabetes_low_income_management.txt", "title": "Affordable Diabetes Management", "language": "en"},
-  {"file": "diabetes_meal_planning_practical.txt", "title": "Practical Meal Planning for Diabetes", "language": "en"},
-  {"file": "diabetes_medications_pharmacotherapy.txt", "title": "Diabetes Pharmacotherapy Guide", "language": "en"},
-  {"file": "diabetes_mediterranean_diet.txt", "title": "Mediterranean Diet and Diabetes", "language": "en"},
-  {"file": "diabetes_men_health.txt", "title": "Diabetes and Men's Health", "language": "en"},
-  {"file": "diabetes_mental_health.txt", "title": "Diabetes and Mental Health", "language": "en"},
-  {"file": "diabetes_mobile_apps.txt", "title": "Diabetes Management Mobile Apps", "language": "en"},
-  {"file": "diabetes_new_treatments_research.txt", "title": "New Treatments and Research in Diabetes", "language": "en"},
-  {"file": "diabetes_nutrition_guidelines.txt", "title": "Diabetes Nutrition and Diet Guidelines", "language": "en"},
-  {"file": "diabetes_pediatric_type2.txt", "title": "Type 2 Diabetes in Children and Adolescents", "language": "en"},
-  {"file": "diabetes_pregnancy_planning.txt", "title": "Pregnancy Planning with Diabetes", "language": "en"},
-  {"file": "diabetes_prevention_prediabetes.txt", "title": "Diabetes Prevention and Prediabetes", "language": "en"},
-  {"file": "diabetes_protein_guide.txt", "title": "Protein Guide for Diabetes", "language": "en"},
-  {"file": "diabetes_reading_food_labels.txt", "title": "Reading Food Labels with Diabetes", "language": "en"},
-  {"file": "diabetes_resistance_training.txt", "title": "Resistance Training for Diabetes", "language": "en"},
-  {"file": "diabetes_school_children.txt", "title": "Managing Diabetes in School", "language": "en"},
-  {"file": "diabetes_seasonal_management.txt", "title": "Seasonal Diabetes Management", "language": "en"},
-  {"file": "diabetes_skin_conditions.txt", "title": "Diabetes and Skin Conditions", "language": "en"},
-  {"file": "diabetes_snacking_guide.txt", "title": "Smart Snacking Guide for Diabetes", "language": "en"},
-  {"file": "diabetes_social_stigma.txt", "title": "Diabetes Social Stigma and Coping", "language": "en"},
-  {"file": "diabetes_superfoods.txt", "title": "Evidence-Based Superfoods for Diabetes", "language": "en"},
-  {"file": "diabetes_supplements_vitamins.txt", "title": "Vitamins and Supplements for Diabetes", "language": "en"},
-  {"file": "diabetes_swimming_aquatic.txt", "title": "Swimming and Aquatic Exercise for Diabetes", "language": "en"},
-  {"file": "diabetes_symptoms_and_risk_factors.txt", "title": "Diabetes Symptoms, Risk Factors and Early Detection", "language": "en"},
-  {"file": "diabetes_technology_digital_health.txt", "title": "Diabetes Technology and Digital Health", "language": "en"},
-  {"file": "diabetes_travel_guide.txt", "title": "Traveling with Diabetes Guide", "language": "en"},
-  {"file": "diabetes_type1_overview.txt", "title": "Type 1 Diabetes Overview", "language": "en"},
-  {"file": "diabetes_walking_program.txt", "title": "Walking Program for Diabetes", "language": "en"},
-  {"file": "diabetes_weight_management.txt", "title": "Weight Management and Diabetes", "language": "en"},
-  {"file": "diabetes_women_health.txt", "title": "Diabetes and Women's Health", "language": "en"},
-  {"file": "diabetes_yoga_meditation.txt", "title": "Yoga and Meditation for Diabetes", "language": "en"},
-  {"file": "diabetic_microvascular_complications.txt", "title": "Diabetic Microvascular Complications", "language": "en"},
-  {"file": "diyabet_acil_durumlar.txt", "title": "Diyabet Acil Durumlar ve Müdahale", "language": "tr"},
-  {"file": "diyabet_ailede_destek.txt", "title": "Ailede Diyabet Desteği", "language": "tr"},
-  {"file": "diyabet_genc_eriskinler.txt", "title": "Genç Erişkinlerde Diyabet Yönetimi", "language": "tr"},
-  {"file": "diyabet_hasta_egitimi_turkce.txt", "title": "Diyabet Hasta Eğitimi", "language": "tr"},
-  {"file": "diyabet_mitleri_gercekler.txt", "title": "Diyabet Mitleri ve Gerçekler", "language": "tr"},
-  {"file": "diyabet_psikolojik_dayaniklilik.txt", "title": "Diyabette Psikolojik Dayanıklılık", "language": "tr"},
-  {"file": "diyabet_turk_mutfagi_rehberi.txt", "title": "Diyabet Dostu Türk Mutfağı Rehberi", "language": "tr"},
-  {"file": "diyabet_turkiye_saglik_sistemi.txt", "title": "Türkiye'de Diyabet Tedavi Hakları ve SGK", "language": "tr"},
-  {"file": "diyabet_ve_ramazan_orucu.txt", "title": "Diyabet ve Ramazan Orucu", "language": "tr"},
-  {"file": "diyabet_ve_spor_turkiye.txt", "title": "Türkiye'de Diyabet ve Spor", "language": "tr"},
-  {"file": "diyabet_yasli_bakimi.txt", "title": "Yaşlılarda Diyabet Bakımı", "language": "tr"},
-  {"file": "gestational_diabetes.txt", "title": "Gestational Diabetes Mellitus", "language": "en"},
-  {"file": "hba1c_blood_glucose_monitoring.txt", "title": "HbA1c and Blood Glucose Monitoring", "language": "en"},
-  {"file": "idf_diabetes_atlas_key_messages.txt", "title": "IDF Diabetes Atlas Key Messages", "language": "en"},
-  {"file": "insulin_resistance_pathophysiology.txt", "title": "Insulin Resistance Pathophysiology", "language": "en"},
-  {"file": "temd_diyabet_kilavuzu_2024.txt", "title": "TEMD Diyabet Kılavuzu 2024", "language": "tr"},
-  {"file": "type2_diabetes_management.txt", "title": "Type 2 Diabetes Management Guidelines", "language": "en"},
-  {"file": "who_diabetes_overview.txt", "title": "WHO Diabetes Overview", "language": "en"}
+  {
+    "file": "ada_clinical_guidelines_summary.txt",
+    "title": "ADA Standards of Care in Diabetes 2024",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_acupuncture_alternative.txt",
+    "title": "Alternative Therapies and Acupuncture for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_alcohol.txt",
+    "title": "Alcohol and Diabetes: Risks and Safe Limits",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_cancer_risk.txt",
+    "title": "Diabetes and Cancer Risk",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_depression.txt",
+    "title": "Diabetes and Depression: Bidirectional Relationship",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_driving.txt",
+    "title": "Diabetes and Driving Safety",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_infections.txt",
+    "title": "Diabetes and Infections",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_liver_disease_nafld.txt",
+    "title": "Diabetes and Liver Disease (NAFLD)",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_relationships.txt",
+    "title": "Diabetes Impact on Relationships and Sexual Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_sleep_disorders.txt",
+    "title": "Diabetes and Sleep Disorders",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_smoking.txt",
+    "title": "Smoking and Diabetes: Risks and Cessation Benefits",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_stress_management.txt",
+    "title": "Stress Management for Diabetes Patients",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_thyroid_disorders.txt",
+    "title": "Diabetes and Thyroid Disorders",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_and_work_life.txt",
+    "title": "Diabetes Management at Workplace",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_beverages_guide.txt",
+    "title": "Beverage Guide for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_bone_joint_health.txt",
+    "title": "Diabetes and Bone/Joint Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_breakfast_guide.txt",
+    "title": "Diabetes-Friendly Breakfast Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_carb_counting.txt",
+    "title": "Advanced Carbohydrate Counting for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_cardiovascular_risk.txt",
+    "title": "Diabetes and Cardiovascular Risk Management",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_cognitive_function.txt",
+    "title": "Diabetes and Cognitive Function",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_complications.txt",
+    "title": "Diabetes Complications and Prevention",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_continuous_glucose_monitor.txt",
+    "title": "Continuous Glucose Monitoring (CGM) Technology",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_cooking_methods.txt",
+    "title": "Healthy Cooking Methods for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_cultural_food_practices.txt",
+    "title": "Cultural Food Practices and Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_dental_health.txt",
+    "title": "Diabetes and Dental Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_eating_out.txt",
+    "title": "Diabetes-Friendly Eating Out Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_elderly_geriatric.txt",
+    "title": "Geriatric Diabetes Management",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_emergency_dka_hhs.txt",
+    "title": "Diabetic Emergencies: DKA and HHS",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_emergency_preparedness.txt",
+    "title": "Diabetes Emergency and Disaster Preparedness",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_epidemiology_turkey.txt",
+    "title": "Diabetes Epidemiology in Turkey",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_exercise_recommendations.txt",
+    "title": "Physical Activity Recommendations for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_exercise_safety.txt",
+    "title": "Exercise Safety for Diabetic Patients",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_eye_care_retinopathy.txt",
+    "title": "Diabetic Retinopathy and Eye Care",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_fiber_importance.txt",
+    "title": "Fiber Importance in Diabetes Diet",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_foot_care_daily.txt",
+    "title": "Daily Foot Care for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_genetic_factors.txt",
+    "title": "Genetic Factors in Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_glycemic_index_guide.txt",
+    "title": "Glycemic Index and Load Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_gut_microbiome.txt",
+    "title": "Gut Microbiome and Diabetes Connection",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_healthy_fats.txt",
+    "title": "Healthy Fats Guide for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_herbal_remedies.txt",
+    "title": "Herbal Remedies for Diabetes: Evidence Review",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_home_exercises.txt",
+    "title": "Home Exercise Programs for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_hormones_endocrine.txt",
+    "title": "Diabetes and the Endocrine System",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_hydration.txt",
+    "title": "Hydration and Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_immune_system.txt",
+    "title": "Diabetes and Immune System Function",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_inflammation_markers.txt",
+    "title": "Chronic Inflammation and Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_insulin_pump_therapy.txt",
+    "title": "Insulin Pump Therapy Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_kidney_health.txt",
+    "title": "Diabetic Kidney Disease (Nephropathy)",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_latest_statistics_2024.txt",
+    "title": "Global Diabetes Statistics 2024",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_lgbtq_considerations.txt",
+    "title": "LGBTQ+ Diabetes Care Considerations",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_lifestyle_modifications.txt",
+    "title": "Lifestyle Modifications for Diabetes Prevention",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_low_income_management.txt",
+    "title": "Affordable Diabetes Management",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_meal_planning_practical.txt",
+    "title": "Practical Meal Planning for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_medications_pharmacotherapy.txt",
+    "title": "Diabetes Pharmacotherapy Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_mediterranean_diet.txt",
+    "title": "Mediterranean Diet and Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_men_health.txt",
+    "title": "Diabetes and Men's Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_mental_health.txt",
+    "title": "Diabetes and Mental Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_mobile_apps.txt",
+    "title": "Diabetes Management Mobile Apps",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_new_treatments_research.txt",
+    "title": "New Treatments and Research in Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_nutrition_guidelines.txt",
+    "title": "Diabetes Nutrition and Diet Guidelines",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_pediatric_type2.txt",
+    "title": "Type 2 Diabetes in Children and Adolescents",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_pregnancy_planning.txt",
+    "title": "Pregnancy Planning with Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_prevention_prediabetes.txt",
+    "title": "Diabetes Prevention and Prediabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_protein_guide.txt",
+    "title": "Protein Guide for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_reading_food_labels.txt",
+    "title": "Reading Food Labels with Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_resistance_training.txt",
+    "title": "Resistance Training for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_school_children.txt",
+    "title": "Managing Diabetes in School",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_seasonal_management.txt",
+    "title": "Seasonal Diabetes Management",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_skin_conditions.txt",
+    "title": "Diabetes and Skin Conditions",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_snacking_guide.txt",
+    "title": "Smart Snacking Guide for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_social_stigma.txt",
+    "title": "Diabetes Social Stigma and Coping",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_superfoods.txt",
+    "title": "Evidence-Based Superfoods for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_supplements_vitamins.txt",
+    "title": "Vitamins and Supplements for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_swimming_aquatic.txt",
+    "title": "Swimming and Aquatic Exercise for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_symptoms_and_risk_factors.txt",
+    "title": "Diabetes Symptoms, Risk Factors and Early Detection",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_technology_digital_health.txt",
+    "title": "Diabetes Technology and Digital Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_travel_guide.txt",
+    "title": "Traveling with Diabetes Guide",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_type1_overview.txt",
+    "title": "Type 1 Diabetes Overview",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_walking_program.txt",
+    "title": "Walking Program for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_weight_management.txt",
+    "title": "Weight Management and Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_women_health.txt",
+    "title": "Diabetes and Women's Health",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetes_yoga_meditation.txt",
+    "title": "Yoga and Meditation for Diabetes",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diabetic_microvascular_complications.txt",
+    "title": "Diabetic Microvascular Complications",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_acil_durumlar.txt",
+    "title": "Diyabet Acil Durumlar ve Müdahale",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_ailede_destek.txt",
+    "title": "Ailede Diyabet Desteği",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_genc_eriskinler.txt",
+    "title": "Genç Erişkinlerde Diyabet Yönetimi",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_hasta_egitimi_turkce.txt",
+    "title": "Diyabet Hasta Eğitimi",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_mitleri_gercekler.txt",
+    "title": "Diyabet Mitleri ve Gerçekler",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_psikolojik_dayaniklilik.txt",
+    "title": "Diyabette Psikolojik Dayanıklılık",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_turk_mutfagi_rehberi.txt",
+    "title": "Diyabet Dostu Türk Mutfağı Rehberi",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_turkiye_saglik_sistemi.txt",
+    "title": "Türkiye'de Diyabet Tedavi Hakları ve SGK",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_ve_ramazan_orucu.txt",
+    "title": "Diyabet ve Ramazan Orucu",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_ve_spor_turkiye.txt",
+    "title": "Türkiye'de Diyabet ve Spor",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "diyabet_yasli_bakimi.txt",
+    "title": "Yaşlılarda Diyabet Bakımı",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "gestational_diabetes.txt",
+    "title": "Gestational Diabetes Mellitus",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "hba1c_blood_glucose_monitoring.txt",
+    "title": "HbA1c and Blood Glucose Monitoring",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "idf_diabetes_atlas_key_messages.txt",
+    "title": "IDF Diabetes Atlas Key Messages",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "insulin_resistance_pathophysiology.txt",
+    "title": "Insulin Resistance Pathophysiology",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "temd_diyabet_kilavuzu_2024.txt",
+    "title": "TEMD Diyabet Kılavuzu 2024",
+    "language": "tr",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "type2_diabetes_management.txt",
+    "title": "Type 2 Diabetes Management Guidelines",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "who_diabetes_overview.txt",
+    "title": "WHO Diabetes Overview",
+    "language": "en",
+    "source_type": "educational",
+    "category": null
+  },
+  {
+    "file": "gebe_ve_diyabet.pdf",
+    "title": "Gebe ve Diyabet",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "insulin_direnci_klinik_onemi.pdf",
+    "title": "İnsülin Direnci ve Klinik Önemi",
+    "language": "tr",
+    "category": "Genetik & Patofizyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "tip2_diyabet_semptom_hba1c.pdf",
+    "title": "Tip 2 Diyabetli Bireylerde Algılanan Semptom Düzeyi ile HbA1c İlişkisi",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_risk_farkindaligi_metropol.pdf",
+    "title": "Diyabet Risk Farkındalığı: Bir Metropol Örneği",
+    "language": "tr",
+    "category": "Halk Sağlığı & Epidemiyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "insulin_direnci_derleme.pdf",
+    "title": "İnsülin Direnci",
+    "language": "tr",
+    "category": "Genetik & Patofizyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_yasam_kalitesi_pilot.pdf",
+    "title": "Diyabet Tanısıyla İzlenen Hastalarda Yaşam Kalitesi ve İlişkili Faktörlerin İncelenmesi",
+    "language": "tr",
+    "category": "Psikoloji & Psikososyal Boyut",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_ruhsal_sorunlar_yonetimi.pdf",
+    "title": "Diyabete Eşlik Eden Ruhsal Sorunlar ve Diyabet Yönetimi",
+    "language": "tr",
+    "category": "Psikoloji & Psikososyal Boyut",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabetik_gebe_hba1c_sonuclar.pdf",
+    "title": "Diyabetik Gebelerde Yüksek Glikalize Hemoglobin Düzeylerinin Obstetrik ve Neonatal Sonuçlara Etkisi",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "tip2_diyabet_yasam_bicimi_oz_yeterlilik.pdf",
+    "title": "Tip 2 Diyabet Hastalarında Sağlıklı Yaşam Biçimi Davranışlarının Belirlenmesi ve Diyabet Öz Yeterliliği",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "yasli_tip2_diyabet_yuku.pdf",
+    "title": "Yaşlı Tip 2 Diyabetli Bireylerde Diyabet Yükünün İncelenmesi",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "tip1_diyabet_cocuk_sosyal_destek.pdf",
+    "title": "Tip 1 Diyabetli Çocuk ve Ergenlerde Algılanan Sosyal Desteğin Travma Sonrası Büyüme İle İlişkisi",
+    "language": "tr",
+    "category": "Psikoloji & Psikososyal Boyut",
+    "source_type": "research"
+  },
+  {
+    "file": "orem_oz_bakim_diyabet_teknolojileri.pdf",
+    "title": "Orem'in Öz Bakım Eksikliği Kuramına Göre Diyabet Teknolojileri",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_tedavisi_hasta_egitimi.pdf",
+    "title": "Diyabet Tedavisinde Hasta Eğitimi",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "menopoz_ve_diyabet.pdf",
+    "title": "Menopoz ve Diyabet: Kadın Sağlığında Çift Yönlü Bir İlişki",
+    "language": "tr",
+    "category": "Cinsel Sağlık & Ürojinekoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "tip2_diyabet_tedavisi_2005.pdf",
+    "title": "Tip 2 Diyabet Tedavisi",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_mikro_makrovaskuler_biyobelirtecler.pdf",
+    "title": "Diyabetin Mikrovasküler ve Makrovasküler Komplikasyonlarında Biyobelirteçlerin Yeri",
+    "language": "tr",
+    "category": "Komplikasyonlar & Biyobelirteçler",
+    "source_type": "research"
+  },
+  {
+    "file": "turkiye_florasi_diyabet_tibbi_bitkiler.pdf",
+    "title": "Türkiye Florasında Diyabet Tedavisinde Kullanılan Tıbbi Bitkiler",
+    "language": "tr",
+    "category": "Farmakognozi & Bitkisel Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_antidiyabetik_bitkiler_turkiye.pdf",
+    "title": "Diyabet ve Türkiye'de Antidiyabetik Olarak Kullanılan Bitkiler",
+    "language": "tr",
+    "category": "Farmakognozi & Bitkisel Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_3c_pankreatojenik.pdf",
+    "title": "Tip 3c (Pankreatojenik) Diyabet",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "nk17_il17_diyabet_sureci_immunoloji.pdf",
+    "title": "NK-17/NK-1 ile IL-17/IFN-gama Miktarı ve Oranlarının Diyabet Süreciyle İlişkisinin Araştırılması",
+    "language": "tr",
+    "category": "Genetik & Patofizyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_oz_yonetim_skalasi_gecerlik.pdf",
+    "title": "Diyabet Öz Yönetim Skalası'nın Türk Toplumuna Uyarlanması: Geçerlik ve Güvenirlik Çalışması",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_risk_belirleme_tanilama.pdf",
+    "title": "Diyabetle Mücadelede Diyabet Risklerinin Belirlenmesi ve Tanılama",
+    "language": "tr",
+    "category": "Halk Sağlığı & Epidemiyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_kronik_komplikasyon_guncel_yaklasimlar.pdf",
+    "title": "Diyabete Bağlı Kronik Komplikasyonların Yönetiminde Güncel Yaklaşımlar",
+    "language": "tr",
+    "category": "Komplikasyonlar & Biyobelirteçler",
+    "source_type": "research"
+  },
+  {
+    "file": "temd_diyabet_kilavuzu_2024_tam.pdf",
+    "title": "TEMD Diabetes Mellitus ve Komplikasyonlarının Tanı, Tedavi ve İzlem Kılavuzu 2024",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diabetes_mellitus_tani_tedavi_izlem_kitap.pdf",
+    "title": "Diabetes Mellitusun Tanı, Tedavi ve İzlemi",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_afet_yonetimi.pdf",
+    "title": "Diyabette Afet Yönetimi",
+    "language": "tr",
+    "category": "Halk Sağlığı & Epidemiyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_komplikasyon_korunma_tani_tedavi.pdf",
+    "title": "Diyabetin Komplikasyonlarından Korunmak için Tanı, Tedavi ve İzlem",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabette_sira_disi_olgular_kitabi.pdf",
+    "title": "Diyabette Sıra Dışı Olgular Kitabı",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_hastalari_psikolojik_sikinti_travma.pdf",
+    "title": "Diyabet Hastalarının Psikolojik Sıkıntı ve Travma Sonrası Gelişimlerinin İncelenmesi",
+    "language": "tr",
+    "category": "Psikoloji & Psikososyal Boyut",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_genetik_faktorler_arastirma.pdf",
+    "title": "Diyabette Genetik Faktörler",
+    "language": "tr",
+    "category": "Genetik & Patofizyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "genclikte_ortaya_cikan_eriskin_tip_diyabet_mody.pdf",
+    "title": "Gençlikte Ortaya Çıkan Erişkin Tip Diyabet (MODY) Tanısı ile İzlenen Çocuklarda Yeni Nesil Dizi Analizi",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "gestasyonel_diyabet_risk_faktorleri.pdf",
+    "title": "Gestasyonel Diyabet ve Risk Faktörleri",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabetik_ketoasidoz_hemsirelik.pdf",
+    "title": "Erişkin Hastalarda Diyabetik Ketoasidoz Tedavisi ve Hemşirelik Yaklaşımları",
+    "language": "tr",
+    "category": "Hemşirelik, Öz Bakım & Hasta Eğitimi",
+    "source_type": "research"
+  },
+  {
+    "file": "ceza_infaz_kurumlari_diyabet_yonetimi.pdf",
+    "title": "Ceza İnfaz Kurumlarında Diyabet Yönetimi",
+    "language": "tr",
+    "category": "Halk Sağlığı & Epidemiyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "obezite_tip2_diyabet_beslenme.pdf",
+    "title": "Obezite, Tip 2 Diyabet ve Beslenme",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "obezite_tip2_diyabet_insulin_direnci_inflamasyon.pdf",
+    "title": "Obezite, Tip 2 Diyabet ve İnsülin Direnci Arasındaki Bağlantı: İnflamasyon",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_kuresel_salgin_hastalik.pdf",
+    "title": "Diyabet: Küresel Bir Salgın Hastalık",
+    "language": "tr",
+    "category": "Halk Sağlığı & Epidemiyoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_hastalarina_beslenme_yaklasimi.pdf",
+    "title": "Diyabet Hastalarına Beslenme Açısından Yaklaşım",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_norolojik_hastaliklar.pdf",
+    "title": "Diyabet ve Nörolojik Hastalıklar",
+    "language": "tr",
+    "category": "Komplikasyonlar & Biyobelirteçler",
+    "source_type": "research"
+  },
+  {
+    "file": "pcos_insulin_direnci_diyabet.pdf",
+    "title": "Polikistik Over Sendromu ve Diyabet İlişkisi",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabetli_bireylerde_psikososyal_uyum.pdf",
+    "title": "Diyabetli Bireylerde Hastalığa Psikososyal Uyum",
+    "language": "tr",
+    "category": "Psikoloji & Psikososyal Boyut",
+    "source_type": "research"
+  },
+  {
+    "file": "prediyabet_onemi_tedavi_yaklasimi.pdf",
+    "title": "Prediyabetin Önemi ve Tedavi Yaklaşımı",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_ve_spor_egzersiz.pdf",
+    "title": "Diyabet ve Spor/Egzersiz",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "tip1_diyabet_cinsellik_algilari_bakim.pdf",
+    "title": "Tip 1 Diabetes Mellitusu Olan Hastaların Cinsellik Algılarının ve Cinsel Bakım Gereksinimlerinin Belirlenmesi",
+    "language": "tr",
+    "category": "Cinsel Sağlık & Ürojinekoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_tatlandiricilar.pdf",
+    "title": "Diyabette Tatlandırıcı Kullanımı",
+    "language": "tr",
+    "category": "Beslenme, Obezite & Metabolizma",
+    "source_type": "research"
+  },
+  {
+    "file": "prediyabet_riski_tanilama_yontemleri.pdf",
+    "title": "Toplumda Prediyabet Riski ve Tanılama Yöntemleri: Güncel Ölçüm Araçlarına İlişkin Derleme",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabet_tani_takip_biyokimyasal_belirtecler.pdf",
+    "title": "Diyabet Tanı ve Takibinde Geleneksel ve Yeni Biyokimyasal Belirteçler",
+    "language": "tr",
+    "category": "Komplikasyonlar & Biyobelirteçler",
+    "source_type": "research"
+  },
+  {
+    "file": "diyabetik_seksuel_disfonksiyon.pdf",
+    "title": "Diyabetik Erkek ve Kadınlarda Seksüel Disfonksiyon",
+    "language": "tr",
+    "category": "Cinsel Sağlık & Ürojinekoloji",
+    "source_type": "research"
+  },
+  {
+    "file": "yenidogan_hipoglisemi_hyperinsulizm.pdf",
+    "title": "Yenidoğan Hipoglisemisinde Hiperinsülizmin Yeri",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "cocuklarda_diyabet_yonetimi.pdf",
+    "title": "Çocuklarda Diyabet Yönetimi",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  },
+  {
+    "file": "diabetes_mellitus_komplikasyonlari.pdf",
+    "title": "Diabetes Mellitus'un Komplikasyonları",
+    "language": "tr",
+    "category": "Komplikasyonlar & Biyobelirteçler",
+    "source_type": "research"
+  },
+  {
+    "file": "koc_cocuk_diyabet_klinik_oneriler_2023.pdf",
+    "title": "Koç Üniversitesi Çocuk Diyabet Ekibi Klinik Uygulama Önerileri 2023",
+    "language": "tr",
+    "category": "Klinik Tıp & Tanı-Tedavi",
+    "source_type": "research"
+  }
 ]

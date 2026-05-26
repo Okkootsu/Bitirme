@@ -15,6 +15,8 @@ def chunk_documents(documents: List[Dict]) -> List[Dict]:
         text = doc["text"]
         source = doc["source"]
         page_number = doc["page_number"]
+        category = doc.get("category")
+        source_type = doc.get("source_type", "educational")
 
         chunks = _recursive_split(text, CHUNK_SIZE, CHUNK_OVERLAP)
 
@@ -24,6 +26,8 @@ def chunk_documents(documents: List[Dict]) -> List[Dict]:
                 "text": chunk_text,
                 "source": source,
                 "page_number": page_number,
+                "category": category,
+                "source_type": source_type,
             })
             chunk_id += 1
 
