@@ -1,0 +1,94 @@
+Diabetes Nutrition and Diet Guidelines
+Source: ADA Standards of Medical Care 2023; WHO Healthy Diet Fact Sheet
+
+GENERAL PRINCIPLES OF MEDICAL NUTRITION THERAPY (MNT)
+
+Medical Nutrition Therapy is a critical component of diabetes management. There is no single ideal dietary distribution of calories among carbohydrates, fats, and proteins for people with diabetes. Meal plans should be individualized based on metabolic goals, personal and cultural preferences, access to healthful foods, and readiness and ability to make behavioral changes.
+
+KEY NUTRITION RECOMMENDATIONS
+
+1. Carbohydrate Management:
+- Focus on nutrient-dense carbohydrate sources that are high in fiber, including vegetables, fruits, legumes, whole grains, and dairy products.
+- Minimize intake of added sugars and refined grains.
+- People with diabetes should aim for at least 14 g fiber/1,000 kcal.
+- Sugar-sweetened beverages (SSBs) should be replaced with water or non-caloric beverages.
+- The glycemic index (GI) and glycemic load (GL) can provide additional benefit for glycemic control beyond that achieved by total carbohydrate alone.
+
+2. Protein Intake:
+- For people with diabetes without kidney disease, protein intake of 15-20% of total calories is adequate.
+- In people with type 2 diabetes, protein intake may enhance insulin response without increasing plasma glucose concentrations.
+- For those with diabetic kidney disease, reducing protein intake below 0.8 g/kg/day is not recommended as it does not alter glycemic measures, cardiovascular risk measures, or rate of kidney function decline.
+
+3. Fat Intake:
+- Focus on foods rich in monounsaturated and polyunsaturated fats (Mediterranean-style diet).
+- Limit saturated fat to <10% of total calories.
+- Avoid trans fats.
+- Omega-3 fatty acids (EPA and DHA) from fatty fish (at least 2 servings/week) are recommended.
+
+4. Micronutrients:
+- There is no clear evidence of benefit from vitamin or mineral supplementation in people with diabetes who do not have underlying deficiencies.
+- Routine supplementation with antioxidants (vitamin E, vitamin C, carotene) is not advised due to lack of evidence.
+- Chromium supplementation has not been conclusively shown to improve glycemia.
+
+DIETARY PATTERNS SHOWN TO BE BENEFICIAL
+
+1. Mediterranean Diet:
+- Rich in olive oil, nuts, vegetables, fruits, fish
+- Shown to improve glycemic control and cardiovascular risk factors
+- May reduce HbA1c by 0.3-0.5%
+- Reduces cardiovascular events by 30%
+
+2. DASH Diet (Dietary Approaches to Stop Hypertension):
+- Rich in fruits, vegetables, low-fat dairy, whole grains
+- Limits saturated fat, sodium, and added sugars
+- Effective for blood pressure control in diabetes
+
+3. Plant-Based Diets:
+- Associated with improved insulin sensitivity
+- May reduce HbA1c, body weight, and LDL cholesterol
+- Adequate protein intake should be ensured
+
+4. Low-Carbohydrate Diets (<130 g/day):
+- Can improve glycemic control in short term
+- May reduce need for glucose-lowering medications
+- Long-term sustainability and safety should be considered
+- Not recommended for people on SGLT2 inhibitors (risk of ketoacidosis)
+
+MEAL PLANNING METHODS
+
+1. Plate Method:
+- Fill half the plate with non-starchy vegetables
+- Fill one quarter with lean protein
+- Fill one quarter with carbohydrate foods
+- Add a serving of fruit or dairy on the side
+- Choose water or a low-calorie drink
+
+2. Carbohydrate Counting:
+- Monitor carbohydrate intake to match insulin doses
+- One carbohydrate serving = 15 g of carbohydrate
+- Most adults need 3-5 carbohydrate servings per meal
+
+SPECIFIC FOOD RECOMMENDATIONS
+
+Foods to emphasize:
+- Non-starchy vegetables (broccoli, spinach, tomatoes, peppers)
+- Whole grains (oats, quinoa, brown rice, whole wheat bread)
+- Lean proteins (chicken, fish, tofu, legumes)
+- Healthy fats (olive oil, avocados, nuts, seeds)
+- Low-fat dairy (yogurt, milk)
+- Fresh fruits (berries, apples, citrus fruits)
+
+Foods to limit:
+- Refined carbohydrates (white bread, white rice, pastries)
+- Sugar-sweetened beverages (soda, juice, energy drinks)
+- Processed meats (bacon, hot dogs, deli meats)
+- Fried foods and trans fats
+- High-sodium foods (>2300 mg/day limit)
+- Excessive alcohol (limit to 1 drink/day for women, 2 for men)
+
+WEIGHT MANAGEMENT
+
+- For overweight/obese individuals with type 2 diabetes, a sustained weight loss of 5-7% is recommended.
+- A caloric deficit of 500-750 kcal/day can lead to approximately 0.5-1 kg weight loss per week.
+- Weight loss of ≥15% may lead to diabetes remission in some individuals.
+- Bariatric surgery may be considered for adults with BMI ≥ 40 kg/m² or BMI ≥ 35 kg/m² with obesity-related comorbidities.

@@ -1,0 +1,125 @@
+Diabetic Emergencies: Diabetic Ketoacidosis (DKA) and Hyperglycemic Hyperosmolar State (HHS)
+Sources: ADA Consensus Report 2024, Kitabchi AE et al. Diabetes Care, Joint British Diabetes Societies (JBDS) Guidelines
+
+DIABETIC KETOACIDOSIS (DKA)
+
+Definition: Acute, life-threatening complication characterized by hyperglycemia, metabolic acidosis, and ketosis due to absolute or relative insulin deficiency.
+
+Epidemiology:
+- Annual incidence: 4-8 per 1,000 diabetes patients
+- Mortality: 1-5% in developed countries; up to 30% in developing countries
+- Leading cause of death in children and young adults with T1DM
+- 25-40% of T1DM patients present with DKA at initial diagnosis
+- Can occur in T2DM during severe physiological stress
+
+Pathophysiology:
+1. Insulin deficiency + counterregulatory hormone excess (glucagon, cortisol, catecholamines, growth hormone)
+2. Hepatic gluconeogenesis and glycogenolysis → hyperglycemia
+3. Lipolysis → free fatty acids → hepatic ketogenesis → acetoacetate, β-hydroxybutyrate, acetone
+4. Ketone accumulation → metabolic acidosis (anion gap acidosis)
+5. Osmotic diuresis → dehydration, electrolyte loss (Na⁺, K⁺, PO₄, Mg²⁺)
+
+Diagnostic Criteria (ADA):
+- Blood glucose >250 mg/dL (may be lower in euglycemic DKA)
+- Arterial pH <7.30
+- Serum bicarbonate <18 mEq/L
+- Anion gap >12
+- Ketonemia (serum β-hydroxybutyrate >3.0 mmol/L) or ketonuria
+
+Severity Classification:
+- Mild: pH 7.25-7.30, bicarbonate 15-18, alert mental status
+- Moderate: pH 7.00-7.24, bicarbonate 10-14, alert/drowsy
+- Severe: pH <7.00, bicarbonate <10, stupor/coma
+
+Precipitating Factors:
+- Infection (most common, 30-40%): Pneumonia, UTI, sepsis
+- Insulin omission or inadequate dosing (20-25%)
+- New-onset diabetes (15-20%)
+- Myocardial infarction, stroke, pancreatitis
+- Medications: Corticosteroids, SGLT2 inhibitors, atypical antipsychotics
+- Substance abuse (cocaine, alcohol)
+- Pregnancy
+
+Treatment Protocol (Kitabchi):
+
+1. IV Fluid Resuscitation:
+   - Start: 0.9% NaCl at 15-20 mL/kg/hr (1-1.5 L in first hour)
+   - Then: 0.9% NaCl at 250-500 mL/hr (adjust based on hydration status)
+   - When glucose reaches 200 mg/dL: Switch to D5-0.45% NaCl at 150-250 mL/hr
+   - Total deficit typically 5-7 liters
+
+2. Insulin Therapy:
+   - Regular insulin IV bolus: 0.1 U/kg, then continuous infusion 0.1 U/kg/hr
+   - Alternative: 0.14 U/kg/hr without bolus
+   - Target glucose decrease: 50-75 mg/dL per hour
+   - When glucose reaches 200 mg/dL: Reduce insulin to 0.02-0.05 U/kg/hr
+   - Continue IV insulin until DKA resolution criteria met
+
+3. Potassium Replacement:
+   - If K⁺ <3.3 mEq/L: Hold insulin, give 20-40 mEq/hr until K⁺ >3.3
+   - If K⁺ 3.3-5.3 mEq/L: Add 20-30 mEq/L to each liter of IV fluid
+   - If K⁺ >5.3 mEq/L: Do not supplement; recheck every 2 hours
+   - Monitor K⁺ every 1-2 hours
+
+4. Bicarbonate: Only if pH <6.9 (100 mmol NaHCO₃ in 400 mL water with 20 mEq KCl over 2 hours)
+
+5. Phosphate: Replace if <1.0 mg/dL or if cardiac/respiratory dysfunction
+
+Resolution Criteria:
+- Glucose <200 mg/dL AND at least two of:
+  * Serum bicarbonate ≥15 mEq/L
+  * Venous pH >7.3
+  * Anion gap ≤12
+- Transition to subcutaneous insulin: Give SC insulin 1-2 hours BEFORE stopping IV insulin
+- Patient must be eating and drinking
+
+Euglycemic DKA:
+- DKA with blood glucose <250 mg/dL
+- Increasingly recognized with SGLT2 inhibitor use
+- SGLT2i mechanism: Glucosuria masks hyperglycemia while ketogenesis continues
+- Management: Same as standard DKA but with earlier dextrose-containing fluids
+- Prevention: Stop SGLT2i 3-4 days before surgery, during prolonged fasting, or acute illness
+
+HYPERGLYCEMIC HYPEROSMOLAR STATE (HHS)
+
+Definition: Severe hyperglycemia with hyperosmolality and dehydration without significant ketoacidosis. More common in T2DM.
+
+Diagnostic Criteria:
+- Blood glucose >600 mg/dL
+- Serum osmolality >320 mOsm/kg
+- pH >7.30 (minimal acidosis)
+- Serum bicarbonate >18 mEq/L
+- Absent to mild ketonemia
+- Altered mental status (confusion, lethargy, coma)
+
+Key Differences from DKA:
+- More gradual onset (days to weeks vs hours)
+- More severe dehydration (average fluid deficit 8-12 liters)
+- Higher mortality (10-20% vs 1-5% for DKA)
+- More common in elderly, often with impaired thirst mechanism
+- Sufficient insulin to prevent ketosis but insufficient to control glucose
+
+Precipitating Factors:
+- Infection (40-60%): Most common precipitant
+- Poor fluid intake (especially in elderly, nursing home residents)
+- Medications: Diuretics, corticosteroids, phenytoin
+- New-onset T2DM
+- Renal failure, stroke, MI
+
+Treatment:
+- Aggressive IV fluid replacement (0.9% NaCl, then 0.45% NaCl when Na⁺ corrected)
+- Careful insulin therapy (lower doses than DKA; avoid rapid glucose correction)
+- Target glucose decrease: 50-70 mg/dL per hour (rapid correction → cerebral edema risk)
+- Electrolyte replacement (K⁺, PO₄, Mg²⁺)
+- Thromboprophylaxis (high VTE risk due to hyperosmolality and dehydration)
+- Treat underlying cause
+
+PREVENTION STRATEGIES
+
+- Sick day education for all diabetes patients
+- Never stop insulin during illness (even if not eating)
+- Ensure access to insulin and glucose monitoring supplies
+- Ketone monitoring for T1DM patients during illness
+- Hold SGLT2i during acute illness
+- Early medical contact when glucose >300 mg/dL or ketones positive
+- Diabetes identification (medical alert bracelet/card)

@@ -1,0 +1,55 @@
+Weight Management and Diabetes
+Source: American Diabetes Association; WHO Obesity Guidelines; Look AHEAD Trial; DiRECT Trial
+
+THE OBESITY-DIABETES CONNECTION
+
+Approximately 85-90% of people with type 2 diabetes are overweight or obese. Excess body fat, particularly visceral (abdominal) fat, is the single most important modifiable risk factor for type 2 diabetes. Fat tissue releases inflammatory chemicals and hormones that cause insulin resistance. The relationship is so strong that the term "diabesity" is used to describe the combined condition.
+
+Key statistics:
+- BMI above 30: diabetes risk increases 7-fold for women, 11-fold for men
+- Waist circumference above 102 cm (men) or 88 cm (women) significantly increases risk
+- 5-7% weight loss reduces diabetes onset by 58% in prediabetic individuals
+- 10-15% weight loss can lead to diabetes remission in recently diagnosed type 2 patients
+- Turkey: 33% of the adult population is obese (one of the highest rates in Europe)
+
+WEIGHT LOSS TARGETS AND BENEFITS
+
+Initial target: 5-7% of body weight (3.5-5 kg for a 70 kg person). Benefits at 5% weight loss: improved insulin sensitivity, lower fasting glucose, reduced blood pressure, improved lipid profile.
+
+Greater benefits at 10-15% weight loss: potential diabetes remission (DiRECT trial: 46% remission at 15% loss), significant reduction in cardiovascular risk, sleep apnea improvement, reduced joint pain, improved mental health.
+
+HbA1c improvement with weight loss:
+- 5% weight loss: 0.5-1.0% HbA1c reduction
+- 10% weight loss: 1.0-1.5% HbA1c reduction
+- 15% weight loss: up to 2.0% HbA1c reduction (some patients can stop medications)
+
+DIETARY APPROACHES
+
+No single diet is best for all diabetic patients. The best diet is one that can be sustained long-term.
+
+Mediterranean diet: Strong evidence for both weight loss and cardiovascular protection. Rich in olive oil, fish, vegetables, nuts, whole grains. Reduces diabetes incidence by 52% in high-risk individuals.
+
+Low-carbohydrate diet: Effective for short-term weight loss and blood sugar improvement. Carbs limited to 50-130 g/day. May allow medication reduction. Monitor kidney function if high protein intake.
+
+Calorie restriction: 500-750 kcal/day deficit for gradual weight loss. Very low calorie diets (800 kcal/day) used in supervised programs like DiRECT. Rapid initial weight loss can motivate adherence.
+
+Intermittent fasting: Time-restricted eating (16:8) shows promise for weight and glucose management. Not suitable for all diabetic patients (hypoglycemia risk with certain medications). Requires medication adjustment.
+
+PHYSICAL ACTIVITY FOR WEIGHT MANAGEMENT
+
+- Minimum 150 minutes/week moderate-intensity aerobic activity
+- Add resistance training 2-3 times/week (preserves muscle during weight loss)
+- Exercise alone without dietary change produces modest weight loss (2-3 kg)
+- Combined diet and exercise produces best long-term results
+- Walking 10,000 steps/day associated with 3-5 kg weight loss over 6 months
+- Reduce sedentary time: stand every 30 minutes
+
+PHARMACOLOGICAL OPTIONS
+
+GLP-1 receptor agonists (semaglutide, liraglutide): Dual benefit: weight loss (10-15%) and blood sugar control. Semaglutide (Ozempic/Wegovy) shows 15-20% weight loss in trials. Now considered first-line for obese type 2 diabetic patients.
+
+SGLT2 inhibitors: Modest weight loss (2-3 kg) through glucose excretion in urine. Additional cardiovascular and kidney protective effects. Well-tolerated in most patients.
+
+BARIATRIC SURGERY
+
+Considered for BMI above 35 with type 2 diabetes (or BMI above 30 with uncontrolled diabetes). Types: gastric bypass, sleeve gastrectomy, adjustable gastric banding. Diabetes remission rates: 30-63% at 5 years. Long-term nutritional monitoring and supplementation required. Can be life-changing but requires lifelong commitment to follow-up.

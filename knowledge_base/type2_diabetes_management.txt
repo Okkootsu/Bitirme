@@ -1,0 +1,81 @@
+Type 2 Diabetes Management Guidelines
+Source: ADA Standards of Medical Care 2023; EASD/ADA Consensus Report
+
+GLYCEMIC TARGETS
+
+General adult targets:
+- HbA1c: < 7.0% (53 mmol/mol) for most non-pregnant adults
+- Preprandial (fasting) glucose: 80-130 mg/dL (4.4-7.2 mmol/L)
+- Postprandial glucose (1-2 hours after meal): < 180 mg/dL (10.0 mmol/L)
+
+Individualized targets:
+- Stricter (HbA1c < 6.5%): Younger patients, short duration of diabetes, no cardiovascular disease
+- Less strict (HbA1c < 8.0%): Elderly, long duration, history of severe hypoglycemia, limited life expectancy, advanced complications
+
+PHARMACOLOGICAL MANAGEMENT
+
+First-line therapy:
+- Metformin remains the preferred initial oral medication
+- Benefits: Weight neutral or modest weight loss, cardiovascular benefits, low cost
+- Start at 500 mg once or twice daily, titrate to 1000 mg twice daily
+- Main side effects: GI discomfort (usually transient), vitamin B12 deficiency
+- Contraindicated in severe renal impairment (eGFR < 30 mL/min)
+
+Second-line agents (based on patient characteristics):
+- SGLT2 inhibitors (empagliflozin, dapagliflozin): Preferred if cardiovascular disease or heart failure present. Benefits: weight loss, cardiovascular and renal protection.
+- GLP-1 receptor agonists (semaglutide, liraglutide): Preferred if obesity or cardiovascular disease. Benefits: significant weight loss, cardiovascular protection.
+- DPP-4 inhibitors (sitagliptin, linagliptin): Weight neutral, well tolerated, suitable for elderly.
+- Thiazolidinediones (pioglitazone): Insulin sensitizer, but associated with weight gain and fluid retention.
+- Sulfonylureas (glimepiride, gliclazide): Effective but risk of hypoglycemia and weight gain.
+- Insulin therapy: When oral agents insufficient or severe hyperglycemia at diagnosis.
+
+SELF-MONITORING OF BLOOD GLUCOSE (SMBG)
+
+Recommended for patients on:
+- Insulin therapy: Check 4-10 times daily (before meals, bedtime, before exercise)
+- Oral medications with hypoglycemia risk: Check before meals and when symptomatic
+- Non-insulin therapy: Periodic monitoring may be helpful
+
+Continuous Glucose Monitoring (CGM):
+- Time in Range (TIR): Target > 70% time between 70-180 mg/dL
+- Time Below Range: < 4% time below 70 mg/dL
+- Time Above Range: < 25% time above 180 mg/dL
+
+CARDIOVASCULAR RISK MANAGEMENT
+
+Blood pressure:
+- Target: < 130/80 mmHg for most adults with diabetes
+- First-line: ACE inhibitors or ARBs (especially with albuminuria)
+- Lifestyle modifications: sodium restriction, DASH diet, weight loss, exercise
+
+Lipids:
+- Statin therapy recommended for all adults with diabetes aged 40-75
+- High-intensity statin for those with ASCVD or 10-year ASCVD risk ≥ 20%
+- LDL-C target: < 70 mg/dL for those with ASCVD
+
+Antiplatelet therapy:
+- Aspirin (75-162 mg/day) for secondary prevention in those with ASCVD
+- May be considered for primary prevention in those with increased cardiovascular risk
+
+DIABETES SELF-MANAGEMENT EDUCATION AND SUPPORT (DSMES)
+
+Key components:
+- Understanding the disease and treatment options
+- Healthy eating and meal planning
+- Physical activity incorporation
+- Medication adherence and management
+- Blood glucose monitoring and interpretation
+- Problem-solving skills for daily challenges
+- Psychosocial adaptation and coping
+- Foot care and complication prevention
+
+REGULAR MONITORING SCHEDULE
+
+- HbA1c: Every 3-6 months
+- Blood pressure: Every visit
+- Lipid panel: Annually (more often if adjusting therapy)
+- Kidney function (eGFR, urine albumin): Annually
+- Dilated eye exam: Annually (or every 2 years if no retinopathy)
+- Comprehensive foot exam: Annually
+- Dental exam: Every 6 months
+- Depression screening: Annually

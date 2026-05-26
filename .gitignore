@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
 .idea
 .DS_Store
@@ -22,20 +22,34 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vs/
+*.user
 
-# other stuff
+# .NET build
 [Bb]in/
 [Oo]bj/
 
+# Database
 *.db
 *.db-shm
 *.db-wal
 
-.vscode/
-.vs/
-
-*.user
-*.suo
-
-appsettings.Development.json
+# Environment & secrets
 .env
+appsettings.Development.json
+
+# ML model/artifact files
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated index (built locally, copied to container)
+faiss_index/
+
+# ONNX model (exported locally, copied to container)
+onnx_model/
+
+# Large dataset files (not needed in repo)
+*.csv

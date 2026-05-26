@@ -1,0 +1,87 @@
+Global and Turkey Diabetes Statistics: Prevalence, Trends, and 2030 Projections
+Source: IDF Diabetes Atlas 10th Edition; TEMD National Diabetes Survey; WHO Global Diabetes Report; TUIK Health Statistics
+
+GLOBAL DIABETES PREVALENCE 2024
+
+As of 2024, approximately 537 million adults aged 20-79 are living with diabetes worldwide,
+representing 10.5% of the global adult population. This number has more than tripled since
+2000, when an estimated 151 million adults had diabetes. An additional 541 million adults
+have impaired glucose tolerance (prediabetes) and are at high risk of developing Type 2
+diabetes. Alarmingly, approximately 44% of adults with diabetes (240 million people) remain
+undiagnosed. The global diabetes-related health expenditure reached $966 billion in 2021
+and continues to rise. Diabetes caused approximately 6.7 million deaths in 2021, equivalent
+to one death every 5 seconds.
+
+REGIONAL DISTRIBUTION
+
+The highest diabetes prevalence by region is in the Middle East and North Africa (MENA)
+at 16.2%, followed by Southeast Asia at 11.3%. The Western Pacific region has the largest
+absolute number of diabetic individuals at 206 million. Africa has the highest proportion
+of undiagnosed cases at 54%. Europe has approximately 61 million diabetic adults with a
+prevalence of 9.2%. The top five countries by number of diabetic adults are China (141
+million), India (74 million), Pakistan (33 million), United States (32 million), and Indonesia
+(19 million). Turkey ranks among the top 10 in the European region.
+
+TURKEY SPECIFIC STATISTICS
+
+Turkey has one of the highest diabetes prevalence rates in Europe. According to the most
+recent TEMD national survey data, diabetes prevalence in Turkey is approximately 15.7%
+among adults aged 20 and over, affecting approximately 9-10 million people. Prediabetes
+prevalence is estimated at 14.5%, placing an additional 7-8 million people at risk. The
+prevalence varies significantly by region: southeastern Turkey has the highest rates at
+approximately 18-20%, while western coastal regions show lower prevalence at 12-14%.
+Urban areas have slightly higher prevalence than rural areas. Women have a higher diabetes
+prevalence (17.2%) compared to men (14.1%) in Turkey. Obesity, a major diabetes risk
+factor, affects approximately 32% of the Turkish population, one of the highest rates in
+Europe.
+
+TYPE 1 DIABETES TRENDS
+
+Type 1 diabetes incidence is increasing globally by approximately 3-4% annually. An
+estimated 1.2 million children and adolescents live with Type 1 diabetes worldwide. In
+Turkey, Type 1 diabetes incidence in children under 15 is approximately 10-12 per 100,000
+per year, showing a steady increase over the past two decades. Access to insulin remains
+a critical issue: the WHO estimates that only 50% of people with Type 2 diabetes who need
+insulin have access to it globally, and approximately half of all insulin is consumed by just
+three countries (United States, China, India).
+
+GESTATIONAL DIABETES TRENDS
+
+Gestational diabetes mellitus (GDM) affects approximately 14-16% of pregnancies globally.
+In Turkey, GDM prevalence is estimated at 8-15% depending on diagnostic criteria and
+population studied. GDM rates are rising parallel to maternal obesity trends. Women with
+GDM have a 50% lifetime risk of developing Type 2 diabetes.
+
+ECONOMIC BURDEN
+
+The total global cost of diabetes was estimated at $966 billion in 2021 and projected to
+exceed $1 trillion by 2030. In Turkey, diabetes-related healthcare expenditure represents
+a significant portion of the national health budget. Direct costs include medications,
+monitoring supplies, hospitalizations, and managing complications. Indirect costs include
+lost productivity, disability, and premature mortality. Diabetic complications drive the
+majority of costs: treating a diabetic patient with complications costs 3-5 times more
+than treating one without.
+
+PROJECTIONS FOR 2030 AND BEYOND
+
+The IDF projects that global diabetes prevalence will reach 643 million by 2030 and 783
+million by 2045. For Turkey, projections estimate diabetes prevalence could reach 17-20%
+by 2030 without significant intervention, potentially affecting 12-14 million adults. Key
+drivers of this increase include population aging, urbanization, increasing obesity rates,
+sedentary lifestyles, and dietary changes toward processed foods. The prediabetes
+population represents both the greatest risk and the greatest opportunity for intervention:
+lifestyle modification programs can reduce conversion to diabetes by 58%.
+
+MORTALITY AND COMPLICATIONS DATA
+
+Diabetes is the 9th leading direct cause of death globally. In Turkey, cardiovascular disease
+accounts for approximately 50-60% of diabetes-related deaths. End-stage renal disease from
+diabetes has increased by 30% in the last decade. Diabetic retinopathy affects approximately
+35% of all diabetic patients globally. Lower limb amputation rates in diabetic patients
+remain 10-20 times higher than in non-diabetic populations.
+
+CONCLUSION
+
+The global and Turkish diabetes epidemic continues to accelerate. Without aggressive
+prevention strategies targeting prediabetes, obesity, and sedentary lifestyles, the
+projected numbers for 2030 will place unsustainable burden on healthcare systems.

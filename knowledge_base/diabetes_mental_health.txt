@@ -1,0 +1,110 @@
+Diabetes and Mental Health - Psychological Aspects
+Sources: ADA Position Statement on Psychosocial Care 2024, Lancet Diabetes and Endocrinology, WHO Mental Health and Diabetes Report
+
+OVERVIEW
+
+Diabetes and mental health have a bidirectional relationship. Diabetes increases the risk of mental health conditions, and mental health conditions worsen diabetes outcomes. Psychosocial care is an integral component of diabetes management, yet it remains significantly underaddressed in clinical practice.
+
+DIABETES DISTRESS
+
+Definition: Diabetes distress refers to the unique emotional burdens and worries related to living with and managing diabetes. It is distinct from clinical depression and is specific to the diabetes experience.
+
+Prevalence: 18-45% of people with diabetes experience significant diabetes distress.
+
+Four domains (Diabetes Distress Scale):
+1. Emotional burden: Feeling overwhelmed by diabetes demands
+2. Physician-related distress: Concerns about access and quality of care
+3. Regimen-related distress: Difficulty with self-management tasks
+4. Interpersonal distress: Feeling unsupported by others
+
+Impact on outcomes:
+- Diabetes distress is independently associated with poor glycemic control (higher HbA1c)
+- Stronger predictor of glycemic outcomes than clinical depression in many studies
+- Associated with reduced adherence to medication, diet, and exercise
+- May lead to diabetes burnout: complete disengagement from self-care
+
+Management:
+- Acknowledge the emotional burden of diabetes
+- Problem-focused counseling (address specific diabetes management challenges)
+- Peer support groups
+- Diabetes self-management education and support (DSMES)
+- Referral to mental health professional when distress is severe or persistent
+
+DEPRESSION AND DIABETES
+
+Prevalence:
+- People with diabetes are 2-3 times more likely to have depression compared to those without diabetes
+- Major Depressive Disorder (MDD) affects approximately 20-25% of people with diabetes
+- Depression is underdiagnosed in 50-75% of diabetes patients
+- Recurrence rate is high: 80% within 5 years
+
+Bidirectional mechanisms:
+- Diabetes → Depression: Chronic illness burden, treatment complexity, complications, functional limitations, pain (neuropathy), fear of hypoglycemia, social stigma
+- Depression → Diabetes: Hypothalamic-pituitary-adrenal (HPA) axis dysregulation, elevated cortisol, increased inflammatory markers (IL-6, TNF-α, CRP), sympathetic nervous system activation, poor self-care behaviors, physical inactivity, unhealthy diet, medication non-adherence
+
+Impact on outcomes:
+- Depressed patients with diabetes have 1.5x higher HbA1c
+- 2-3x higher risk of diabetes complications (retinopathy, nephropathy, neuropathy, CVD)
+- 1.5x higher mortality rate
+- 2-3x higher healthcare costs
+- Reduced quality of life and functional capacity
+
+Screening:
+- PHQ-2 (Patient Health Questionnaire-2) as initial screen at every visit
+- PHQ-9 for full assessment if PHQ-2 is positive
+- Screen at diagnosis, annually, and when complications develop
+
+Treatment:
+- Collaborative care models (integrated diabetes and mental health care) are most effective
+- Psychotherapy: CBT (Cognitive Behavioral Therapy) has strong evidence for depression in diabetes
+- Pharmacotherapy: SSRIs preferred (sertraline, escitalopram) — minimal effect on glucose metabolism
+  * Avoid TCAs (weight gain, orthostatic hypotension, cardiac effects)
+  * Bupropion: Weight-neutral alternative
+- Exercise: Strong evidence for antidepressant effect (150 min/week moderate activity)
+
+ANXIETY DISORDERS
+
+Prevalence: 20-40% of people with diabetes experience clinically significant anxiety.
+
+Diabetes-specific anxiety:
+- Fear of hypoglycemia: Affects 30-40% of insulin-treated patients; leads to intentional hyperglycemia ("running high for safety"), reduced insulin doses, avoidance of physical activity
+- Fear of complications: Persistent worry about long-term damage (blindness, amputation, kidney failure)
+- Injection anxiety/needle phobia: Affects 10-20%, barrier to insulin initiation
+- Fear of self-monitoring: Blood glucose checking anxiety
+
+Management:
+- CBT specifically adapted for diabetes-related anxiety
+- Exposure therapy for needle phobia
+- Hypoglycemia awareness training (e.g., BGAT - Blood Glucose Awareness Training)
+- CGM technology can reduce fear of hypoglycemia
+- Pharmacotherapy when needed: SSRIs, SNRIs
+
+EATING DISORDERS AND DIABETES
+
+Diabulimia (insulin omission for weight loss):
+- Occurs in Type 1 diabetes (primarily young women)
+- Deliberate reduction or omission of insulin to cause glycosuria and weight loss
+- Extremely dangerous: Leads to DKA, accelerated microvascular complications
+- 3-fold increased risk of mortality
+- Prevalence: Estimated 30-40% of young women with T1DM manipulate insulin for weight control
+
+Other eating disorders:
+- Binge eating disorder: More common in T2DM, associated with obesity and poor glycemic control
+- Bulimia nervosa: Purging behaviors complicate diabetes management
+- Night eating syndrome: Associated with obesity and poor glycemic control
+
+COGNITIVE FUNCTION AND DIABETES
+
+- Both Type 1 and Type 2 diabetes are associated with cognitive decline
+- T2DM increases risk of dementia by 50-100% (both Alzheimer's and vascular dementia)
+- Chronic hyperglycemia, hypoglycemia episodes, and insulin resistance all contribute to cognitive impairment
+- Brain changes: Cerebral atrophy, white matter lesions, reduced hippocampal volume
+- Mechanisms: AGE accumulation, oxidative stress, neuroinflammation, impaired cerebral insulin signaling
+- Good glycemic control and cardiovascular risk management may slow cognitive decline
+
+QUALITY OF LIFE
+
+- Diabetes significantly impacts quality of life across all domains (physical, emotional, social, occupational)
+- Factors most affecting QoL: Complications, treatment complexity, hypoglycemia frequency, depression, financial burden
+- Assessment tools: DQOL (Diabetes Quality of Life), EQ-5D, SF-36
+- Interventions that improve QoL: DSMES, simplified treatment regimens, CGM technology, psychological support, peer groups

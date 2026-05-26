@@ -55,7 +55,7 @@ export const ConversationList = ({
                 "absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer",
                 selectedConversation === chat.id
                   ? "hover:bg-gray-700 text-gray-300"
-                  : "hover:bg-gray-200 text-gray-500",
+                  : "hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-500 dark:text-gray-400",
               )}
             >
               <Trash2 size={16} />

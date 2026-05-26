@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AsistanAI.Core.Enums;
 
 namespace AsistanAI.Core.Wrappers;
@@ -45,14 +41,6 @@ public class ServiceResponse
 
     public static ServiceResponse Success(ServiceResultType resultType = ServiceResultType.Success)
     {
-        if (resultType == ServiceResultType.NotFound || 
-            resultType == ServiceResultType.InvalidInput || 
-            resultType == ServiceResultType.Conflict || 
-            resultType == ServiceResultType.Failure)
-        {
-            resultType = ServiceResultType.Success;
-        }
-
         return new ServiceResponse
         {
             IsSuccess = true,
@@ -62,12 +50,11 @@ public class ServiceResponse
 
     public static ServiceResponse Fail(string errorMessage, ServiceResultType resultType)
     {
-        if (resultType == ServiceResultType.Success || 
+        if (resultType == ServiceResultType.Success ||
             resultType == ServiceResultType.SuccessNoContent)
         {
             resultType = ServiceResultType.Failure;
         }
-        
 
         return new ServiceResponse
         {

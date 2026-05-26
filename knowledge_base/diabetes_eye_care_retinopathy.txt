@@ -1,0 +1,54 @@
+Diabetic Retinopathy and Eye Care
+Source: American Academy of Ophthalmology; National Eye Institute; WHO Vision Programme
+
+OVERVIEW AND PREVALENCE
+
+Diabetic retinopathy is the leading cause of blindness in working-age adults worldwide. It occurs when high blood sugar damages the tiny blood vessels in the retina. After 20 years of diabetes, nearly all type 1 and over 60% of type 2 patients show some degree of retinopathy. Early detection through regular screening can prevent 95% of diabetes-related vision loss.
+
+Global statistics:
+- 103 million people affected worldwide (projected 161 million by 2045)
+- 1 in 3 diabetic patients has some form of retinopathy
+- Diabetic macular edema affects 1 in 15 diabetic patients
+- Risk increases with duration of diabetes, poor glycemic control, and hypertension
+- Turkey: approximately 30% of diabetic patients have retinopathy
+
+STAGES OF DIABETIC RETINOPATHY
+
+Mild non-proliferative (NPDR): Microaneurysms (small bulges in blood vessels). Usually no symptoms. No treatment needed, but monitoring is essential.
+
+Moderate NPDR: Blood vessels swell and distort. May block blood flow to retina. Some vision changes may begin.
+
+Severe NPDR: Many blood vessels are blocked. Retina sends signals for new vessel growth. High risk of progression. Closer monitoring needed (every 2-4 months).
+
+Proliferative diabetic retinopathy (PDR): New, abnormal blood vessels grow (neovascularization). These fragile vessels can leak blood into the vitreous. Can cause retinal detachment and severe vision loss. Requires immediate treatment.
+
+Diabetic macular edema (DME): Can occur at any stage. Fluid leaks into the macula (central vision area). Causes blurred central vision, difficulty reading, and color changes.
+
+SCREENING SCHEDULE
+
+Type 1 diabetes: First eye exam within 5 years of diagnosis, then annually.
+Type 2 diabetes: Eye exam at diagnosis (retinopathy may already be present), then annually.
+Pregnancy with diabetes: Eye exam before conception or in first trimester, then each trimester.
+Well-controlled with no retinopathy: May extend to every 2 years after 2 consecutive normal exams.
+
+Screening methods:
+- Dilated fundus examination (gold standard)
+- Fundus photography (digital retinal imaging)
+- Optical Coherence Tomography (OCT) for macular edema
+- AI-assisted screening systems (increasing availability in Turkey)
+
+TREATMENT OPTIONS
+
+Laser photocoagulation: Seals leaking blood vessels and reduces new vessel growth. Panretinal photocoagulation (PRP) for proliferative retinopathy. Focal laser for macular edema.
+
+Anti-VEGF injections: Ranibizumab, aflibercept, bevacizumab. Injected into the eye to stop abnormal vessel growth. First-line treatment for diabetic macular edema. Requires repeated injections (monthly initially, then as needed).
+
+Vitrectomy surgery: Removes blood from vitreous cavity. Repairs retinal detachment. For advanced proliferative retinopathy that does not respond to other treatments.
+
+PREVENTION
+
+- Maintain HbA1c below 7% (reduces retinopathy risk by 76%)
+- Blood pressure below 130/80 mmHg
+- Cholesterol management (statins if indicated)
+- Do not smoke
+- Report any vision changes immediately: blurred vision, floaters, dark spots, difficulty seeing at night

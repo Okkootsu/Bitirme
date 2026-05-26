@@ -1,0 +1,66 @@
+65 Yas Ustu Diyabet Yonetimi: Ilac Etkilesimleri, Dusme Riski ve Beslenme
+Source: ADA Older Adults Guidelines 2024; TEMD Geriatrik Diyabet Rehberi; IDF Managing Diabetes in Older People
+
+GIRIS
+
+Türkiye'de 65 yas üstü nüfusta diyabet prevalansi %25-30 arasindadir ve bu oran hizla
+artmaktadir. Yasli bireylerde diyabet yönetimi genç eriskinlere göre önemli farkliliklar
+gösterir. Çoklu ilac kullanimi, eslik eden hastaliklar, kognitif gerileme ve düsme riski gibi
+faktörler tedavi planlamasini karmasiklastirir. Bireysellestirilmis tedavi hedefleri bu
+populasyonda büyük önem tasimaktadir.
+
+TEDAVI HEDEFLERININ BIREYSELLESTIRILMESI
+
+ADA ve TEMD kilavuzlari yasli hastalarda HbA1c hedefinin bireysel olarak belirlenmesini
+önerir. Saglikli ve fonksiyonel yasli bireyler için HbA1c hedefi %7.0-7.5 olabilirken, çoklu
+kronik hastaligi olan kirgin yasli bireyler için %8.0-8.5 hedefi kabul edilebilir. Hipoglisemiden
+kaçinmak bu populasyonda en önemli önceliktir çünkü yasli bireylerde hipoglisemi düsme,
+kirik, kardiyak aritmi ve kognitif bozulma riskini arttirir.
+
+ILAC ETKILESIMLERI VE POLIFARMASI
+
+Yasli diyabet hastalari ortalama 5-8 farkli ilaç kullanmaktadir. Metformin böbrek fonksiyonu
+dikkatli izlenerek kullanilmalidir; GFR 30 ml/dk altinda kontrendikedir. Sülfonilüre grubu
+ilaçlar hipoglisemi riski nedeniyle yasli hastalarda dikkatli kullanilmalidir; glibenklamid
+özellikle kaçinilmalidir. DPP-4 inhibitörleri yasli hastalarda iyi tolere edilir ve hipoglisemi
+riski düsüktür. SGLT2 inhibitörleri dehidrasyon ve üriner enfeksiyon riskini artirabileceğinden
+dikkatli kullanilmalidir. GLP-1 reseptör agonistleri bulanti ve kilo kaybi yapabilir, zayif
+yasli hastalarda dikkatli olmak gerekir. Insülin tedavisinde basit rejimler tercih edilmeli ve
+hipoglisemi riski en aza indirilmelidir.
+
+DUSME RISKI VE ONLEME
+
+Diyabetli yasli bireylerde düsme riski genel yasli nüfusa göre %50-60 daha yüksektir.
+Hipoglisemi, periferik nöropati, görme bozukluklari, ortostatik hipotansiyon ve kas güçsüzlügü
+düsme riskini artiran faktorlerdir. Düsme önleme stratejileri arasinda ev ortaminin güvenli
+hale getirilmesi, uygun ayakkabi kullanimi, denge egzersizleri, düzenli göz muayenesi ve
+ilaç dozlarinin gözden geçirilmesi yer alir. Türkiye'de yasli bireylerin %30'u yilda en az bir
+kez düsmekte ve bunlarin %10'u ciddi yaralanma ile sonuçlanmaktadir.
+
+BESLENME VE MALNUTRISYON
+
+Yasli diyabet hastalarinda hem obezite hem de malnütrisyon riski bulunmaktadir. Protein
+ihtiyaci genç eriskinlere göre daha yüksektir (1.0-1.2 g/kg/gün). Kalsiyum ve D vitamini
+takviyesi osteoporoz önlemi için önemlidir. Yeterli sivi alimi dehidrasyon riskini azaltir.
+Dis ve agiz sagligi sorunlari beslenmeyi olumsuz etkileyebilir. Yutma güçlügü olan
+hastalarda gida kivami ayarlanmalidir. Sosyal izolasyon ve depresyon istahsizliga neden
+olarak beslenme durumunu kötülestirebilir.
+
+KOGNITIF FONKSIYON VE DIYABET
+
+Diyabet demans riskini 1.5-2 kat artirmaktadir. Yasli diyabet hastalarinda düzenli kognitif
+tarama yapilmasi önerilir. Kognitif gerileme ilac uyumunu, kan sekeri takibini ve beslenme
+düzenini olumsuz etkiler. Bu hastalarda tedavi rejiminin basitlestirilmesi ve bakim veren
+kisinin aktif katilimi gereklidir.
+
+SOSYAL DESTEK VE BAKIM PLANLAMASI
+
+Türkiye'de yasli bireylerin çogunluğu aile yaninda yasamaktadir. Ancak kentlesme ile birlikte
+yalniz yasayan yasli sayisi artmaktadir. Evde bakim hizmetleri, toplum sagligi merkezlerinin
+takip programlari ve belediye destek hizmetleri degerlendrilmelidir. Ilac kutulari, büyük
+yazili talimatlar ve düzenli telefon takibi tedaviye uyumu artirabilir.
+
+SONUC
+
+Yasli diyabet hastalarinin yönetiminde bireysellestirilmis yaklasiim esastir. Hipoglisemiden
+kaçinma, düsme önleme, beslenme destegi ve sosyal destek tedavinin temel direkleridir.

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useAuthStore } from "../store/authStore";
 import { jwtDecode } from "jwt-decode";
 import { useUserStore, type User } from "@/store/userStore";
+import { toast } from "sonner";
 
 export type AuthForm = {
   username: string;
@@ -25,20 +26,20 @@ export type MyJwtPayload = {
   username: string;
 };
 
+const INITIAL_FORM_STATE: AuthForm = {
+  username: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+};
+
+const INITIAL_CARD_STATE: ResponseMessageCard = {
+  isHidden: true,
+  className: "",
+  message: "",
+};
+
 export const useAuth = () => {
-  const INITIAL_FORM_STATE: AuthForm = {
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  };
-
-  const INITIAL_CARD_STATE = {
-    isHidden: true,
-    className: "",
-    message: "",
-  };
-
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [formVariant, setFormVariant] = useState<"login" | "register">("login");
   const [formValues, setFormValues] = useState<AuthForm>(INITIAL_FORM_STATE);
@@ -96,7 +97,7 @@ export const useAuth = () => {
     const validation = validateRegisterForm(formValues);
 
     if (!validation.isValid) {
-      alert(validation.errorMessage);
+      toast.error(validation.errorMessage);
       return;
     }
 
@@ -142,7 +143,7 @@ export const useAuth = () => {
     const validation = validateLoginForm(formValues);
 
     if (!validation.isValid) {
-      alert(validation.errorMessage);
+      toast.error(validation.errorMessage);
       return;
     }
 

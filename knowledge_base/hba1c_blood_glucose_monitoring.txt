@@ -1,0 +1,121 @@
+HbA1c and Blood Glucose Monitoring in Diabetes
+Sources: ADA Standards of Care 2024, International Consensus on CGM, AACE Guidelines
+
+HEMOGLOBIN A1c (HbA1c)
+
+Definition and Mechanism:
+HbA1c (glycated hemoglobin) measures the percentage of hemoglobin that has glucose attached to it. Since red blood cells have a lifespan of approximately 120 days, HbA1c reflects average blood glucose levels over the preceding 2-3 months, with a greater weighting toward the most recent 30 days.
+
+HbA1c Interpretation:
+- Normal: <5.7% (39 mmol/mol)
+- Prediabetes: 5.7-6.4% (39-47 mmol/mol)
+- Diabetes diagnosis: ≥6.5% (48 mmol/mol)
+
+Estimated Average Glucose (eAG) Correlation:
+- HbA1c 5.0% → eAG 97 mg/dL (5.4 mmol/L)
+- HbA1c 6.0% → eAG 126 mg/dL (7.0 mmol/L)
+- HbA1c 7.0% → eAG 154 mg/dL (8.6 mmol/L)
+- HbA1c 8.0% → eAG 183 mg/dL (10.2 mmol/L)
+- HbA1c 9.0% → eAG 212 mg/dL (11.8 mmol/L)
+- HbA1c 10.0% → eAG 240 mg/dL (13.4 mmol/L)
+
+Glycemic Targets (ADA 2024):
+- Most non-pregnant adults: HbA1c <7.0%
+- If achievable without significant hypoglycemia: HbA1c <6.5%
+- Older adults or those with comorbidities: HbA1c <8.0%
+- Pregnancy (pre-existing diabetes): HbA1c <6.0-6.5%
+
+Limitations of HbA1c:
+- Does not capture glycemic variability (swings between highs and lows)
+- Conditions that affect RBC turnover alter results:
+  * Falsely low: Hemolytic anemia, chronic kidney disease (EPO therapy), blood transfusions, iron deficiency treatment, pregnancy (2nd/3rd trimester)
+  * Falsely high: Iron deficiency anemia, vitamin B12 deficiency, splenectomy, alcoholism
+- Hemoglobin variants (HbS, HbC, HbE) may interfere with some assay methods
+- Does not reflect hypoglycemia burden
+
+Monitoring Frequency:
+- At least twice per year if meeting glycemic targets
+- Quarterly (every 3 months) if therapy changed or not meeting targets
+
+SELF-MONITORING OF BLOOD GLUCOSE (SMBG)
+
+Indications:
+- All patients on insulin therapy
+- Patients on sulfonylureas or meglitinides (hypoglycemia risk)
+- Patients not meeting glycemic targets
+- During illness, stress, or medication changes
+- Pregnancy with diabetes
+
+Testing Frequency:
+- Multiple daily insulin injections or pump: 4-10 times/day (before meals, 2h after meals, bedtime, before exercise, when symptoms suggest hypoglycemia)
+- Basal insulin only: At minimum, fasting glucose daily
+- Non-insulin therapy: Individualized; may be helpful for monitoring patterns
+
+Blood Glucose Targets:
+- Fasting/pre-meal: 80-130 mg/dL (4.4-7.2 mmol/L)
+- 2-hour postprandial: <180 mg/dL (10.0 mmol/L)
+- Bedtime: 90-150 mg/dL
+
+CONTINUOUS GLUCOSE MONITORING (CGM)
+
+Technology Types:
+1. Real-time CGM (rtCGM): Continuous display of glucose, alerts for highs/lows
+   - Examples: Dexcom G7, Medtronic Guardian 4, Abbott FreeStyle Libre 3
+   - Measures interstitial glucose every 1-5 minutes
+   - Can alert for predicted highs and lows
+
+2. Intermittently scanned CGM (isCGM / Flash):
+   - Example: Abbott FreeStyle Libre 2
+   - Requires scanning the sensor to see glucose data
+   - Stores up to 8 hours of data
+
+Key CGM Metrics (International Consensus 2019):
+- Time in Range (TIR): 70-180 mg/dL → Target: >70% (≈HbA1c <7%)
+- Time Below Range (TBR):
+  * <70 mg/dL (Level 1 hypoglycemia): Target <4%
+  * <54 mg/dL (Level 2 hypoglycemia): Target <1%
+- Time Above Range (TAR):
+  * >180 mg/dL (Level 1 hyperglycemia): Target <25%
+  * >250 mg/dL (Level 2 hyperglycemia): Target <5%
+- Glucose Management Indicator (GMI): Estimated HbA1c from CGM data
+- Coefficient of Variation (CV): Measure of glycemic variability, target <36%
+
+Benefits of CGM:
+- Reduces HbA1c by 0.3-0.5% compared to SMBG alone
+- Reduces hypoglycemia (especially nocturnal)
+- Improves Time in Range
+- Better understanding of glucose patterns (dawn phenomenon, postprandial spikes, exercise effects)
+- Ambulatory Glucose Profile (AGP) provides standardized visualization
+
+HYPOGLYCEMIA
+
+Classification:
+- Level 1: Glucose 54-70 mg/dL (alert value)
+- Level 2: Glucose <54 mg/dL (clinically significant)
+- Level 3: Severe event requiring assistance from another person
+
+Symptoms:
+- Adrenergic: Tremor, palpitations, sweating, anxiety, hunger, tingling
+- Neuroglycopenic: Confusion, difficulty speaking, blurred vision, drowsiness, seizures, loss of consciousness
+- Hypoglycemia unawareness: Loss of warning symptoms with recurrent hypoglycemia (affects 20-40% of T1DM patients)
+
+Treatment (Rule of 15):
+1. Consume 15-20g of fast-acting carbohydrate (glucose tablets, juice, regular soda)
+2. Recheck glucose after 15 minutes
+3. Repeat if still <70 mg/dL
+4. Once normalized, eat a meal or snack to prevent recurrence
+5. For severe hypoglycemia: Glucagon injection (1mg IM/SC) or nasal glucagon (Baqsimi 3mg)
+
+HYPERGLYCEMIA
+
+Diabetic Ketoacidosis (DKA):
+- Primarily in Type 1, but can occur in Type 2 (ketosis-prone diabetes)
+- Criteria: Blood glucose >250 mg/dL, pH <7.3, bicarbonate <18 mEq/L, positive ketones
+- Treatment: IV fluids, insulin infusion, electrolyte replacement (potassium), treat underlying cause
+
+Hyperosmolar Hyperglycemic State (HHS):
+- Primarily in Type 2 diabetes
+- Extreme hyperglycemia (often >600 mg/dL), severe dehydration, altered mental status
+- Serum osmolality >320 mOsm/kg, minimal or no ketosis
+- High mortality rate (10-20%)
+- Treatment: Aggressive IV fluid resuscitation, insulin, electrolyte monitoring

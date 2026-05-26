@@ -1,0 +1,135 @@
+Diabetes Epidemiology in Turkey and Global Context
+Sources: TURDEP-I (1998), TURDEP-II (2010), IDF Diabetes Atlas 10th Edition 2021, WHO NCD Country Profiles, Turkish Society of Endocrinology and Metabolism (TEMD), TEKHARF Study
+
+TURKEY - NATIONAL DATA
+
+TURDEP Studies (Turkish Diabetes Epidemiology Studies):
+
+TURDEP-I (1997-1998):
+- First nationwide diabetes prevalence study in Turkey
+- 24,788 participants aged ≥20 years from 540 centers
+- Results: Diabetes prevalence 7.2%, IGT prevalence 6.7%
+- Total dysglycemia: 13.9%
+- Marked urban-rural difference: Higher prevalence in urban areas
+
+TURDEP-II (2010):
+- Follow-up national study, 26,499 participants
+- Results: Diabetes prevalence 13.7% (90% increase in 12 years)
+- Prediabetes prevalence: 30.8%
+- Total dysglycemia: 44.5% (nearly half of all adults)
+- Previously undiagnosed diabetes: 45% (nearly half of diabetics were unaware)
+- Obesity prevalence: 36% (increased from 22% in TURDEP-I)
+- Hypertension: 31.7%
+
+Key findings from TURDEP-II:
+- Women had higher diabetes prevalence than men (14.6% vs 12.4%)
+- Strong association with obesity (BMI >30) and central obesity
+- Diabetes prevalence increased with age: <40 years (4%), 40-59 (17%), ≥60 (30%)
+- Regional variation: Highest in Southeast Turkey and Mediterranean regions
+- Education inversely correlated with diabetes risk
+- Estimated 6.5 million adults with diabetes in Turkey (2010)
+
+Current Estimates (2021-2025):
+- IDF estimates approximately 9-10 million adults with diabetes in Turkey
+- Turkey ranks among the top 10 countries in Europe for diabetes prevalence
+- Estimated healthcare expenditure on diabetes: $10-12 billion annually
+- Projected to exceed 12 million diabetes patients by 2045
+
+TEKHARF Study (Turkish Adult Risk Factor Study):
+- Longitudinal cohort study following Turkish adults since 1990
+- Diabetes incidence: Approximately 1% per year (new cases)
+- Metabolic syndrome prevalence: 40% in women, 28% in men
+- Cardiovascular mortality 2-3x higher in diabetic participants
+
+Risk Factors Specific to Turkish Population:
+- High prevalence of central obesity (visceral fat distribution)
+- Dietary transition: Shift from traditional Mediterranean/Anatolian diet to Western diet
+- Rapid urbanization and sedentary lifestyle
+- High carbohydrate diet (bread consumption among highest in the world)
+- Genetic predisposition: Turkish population has intermediate risk between European and South Asian populations
+- Cultural factors: Large portion sizes, sugar-rich traditional desserts, limited health literacy in rural areas
+- Consanguineous marriages in Eastern Turkey may amplify genetic risk
+
+GLOBAL EPIDEMIOLOGY
+
+IDF Diabetes Atlas 10th Edition (2021) Key Statistics:
+
+Current burden:
+- 537 million adults (20-79 years) living with diabetes globally
+- 1 in 10 adults has diabetes
+- 240 million (44.7%) are undiagnosed
+- 6.7 million deaths attributed to diabetes in 2021
+- $966 billion in health expenditure (11% of total global health spending)
+
+Type distribution:
+- Type 2 diabetes: ~90-95% of all cases
+- Type 1 diabetes: ~5-10%
+- Gestational diabetes: Affects 21 million pregnancies annually
+
+Regional prevalence (age-adjusted):
+- Middle East and North Africa (MENA): 16.2% (highest)
+- South-East Asia: 90 million people (largest absolute number)
+- North America and Caribbean: 14.0%
+- Europe: 9.2% (61 million people)
+- Western Pacific: 206 million people
+- Africa: 24 million people (60% undiagnosed — highest rate)
+
+Top 10 countries by number of adults with diabetes (2021):
+1. China: 141 million
+2. India: 74 million
+3. Pakistan: 33 million
+4. USA: 32 million
+5. Indonesia: 19 million
+6. Brazil: 16 million
+7. Mexico: 14 million
+8. Germany: 12 million
+9. Turkey: 10 million
+10. Japan: 10 million
+
+Projections for 2045:
+- 783 million adults projected to have diabetes (46% increase)
+- Greatest increase expected in Africa (134%) and South-East Asia (68%)
+- Low- and middle-income countries will bear disproportionate burden
+
+Prediabetes:
+- 541 million adults with IGT globally
+- By 2045, projected to reach 730 million
+- Annual conversion rate to diabetes without intervention: 5-10%
+
+SOCIOECONOMIC IMPACT
+
+Direct costs:
+- Diabetes accounts for 10-15% of national healthcare budgets in most countries
+- People with diabetes have 2-3x higher healthcare expenditure than those without
+- Hospitalization costs are the largest component (30-40%)
+- Medication costs rising due to newer, more expensive therapies (GLP-1 RAs, SGLT2i, CGM)
+
+Indirect costs:
+- Reduced productivity (absenteeism and presenteeism)
+- Early retirement and disability
+- Premature mortality (working-age deaths)
+- Caregiver burden
+- Estimated indirect costs equal or exceed direct costs
+
+Health system challenges:
+- Shortage of endocrinologists globally (especially in low-income countries)
+- Limited access to essential medicines (insulin, glucose test strips) in many settings
+- Insulin affordability crisis: Despite being discovered 100+ years ago, insulin prices remain prohibitively high in many countries
+- Need for integrated care models: Primary care-based diabetes management with specialist support
+
+PREVENTION AT POPULATION LEVEL
+
+Evidence-based strategies:
+- Sugar-sweetened beverage taxes (Mexico, UK, South Africa — shown to reduce consumption by 10-20%)
+- Front-of-pack nutrition labeling (Chile model: significant impact on consumer choices)
+- Urban planning for physical activity (walkable cities, cycling infrastructure)
+- School-based nutrition and physical activity programs
+- National diabetes prevention programs (CDC model in USA, NHS DPP in UK)
+- Workplace wellness programs
+- Public awareness campaigns targeting modifiable risk factors
+- Integration of diabetes screening into primary care routine
+
+WHO Global Targets for NCDs:
+- Halt the rise in diabetes and obesity by 2025 (not on track)
+- 80% availability of essential NCD medicines including insulin by 2025
+- 25% reduction in premature mortality from NCDs by 2025

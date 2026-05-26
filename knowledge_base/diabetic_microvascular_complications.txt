@@ -1,0 +1,150 @@
+Diabetic Microvascular Complications - Retinopathy, Nephropathy, Neuropathy
+Sources: ADA Standards of Care 2024, KDIGO Guidelines 2022, AAO Preferred Practice Pattern, Diabetologia
+
+OVERVIEW
+
+Microvascular complications are the hallmark chronic complications of diabetes, affecting small blood vessels in the eyes, kidneys, and nerves. They are primarily driven by chronic hyperglycemia and develop progressively over years. Intensive glycemic control (HbA1c <7%) significantly reduces the risk of microvascular complications by 25-50% (DCCT/EDIC, UKPDS, ADVANCE studies).
+
+Common pathophysiological pathways:
+- Polyol pathway: Excess glucose converted to sorbitol by aldose reductase, causing osmotic cellular damage
+- Advanced Glycation End-products (AGEs): Glucose binds to proteins, forming AGEs that damage vessel walls and activate inflammatory pathways via RAGE receptors
+- Protein Kinase C (PKC) activation: Diacylglycerol accumulation activates PKC, increasing vascular permeability and inflammation
+- Hexosamine pathway: Excess glucose shunted through hexosamine pathway, altering gene expression
+- Oxidative stress: Mitochondrial superoxide overproduction is the unifying mechanism (Brownlee hypothesis)
+
+DIABETIC RETINOPATHY (DR)
+
+Epidemiology:
+- Most common cause of new-onset blindness in working-age adults (20-74 years)
+- After 20 years of diabetes: ~80% of T1DM and ~60% of T2DM patients have some degree of retinopathy
+- Prevalence in Turkey: Approximately 30% of diabetes patients
+- Annual progression from non-proliferative to proliferative: 5-15%
+
+Classification:
+1. Non-Proliferative Diabetic Retinopathy (NPDR):
+   - Mild: Microaneurysms only
+   - Moderate: Microaneurysms, dot-blot hemorrhages, hard exudates, cotton-wool spots
+   - Severe (4-2-1 rule): Hemorrhages in 4 quadrants, venous beading in 2 quadrants, or IRMA in 1 quadrant
+   - Very severe: Two or more of the above criteria
+
+2. Proliferative Diabetic Retinopathy (PDR):
+   - Neovascularization (new blood vessel growth) on the disc (NVD) or elsewhere (NVE)
+   - High-risk PDR: NVD >1/4 disc area, any NVD with vitreous hemorrhage, NVE >1/2 disc area with vitreous hemorrhage
+   - Complications: Vitreous hemorrhage, tractional retinal detachment
+
+3. Diabetic Macular Edema (DME):
+   - Can occur at any stage of DR
+   - Retinal thickening within 2 disc diameters of the macula center
+   - Leading cause of vision loss in diabetes
+   - Center-involving DME has worse visual prognosis
+
+Risk factors for progression:
+- Duration of diabetes (strongest risk factor)
+- Glycemic control (each 1% HbA1c reduction = 35-40% reduced risk)
+- Hypertension
+- Dyslipidemia
+- Pregnancy (can accelerate retinopathy)
+- Nephropathy (marker of generalized microvascular disease)
+- Rapid normalization of blood glucose (transient worsening)
+
+Screening:
+- T1DM: Initial exam within 5 years of diagnosis, then annually
+- T2DM: At diagnosis, then annually (every 2 years if no retinopathy and good control)
+- Pregnancy with pre-existing diabetes: Before conception or first trimester, then every trimester
+- Method: Dilated fundus examination or validated retinal photography with remote reading (AI-assisted screening emerging)
+
+Treatment:
+- Optimize glycemic control, blood pressure, and lipids
+- Anti-VEGF injections (first-line for center-involving DME): Ranibizumab, aflibercept, bevacizumab
+- Pan-retinal photocoagulation (PRP): For PDR
+- Intravitreal corticosteroids: For DME refractory to anti-VEGF
+- Vitrectomy: For non-clearing vitreous hemorrhage or tractional retinal detachment
+
+DIABETIC NEPHROPATHY (Diabetic Kidney Disease - DKD)
+
+Epidemiology:
+- Diabetes is the leading cause of end-stage kidney disease (ESKD) worldwide
+- Affects approximately 30-40% of people with diabetes
+- Accounts for 30-50% of all dialysis patients globally
+- In Turkey: Diabetes is responsible for approximately 30% of ESKD cases (Turkish Society of Nephrology)
+
+Stages of DKD:
+1. Hyperfiltration: Increased GFR >120 mL/min (early, potentially reversible)
+2. Microalbuminuria (Moderately increased albuminuria): UACR 30-300 mg/g (earliest clinical sign)
+3. Macroalbuminuria (Severely increased albuminuria): UACR >300 mg/g
+4. Progressive GFR decline: GFR 30-59 mL/min (Stage 3 CKD)
+5. End-stage kidney disease: GFR <15 mL/min (requires dialysis or transplant)
+
+Screening:
+- T1DM: Annually starting 5 years after diagnosis
+- T2DM: Annually from diagnosis
+- Tests: Urine albumin-to-creatinine ratio (UACR) + estimated GFR (eGFR from serum creatinine)
+- Confirm abnormal results with repeat testing (2 of 3 specimens over 3-6 months)
+
+Treatment:
+- Glycemic control: HbA1c <7% slows progression
+- Blood pressure: Target <130/80 mmHg
+- ACE inhibitor or ARB: First-line for hypertension with albuminuria (renoprotective beyond BP lowering)
+- SGLT2 inhibitors: Now standard of care for DKD
+  * CREDENCE (canagliflozin): 30% reduction in kidney disease progression
+  * DAPA-CKD (dapagliflozin): 39% reduction, effective even in non-diabetic CKD
+  * EMPA-KIDNEY (empagliflozin): 28% reduction in kidney disease progression
+- Finerenone (non-steroidal mineralocorticoid receptor antagonist): FIDELIO-DKD, FIGARO-DKD trials showed additional cardiorenal benefit on top of ACEi/ARB + SGLT2i
+- GLP-1 RAs: FLOW trial (semaglutide) showed 24% reduction in kidney disease progression
+- Avoid nephrotoxic agents: NSAIDs, iodinated contrast (minimize), aminoglycosides
+- Dietary protein: 0.8 g/kg/day for non-dialysis CKD
+- Refer to nephrology when eGFR <30 or rapidly declining
+
+DIABETIC NEUROPATHY
+
+Epidemiology:
+- Most common complication of diabetes overall
+- Affects up to 50% of people with diabetes during their lifetime
+- Prevalence increases with duration of diabetes and poor glycemic control
+- Leading cause of non-traumatic lower limb amputations worldwide
+
+Classification:
+
+1. Distal Symmetric Polyneuropathy (DSPN) — most common (75% of diabetic neuropathies):
+- "Stocking-glove" distribution: Starts in feet, progresses proximally
+- Symptoms: Numbness, tingling, burning pain, shooting pain (worse at night), loss of sensation
+- Signs: Decreased vibration sense, absent ankle reflexes, reduced monofilament sensation
+- Risk of foot ulcers: Patients with DSPN have 7x higher risk of foot ulceration
+- 15% of diabetes patients develop a foot ulcer; 85% of amputations are preceded by ulcers
+
+2. Autonomic Neuropathy:
+- Cardiovascular: Resting tachycardia, orthostatic hypotension, silent myocardial ischemia, sudden cardiac death
+- Gastrointestinal: Gastroparesis (delayed gastric emptying), constipation, diarrhea, fecal incontinence
+- Genitourinary: Erectile dysfunction (35-75% of men with diabetes), neurogenic bladder, female sexual dysfunction
+- Sudomotor: Anhidrosis (absent sweating) in feet, compensatory hyperhidrosis in upper body, dry cracked skin predisposing to infection
+
+3. Focal and Multifocal Neuropathies:
+- Cranial neuropathies (CN III palsy most common)
+- Diabetic amyotrophy (lumbosacral radiculoplexus neuropathy): Severe thigh pain and weakness
+- Carpal tunnel syndrome (median nerve entrapment): 3x more common in diabetes
+
+Screening:
+- All patients: At T2DM diagnosis, 5 years after T1DM diagnosis, then annually
+- Tools: 10-g monofilament testing (loss of protective sensation), 128-Hz tuning fork (vibration), ankle reflexes, pinprick sensation
+- Michigan Neuropathy Screening Instrument (MNSI): Validated screening questionnaire
+- Nerve conduction studies: Not routinely needed but useful for atypical presentations
+
+Treatment:
+- Glycemic control: Only proven therapy to prevent or slow DSPN
+  * DCCT/EDIC: 60% reduction in neuropathy incidence with intensive control in T1DM
+  * Evidence weaker in T2DM, but glycemic optimization still recommended
+- Pain management for painful DSPN:
+  * First-line: Pregabalin (75-300 mg/day), Duloxetine (60-120 mg/day), Gabapentin (900-3600 mg/day)
+  * Second-line: Amitriptyline (25-75 mg/day), Venlafaxine, Tramadol
+  * Topical: Capsaicin cream (0.075%), lidocaine patches
+  * Avoid opioids if possible (addiction risk, limited evidence for long-term use)
+- Foot care: Daily inspection, proper footwear, podiatry referral, patient education
+
+DIABETIC FOOT
+
+- Diabetic foot is a complex complication resulting from neuropathy, peripheral arterial disease, and infection
+- Annual comprehensive foot exam for all diabetes patients
+- Risk stratification determines follow-up frequency
+- Multidisciplinary team approach: Endocrinologist, podiatrist, vascular surgeon, wound care specialist, orthopedic surgeon
+- Charcot neuroarthropathy: Destructive joint disease due to neuropathy; presents as hot, swollen, deformable foot; can lead to complete foot arch collapse if not recognized early
+- Offloading (removable or irremovable cast) is essential for healing neuropathic ulcers

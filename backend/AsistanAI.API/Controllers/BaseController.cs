@@ -1,13 +1,8 @@
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 using AsistanAI.Core.Enums;
 using AsistanAI.Core.Wrappers;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 
 namespace AsistanAI.API.Controllers;
 
@@ -61,9 +56,9 @@ public class BaseController : ControllerBase
     {
         var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier) ?? User.FindFirst(JwtRegisteredClaimNames.Sub);
 
-        if (userIdClaim == null)
+        if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out var userId))
             throw new UnauthorizedAccessException("Kullanıcı kimliği doğrulanamadı.");
-        
-        return int.Parse(userIdClaim.Value);
+
+        return userId;
     }
 }

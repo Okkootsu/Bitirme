@@ -2,23 +2,43 @@ namespace AsistanAI.Core.DTOs.Prediction;
 
 public class PredictionRequestDto
 {
+    // Required
     public int Age { get; set; }
     public string Gender { get; set; } = null!;
-    public string Polyuria { get; set; } = null!;
-    public string Polydipsia { get; set; } = null!;
-    public string SuddenWeightLoss { get; set; } = null!;
-    public string Weakness { get; set; } = null!;
-    public string Polyphagia { get; set; } = null!;
-    public string GenitalThrush { get; set; } = null!;
-    public string VisualBlurring { get; set; } = null!;
-    public string Itching { get; set; } = null!;
-    public string Irritability { get; set; } = null!;
-    public string DelayedHealing { get; set; } = null!;
-    public string PartialParesis { get; set; } = null!;
-    public string MuscleStiffness { get; set; } = null!;
-    public string Alopecia { get; set; } = null!;
-    public string Obesity { get; set; } = null!;
 
-    // Hangi chat oturumuna bağlı
+    // Tier 1 - Lifestyle & health history
+    public double? Bmi { get; set; }
+    public bool? HighBp { get; set; }
+    public bool? HighChol { get; set; }
+    public bool? PhysicalActivity { get; set; }
+    public int? GenHealth { get; set; } // 1-5
+    public bool? DiffWalking { get; set; }
+    public bool? Smoker { get; set; }
+
+    // Tier 2 - Optional
+    public bool? HeartDisease { get; set; }
+    public bool? FruitsDaily { get; set; }
+    public bool? VeggiesDaily { get; set; }
+    public bool? HeavyAlcohol { get; set; }
+
+    // Clinical values
+    public double? BloodGlucose { get; set; }
+    public double? Hba1c { get; set; }
+
+    // Convenience for BMI
+    public double? HeightCm { get; set; }
+    public double? WeightKg { get; set; }
+
+    // Symptoms (hybrid model)
+    public bool? Polyuria { get; set; }
+    public bool? Polydipsia { get; set; }
+    public bool? UnexplainedWeightLoss { get; set; }
+    public bool? Fatigue { get; set; }
+    public bool? BlurredVision { get; set; }
+    public bool? SlowHealing { get; set; }
+    public bool? FrequentInfections { get; set; }
+    public bool? TinglingNumbness { get; set; }
+
+    // Chat session reference
     public int ChatSessionId { get; set; }
 }

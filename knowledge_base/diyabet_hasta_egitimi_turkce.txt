@@ -1,0 +1,139 @@
+Diyabet Hasta Eğitimi ve Öz-Yönetim (DSME/DSMS)
+Kaynaklar: ADA Diyabet Öz-Yönetim Eğitimi ve Desteği (DSMES) 2024, TEMD Hasta Eğitimi Rehberi, IDF Eğitim Kılavuzu
+
+DSME/DSMS NEDİR?
+
+DSME (Diabetes Self-Management Education): Diyabet öz-yönetim eğitimi — hastaların diyabet yönetimi için gerekli bilgi, beceri ve yetenekleri kazanma sürecidir.
+
+DSMS (Diabetes Self-Management Support): Diyabet öz-yönetim desteği — eğitim sonrası davranış değişikliğini sürdürmek için devam eden destek sürecidir.
+
+Eğitimin kanıtlanmış faydaları:
+- HbA1c'de %0.5-1.0 düşüş
+- Hastane yatış oranlarında azalma
+- Akut komplikasyonlarda (hipoglisemi, DKA) azalma
+- Yaşam kalitesinde artış
+- Tedaviye uyumda iyileşme
+- Diyabet sıkıntısında (distres) azalma
+
+EĞİTİMİN VERİLMESİ GEREKEN KRİTİK ZAMANLAR
+
+1. Tanı anında (ilk 3 ay içinde)
+2. Yılda en az bir kez düzenli tekrar
+3. Yeni komplikasyon geliştiğinde
+4. Tedavi değişikliğinde (insüline geçiş vb.)
+5. Yaşam geçişlerinde (gebelik, emeklilik, bakımevi)
+
+TÜRKİYE'DE DİYABET EĞİTİMİ
+
+- Diyabet Eğitim Hemşireliği: TEMD ve Hemşirelik dernekleri tarafından sertifikalı eğitim programları
+- Toplum Sağlığı Merkezleri (TRSM): Kronik hastalık yönetimi kapsamında diyabet eğitimi
+- Aile Hekimliği: İlk basamak diyabet eğitimi ve takip
+- Üniversite hastaneleri: Multidisipliner diyabet eğitim merkezleri
+- Sorunlar: Eğitim hemşiresi sayısının yetersizliği, standart müfredat eksikliği, kırsal kesimde erişim güçlüğü, sağlık okuryazarlığı düşüklüğü
+
+KAN ŞEKERİ ÖLÇÜM EĞİTİMİ
+
+Öz-izlem (SMBG) tekniği:
+1. Elleri yıka ve kurula (alkol kullanma — yanlış sonuç verebilir)
+2. Lans cihazını parmak ucunun yan tarafına uygula (parmak ucu daha az ağrılı)
+3. İlk damlayı sil, ikinci damlayı strip'e uygula
+4. Sonucu deftere veya uygulamaya kaydet
+5. Kullanılmış lansleri güvenli atık kutusuna at
+
+Ölçüm sıklığı:
+- İnsülin kullanan: Günde 3-4 kez (açlık + öğün öncesi/sonrası)
+- Oral ilaç kullanan: Haftada 2-3 kez (açlık + değişen öğün sonrası)
+- İyi kontrollü: Haftada 1-2 kez yeterli olabilir
+- Hastalık, egzersiz değişikliği, yeni ilaç dönemlerinde sıklık artırılmalı
+
+İNSÜLİN ENJEKSİYON TEKNİĞİ
+
+Enjeksiyon bölgeleri:
+- Karın (en hızlı emilim): Göbek çevresinden 5 cm uzak alan
+- Uyluk ön-dış yüzeyi (orta hızda emilim)
+- Kol üst-dış yüzeyi
+- Kalça üst-dış kadran
+
+Doğru teknik:
+1. İnsülini oda sıcaklığına getir (soğuk insülin ağrılı olabilir)
+2. Bulanık insülinleri yavaşça 20 kez çevir (çalkalama — köpük yapar)
+3. Kalem iğnesini takın, hava kontrolü yapın (2 Ü boşa sıkın)
+4. Dozu ayarlayın
+5. Cildi iki parmakla kavrayın (özellikle ince hastalarda)
+6. 90° açıyla batırın (4-5 mm iğne için kavramadan, 8 mm iğne için kavrayarak)
+7. İlacı enjekte edin, 10 saniye bekleyin, sonra çıkarın
+8. İğneyi her seferinde değiştirin
+
+Bölge rotasyonu:
+- Aynı bölge içinde sistematik rotasyon yapın (örn: karın bölgesini saatin yönünde kullanın)
+- Aynı noktaya tekrar tekrar enjeksiyon → lipohipertrofi (yağ birikimi) → düzensiz insülin emilimi
+- Lipohipertrofi oluşmuş bölgelerden kaçının
+
+HİPOGLİSEMİ EĞİTİMİ
+
+Belirtileri tanıma:
+- Erken belirtiler (adrenerjik): Terleme, titreme, çarpıntı, açlık hissi, huzursuzluk
+- Geç belirtiler (nöroglikopenik): Baş dönmesi, bulanık görme, konuşma zorluğu, konfüzyon, bilinç kaybı
+
+15-15 kuralı ile müdahale:
+1. Kan şekerini ölç (<70 mg/dL ise hipoglisemi)
+2. 15 gram hızlı karbonhidrat al:
+   - 3-4 glukoz tableti VEYA
+   - Yarım bardak (120 mL) meyve suyu VEYA
+   - 1 yemek kaşığı bal/şeker VEYA
+   - 3-4 kesme şeker
+3. 15 dakika bekle, tekrar ölç
+4. Hala <70 mg/dL ise tekrarla
+5. Düzelince hafif bir ara öğün ye (kraker + peynir gibi)
+
+Ağır hipoglisemi (bilinç kaybı):
+- Ağızdan bir şey vermeyin (aspirasyon riski!)
+- Glukagon enjeksiyonu (aile/yakınlar eğitilmeli)
+- 112 acil servisi arayın
+- Hasta yan yatırılmalı (koma pozisyonu)
+
+HİPERGLİSEMİ EĞİTİMİ
+
+Belirtileri tanıma:
+- Sık idrara çıkma, aşırı susuzluk, ağız kuruluğu
+- Bulanık görme, halsizlik, baş ağrısı
+- Meyve kokulu nefes (ketoasidoz belirtisi)
+- Bulantı, kusma, karın ağrısı (acil!)
+
+Ne yapmalı:
+- Kan şekerini ölç
+- Bol su iç (şekersiz)
+- İnsülin kullanıyorsa düzeltme dozu uygula (doktor talimatına göre)
+- Kan şekeri >300 mg/dL ve/veya keton pozitifse acile başvur
+- Egzersiz yapma (kan şekeri >250 mg/dL ise egzersiz şekeri daha da yükseltebilir)
+
+AYAK BAKIMI EĞİTİMİ
+
+Günlük kontrol:
+- Her gün ayakları kontrol edin (taban dahil — ayna kullanın)
+- Kızarıklık, şişlik, yara, nasır, çatlak, renk değişikliği arayın
+- Ayak parmaklarının arasını kontrol edin
+
+Bakım:
+- Ayakları ılık su ile yıkayın (sıcak su yakar — nöropati nedeniyle hissetmeyebilirsiniz)
+- Kurulamayı unutmayın (özellikle parmak araları — mantar enfeksiyonu riski)
+- Nemlendirici krem sürün (parmak araları HARİÇ)
+- Tırnakları düz kesin (kenarları yuvarlak kesmeyin — batma riski)
+- Nasır ve nasır kesmeyi kendiniz yapmayın, podologa başvurun
+
+Ayakkabı seçimi:
+- Rahat, kapalı, yumuşak iç tabanlı ayakkabı
+- Yeni ayakkabıyı kademeli olarak giyin
+- Çıplak ayakla yürümeyin (ev dahil)
+- Ayakkabıyı giymeden önce içini elle kontrol edin (taş, sivri cisim)
+
+TEDAVİYE UYUM (COMPLIANCE) STRATEJİLERİ
+
+- İlaç kutucuğu/hatırlatıcı alarm kullanımı
+- Diyabet günlüğü tutma (kan şekeri, ilaç, beslenme, egzersiz)
+- Mobil uygulama kullanımı (MySugr, Glucose Buddy)
+- Aile desteğinin sağlanması
+- Düzenli kontrollere gitme alışkanlığı
+- Motivasyonel görüşme teknikleri (sağlık ekibi tarafından)
+- Akran desteği (diyabet hasta grupları)
+- Gerçekçi hedefler koyma (küçük adımlarla başlama)

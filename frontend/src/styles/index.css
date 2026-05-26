@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@custom-variant dark (&:is(.dark *));
 
 html,
 body {
@@ -29,4 +31,46 @@ body {
   --color-accent: #d4c5a9;
   --color-border: #e6e2d8;
   --color-border-secondary: #cfccc4;
+}
+
+/* Dark Mode */
+html.dark {
+  --color-background: #1a1b2e;
+  --color-card: #242540;
+  --color-card-hover: #2e2f4a;
+  --color-button: #2a2b45;
+  --color-button-hover: #35365a;
+  --color-drawer-header: #1e1f35;
+  --color-drawer: #16172a;
+  --color-accent: #5a5b80;
+  --color-border: #2e2f4a;
+  --color-border-secondary: #3a3b5a;
+  color-scheme: dark;
+}
+
+html.dark body {
+  color: #e2e4f0;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4 {
+  color: #e8eaf6;
+}
+
+html.dark .prose {
+  --tw-prose-body: #d0d2e0;
+  --tw-prose-headings: #e8eaf6;
+  --tw-prose-bold: #e8eaf6;
+  --tw-prose-links: #93c5fd;
+  --tw-prose-code: #c4b5fd;
+  --tw-prose-bullets: #8b8da8;
+  --tw-prose-counters: #8b8da8;
+}
+
+/* Typing indicator animation */
+@keyframes typing-dot {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-4px); }
 }

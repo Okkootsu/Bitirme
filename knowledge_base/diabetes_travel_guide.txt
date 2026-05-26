@@ -1,0 +1,26 @@
+Diyabetle Seyahat Rehberi
+Source: International Diabetes Federation Travel Guidelines; Turk Diyabet Vakfi Hasta Bilgilendirme Dokumanlari; CDC Travelers Health
+
+SEYAHAT ONCESI HAZIRLIK
+
+Diyabetli bireyler seyahat oncesinde mutlaka endokrinolog kontrolunden gecmelidir. HbA1c degeri 9%'un uzerindeyse uzun sureli seyahatler riskli olabilir. Doktorunuzdan Ingilizce ve Turkce yazilmis bir medikal rapor alin; bu rapor diyabet tipinizi, kullandiginiz ilaclari, insulin dozlarinizi ve alerjilerinizi icermelidir. Seyahat sigortasi yaptirirken diyabetin kapsam dahilinde oldugundan emin olun. Bircok standart seyahat sigortasi kronik hastaliklari kapsamaz; ozel saglik sigortasi ekleri gerekebilir. Gidilen ulkedeki en yakin hastane ve eczane bilgilerini onceden arastirin.
+
+INSULIN VE ILAC SAKLAMA KOSULLARI
+
+Insulin 2-8 derece Celsius arasinda buzdolabinda saklanmalidir. Kullanima acilmis insulin kalemleri oda sicakliginda (25-30 derece altinda) 28 gun boyunca kullanilabilir. Seyahatte insulin icin ozel sogutma cantalari (FRIO, MedAngel gibi) kullanilmalidir. Insulini asla bagaja koymayin; ucak kargo bolumunde sicaklik eksi 40 dereceye kadar dusebilir ve insulin donar. Donmus insulin kullanilmamalidir cunku molekuler yapisi bozulur ve etkisini kaybeder. Oral antidiyabetik ilaclar da asiri sicak ve nemden korunmalidir. Yedek ilac ve malzeme her zaman ayri bir cantada tasinmalidir.
+
+HAVAALANI GUVENLIGI VE UCUS
+
+Insulin kalemleri, igneler, glukometre, lancetler ve CGM cihazlari ucaga alinabilir. Turkiye ve uluslararasi havalimanlarinda tibbi malzeme icin doktor raporu gostermek gerekebilir. TSA (ABD) ve ECAC (Avrupa) duzenlemelerine gore diyabet malzemeleri guvenlik taramasindan muaf tutulabilir. Insulin pompalari ve CGM sensörleri X-ray cihazlarindan gecirilmemelidir; el kontrolu talep edin. Uzun ucuslarda her 2-3 saatte bir kan sekerini olcun. Ucak yemeklerinin karbonhidrat icerigi tahmin edilemez olabilir; yaninda kendi atistirmaliklarinizi bulundurun.
+
+ZAMAN DILIMI DEGISIKLIKLERI VE INSULIN AYARLAMASI
+
+Doguya seyahatte gun kisalir, batiya seyahatte uzar. Doguya giderken (ornegin Istanbul'dan Tokyo'ya) gun 6-12 saat kisalabilir; bu durumda bazal insulin dozu %10-20 azaltilabilir. Batiya giderken (Istanbul'dan New York'a) gun uzadigi icin ek bir kisa etkili insulin dozu gerekebilir. Genel kural: zaman dilimi farki 5 saatten azsa buyuk ayarlama gerekmez. 5 saatten fazlaysa doktorunuzla ozel bir plan olusturun. Varis noktasina ulastiginizda yerel saate mumkun olan en kisa surede uyum saglayin ve insulin programinizi yerel saate gore ayarlayin.
+
+ACIL DURUM KITI
+
+Her diyabetli gezginin yaninda su malzemeler bulunmalidir: glukometre ve yedek piller, en az 2 katina yetecek insulin veya ilac, hizli etkili glikoz tabletleri veya jeli, glukagon acil durum kiti, ketone test stripleri (Tip 1 icin), yedek insulin igneleri, tibbi kimlik bilekligi veya karti, doktor raporu ve recete kopyalari. Bu malzemeler iki ayri cantaya bölünerek tasinmalidir; bir canta kaybolursa diger canta yedek olarak kullanilabilir.
+
+DESTINASYONA OZEL RISKLER
+
+Sicak iklimlere seyahatte (ornegin Antalya, Dubai) insulin emilimi hizlanir ve hipoglisemi riski artar. Soguk iklimlerde ise insulin emilimi yavaslayabilir. Yuksek rakimli bölgelerde (2500 metre uzeri) glukometre ölcumleri yanlis sonuc verebilir; bu durumda CGM kullanmak daha guvenilirdir. Tropikal bölgelerde enfeksiyon riski artar ve enfeksiyonlar kan sekerini belirgin sekilde yukseltir. Ishal ve kusma durumunda dehidratasyonu onlemek icin oral rehidratasyon solüsyonlari kullanilmali ve insulin dozlari dikkatle ayarlanmalidir. Yerel yiyeceklerin karbonhidrat icerigini bilmek icin onceden arastirma yapin veya karbonhidrat sayim uygulamalari kullanin.
