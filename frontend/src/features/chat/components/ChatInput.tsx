@@ -1,8 +1,6 @@
 import { PlaceholdersAndVanishInput } from "@/components/AceternityInput";
 
 type ChatInputProps = {
-  isChatStarted: boolean;
-  maxWidthClass: string;
   setInput: (value: string) => void;
   handleSendMessage: () => void;
 };

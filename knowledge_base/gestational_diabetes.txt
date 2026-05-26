@@ -1,0 +1,125 @@
+Gestational Diabetes Mellitus (GDM) - Clinical Guide
+Sources: ADA Standards of Care 2024, ACOG Practice Bulletin, WHO, IADPSG Criteria, NICE Guidelines
+
+DEFINITION
+
+Gestational Diabetes Mellitus (GDM) is diabetes diagnosed in the second or third trimester of pregnancy that was not clearly overt diabetes prior to gestation. It is characterized by glucose intolerance with onset or first recognition during pregnancy.
+
+EPIDEMIOLOGY
+
+- Affects 2-14% of all pregnancies globally, depending on the population and diagnostic criteria used
+- Prevalence is increasing worldwide, paralleling the obesity epidemic
+- In Turkey, GDM prevalence is estimated at 7-12% (Turkish Perinatology Society data)
+- Risk increases with maternal age, with highest rates in women over 35
+- Recurrence rate in subsequent pregnancies: 30-70%
+- Women with GDM have a 50-60% lifetime risk of developing Type 2 diabetes
+
+PATHOPHYSIOLOGY
+
+During normal pregnancy:
+- Insulin resistance increases progressively from the second trimester, driven by placental hormones (human placental lactogen, progesterone, cortisol, prolactin, growth hormone)
+- Healthy women compensate by increasing insulin secretion 2-3 fold
+- GDM develops when beta cells cannot meet the increased insulin demand
+
+Key mechanisms:
+- Pre-existing subclinical insulin resistance (often related to obesity)
+- Beta cell dysfunction (inability to upregulate insulin secretion)
+- Placental hormones that antagonize insulin action
+- Increased hepatic glucose production
+- Altered adipokine secretion (decreased adiponectin, increased TNF-alpha, IL-6)
+
+RISK FACTORS
+
+High risk:
+- Obesity (BMI ≥30 kg/m²)
+- Previous GDM
+- Family history of Type 2 diabetes (first-degree relative)
+- Prior macrosomic infant (birth weight >4000g)
+- Polycystic ovary syndrome (PCOS)
+- Age ≥35 years
+- Ethnicity: South Asian, Middle Eastern, Hispanic, African American, Pacific Islander
+
+Moderate risk:
+- Overweight (BMI 25-29.9 kg/m²)
+- Previous unexplained stillbirth
+- Previous infant with congenital anomaly
+- Glycosuria in current pregnancy
+
+SCREENING AND DIAGNOSIS
+
+Two main approaches:
+
+1. One-Step Approach (IADPSG/WHO - recommended by ADA):
+- 75g OGTT at 24-28 weeks gestation
+- GDM diagnosed if ANY ONE value is met or exceeded:
+  * Fasting: ≥92 mg/dL (5.1 mmol/L)
+  * 1-hour: ≥180 mg/dL (10.0 mmol/L)
+  * 2-hour: ≥153 mg/dL (8.5 mmol/L)
+
+2. Two-Step Approach (Carpenter-Coustan / ACOG):
+- Step 1: 50g Glucose Challenge Test (GCT), non-fasting
+  * If 1-hour glucose ≥130-140 mg/dL → proceed to Step 2
+- Step 2: 100g OGTT (fasting)
+  * GDM diagnosed if TWO or more values are met or exceeded:
+    - Fasting: ≥95 mg/dL
+    - 1-hour: ≥180 mg/dL
+    - 2-hour: ≥155 mg/dL
+    - 3-hour: ≥140 mg/dL
+
+Early screening (first trimester) recommended for women with risk factors.
+
+MANAGEMENT
+
+Glycemic Targets During Pregnancy:
+- Fasting glucose: <95 mg/dL (5.3 mmol/L)
+- 1-hour postprandial: <140 mg/dL (7.8 mmol/L)
+- 2-hour postprandial: <120 mg/dL (6.7 mmol/L)
+- HbA1c: <6.0% (if achievable without significant hypoglycemia)
+
+Medical Nutrition Therapy (MNT):
+- First-line treatment for all women with GDM
+- Individualized meal plan with a registered dietitian
+- Generally: 35-40% carbohydrate, 20-25% protein, 35-40% fat
+- Three meals and 2-3 snacks daily to distribute carbohydrate intake
+- Complex carbohydrates preferred over simple sugars
+- Caloric requirements: 30 kcal/kg/day for normal BMI, 25 kcal/kg/day for overweight
+
+Physical Activity:
+- Moderate exercise (e.g., brisk walking) 30 minutes most days
+- Can reduce insulin requirements by 20-30%
+- Safe activities: walking, swimming, prenatal yoga, stationary cycling
+- Contraindicated in certain pregnancy complications
+
+Pharmacotherapy (if glycemic targets not met with MNT + exercise):
+- Insulin is the preferred pharmacological agent (does not cross placenta)
+  * Rapid-acting: lispro, aspart
+  * Intermediate/long-acting: NPH, detemir
+- Metformin: May be used as alternative (crosses placenta, long-term safety data emerging)
+- Glyburide: Previously used but now less favored due to higher rates of neonatal hypoglycemia and macrosomia compared to insulin
+
+COMPLICATIONS
+
+Maternal complications:
+- Preeclampsia (2-4x increased risk)
+- Need for cesarean delivery (increased by 25-30%)
+- Birth trauma during vaginal delivery
+- Future risk of Type 2 diabetes (50-60% within 10-20 years)
+- Increased risk of GDM in future pregnancies
+- Increased risk of cardiovascular disease
+
+Fetal/Neonatal complications:
+- Macrosomia (large for gestational age, birth weight >4000g)
+- Shoulder dystocia
+- Neonatal hypoglycemia
+- Hyperbilirubinemia (jaundice)
+- Respiratory distress syndrome
+- Polycythemia (high red blood cell count)
+- Long-term: increased risk of obesity and Type 2 diabetes in offspring
+
+POSTPARTUM MANAGEMENT
+
+- Screen for persistent diabetes at 4-12 weeks postpartum using 75g OGTT (NOT HbA1c, as it may be falsely low postpartum)
+- If normal, rescreen every 1-3 years for life
+- Encourage breastfeeding (improves insulin sensitivity, promotes weight loss)
+- Lifestyle modifications to prevent or delay Type 2 diabetes
+- Preconception counseling before future pregnancies

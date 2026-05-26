@@ -1,0 +1,30 @@
+Diabetes and Sleep Disorders: A Bidirectional Relationship
+Source: Sleep Medicine Reviews; American Academy of Sleep Medicine; Diabetes Care Journal; European Sleep Research Society
+
+SLEEP AND GLUCOSE METABOLISM
+
+Sleep plays a critical role in glucose homeostasis. During deep slow-wave sleep (stages N3), the body suppresses cortisol and sympathetic nervous system activity, allowing optimal insulin sensitivity. Disruption of this sleep phase directly impairs glucose tolerance. Experimental sleep restriction studies show that limiting healthy adults to 4-5 hours of sleep per night for just one week reduces insulin sensitivity by 25-30% and increases diabetes risk markers to pre-diabetic levels. The International Diabetes Federation estimates that 1 in 2 people with Type 2 diabetes has a concurrent sleep disorder, yet fewer than 30% are formally diagnosed.
+
+OBSTRUCTIVE SLEEP APNEA AND DIABETES
+
+Obstructive sleep apnea (OSA) is the most prevalent sleep disorder in diabetes, affecting 58-86% of people with Type 2 diabetes who are overweight or obese. OSA causes intermittent hypoxia and sleep fragmentation, both of which activate the sympathetic nervous system, increase cortisol, and promote insulin resistance. A meta-analysis of 16 studies found that moderate-to-severe OSA increases Type 2 diabetes risk by 63% independent of obesity. CPAP therapy, the gold standard for OSA treatment, has been shown to improve insulin sensitivity by 13-20% when used consistently for more than 4 hours per night. However, adherence remains a challenge with only 40-60% of patients using CPAP regularly at one year. Screening for OSA should be standard practice in diabetes care using tools like the STOP-BANG questionnaire (score of 3 or higher warrants polysomnography).
+
+INSOMNIA AND DIABETES
+
+Chronic insomnia affects 23-40% of people with diabetes, compared to 10-15% of the general population. The hyperarousal model of insomnia suggests that elevated nighttime cortisol and sympathetic activity create a self-perpetuating cycle: high glucose causes nocturia and discomfort, which disrupts sleep, which raises glucose further. Nocturia (waking to urinate) affects up to 76% of people with poorly controlled diabetes and is a major sleep disruptor. Cognitive Behavioral Therapy for Insomnia (CBT-I) is the first-line treatment and has been validated in diabetic populations, improving both sleep efficiency and HbA1c. Pharmacological sleep aids (zolpidem, eszopiclone) should be used cautiously as they may impair hypoglycemia awareness during sleep.
+
+CIRCADIAN RHYTHM DISRUPTION
+
+The body's circadian clock regulates insulin secretion, glucose absorption, and hepatic glucose output with predictable daily patterns. Insulin sensitivity peaks in the morning and declines in the evening, which is why eating identical meals produces higher glucose responses at dinner compared to breakfast. Disrupted circadian rhythms from shift work, irregular sleep schedules, or excessive evening light exposure desynchronize these metabolic clocks. Blue light from screens suppresses melatonin production by 50% when used within 2 hours of bedtime. Melatonin itself plays a role in insulin secretion; genetic variants in the melatonin receptor gene (MTNR1B) are associated with increased diabetes risk.
+
+RESTLESS LEG SYNDROME AND PERIPHERAL NEUROPATHY
+
+Restless leg syndrome (RLS) is 2-4 times more common in people with diabetes, particularly those with peripheral neuropathy. The uncomfortable sensations in the legs and irresistible urge to move them worsen during rest and at night, causing significant sleep onset and maintenance insomnia. Diabetic peripheral neuropathy itself causes nighttime pain (burning, tingling, numbness) that disrupts sleep in 25-50% of affected individuals. Treatment includes optimizing glycemic control, gabapentin or pregabalin for neuropathic pain (which also improve sleep), and dopamine agonists for severe RLS. Iron deficiency should be assessed as it worsens RLS symptoms.
+
+SLEEP HYGIENE RECOMMENDATIONS FOR DIABETES
+
+Consistent sleep-wake times (within 30 minutes variation, including weekends) are the single most impactful sleep hygiene measure. The bedroom should be kept at 18-20 degrees Celsius, dark, and quiet. Avoid caffeine after 2 PM and alcohol within 3 hours of bedtime (alcohol disrupts sleep architecture despite initial sedation). Blood glucose should be checked before bed; a reading between 100-180 mg/dL is generally safe for sleep. If below 100 mg/dL, a small snack with protein and complex carbohydrates (e.g., cheese and whole grain crackers) can prevent overnight hypoglycemia. CGM with alarms set for values below 70 mg/dL and above 250 mg/dL provides safety during sleep without requiring manual checks.
+
+SCREENING AND ASSESSMENT
+
+Every diabetes clinical visit should include at least two sleep-related questions: sleep duration and sleep quality. The Pittsburgh Sleep Quality Index (PSQI) is a validated tool taking 5-10 minutes to complete. An Epworth Sleepiness Scale score above 10 suggests excessive daytime sleepiness warranting further evaluation. Overnight oximetry can serve as a screening tool for OSA when polysomnography is not readily available. Treatment of sleep disorders should be integrated into the diabetes care plan, not treated as a separate issue, given the profound bidirectional effects on metabolic health.

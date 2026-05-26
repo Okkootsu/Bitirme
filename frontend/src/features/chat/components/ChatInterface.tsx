@@ -6,9 +6,10 @@ import { ChatInput } from "./ChatInput";
 import { Dialog } from "@/components/Dialog";
 import { FormModal } from "@/features/auth/components/FormModal";
 import { useAuth } from "@/features/auth/hooks/useAuth";
-import { useConversations } from "@/hooks/useConversations";
+import { useConversationStore } from "@/store/conversationStore";
 import { SymptomForm } from "@/features/prediction/components/SymptomForm";
 import { Button } from "@/components/Button";
+import { Moon, Sun } from "lucide-react";
 
 export const ChatInterface = () => {
   const {
@@ -19,10 +20,12 @@ export const ChatInterface = () => {
   } = useChat();
 
   const { isDialogOpen, setIsDialogOpen } = useAuth();
-  const { currentMessages } = useConversations();
+  const currentMessages = useConversationStore((state) => state.currentMessages);
+  const darkMode = useConversationStore((state) => state.darkMode);
+  const toggleDarkMode = useConversationStore((state) => state.toggleDarkMode);
   const [isSymptomFormOpen, setIsSymptomFormOpen] = useState(false);
 
-  const maxWidthClass = "max-w-2xl";
+  const maxWidthClass = "max-w-4xl";
 
   return (
     <div
@@ -31,14 +34,24 @@ export const ChatInterface = () => {
         isChatStarted ? "justify-between" : "items-center justify-center gap-8",
       )}
     >
-      <h1
+      <div
         className={cn(
-          "z-10 h-16 text-4xl font-extrabold backdrop-blur-3xl flex justify-center text-gray-800 tracking-tight py-2 top-0 w-full bg-background/30 border-border/20 shrink-0",
+          "z-10 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0",
           isChatStarted && "border-b-3",
         )}
       >
-        Asistan.ai
-      </h1>
+        <div />
+        <h1 className="text-4xl font-extrabold text-gray-800 dark:text-gray-100 tracking-tight">
+          Asistan.ai
+        </h1>
+        <button
+          onClick={toggleDarkMode}
+          className="p-2 rounded-lg hover:bg-card transition-colors text-gray-600 dark:text-gray-300"
+          title={darkMode ? "Açık tema" : "Koyu tema"}
+        >
+          {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
+      </div>
 
       {/* Mesaj Alanı */}
       {isChatStarted && (
@@ -57,14 +70,12 @@ export const ChatInterface = () => {
           <Button
             variant="iconOutline"
             onClick={() => setIsSymptomFormOpen(true)}
-            className="w-full text-sm py-2 rounded-xl border-blue-300 text-blue-600 hover:bg-blue-50"
+            className="w-full text-sm py-2 rounded-xl border-blue-300 text-blue-600 hover:bg-blue-50 dark:border-blue-700 dark:text-blue-400 dark:hover:bg-blue-900/30"
           >
             Diyabet Risk Testi
           </Button>
 
           <ChatInput
-            isChatStarted={isChatStarted}
-            maxWidthClass={maxWidthClass}
             setInput={setInput}
             handleSendMessage={handleSendMessage}
           />

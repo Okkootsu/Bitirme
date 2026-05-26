@@ -1,0 +1,30 @@
+Continuous Glucose Monitoring Technology for Diabetes
+Source: ADA Technology Standards 2024; Endocrine Society CGM Guidelines; Turkish Endocrinology and Metabolism Society (TEMD) 2024
+
+WHAT IS CONTINUOUS GLUCOSE MONITORING
+
+Continuous glucose monitoring (CGM) represents a transformative technology in diabetes management. CGM systems measure interstitial fluid glucose levels every 1 to 5 minutes, generating up to 288 glucose readings per day compared to the typical 4 to 8 readings from traditional fingerstick self-monitoring of blood glucose (SMBG). This continuous data stream reveals glucose patterns, trends, and variability that are invisible with intermittent testing. Clinical trials have consistently demonstrated that CGM use reduces HbA1c by 0.3 to 0.5 percentage points while simultaneously reducing hypoglycemic events by 40 to 70 percent. CGM provides actionable real-time information including current glucose value, rate of change (rising, falling, stable), and customizable alerts for impending hypoglycemia or hyperglycemia.
+
+TYPES OF CGM SYSTEMS
+
+Real-time CGM (rtCGM) systems continuously transmit glucose data to a receiver, smartphone, or insulin pump, with customizable high and low glucose alerts. Examples include Dexcom G7 (sensor life 10 days, warm-up 30 minutes, no calibration required), Medtronic Guardian 4 (7-day sensor life, integrates with MiniMed 780G pump), and Abbott FreeStyle Libre 3 (14-day sensor life, factory calibrated). Intermittently scanned CGM (isCGM), also called flash glucose monitoring, requires the user to scan the sensor with a reader or phone to obtain data; the FreeStyle Libre 2 is the primary isCGM though newer versions add optional alerts. Professional CGM systems are clinic-owned devices applied by healthcare providers for diagnostic 10 to 14 day monitoring periods to identify patterns.
+
+SENSOR TECHNOLOGY AND PLACEMENT
+
+Most CGM sensors use electrochemical glucose oxidase technology embedded in a thin, flexible filament inserted 3 to 5 mm into the subcutaneous tissue. The sensor measures glucose in interstitial fluid, which has a physiological lag of 5 to 15 minutes compared to blood glucose. This lag is most clinically relevant during rapid glucose changes such as post-meal spikes or exercise-induced drops. Sensors are typically placed on the upper arm (Libre), abdomen (Dexcom), or upper buttock, with adhesive patches securing the unit for the sensor's lifespan. Sensor accuracy is measured by Mean Absolute Relative Difference (MARD), with modern sensors achieving MARD values of 8 to 10 percent, approaching the accuracy of laboratory measurements.
+
+DATA INTERPRETATION AND KEY METRICS
+
+The Ambulatory Glucose Profile (AGP) is the standardized CGM report endorsed by international guidelines. Key CGM metrics include Time in Range (TIR), the percentage of time glucose is between 70 and 180 mg/dL, with a target of greater than 70 percent for most adults. Time Below Range (TBR) below 70 mg/dL should be less than 4 percent, and below 54 mg/dL less than 1 percent. Time Above Range (TAR) above 180 mg/dL should be less than 25 percent. Glucose Management Indicator (GMI) estimates HbA1c from CGM data. Coefficient of Variation (CV), targeting less than 36 percent, measures glucose variability. A minimum of 14 days of data with at least 70 percent sensor wear time is needed for reliable AGP analysis.
+
+CLINICAL INDICATIONS AND PATIENT SELECTION
+
+CGM is recommended for all individuals with type 1 diabetes, particularly those on intensive insulin therapy (multiple daily injections or insulin pump). For type 2 diabetes, CGM is indicated for those on intensive insulin regimens, those with recurrent hypoglycemia or hypoglycemia unawareness, pregnant women with pre-existing or gestational diabetes, and individuals not reaching glycemic targets despite optimized therapy. CGM is increasingly used as a short-term educational tool for newly diagnosed type 2 diabetes patients to visualize the impact of dietary choices and physical activity on glucose patterns.
+
+INSURANCE COVERAGE AND ACCESS IN TURKEY
+
+In Turkey, CGM access has expanded significantly since 2020. The Sosyal Guvenlik Kurumu (SGK) covers CGM (specifically the FreeStyle Libre system) for patients with type 1 diabetes, with a prescription from an endocrinologist and documentation of frequent hypoglycemia or HbA1c above target despite intensive insulin therapy. Coverage typically includes 26 sensors per year (one every 14 days). For type 2 diabetes, SGK coverage is more limited and generally requires documented recurrent severe hypoglycemia. Out-of-pocket costs for CGM sensors in Turkey range from approximately 400 to 800 TL per sensor without insurance coverage. Several Turkish university hospitals participate in CGM research programs that provide devices at reduced or no cost. The TEMD recommends broader CGM adoption and is advocating for expanded SGK coverage criteria.
+
+PRACTICAL TIPS AND TROUBLESHOOTING
+
+Common issues include sensor adhesion failure (addressed with skin preparation wipes, additional adhesive patches, or medical tape), inaccurate readings during the first 24 hours of sensor insertion, compression lows from sleeping on the sensor, and skin irritation from adhesive. Calibration with fingerstick testing is advisable when CGM readings do not match symptoms. MRI scans require sensor removal. Acetaminophen (paracetamol) can affect readings in some older sensor models. Extreme temperatures (saunas, ice baths) may cause temporary reading inaccuracies. Data sharing features allow caregivers and healthcare providers to remotely monitor glucose in real time, which is particularly valuable for children, elderly patients, and those with hypoglycemia unawareness.

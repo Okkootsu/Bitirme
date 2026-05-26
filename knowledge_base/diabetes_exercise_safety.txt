@@ -1,0 +1,34 @@
+Exercise Safety for People with Diabetes
+Source: ADA Standards of Medical Care 2024; ACSM Exercise Testing and Prescription; Diabetes UK Safety Guidelines
+
+HYPOGLYCEMIA DURING AND AFTER EXERCISE
+
+Exercise-induced hypoglycemia is the most common acute complication of physical activity in individuals treated with insulin or insulin secretagogues (sulfonylureas, meglitinides). During moderate-intensity exercise, glucose utilization by skeletal muscle increases 5 to 10 fold, while hepatic glucose output may not increase proportionally in insulin-treated individuals. Hypoglycemia can occur during exercise, immediately after, or as late onset hypoglycemia up to 24 hours post-exercise due to ongoing muscle glycogen replenishment. Symptoms include shakiness, sweating, rapid heartbeat, confusion, dizziness, and blurred vision. Severe hypoglycemia can lead to seizures and loss of consciousness, creating dangerous situations particularly during activities like swimming, cycling, or driving to the gym.
+
+BLOOD GLUCOSE MONITORING AROUND EXERCISE
+
+Pre-exercise glucose testing is mandatory for all individuals on insulin or sulfonylureas. The recommended pre-exercise glucose range is 100 to 250 mg/dL. If glucose is below 100 mg/dL, consume 15 to 30 grams of fast-acting carbohydrates and retest after 15 minutes before beginning exercise. If glucose exceeds 250 mg/dL, check for urine or blood ketones; exercise is contraindicated if ketones are moderate to large (above 1.5 mmol/L in blood) as it may worsen hyperglycemia and precipitate diabetic ketoacidosis. For type 1 diabetes, glucose above 300 mg/dL without ketones may permit light exercise with caution. Continuous glucose monitors provide real-time glucose and trend data during exercise, with rate-of-change arrows helping predict impending hypoglycemia 15 to 30 minutes before symptoms occur.
+
+CARBOHYDRATE LOADING AND FUELING STRATEGIES
+
+For planned moderate exercise lasting less than 30 minutes, a pre-exercise snack may not be necessary if glucose is in the target range. For sessions of 30 to 60 minutes, 15 to 30 grams of carbohydrate should be consumed before or during exercise depending on glucose trends. Prolonged exercise exceeding 60 minutes requires 30 to 60 grams of carbohydrate per hour to maintain euglycemia. Suitable exercise snacks include glucose tablets (4 grams each), fruit juice boxes (15 grams per 120 mL), sports drinks, bananas, granola bars, or dried fruit. Post-exercise carbohydrate intake within 30 minutes helps replenish glycogen stores and reduces the risk of late-onset hypoglycemia.
+
+HYPERGLYCEMIA DURING EXERCISE
+
+High-intensity exercise, including sprinting, heavy weightlifting, and competitive sports, can paradoxically raise blood glucose due to increased hepatic glucose output driven by catecholamines (adrenaline, noradrenaline) and cortisol. This stress hyperglycemia typically peaks 30 to 60 minutes after intense exercise and resolves within 1 to 2 hours. For individuals with type 1 diabetes, starting exercise with glucose below 150 mg/dL and performing a brief 10-second sprint before moderate exercise may blunt the post-exercise glucose rise. Adequate hydration is essential during hyperglycemic episodes as dehydration compounds the problem.
+
+INSULIN DOSE ADJUSTMENTS FOR EXERCISE
+
+Rapid-acting insulin doses for meals preceding exercise should be reduced by 25 to 75 percent depending on exercise intensity, duration, and timing. Basal insulin may need a 10 to 20 percent reduction on exercise days for those on multiple daily injections. Insulin pump users can set temporary basal rates at 50 to 80 percent of normal, starting 60 to 90 minutes before exercise and continuing 60 minutes after. Injection site selection matters: insulin injected into exercising limbs is absorbed faster, potentially causing hypoglycemia. The abdomen is the preferred injection site before exercise involving legs.
+
+SICK DAY AND EXTREME WEATHER RULES
+
+Exercise should be avoided during acute illness, fever, or active infections as stress hormones elevate glucose and exercise may worsen dehydration. After illness, a gradual return to exercise over 3 to 5 days is recommended. In hot weather (above 32 degrees Celsius), exercise intensity should be reduced by 20 to 30 percent, hydration increased to 200 to 300 mL every 15 to 20 minutes, and sessions shifted to early morning or evening. In cold weather, extra attention to foot protection and warming up is necessary. Air pollution alerts should prompt indoor exercise alternatives.
+
+CARDIOVASCULAR SCREENING AND PRECAUTIONS
+
+Individuals with diabetes who are asymptomatic and plan moderate-intensity exercise (such as brisk walking) generally do not require cardiac stress testing. However, those planning vigorous-intensity exercise, or those with cardiovascular disease, symptoms suggestive of cardiac disease, peripheral artery disease, or multiple cardiovascular risk factors should undergo evaluation. Autonomic neuropathy may impair heart rate response to exercise, making heart rate-based intensity monitoring unreliable; the rating of perceived exertion scale should be used instead.
+
+FOOT CARE AND PERIPHERAL NEUROPATHY
+
+Individuals with peripheral neuropathy have reduced protective sensation, increasing the risk of undetected blisters, calluses, and foot injuries during exercise. Proper footwear fitted by a specialist, moisture-wicking socks, and thorough pre- and post-exercise foot inspections are essential. Weight-bearing exercise may need to be limited in those with active foot ulcers or Charcot arthropathy; non-weight-bearing alternatives such as swimming, cycling, or seated exercises should be substituted. Silica gel insoles can reduce plantar pressure by 25 to 30 percent during walking.

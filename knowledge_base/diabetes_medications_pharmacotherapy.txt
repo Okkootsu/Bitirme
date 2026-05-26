@@ -1,0 +1,92 @@
+Diabetes Pharmacotherapy - Medication Classes and Guidelines
+Sources: ADA Standards of Care 2024, EASD Consensus Report 2022, WHO Essential Medicines List
+
+OVERVIEW OF DIABETES MEDICATIONS
+
+The goal of pharmacotherapy in Type 2 diabetes is to achieve and maintain glycemic targets while minimizing side effects, particularly hypoglycemia and weight gain. Treatment should be individualized based on patient characteristics, comorbidities, and preferences.
+
+FIRST-LINE THERAPY
+
+Metformin (Biguanide):
+- Mechanism: Reduces hepatic glucose production, improves insulin sensitivity, decreases intestinal absorption of glucose
+- Typical dose: 500-2000 mg/day (start low, titrate slowly)
+- HbA1c reduction: 1.0-1.5%
+- Advantages: Weight neutral or modest weight loss, low hypoglycemia risk, cardiovascular benefit (UKPDS study), low cost, long safety record
+- Side effects: GI symptoms (nausea, diarrhea, metallic taste) in 20-30% of patients, vitamin B12 deficiency with long-term use
+- Contraindications: eGFR <30 mL/min, acute conditions with risk of lactic acidosis (sepsis, shock, hepatic failure)
+- First-line for most patients with Type 2 diabetes regardless of HbA1c level
+
+SECOND-LINE AND ADD-ON THERAPIES
+
+1. GLP-1 Receptor Agonists (Incretin Mimetics):
+- Examples: Semaglutide (Ozempic, Wegovy), Liraglutide (Victoza), Dulaglutide (Trulicity), Exenatide (Byetta)
+- Mechanism: Mimic GLP-1 hormone - stimulate insulin secretion, suppress glucagon, slow gastric emptying, promote satiety
+- HbA1c reduction: 1.0-1.8%
+- Advantages: Significant weight loss (3-7 kg), cardiovascular benefit (LEADER, SUSTAIN-6, REWIND trials), low hypoglycemia risk
+- Side effects: Nausea, vomiting, diarrhea (usually transient), injection site reactions, rare pancreatitis risk
+- Preferred add-on for patients with established cardiovascular disease or high CV risk
+- Preferred for patients who need weight loss
+
+2. SGLT2 Inhibitors (Gliflozins):
+- Examples: Empagliflozin (Jardiance), Dapagliflozin (Forxiga), Canagliflozin (Invokana), Ertugliflozin
+- Mechanism: Block glucose reabsorption in proximal tubule of kidney, causing glycosuria (glucose excretion in urine)
+- HbA1c reduction: 0.5-1.0%
+- Advantages: Weight loss (2-3 kg), blood pressure reduction (3-5 mmHg systolic), cardiovascular benefit (EMPA-REG, CANVAS, DECLARE trials), renal protection (DAPA-CKD, CREDENCE trials), heart failure benefit
+- Side effects: Genital mycotic infections (yeast infections), urinary tract infections, volume depletion, rare euglycemic DKA, Fournier's gangrene (very rare)
+- Preferred for patients with heart failure or chronic kidney disease (eGFR >20 mL/min)
+- Contraindicated in Type 1 diabetes (off-label use carries DKA risk)
+
+3. DPP-4 Inhibitors (Gliptins):
+- Examples: Sitagliptin (Januvia), Vildagliptin (Galvus), Saxagliptin, Linagliptin (Tradjenta), Alogliptin
+- Mechanism: Inhibit DPP-4 enzyme that degrades endogenous GLP-1 and GIP, thereby increasing incretin levels
+- HbA1c reduction: 0.5-0.8%
+- Advantages: Weight neutral, low hypoglycemia risk, oral administration, well tolerated, no dose adjustment needed for linagliptin in renal impairment
+- Side effects: Generally well tolerated, rare pancreatitis, joint pain, possible heart failure risk with saxagliptin (SAVOR-TIMI 53 trial)
+- Useful when GLP-1 RA is not feasible (cost, injection aversion)
+
+4. Sulfonylureas:
+- Examples: Glimepiride, Gliclazide, Glipizide, Glyburide
+- Mechanism: Stimulate insulin secretion from pancreatic beta cells by closing K-ATP channels
+- HbA1c reduction: 1.0-1.5%
+- Advantages: Low cost, rapid onset, effective
+- Disadvantages: Hypoglycemia risk (especially glyburide), weight gain (2-4 kg), possible cardiovascular concerns, beta cell exhaustion over time
+- Best choice: Gliclazide MR (lower hypoglycemia risk than glyburide, ADVANCE trial)
+- Still widely used in low-resource settings due to cost
+
+5. Thiazolidinediones (TZDs):
+- Examples: Pioglitazone, Rosiglitazone
+- Mechanism: Activate PPARγ receptors, improving insulin sensitivity in adipose tissue, muscle, and liver
+- HbA1c reduction: 1.0-1.5%
+- Advantages: Durable glycemic effect, low hypoglycemia risk, pioglitazone has cardiovascular benefit (PROactive trial), beneficial effect on NAFLD
+- Disadvantages: Weight gain, fluid retention, heart failure risk, bone fractures (especially in women), bladder cancer concern with pioglitazone (debated)
+- Contraindicated in heart failure (NYHA Class III-IV)
+
+6. Insulin Therapy:
+- Required when oral agents fail to maintain glycemic control
+- Types:
+  * Basal insulin: Glargine (Lantus, Toujeo), Detemir (Levemir), Degludec (Tresiba), NPH
+  * Prandial (bolus) insulin: Lispro (Humalog), Aspart (NovoRapid), Glulisine (Apidra)
+  * Premixed: 70/30 (NPH/Regular), BiAsp 30 (NovoMix 30)
+- Starting dose for basal insulin: 10 units or 0.1-0.2 units/kg/day
+- Titrate by 2-4 units every 3-7 days based on fasting glucose
+
+TREATMENT ALGORITHM (ADA/EASD 2022 Consensus)
+
+Step 1: Lifestyle modification + Metformin (for all patients)
+
+Step 2: Add second agent based on patient profile:
+- If atherosclerotic cardiovascular disease (ASCVD): GLP-1 RA or SGLT2i (with proven CV benefit)
+- If heart failure: SGLT2i (empagliflozin or dapagliflozin)
+- If chronic kidney disease: SGLT2i (if eGFR adequate) or GLP-1 RA
+- If weight loss is priority: GLP-1 RA > SGLT2i
+- If cost is major barrier: Sulfonylurea (gliclazide) or TZD (pioglitazone)
+- If hypoglycemia is major concern: GLP-1 RA, SGLT2i, DPP-4i, or TZD
+
+Step 3: Triple therapy or insulin initiation if targets not met
+
+SPECIAL CONSIDERATIONS
+
+- Ramadan fasting: Diabetes patients who fast during Ramadan should be risk-stratified. Pre-Ramadan education, medication adjustment (dose timing, drug selection), and glucose monitoring are essential. IDF-DAR Practical Guidelines provide specific recommendations.
+- Elderly patients (≥65 years): Less stringent HbA1c targets (7.5-8.0%), avoid sulfonylureas and complex insulin regimens, prioritize safety over tight control
+- Renal impairment: Adjust metformin dose, prefer SGLT2i for renal protection, GLP-1 RA safe in most stages, avoid glyburide
+- Pregnancy: Only insulin is approved first-line; metformin may be used as alternative

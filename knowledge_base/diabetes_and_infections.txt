@@ -1,0 +1,92 @@
+Infections and Diabetes: Increased Susceptibility, Prevention and Management
+Sources: Clinical Infectious Diseases, Lancet Infectious Diseases, ADA Standards of Care 2024, WHO Vaccination Guidelines
+
+OVERVIEW
+
+Diabetes significantly increases the risk of infections due to impaired immune function. Infections are both more common and more severe in people with diabetes, leading to higher hospitalization and mortality rates. Conversely, infections worsen glycemic control through stress hormone release and inflammatory cytokines.
+
+IMMUNE DYSFUNCTION IN DIABETES
+
+Hyperglycemia impairs multiple arms of the immune system:
+1. Neutrophil dysfunction: Reduced chemotaxis, phagocytosis, and bactericidal activity when glucose >200 mg/dL
+2. Impaired complement activation: Reduced opsonization of pathogens
+3. Reduced T-cell function: Decreased CD4⁺ T-cell response, impaired cytokine production
+4. Impaired wound healing: Reduced fibroblast proliferation, angiogenesis, and collagen synthesis
+5. Glycosylation of immunoglobulins: Reduced antibody function
+6. Neuropathy: Loss of protective sensation → unrecognized trauma → portal of entry for pathogens
+7. Vascular insufficiency: Reduced blood flow → impaired delivery of immune cells and antibiotics
+
+COMMON INFECTIONS IN DIABETES
+
+Urinary Tract Infections (UTIs):
+- 2-3x more common in diabetic women
+- Risk factors: Glycosuria (bacterial nutrient), neurogenic bladder, impaired neutrophil function
+- More likely to progress to pyelonephritis and urosepsis
+- Asymptomatic bacteriuria: 2-4x more prevalent but routine screening NOT recommended (no benefit from treatment)
+- SGLT2 inhibitors may increase genital mycotic infections (not UTIs per se)
+
+Respiratory Infections:
+- Pneumonia: 1.5-2x more common; higher ICU admission rates
+- Community-acquired pneumonia: S. pneumoniae most common; also increased risk of S. aureus, Klebsiella
+- Influenza: 3-6x higher hospitalization rate in diabetes
+- Tuberculosis: 2-3x increased risk; diabetes impairs macrophage function against M. tuberculosis
+  * TB-diabetes bidirectional screening recommended by WHO in high-burden countries
+  * In Turkey: TB prevalence is declining but diabetes-TB co-management remains important
+
+Skin and Soft Tissue Infections:
+- Cellulitis, abscesses, erysipelas: More common and more severe
+- Necrotizing fasciitis: Diabetes is the strongest risk factor (mortality 20-40%)
+- Fournier's gangrene: Rare but devastating perineal necrotizing infection; associated with SGLT2 inhibitors (FDA warning)
+- Staphylococcal skin infections and carbuncles more frequent
+
+Fungal Infections:
+- Vulvovaginal candidiasis: Very common in poorly controlled diabetes and with SGLT2i use
+- Oral candidiasis (thrush): Related to xerostomia and immune impairment
+- Dermatophyte infections: Tinea pedis increases foot ulcer risk
+- Invasive fungal infections:
+  * Mucormycosis (zygomycosis): Rhinocerebral form especially in DKA; mortality 50-70%
+  * Characterized by black necrotic eschar in nasal/palatal area
+  * Emergency: Requires amphotericin B + surgical debridement
+  * COVID-associated mucormycosis (CAM) was a major concern during the pandemic in India and Turkey
+
+Diabetic Foot Infections:
+- Classified by IWGDF/IDSA:
+  * Mild: Local infection, erythema <2 cm, superficial
+  * Moderate: Erythema >2 cm, deeper than skin/subcutaneous, no systemic signs
+  * Severe: Systemic signs of infection (fever, tachycardia, elevated WBC), limb-threatening
+- Polymicrobial: Gram-positive cocci (S. aureus most common) + gram-negative rods + anaerobes in chronic wounds
+- Treatment: Antibiotics based on culture + wound care + offloading + vascular assessment
+- 85% of diabetes-related amputations are preceded by foot ulcer/infection
+- MRSA consideration: Especially in patients with prior hospitalization or antibiotic use
+
+Periodontal Infections:
+- Periodontitis prevalence 2-3x higher in diabetes
+- Bidirectional relationship: Poor oral health worsens glycemic control
+- Periodontal treatment improves HbA1c by 0.3-0.4%
+
+GLYCEMIC MANAGEMENT DURING INFECTION
+
+- Infection causes stress hyperglycemia through cortisol, glucagon, catecholamine release
+- Target glucose in hospitalized patients: 140-180 mg/dL (ICU and general ward)
+- May need to temporarily intensify insulin therapy
+- Transition from oral agents to insulin during severe infections
+- Resume oral agents when infection resolves and oral intake normalizes
+- Monitor for steroid-induced hyperglycemia if corticosteroids are used
+
+VACCINATION RECOMMENDATIONS FOR PEOPLE WITH DIABETES (ADA 2024)
+
+- Influenza: Annual vaccination (all diabetes patients ≥6 months old)
+- Pneumococcal: PCV20 or PCV15 followed by PPSV23 (all adults with diabetes aged 19-64 and ≥65)
+- Hepatitis B: 3-dose series recommended for unvaccinated adults aged 19-59 with diabetes; consider for ≥60
+- COVID-19: Primary series + recommended boosters (diabetes patients are high-risk)
+- Shingles (Herpes Zoster): Shingrix (recombinant zoster vaccine) for adults ≥50 years
+- Tdap/Td: Standard adult recommendations apply
+- RSV: For adults ≥60 years (shared decision-making)
+
+PERIOPERATIVE GLUCOSE MANAGEMENT
+
+- Preoperative: Optimize HbA1c <8.5% if possible; postpone elective surgery if DKA or HHS
+- Day of surgery: Hold oral agents, hold or reduce insulin (protocols vary)
+- Intraoperative: Insulin infusion if glucose >180 mg/dL; target 140-180 mg/dL
+- Postoperative: Resume subcutaneous insulin when eating; restart oral agents when stable
+- Surgical site infection risk is 2-3x higher in poorly controlled diabetes

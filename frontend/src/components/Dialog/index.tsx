@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 type DialogProps = React.HTMLAttributes<HTMLDivElement> & {
   isOpen: boolean;
-  isLocked?: boolean; // kapanabilir olup olmadığını kontrol eder (true => kapatılamaz)
+  isLocked?: boolean;
   title?: string;
   onClose: () => void;
 };
@@ -22,15 +22,13 @@ export const Dialog = ({
 
   if (!isOpen) return null;
 
-  // const handleOverlayClick = () => {
-  //   if (!isLocked) {
-  //     onClose();
-  //   }
-  // };
+  const handleOverlayClick = (e: React.MouseEvent) => {
+    if (!isLocked && e.target === overlayRef.current) {
+      onClose();
+    }
+  };
 
-  // en önde ve doğru yerde gözüksün diye portal kullandık, bu sayede diğer div'lere sıkışmayacak
   return createPortal(
-    // Tüm ekranı kaplayacak olan ana div, "boş gözükecek" kısımlar da dahil
     <div
       ref={overlayRef}
       className={cn(
@@ -38,7 +36,7 @@ export const Dialog = ({
          animate-in fade-in duration-200`,
         !isLocked ? "bg-black/10" : "bg-black/30 backdrop-blur-2xl",
       )}
-      // onClick={handleOverlayClick}
+      onClick={handleOverlayClick}
     >
       {/* Asıl dialog'u oluşturan kısım */}
       <div className={cn("bg-card shadow-xl rounded-xl ")}>

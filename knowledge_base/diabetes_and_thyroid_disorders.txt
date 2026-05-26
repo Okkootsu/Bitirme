@@ -1,0 +1,111 @@
+Thyroid Disorders and Diabetes Comorbidity
+Sources: Endocrine Reviews, ADA Standards of Care 2024, European Thyroid Association (ETA) Guidelines, Thyroid Journal
+
+OVERVIEW
+
+Thyroid disorders and diabetes frequently coexist. The association is strongest between Type 1 diabetes and autoimmune thyroid disease, but thyroid dysfunction also significantly affects glycemic control in Type 2 diabetes. Thyroid function testing is an important component of comprehensive diabetes care.
+
+EPIDEMIOLOGY
+
+Type 1 Diabetes and Thyroid Disease:
+- Autoimmune thyroid disease (AITD) is the most common autoimmune comorbidity in T1DM
+- Prevalence of thyroid autoantibodies (anti-TPO, anti-Tg) in T1DM: 15-30%
+- Clinical hypothyroidism in T1DM: 5-10% (vs 2-5% in general population)
+- Hyperthyroidism (Graves' disease) in T1DM: 1-2%
+- Shared genetic susceptibility: HLA-DR3, HLA-DR4, CTLA-4, PTPN22 gene variants
+- Autoimmune polyglandular syndrome (APS) Type 2: T1DM + Hashimoto's + Addison's disease
+
+Type 2 Diabetes and Thyroid Disease:
+- Subclinical hypothyroidism prevalence in T2DM: 10-15%
+- Clinical hypothyroidism: 5-8%
+- Thyroid nodules: More common in metabolic syndrome and T2DM (insulin and IGF-1 as thyroid growth factors)
+- Thyroid cancer: Slightly increased risk in T2DM (1.2-1.5x)
+
+HYPOTHYROIDISM AND DIABETES
+
+Effects on glucose metabolism:
+- Reduced glucose absorption from gut
+- Decreased hepatic glucose output
+- Reduced insulin clearance → relative hyperinsulinemia
+- Increased insulin resistance (especially in overt hypothyroidism)
+- Net effect: Variable — may cause hypoglycemia (reduced glucose production) or hyperglycemia (insulin resistance)
+- HbA1c may be falsely elevated in hypothyroidism (reduced red blood cell turnover)
+
+Clinical impact:
+- Worsened lipid profile: Elevated LDL, total cholesterol, triglycerides
+- Increased cardiovascular risk (already elevated in diabetes)
+- Weight gain and difficulty losing weight
+- Fatigue, cold intolerance, constipation overlap with diabetes symptoms
+
+Treatment:
+- Levothyroxine replacement (standard dose: 1.6 mcg/kg/day)
+- Start low in elderly and those with cardiac disease (25-50 mcg/day)
+- TSH target: 0.5-4.0 mU/L for most adults; 1.0-3.0 for those on treatment
+- Monitor glycemic control after starting levothyroxine (may need diabetes medication adjustment)
+- Metformin may lower TSH levels (mechanism unclear); recheck TSH after metformin initiation/discontinuation
+
+HYPERTHYROIDISM AND DIABETES
+
+Effects on glucose metabolism:
+- Increased hepatic glucose production (gluconeogenesis, glycogenolysis)
+- Increased intestinal glucose absorption
+- Accelerated insulin degradation
+- Increased peripheral glucose utilization but net hyperglycemia
+- Can unmask latent diabetes or worsen existing diabetes
+- May precipitate DKA in T1DM
+
+Clinical impact:
+- Significant worsening of glycemic control
+- Weight loss despite increased appetite
+- Increased insulin requirements (may need 50-100% dose increase)
+- Tachycardia, tremor, anxiety (overlap with hypoglycemia symptoms — important distinction)
+- Graves' ophthalmopathy may coexist with diabetic retinopathy
+
+Treatment:
+- Antithyroid drugs (methimazole, propylthiouracil)
+- Radioactive iodine therapy
+- Surgery (thyroidectomy)
+- After treatment: Hypothyroidism is common; glucose control may improve significantly
+- Adjust diabetes medications as thyroid function normalizes
+
+SUBCLINICAL THYROID DYSFUNCTION
+
+Subclinical hypothyroidism (elevated TSH, normal free T4):
+- Common in diabetes (10-15%)
+- May worsen insulin resistance and lipid profile
+- Treatment: Consider if TSH >10 mU/L, or TSH 5-10 with symptoms or positive TPO antibodies
+- Monitor every 6-12 months if not treating
+
+Subclinical hyperthyroidism (suppressed TSH, normal free T4/T3):
+- Less common (1-2%)
+- Associated with atrial fibrillation risk and bone loss
+- Treatment based on degree of TSH suppression and symptoms
+
+SCREENING RECOMMENDATIONS
+
+ADA 2024 recommendations:
+- Type 1 Diabetes:
+  * Screen TSH at diagnosis
+  * Repeat TSH annually or with symptoms
+  * Consider anti-TPO antibodies at diagnosis to assess future risk
+  * Screen for other autoimmune conditions (celiac disease, Addison's)
+
+- Type 2 Diabetes:
+  * No routine screening recommended for all T2DM patients
+  * Check TSH if symptoms of thyroid dysfunction, dyslipidemia not responding to treatment, unexplained glycemic variability, or goiter on exam
+  * Consider screening in women with T2DM (higher prevalence)
+
+SICK EUTHYROID SYNDROME (Non-Thyroidal Illness)
+
+- Abnormal thyroid function tests during acute illness WITHOUT true thyroid disease
+- Pattern: Low T3, low or normal T4, low or normal TSH
+- Common in hospitalized patients with diabetes (DKA, HHS, severe infections)
+- No treatment with thyroid hormone needed (resolves with recovery)
+- Do NOT diagnose thyroid disease based on tests during acute illness; recheck 6-8 weeks after recovery
+
+MEDICATION INTERACTIONS
+
+- Metformin: May lower TSH in patients with hypothyroidism; mechanism debated (central effect vs peripheral)
+- Levothyroxine absorption: Reduced by calcium, iron, PPIs (common in diabetes patients); take on empty stomach, 30-60 minutes before breakfast
+- GLP-1 RAs: Liraglutide and semaglutide carry a thyroid C-cell tumor warning based on rodent studies; no human signal confirmed; contraindicated in personal/family history of medullary thyroid cancer (MTC) or MEN2
+- Pioglitazone: May increase thyroid-stimulating antibodies in some studies (clinical significance unclear)

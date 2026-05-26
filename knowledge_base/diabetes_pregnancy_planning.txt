@@ -1,0 +1,30 @@
+Diyabette Gebelik Planlamasi ve Prekonsepsiyon Bakimi
+Source: American College of Obstetricians and Gynecologists (ACOG); NICE Diabetes in Pregnancy Guidelines; Turkiye Endokrinoloji ve Metabolizma Dernegi Gebelik Kilavuzu
+
+PREKONSEPSIYON BAKIM ONEMI
+
+Diyabetli kadinlarda gebelik oncesi bakim, anne ve bebek sagligini dogrudan etkiler. Plansiz gebeliklerde konjenital anomali riski %6-12 iken, optimize edilmis prekonsepsiyon bakim ile bu oran %1-2'ye duser. Gebelik oncesinde HbA1c hedefi %6.5 altina (ideal olarak %6.0 altina) dusurulmelidir. HbA1c %10 uzeri iken gebelik onerılmez cunku konjenital anomali riski %20-25'e yukselir. Gebelik planlamasi en az 3-6 ay oncesinden baslamalidir. Bu surecte endokrinolog, kadin dogum uzmani, diyabet egitim hemşiresi ve beslenme uzmani iceren multidisipliner bir ekip olusturulmalidir.
+
+GLISEMIK HEDEFLER VE IZLEM
+
+Gebelik sirasinda kan sekeri hedefleri genel diyabet hedeflerinden daha sikidir. Aclik kan sekeri 70-95 mg/dL, yemekten 1 saat sonra 140 mg/dL alti, yemekten 2 saat sonra 120 mg/dL alti hedeflenir. Gunluk kan sekeri olcumu en az 6-7 kez yapilmalidir (aclik, her ogun oncesi ve sonrasi, yatmadan once). Surekli glikoz monitorizasyonu (CGM) gebelikte giderek daha yaygin kullanilmaktadir; CONCEPTT calismasinda CGM kullanan gebelerde neonatal sonuclarin %50 daha iyi oldugu gosterilmistir. HbA1c gebelik boyunca aylik olarak takip edilmeli ve %6.0-6.5 arasinda tutulmalidir.
+
+ILAC DEGISIKLIKLERI
+
+Gebelik oncesinde ve sirasinda bazi diyabet ilaclarinin degistirilmesi gerekir. Metformin gebelikteki guvenliligi tartismali olmakla birlikte bazi kilavuzlar ilk trimesterde devam edilebilecegini belirtmektedir. Sulfonilueler genellikle kesilir ve insuline gecilir. SGLT2 inhibitorleri ve GLP-1 reseptor agonistleri gebelikte kontrendikedir ve en az 2 ay once kesilmelidir. Insulin, gebelikte en guvenli tedavi secenegidir. Tip 2 diyabetli kadinlarin buyuk cogunlugu gebelik oncesinde veya erken gebelikte insulin tedavisine gecirilir. ACE inhibitorleri ve ARB'ler (tansıyon ilaclari) teratojenik oldugu icin gebelik oncesinde kesilmeli ve alternatif antihipertansiflerle (metildopa, labetalol, nifedipin) degistirilmelidir. Statinler de gebelikte kontrendikedir.
+
+FETAL RISKLER VE KOMPLIKASYONLAR
+
+Kontrolsuz maternal diyabet fetus uzerinde ciddi etkilere sahiptir. Konjenital anomaliler (ozellikle kardiyak defektler, noral tup defektleri ve iskelet anomalileri) en ciddi risktir ve organogenez doneminde (gebeligin 3-8. haftasi) hiperglisemiye maruziyetle iliskilidir. Makrozomi (dogum agirligi 4000 gram uzerinde) diyabetli annelerin bebeklerinin %25-40'inda gorulur ve omuz distosisi, dogum yaralanmalari ve sezaryen oranlarini artirir. Neonatal hipoglisemi, bebeklerin %15-25'inde gorulur cunku fetus yuksek maternal glikoza karsi artmis insulin salgilimi gelistirmistir. Polihidramnios, prematüre dogum ve intrauterin fetal olum riskleri de artmistir.
+
+TIP 1 DIYABETTE OZEL DURUMLAR
+
+Tip 1 diyabetli gebelerde insulin ihtiyaci gebelik boyunca onemli olcude degisir. Ilk trimesterde insulin ihtiyaci azalabilir ve hipoglisemi riski artar. Ikinci ve ucuncu trimesterde plasental hormonlar (ozellikle insan plasental laktojen) insulin direncini artirarak insulin ihtiyacini %50-100 kadar yukselitir. Diyabetik ketoasidoz (DKA) gebelikte daha dusuk kan sekeri duzeylerinde gelisebilir ve fetal mortalite orani %10-35'tir. Tip 1 diyabetli kadinlarda tiroid otoimmunitesi taranmalidir cunku Hashimoto tiroiditi birlikte gorulme orani %15-20'dir.
+
+GESTASYONEL DIYABET TARAMASI
+
+Onceden diyabeti olmayan kadinlarda gestasyonel diyabet taramasi genellikle 24-28. haftalarda yapilir. Ancak risk faktorleri olan kadinlarda (obezite, aile hikayesi, daha onceki gestasyonel diyabet, 35 yas uzeri, polikistik over sendromu) ilk prenatal vizitte erken tarama onerilir. Turkiye'de 75 gram oral glikoz tolerans testi (OGTT) en yaygin tarama yontemidir. Gestasyonel diyabet tanisi alan kadinlarin %50'sinde 5-10 yil icinde Tip 2 diyabet gelisir; bu nedenle dogum sonrasi takip ve yasam tarzi mudahalesi kritiktir.
+
+DOGUM SONRASI BAKIM
+
+Dogum sonrasinda insulin ihtiyaci hizla duser ve gebelik oncesi dozlarin %50'sine veya altina inilebilir. Emzirme kan sekerini dusurur ve gunluk enerji ihtiyacini 300-500 kalori artirir; hipoglisemiyi onlemek icin emzirme oncesi atistirmalik tuketilmesi onerilir. Emzirmenin Tip 2 diyabet riskini %15-25 azalttigi gosterilmistir. Kontrasepsiyon planlamasi dogum oncesinden baslamalidir; kombine oral kontraseptifler vaskuler komplikasyonu olmayan diyabetli kadinlarda kullanilabilir. Sonraki gebelik planlamasi icin en az 12-18 ay aralik onerilir.

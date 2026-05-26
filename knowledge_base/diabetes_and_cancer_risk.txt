@@ -1,0 +1,100 @@
+Cancer Risk in Diabetes
+Sources: Diabetes Care (ADA), Lancet Oncology, ADA/ACS Joint Consensus Report, NEJM, BMJ
+
+OVERVIEW
+
+Type 2 diabetes is associated with a 10-20% increased overall cancer risk. The relationship is complex, involving shared risk factors (obesity, physical inactivity), direct biological mechanisms (hyperinsulinemia, hyperglycemia, chronic inflammation), and potential effects of diabetes medications on cancer biology.
+
+EPIDEMIOLOGICAL EVIDENCE
+
+Cancers with INCREASED risk in T2DM:
+- Hepatocellular carcinoma (HCC): 2.0-2.5x increased risk (strongest association)
+- Pancreatic cancer: 1.5-2.0x increased risk (bidirectional: pancreatic cancer can also cause diabetes)
+- Endometrial cancer: 2.0-2.1x increased risk
+- Colorectal cancer: 1.3x increased risk
+- Breast cancer (postmenopausal): 1.2x increased risk
+- Bladder cancer: 1.3x increased risk
+- Non-Hodgkin lymphoma: 1.2x increased risk
+- Kidney cancer: 1.4x increased risk
+
+Cancers with NO clear increased risk or DECREASED risk in T2DM:
+- Prostate cancer: Possibly decreased risk (lower testosterone levels in T2DM men)
+- Lung cancer: No clear independent association after adjusting for smoking
+
+Type 1 Diabetes and Cancer:
+- Less studied; overall cancer risk modestly increased
+- Associations with stomach, cervical, and endometrial cancers reported
+- Cervical cancer: possibly related to immunosuppression
+
+BIOLOGICAL MECHANISMS
+
+1. Hyperinsulinemia and IGF-1 pathway:
+   - Insulin is a growth factor; chronic hyperinsulinemia promotes cell proliferation
+   - Insulin increases bioavailability of IGF-1 (Insulin-like Growth Factor 1)
+   - IGF-1 promotes cell growth, inhibits apoptosis, and stimulates angiogenesis
+   - Insulin receptors (especially IR-A isoform) are overexpressed in many cancer cells
+
+2. Hyperglycemia:
+   - Cancer cells preferentially use glucose (Warburg effect)
+   - Elevated glucose may fuel tumor growth
+   - Hyperglycemia induces oxidative stress and DNA damage
+   - Advanced glycation end products (AGEs) activate NF-κB and promote inflammation
+
+3. Chronic inflammation:
+   - T2DM is a state of chronic low-grade inflammation
+   - Elevated IL-6, TNF-α, CRP promote tumor microenvironment
+   - Adipose tissue (especially visceral fat) secretes inflammatory adipokines
+
+4. Obesity as shared risk factor:
+   - Obesity independently increases cancer risk (endometrial, breast, colorectal, liver, kidney)
+   - Excess adipose tissue → increased aromatase activity → higher estrogen levels → breast and endometrial cancer
+   - Obesity and T2DM share 60-80% of the cancer risk attribution
+
+DIABETES MEDICATIONS AND CANCER
+
+Potentially protective:
+- Metformin: Most studied; observational data suggest 10-40% reduced cancer risk
+  * Mechanisms: AMPK activation, mTOR inhibition, reduced insulin levels, anti-inflammatory
+  * Multiple ongoing clinical trials (CAPTURE, OPTIMIZE)
+  * Strongest signal: Colorectal, liver, and pancreatic cancer risk reduction
+  * Note: Observational data may have time-related biases; RCT data still maturing
+
+- GLP-1 receptor agonists: No increased cancer risk in cardiovascular outcome trials
+  * Early concern about thyroid C-cell tumors based on rodent data; not confirmed in humans
+  * SELECT trial (semaglutide): No cancer signal
+
+- SGLT2 inhibitors: No increased cancer risk in RCTs and meta-analyses
+
+Neutral:
+- DPP-4 inhibitors: No significant cancer association
+- Thiazolidinediones: Pioglitazone — possible slight increase in bladder cancer risk (controversial; FDA removed warning in 2016 after further analysis)
+
+Insulin therapy:
+- Exogenous insulin (especially at high doses) may theoretically increase cancer risk through mitogenic effects
+- Insulin glargine was initially suspected of increased cancer risk (ORIGIN trial found no association over 6 years)
+- No clear evidence that any specific insulin analogue increases cancer risk
+
+CANCER SCREENING RECOMMENDATIONS
+
+People with diabetes should follow standard cancer screening guidelines:
+- Colorectal: Colonoscopy starting at age 45, every 10 years (or stool-based testing)
+- Breast: Mammography every 1-2 years for women 50-74
+- Cervical: Pap smear/HPV testing per guidelines
+- Liver (HCC): Ultrasound ± AFP every 6 months for patients with cirrhosis or chronic hepatitis
+- Pancreatic: No routine screening; consider in new-onset diabetes >50 years with unexplained weight loss
+
+Red flags for pancreatic cancer in diabetes:
+- New-onset diabetes after age 50 with no family history or obesity
+- Unexplained weight loss (>5% in 6 months)
+- Sudden worsening of previously well-controlled diabetes
+- Abdominal or back pain with new diabetes
+
+DIABETES MANAGEMENT DURING CANCER TREATMENT
+
+- Chemotherapy: Frequent glucose monitoring; adjust insulin for nausea/vomiting/appetite changes
+- Corticosteroids (dexamethasone, prednisone): Cause significant hyperglycemia; often requires temporary insulin therapy
+  * Steroid-induced hyperglycemia: Predominantly postprandial; NPH insulin or basal-bolus adjustment needed
+- Immunotherapy: Checkpoint inhibitors can cause autoimmune diabetes (T1DM-like, rapid onset, DKA possible)
+- Radiation therapy: Usually minimal glycemic effect unless involving pancreas or liver
+- Surgical resection: Standard perioperative glucose management
+- Palliative care: Simplify diabetes management; avoid hypoglycemia; quality of life priority

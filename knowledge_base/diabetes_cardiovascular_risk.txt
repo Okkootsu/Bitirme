@@ -1,0 +1,99 @@
+Diabetes and Cardiovascular Disease
+Sources: ADA Standards of Care 2024, ESC/EASD Guidelines 2023, Framingham Heart Study, UKPDS, EMPA-REG OUTCOME, LEADER Trial
+
+OVERVIEW
+
+Cardiovascular disease (CVD) is the leading cause of morbidity and mortality in people with diabetes. Adults with diabetes have a 2-4 fold increased risk of cardiovascular events compared to those without diabetes. Approximately 50-80% of deaths in people with diabetes are attributable to cardiovascular causes.
+
+CARDIOVASCULAR RISK IN DIABETES
+
+Macrovascular complications:
+- Coronary artery disease (CAD): 2-4x increased risk
+- Cerebrovascular disease (stroke): 2-3x increased risk
+- Peripheral arterial disease (PAD): 4-8x increased risk
+- Heart failure: 2-5x increased risk (independent of CAD)
+
+Key statistics:
+- People with T2DM without prior MI have similar CV risk to non-diabetic individuals with prior MI ("coronary heart disease equivalent")
+- Women with diabetes lose their usual cardiovascular protection compared to men
+- CVD risk begins during the prediabetes stage
+- Every 1% increase in HbA1c is associated with approximately 18% increased risk of cardiovascular events (UKPDS)
+
+PATHOPHYSIOLOGY OF DIABETIC CARDIOVASCULAR DISEASE
+
+1. Accelerated atherosclerosis:
+- Endothelial dysfunction (reduced nitric oxide bioavailability)
+- Increased oxidative stress and inflammation
+- Advanced Glycation End-products (AGEs) modify LDL and collagen
+- Glycated LDL is more atherogenic and not recognized by normal LDL receptors
+- Increased VLDL production and small dense LDL particles
+
+2. Diabetic cardiomyopathy:
+- Direct myocardial damage independent of coronary artery disease or hypertension
+- Mechanisms: lipotoxicity, glucotoxicity, microvascular disease, fibrosis, autonomic dysfunction
+- Leads to diastolic dysfunction initially, then systolic dysfunction
+
+3. Prothrombotic state:
+- Increased platelet aggregation and adhesion
+- Elevated fibrinogen, PAI-1, and von Willebrand factor
+- Decreased fibrinolysis
+- Increased risk of thrombus formation
+
+4. Diabetic dyslipidemia:
+- Characteristic pattern: High triglycerides, low HDL-C, elevated small dense LDL
+- Even with normal total LDL, the particle composition is more atherogenic
+- VLDL overproduction driven by insulin resistance and hepatic steatosis
+
+RISK FACTOR MANAGEMENT
+
+1. Glycemic Control:
+- HbA1c <7% reduces microvascular complications significantly
+- Intensive glycemic control has modest macrovascular benefit (UKPDS legacy effect seen after 10+ years)
+- Avoid aggressive glycemic targets in patients with established CVD (ACCORD trial: increased mortality with HbA1c <6.0% target)
+- Prioritize medications with proven CV benefit: GLP-1 RAs, SGLT2 inhibitors
+
+2. Blood Pressure Management:
+- Target: <130/80 mmHg for most patients with diabetes (ADA 2024)
+- First-line: ACE inhibitors or ARBs (preferred due to renoprotective effects)
+- Additional agents: Calcium channel blockers, thiazide diuretics
+- Beta-blockers: Use for specific indications (post-MI, heart failure, rate control)
+- ACE/ARB combination contraindicated (ONTARGET trial)
+
+3. Lipid Management:
+- Statin therapy recommended for virtually all adults with diabetes:
+  * Age 40-75 without ASCVD: Moderate-intensity statin (atorvastatin 10-20mg, rosuvastatin 5-10mg)
+  * Age 40-75 with ASCVD: High-intensity statin (atorvastatin 40-80mg, rosuvastatin 20-40mg)
+  * LDL target in very high risk: <55 mg/dL (ESC/EAS), <70 mg/dL (ADA)
+- If LDL not at goal on max statin: Add ezetimibe, then consider PCSK9 inhibitor
+- Triglycerides >500 mg/dL: Fibrate or icosapent ethyl to prevent pancreatitis
+- Icosapent ethyl (EPA): REDUCE-IT trial showed 25% reduction in CV events in high-risk patients on statins with TG 150-499 mg/dL
+
+4. Antiplatelet Therapy:
+- Aspirin (75-162 mg/day): Recommended for secondary prevention in all patients with ASCVD
+- Primary prevention: Consider aspirin in patients with high CV risk (10-year ASCVD risk >20%) and low bleeding risk
+- Dual antiplatelet therapy (aspirin + clopidogrel/ticagrelor): After acute coronary syndrome or PCI, typically for 12 months
+
+5. Smoking Cessation:
+- Smoking cessation is the single most impactful lifestyle modification for CV risk reduction
+- Diabetes patients who smoke have 2-3x additional CV risk beyond diabetes alone
+- Offer pharmacotherapy: Varenicline, bupropion, nicotine replacement therapy
+
+HEART FAILURE AND DIABETES
+
+- Heart failure affects approximately 22% of people with T2DM
+- SGLT2 inhibitors are now standard of care for heart failure in diabetes:
+  * Empagliflozin: EMPEROR-Reduced and EMPEROR-Preserved trials
+  * Dapagliflozin: DAPA-HF trial
+  * Benefits seen in both HFrEF (reduced ejection fraction) and HFpEF (preserved EF)
+  * 25-30% reduction in heart failure hospitalization
+- Avoid TZDs (pioglitazone, rosiglitazone) in heart failure
+- Metformin is safe in stable heart failure (previously contraindicated, now reconsidered)
+- Saxagliptin: Caution due to possible increased HF hospitalization (SAVOR-TIMI 53)
+
+SCREENING RECOMMENDATIONS
+
+- Annual assessment of cardiovascular risk factors (lipids, blood pressure, smoking status, weight)
+- Resting ECG for patients with hypertension or suspected CVD
+- Ankle-brachial index (ABI) for PAD symptoms
+- Coronary artery calcium (CAC) scoring can refine risk in intermediate-risk patients
+- Stress testing only if symptoms suggestive of CAD or high pre-test probability

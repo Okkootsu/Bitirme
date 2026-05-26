@@ -1,0 +1,30 @@
+Insulin Pump Therapy for Diabetes Management
+Source: ADA Technology in Diabetes Standards 2024; NICE Technology Appraisal TA151; TEMD Insulin Pump Guidelines
+
+INSULIN PUMP BASICS
+
+Insulin pump therapy, also known as continuous subcutaneous insulin infusion (CSII), delivers rapid-acting insulin through a small catheter (infusion set) inserted into the subcutaneous tissue. The pump replaces the need for multiple daily injections by providing a continuous basal rate of insulin throughout the day and user-activated bolus doses before meals and for correction of high blood glucose. Modern insulin pumps are computerized devices roughly the size of a small smartphone, weighing 80 to 120 grams. Pumps deliver insulin in precise increments as small as 0.025 units per hour, enabling fine-tuned glycemic control impossible with syringe or pen injections. Over 500,000 people worldwide use insulin pumps, with the majority having type 1 diabetes.
+
+ADVANTAGES OVER MULTIPLE DAILY INJECTIONS
+
+Clinical evidence demonstrates that insulin pump therapy reduces HbA1c by 0.3 to 0.7 percentage points compared to multiple daily injections (MDI) while simultaneously reducing severe hypoglycemia by 40 to 75 percent. Pumps allow variable basal rates to match circadian insulin needs, such as increased rates during the dawn phenomenon (typically 4 AM to 8 AM) and reduced rates during exercise. Bolus calculators integrated into pumps use programmed insulin sensitivity factors, carbohydrate ratios, and insulin-on-board calculations to recommend precise doses, reducing dosing errors. The flexibility to eat at irregular times, adjust for illness, and manage variable physical activity levels significantly improves quality of life.
+
+TYPES OF INSULIN PUMPS
+
+Tubed pumps (Medtronic MiniMed 780G, Tandem t:slim X2) connect to the body via 30 to 110 cm tubing attached to an infusion set. They are worn on the belt, in a pocket, or clipped to clothing. Patch pumps (Omnipod 5, Accu-Chek Solo) adhere directly to the skin without external tubing, controlled wirelessly by a handheld device or smartphone. Hybrid closed-loop systems (also called automated insulin delivery or artificial pancreas) combine an insulin pump with a CGM, using algorithms to automatically adjust basal insulin delivery based on real-time glucose readings. These systems can increase, decrease, or suspend insulin delivery without user intervention, keeping glucose in range 70 to 80 percent of the time.
+
+DAILY MANAGEMENT AND BEST PRACTICES
+
+Infusion sets should be changed every 2 to 3 days (for steel needle sets) or every 3 days (for Teflon cannula sets) to prevent site infections and insulin absorption degradation. Infusion sites should be rotated systematically across the abdomen, upper buttocks, upper thighs, and outer arms to prevent lipohypertrophy. Reservoir refills require aseptic technique and inspection for air bubbles. Basal rate testing involves fasting during specific time blocks (morning, afternoon, evening, overnight) to verify that blood glucose remains stable without food or bolus insulin. Carbohydrate counting accuracy is essential for effective bolus dosing, and patients should receive comprehensive training from a diabetes educator.
+
+TROUBLESHOOTING COMMON PROBLEMS
+
+Unexplained hyperglycemia is the most common pump issue and should prompt systematic evaluation: check the infusion site for redness, swelling, or dislodgement; inspect tubing for kinks, air bubbles, or disconnections; verify that the reservoir contains insulin and the pump is delivering; and consider insulin degradation from heat exposure. If glucose remains above 250 mg/dL after troubleshooting, administer a correction dose via syringe or pen, change the complete infusion set, and monitor closely. Infusion site infections (redness, warmth, pain, pus) require immediate site change, warm compresses, and potentially oral antibiotics. Pump malfunction requires reverting to a backup MDI regimen, which all pump users should have documented and carry supplies for.
+
+COST AND INSURANCE COVERAGE
+
+Insulin pump systems cost approximately 5,000 to 8,000 USD for the pump device (replaced every 4 years on warranty), plus monthly supplies (infusion sets, reservoirs, insulin) averaging 200 to 400 USD. In Turkey, SGK (Sosyal Guvenlik Kurumu) covers insulin pump therapy for patients with type 1 diabetes who meet specific criteria: HbA1c above 8 percent despite optimized MDI therapy, recurrent severe hypoglycemia, or significant dawn phenomenon unresponsive to MDI adjustments. The endocrinologist must submit a detailed medical report and pump therapy is initiated at designated diabetes centers. SGK covers the pump device and quarterly supply allocations. For type 2 diabetes, pump coverage is extremely limited and generally not provided by SGK.
+
+CANDIDATE SELECTION AND TRAINING
+
+Ideal pump candidates are motivated, willing to perform frequent blood glucose monitoring (or use CGM), proficient in carbohydrate counting, and committed to the demands of pump management. Pump initiation requires 2 to 5 days of intensive education covering pump operation, infusion set changes, basal rate programming, bolus calculations, troubleshooting, sick day management, and emergency procedures. Follow-up visits at 1 week, 1 month, and 3 months post-initiation allow for basal rate optimization and advanced feature training. Psychological readiness assessment is recommended, as wearing a visible device can impact body image and daily activities. Patients should trial a saline-filled pump for 1 to 3 days before insulin initiation to build familiarity.

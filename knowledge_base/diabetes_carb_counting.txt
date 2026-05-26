@@ -1,0 +1,30 @@
+Advanced Carbohydrate Counting for Diabetes
+Source: American Diabetes Association; Joslin Diabetes Center Advanced Carb Counting Program; Diabetes Technology and Therapeutics; DAFNE (Dose Adjustment for Normal Eating) Study
+
+FUNDAMENTALS OF CARB COUNTING
+
+Carbohydrate counting is the primary dietary strategy for people using insulin, whether through injections or an insulin pump. All digestible carbohydrates convert to glucose, making accurate carb counting essential for matching insulin doses to food intake. One carbohydrate serving equals 15 grams and raises blood glucose by approximately 30-50 mg/dL in an adult without sufficient insulin coverage. Basic carb counting involves tracking total carbohydrate grams consumed at each meal to maintain consistency. Advanced carb counting involves calculating precise insulin doses based on the carbohydrate content of each meal using individualized insulin-to-carb ratios. The DAFNE trial demonstrated that advanced carb counting reduced HbA1c by 1.0% while improving quality of life and reducing hypoglycemia episodes.
+
+INSULIN-TO-CARB RATIOS
+
+The insulin-to-carb ratio (ICR) indicates how many grams of carbohydrate are covered by one unit of rapid-acting insulin. A common starting ratio is 1:10 (1 unit per 10 grams of carbs), but individual ratios range from 1:5 to 1:25 depending on insulin sensitivity, body weight, and physical activity. The 500 Rule provides an estimate: divide 500 by the total daily insulin dose. For example, if total daily insulin is 50 units, ICR = 500/50 = 1:10. ICR often varies throughout the day, with many people needing a stronger ratio at breakfast (e.g., 1:8) due to dawn phenomenon hormones and a weaker ratio at lunch (e.g., 1:12). Fine-tuning requires systematic testing: eat a measured meal, bolus with the calculated dose, and check blood sugar 2-4 hours later. If consistently high, decrease the ratio; if consistently low, increase it.
+
+CALCULATING CARBS IN COMMON FOODS
+
+Precision improves with practice and tools. A digital kitchen scale is the most accurate method: weigh the food in grams, then use a carb factor (grams of carb per gram of food). For bread, the carb factor is approximately 0.50 (a 60g slice contains about 30g carbs). For cooked rice, the factor is 0.28 (100g cooked rice contains 28g carbs). For cooked pasta, approximately 0.25. For potatoes, approximately 0.17. For fruits, factors vary: apple 0.14, banana 0.23, orange 0.12. Smartphone apps like MyFitnessPal, Carbs and Cali, and FatSecret provide extensive databases. The USDA FoodData Central website offers the most comprehensive nutritional data. For packaged foods, always verify the serving size on the nutrition label and calculate for the actual amount consumed.
+
+HIDDEN CARBOHYDRATES
+
+Many foods contain carbohydrates that are easy to overlook. Sauces and condiments: ketchup (4g per tablespoon), barbecue sauce (7g per tablespoon), teriyaki sauce (7g per tablespoon), honey mustard (5g per tablespoon). Dairy: milk (12g per cup), flavored yogurt (25-40g per container). Vegetables that count: corn (15g per half cup), peas (11g per half cup), baked potato (37g per medium), sweet potato (24g per medium), winter squash (15g per cup). Breading and coatings on fried foods add 15-25g per serving. Soups thickened with flour or starch contain 15-20g per cup. Marinades with sugar, honey, or fruit juice contribute 5-10g per serving. Even medications can contain carbohydrates: liquid cough syrups may have 5-10g of sugar per dose, and some chewable tablets contain 1-2g each.
+
+DINING OUT STRATEGIES
+
+Restaurant meals are the biggest challenge for carb counting because portions are larger and preparation methods are unknown. General strategies include: research the menu online in advance, as many chain restaurants now provide nutritional information. Ask for sauces and dressings on the side. Request that starchy sides be replaced with extra vegetables. Estimate plate portions using the hand method (fist = 1 cup of carbs). When in doubt, overestimate carbs by 10-20% and be prepared to correct with a small bolus if needed. Common restaurant estimates: a dinner roll is 25-30g, a cup of rice is 45g, a medium baked potato is 37g, a typical pasta serving is 60-75g, and a flour tortilla is 25-35g. For Turkish restaurants, estimate pide at 50-60g per portion, lahmacun at 30-35g per piece, and a standard bread basket at 15-20g per slice.
+
+FAT AND PROTEIN EFFECTS ON INSULIN DOSING
+
+High-fat and high-protein meals require modified insulin dosing because fat slows glucose absorption (causing delayed blood sugar rise 3-6 hours after eating) and excess protein converts to glucose through gluconeogenesis. The Warsaw Method recommends calculating additional insulin for fat and protein: for every 100 calories from fat and protein combined beyond what is typical, add insulin equivalent to 10g of carbohydrates delivered as an extended bolus over 3-5 hours. For example, a pizza meal may require splitting the bolus: 60% immediately for the carbs and 40% extended over 3-4 hours to cover the delayed fat effect. Insulin pump users can program dual-wave or square-wave boluses. For those on injections, a small correction dose 3 hours after high-fat meals may be necessary.
+
+TOOLS AND TECHNOLOGY
+
+Continuous glucose monitors (CGMs) have revolutionized carb counting by providing real-time feedback on how accurately meals were counted. Post-meal CGM trends show whether the bolus was appropriate within 90 minutes. Automated insulin delivery systems (hybrid closed-loop pumps) can partially compensate for carb counting errors but still require accurate meal announcements for optimal performance. Bolus calculator apps integrate ICR, correction factor, and insulin-on-board to recommend precise doses. Keeping a detailed food and blood sugar log for 2-4 weeks identifies patterns and improves estimation accuracy over time.

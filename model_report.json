@@ -1,0 +1,103 @@
+{
+  "dataset": "BRFSS Diabetes Health Indicators 2015 (50/50 split)",
+  "dataset_size": 70692,
+  "features": [
+    "HighBP",
+    "HighChol",
+    "BMI",
+    "Smoker",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "GenHlth",
+    "DiffWalk",
+    "Sex",
+    "Age"
+  ],
+  "ensemble_models": [
+    "RandomForest",
+    "XGBoost",
+    "LogisticRegression"
+  ],
+  "calibration": "isotonic",
+  "test_metrics": {
+    "accuracy": 0.7477,
+    "precision": 0.7259,
+    "recall": 0.796,
+    "f1_score": 0.7593,
+    "auc_roc": 0.8263,
+    "brier_score": 0.169
+  },
+  "all_model_comparison": {
+    "LogisticRegression": {
+      "accuracy": 0.7458,
+      "precision": 0.7368,
+      "recall": 0.7647,
+      "f1": 0.7505,
+      "auc_roc": 0.8223,
+      "time": 2.301
+    },
+    "NaiveBayes": {
+      "accuracy": 0.7313,
+      "precision": 0.7346,
+      "recall": 0.7242,
+      "f1": 0.7294,
+      "auc_roc": 0.7963,
+      "time": 1.9206
+    },
+    "DecisionTree": {
+      "accuracy": 0.7407,
+      "precision": 0.7245,
+      "recall": 0.7774,
+      "f1": 0.7498,
+      "auc_roc": 0.8162,
+      "time": 2.1035
+    },
+    "SVM": {
+      "accuracy": 0.5721,
+      "precision": 0.5488,
+      "recall": 0.8617,
+      "f1": 0.6676,
+      "auc_roc": 0.6719,
+      "time": 311.0901
+    },
+    "RandomForest": {
+      "accuracy": 0.7488,
+      "precision": 0.7298,
+      "recall": 0.7902,
+      "f1": 0.7588,
+      "auc_roc": 0.8256,
+      "time": 3.6869
+    },
+    "XGBoost": {
+      "accuracy": 0.7465,
+      "precision": 0.727,
+      "recall": 0.7896,
+      "f1": 0.757,
+      "auc_roc": 0.8235,
+      "time": 4.8907
+    }
+  },
+  "feature_importance": {
+    "GenHlth": 0.2326,
+    "HighBP": 0.1862,
+    "BMI": 0.1768,
+    "Age": 0.1307,
+    "HighChol": 0.0896,
+    "DiffWalk": 0.0542,
+    "HeartDiseaseorAttack": 0.0329,
+    "PhysActivity": 0.0188,
+    "Sex": 0.0181,
+    "HvyAlcoholConsump": 0.0156,
+    "Fruits": 0.0152,
+    "Smoker": 0.0152,
+    "Veggies": 0.0142
+  },
+  "risk_categories": {
+    "low": "probability < 0.30",
+    "medium": "0.30 <= probability < 0.60",
+    "high": "probability >= 0.60"
+  }
+}

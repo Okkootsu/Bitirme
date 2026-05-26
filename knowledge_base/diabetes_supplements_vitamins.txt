@@ -1,0 +1,48 @@
+Vitamins and Supplements for Diabetes
+Source: Diabetes Care (ADA); Cochrane Reviews; National Institutes of Health Office of Dietary Supplements
+
+OVERVIEW AND CAUTION
+
+Many people with diabetes use dietary supplements, with studies showing 22-67% regular use. While some supplements show promise, none can replace proper diabetes medications, diet, and exercise. Always inform your healthcare provider about supplements, as some interact with diabetes medications.
+
+SUPPLEMENTS WITH STRONG EVIDENCE
+
+Vitamin D: Deficiency is common in diabetic patients (60-80%). Low vitamin D is associated with insulin resistance and increased diabetes risk. Supplementation with 1000-4000 IU/day may improve insulin sensitivity. The D2d trial showed vitamin D reduced progression from prediabetes to diabetes by 12%. Check levels annually; target serum level: 30-50 ng/mL.
+
+Vitamin B12: Metformin, the most common diabetes medication, depletes B12 in 10-30% of long-term users. Deficiency causes peripheral neuropathy (can mimic or worsen diabetic neuropathy), fatigue, and anemia. Screen B12 annually if on metformin for over 2 years. Supplement with 1000 mcg/day if deficient.
+
+Magnesium: 25-38% of diabetic patients are magnesium deficient. Low magnesium worsens insulin resistance and increases cardiovascular risk. Supplementation (250-350 mg/day) may improve fasting glucose by 4-7 mg/dL. Food sources: nuts, seeds, dark leafy greens, whole grains.
+
+Omega-3 fatty acids (fish oil): Reduces triglycerides by 15-30%. Anti-inflammatory effects benefit cardiovascular health. Dose: 1-4 g/day of EPA+DHA. Does not significantly affect blood sugar or HbA1c. Recommended for diabetic patients with high triglycerides.
+
+SUPPLEMENTS WITH MODERATE EVIDENCE
+
+Chromium: Involved in insulin signaling. Some studies show modest HbA1c improvement (0.2-0.5%). More effective in chromium-deficient individuals. Dose: 200-1000 mcg/day as chromium picolinate. Not recommended as routine supplementation by ADA.
+
+Alpha-lipoic acid (ALA): Antioxidant that may improve diabetic neuropathy symptoms. 600 mg/day IV showed benefit in the SYDNEY trial. Oral supplementation evidence is weaker but promising. May lower fasting glucose by 10-15 mg/dL.
+
+Berberine: Plant compound with metformin-like effects. Can lower fasting glucose by 15-25 mg/dL and HbA1c by 0.5-0.9%. Do not combine with metformin (additive effect, hypoglycemia risk). Not well-regulated; quality varies between products.
+
+SUPPLEMENTS WITH LIMITED OR NO EVIDENCE
+
+Cinnamon: Mixed results in clinical trials. Ceylon cinnamon may have modest benefit (5-10 mg/dL fasting glucose). Cassia cinnamon contains coumarin (liver toxicity risk with high doses). Not recommended as a treatment by major guidelines.
+
+Bitter melon: Traditional remedy in many cultures. Some small studies show modest glucose-lowering effect. Insufficient evidence for clinical recommendation. May cause gastrointestinal side effects.
+
+Fenugreek: May lower fasting glucose and HbA1c in small studies. Active compound: 4-hydroxyisoleucine. May interact with blood thinners and diabetes medications.
+
+SAFETY WARNINGS
+
+Drug interactions to be aware of:
+- Chromium can enhance insulin and sulfonylurea effects (hypoglycemia risk)
+- Omega-3 may increase bleeding risk with blood thinners
+- St. John's wort reduces effectiveness of many diabetes medications
+- Ginseng can lower blood sugar unpredictably
+- Biotin (high doses) can interfere with lab test results including HbA1c
+
+General advice:
+- Supplements are not regulated like medications (quality varies)
+- More is not better: megadoses can be harmful
+- Choose products with third-party verification (USP, NSF, ConsumerLab)
+- Always discuss with your doctor before starting any supplement
+- Do not replace prescribed medications with supplements

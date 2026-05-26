@@ -1,0 +1,57 @@
+Diabetic Kidney Disease (Nephropathy)
+Source: KDIGO Guidelines; National Kidney Foundation; American Diabetes Association Standards of Care
+
+OVERVIEW
+
+Diabetic kidney disease (DKD) is the leading cause of end-stage renal disease (ESRD) worldwide. It affects approximately 40% of people with diabetes. The kidneys filter blood through millions of tiny blood vessels (glomeruli), and high blood sugar damages these vessels over time. Early detection and treatment can slow or prevent progression to kidney failure.
+
+Key statistics:
+- 40% of type 2 and 30% of type 1 patients develop some degree of kidney disease
+- Diabetes causes 44% of all new cases of kidney failure
+- 5-year survival rate on dialysis is approximately 35%
+- Turkey: over 30% of dialysis patients have diabetes as the primary cause
+- Early intervention can reduce progression risk by 50-70%
+
+STAGES OF DIABETIC KIDNEY DISEASE
+
+Stage 1 (GFR 90+): Normal kidney function but with evidence of kidney damage (microalbuminuria). No symptoms. Reversible with good control.
+
+Stage 2 (GFR 60-89): Mild decrease in kidney function. Usually no symptoms. Albumin may be elevated. Blood pressure management critical.
+
+Stage 3a/3b (GFR 30-59): Moderate decrease. Fatigue, fluid retention may begin. Medication adjustments needed. Dietary changes important.
+
+Stage 4 (GFR 15-29): Severe decrease. Symptoms include nausea, swelling, anemia. Preparation for dialysis or transplant. Nephrology specialist essential.
+
+Stage 5 (GFR below 15): Kidney failure. Dialysis or transplant needed. Symptoms: severe fatigue, itching, muscle cramps, loss of appetite.
+
+SCREENING AND MONITORING
+
+Essential tests:
+- Urine albumin-to-creatinine ratio (UACR): Detects early kidney damage. Normal: below 30 mg/g. Microalbuminuria: 30-300 mg/g. Macroalbuminuria: above 300 mg/g.
+- Estimated GFR (eGFR): Calculated from serum creatinine. Indicates how well kidneys are filtering.
+- Screening frequency: At least annually for all diabetic patients. More frequent if abnormal results.
+
+BLOOD PRESSURE AND MEDICATION
+
+Blood pressure target: Below 130/80 mmHg (critical for kidney protection).
+ACE inhibitors (enalapril, ramipril) or ARBs (losartan, valsartan): First-line for diabetic patients with albuminuria. Reduce kidney damage progression by 20-30%. Monitor potassium and creatinine after starting.
+SGLT2 inhibitors (dapagliflozin, empagliflozin): Proven kidney-protective effects independent of blood sugar lowering. Reduce risk of kidney failure by 30-40%. Now recommended for DKD even without diabetes in some cases.
+Finerenone (non-steroidal MRA): New option for DKD with proven cardiovascular and renal benefits.
+
+DIETARY MANAGEMENT
+
+Protein: 0.8 g/kg/day for stages 3-5 (avoid high-protein diets). Higher protein accelerates kidney decline.
+Sodium: Below 2,300 mg/day (approximately 1 teaspoon of salt). Reduces blood pressure and fluid retention.
+Potassium: May need restriction in advanced stages (avoid bananas, oranges, potatoes if potassium is high).
+Phosphorus: Limit in stages 4-5 (avoid processed foods, cola, dairy excess).
+Fluid: Usually no restriction until advanced stages unless edema present.
+
+PREVENTION STRATEGIES
+
+- Maintain HbA1c below 7% (reduces nephropathy risk by 33%)
+- Blood pressure below 130/80 mmHg
+- Avoid NSAIDs (ibuprofen, naproxen): can worsen kidney function
+- Stay hydrated (prevents acute kidney injury)
+- Stop smoking (accelerates kidney decline by 2x)
+- Annual screening: do not skip UACR and eGFR tests
+- Metformin dose adjustment needed when GFR drops below 45

@@ -3,44 +3,64 @@ import api from "@/utils/axios";
 import axios from "axios";
 import { useConversationStore } from "@/store/conversationStore";
 import { useConversations } from "@/hooks/useConversations";
+import { toast } from "sonner";
 
 export type SymptomValues = {
   age: number;
   gender: string;
-  polyuria: string;
-  polydipsia: string;
-  suddenWeightLoss: string;
-  weakness: string;
-  polyphagia: string;
-  genitalThrush: string;
-  visualBlurring: string;
-  itching: string;
-  irritability: string;
-  delayedHealing: string;
-  partialParesis: string;
-  muscleStiffness: string;
-  alopecia: string;
-  obesity: string;
+  bmi: number | null;
+  highBp: boolean;
+  highChol: boolean;
+  physicalActivity: boolean;
+  genHealth: number;
+  diffWalking: boolean;
+  smoker: boolean;
+  heartDisease: boolean;
+  fruitsDaily: boolean;
+  veggiesDaily: boolean;
+  heavyAlcohol: boolean;
+  bloodGlucose: number | null;
+  hba1c: number | null;
+  // Symptoms (hybrid model)
+  polyuria: boolean;
+  polydipsia: boolean;
+  unexplainedWeightLoss: boolean;
+  fatigue: boolean;
+  blurredVision: boolean;
+  slowHealing: boolean;
+  frequentInfections: boolean;
+  tinglingNumbness: boolean;
 };
 
 export const defaultSymptoms: SymptomValues = {
   age: 40,
   gender: "Male",
-  polyuria: "No",
-  polydipsia: "No",
-  suddenWeightLoss: "No",
-  weakness: "No",
-  polyphagia: "No",
-  genitalThrush: "No",
-  visualBlurring: "No",
-  itching: "No",
-  irritability: "No",
-  delayedHealing: "No",
-  partialParesis: "No",
-  muscleStiffness: "No",
-  alopecia: "No",
-  obesity: "No",
+  bmi: null,
+  highBp: false,
+  highChol: false,
+  physicalActivity: true,
+  genHealth: 3,
+  diffWalking: false,
+  smoker: false,
+  heartDisease: false,
+  fruitsDaily: true,
+  veggiesDaily: true,
+  heavyAlcohol: false,
+  bloodGlucose: null,
+  hba1c: null,
+  polyuria: false,
+  polydipsia: false,
+  unexplainedWeightLoss: false,
+  fatigue: false,
+  blurredVision: false,
+  slowHealing: false,
+  frequentInfections: false,
+  tinglingNumbness: false,
 };
+
+export type BoolKey = {
+  [K in keyof SymptomValues]: SymptomValues[K] extends boolean ? K : never;
+}[keyof SymptomValues];
 
 export const usePrediction = (onClose: () => void) => {
   const [symptoms, setSymptoms] = useState<SymptomValues>(defaultSymptoms);
@@ -50,10 +70,10 @@ export const usePrediction = (onClose: () => void) => {
     useConversationStore();
   const { createConversation } = useConversations();
 
-  const toggleSymptom = (key: keyof SymptomValues) => {
+  const toggleBool = (key: BoolKey) => {
     setSymptoms((prev) => ({
       ...prev,
-      [key]: prev[key as keyof typeof prev] === "Yes" ? "No" : "Yes",
+      [key]: !prev[key],
     }));
   };
 
@@ -72,20 +92,28 @@ export const usePrediction = (onClose: () => void) => {
       const predictionResponse = await api.post("/Prediction/assess", {
         age: symptoms.age,
         gender: symptoms.gender,
+        bmi: symptoms.bmi,
+        highBp: symptoms.highBp,
+        highChol: symptoms.highChol,
+        physicalActivity: symptoms.physicalActivity,
+        genHealth: symptoms.genHealth,
+        diffWalking: symptoms.diffWalking,
+        smoker: symptoms.smoker,
+        heartDisease: symptoms.heartDisease,
+        fruitsDaily: symptoms.fruitsDaily,
+        veggiesDaily: symptoms.veggiesDaily,
+        heavyAlcohol: symptoms.heavyAlcohol,
+        bloodGlucose: symptoms.bloodGlucose,
+        hba1c: symptoms.hba1c,
+        // Symptoms
         polyuria: symptoms.polyuria,
         polydipsia: symptoms.polydipsia,
-        suddenWeightLoss: symptoms.suddenWeightLoss,
-        weakness: symptoms.weakness,
-        polyphagia: symptoms.polyphagia,
-        genitalThrush: symptoms.genitalThrush,
-        visualBlurring: symptoms.visualBlurring,
-        itching: symptoms.itching,
-        irritability: symptoms.irritability,
-        delayedHealing: symptoms.delayedHealing,
-        partialParesis: symptoms.partialParesis,
-        muscleStiffness: symptoms.muscleStiffness,
-        alopecia: symptoms.alopecia,
-        obesity: symptoms.obesity,
+        unexplainedWeightLoss: symptoms.unexplainedWeightLoss,
+        fatigue: symptoms.fatigue,
+        blurredVision: symptoms.blurredVision,
+        slowHealing: symptoms.slowHealing,
+        frequentInfections: symptoms.frequentInfections,
+        tinglingNumbness: symptoms.tinglingNumbness,
         chatSessionId: sessionId,
       });
 
@@ -94,21 +122,32 @@ export const usePrediction = (onClose: () => void) => {
         id: Date.now(),
         content: predictionResult.formattedMessage,
         isUserMessage: false,
+        predictionData: {
+          riskProbability: predictionResult.riskProbability,
+          riskCategory: predictionResult.riskCategory,
+          confidenceLevel: predictionResult.confidenceLevel,
+          contributingFactors: predictionResult.contributingFactors,
+          shapValues: predictionResult.shapValues,
+          mlScore: predictionResult.mlScore,
+          symptomScore: predictionResult.symptomScore,
+          clinicalScore: predictionResult.clinicalScore,
+          activeSymptoms: predictionResult.activeSymptoms,
+          riskFactorCards: predictionResult.riskFactorCards ?? [],
+        },
       });
 
-      // Formu sıfırla ve kapat
       setSymptoms(defaultSymptoms);
       onClose();
     } catch (err) {
       if (axios.isAxiosError(err) && err.response) {
-        alert(err.response.data.errorMessage || "Tahmin yapılamadı.");
+        toast.error(err.response.data.errorMessage || "Tahmin yapılamadı.");
       } else {
-        alert("Sunucuya bağlanılamadı.");
+        toast.error("Sunucuya bağlanılamadı.");
       }
     } finally {
       setIsLoading(false);
     }
   };
 
-  return { symptoms, setSymptoms, toggleSymptom, handleSubmit, isLoading };
+  return { symptoms, setSymptoms, toggleBool, handleSubmit, isLoading };
 };

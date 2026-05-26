@@ -20,7 +20,7 @@ export const DrawerInterface = () => {
   return (
     <div
       className={cn(
-        "flex flex-col transition-all h-screen sticky top-0 duration-300 ease-in-out bg-drawer shrink-0",
+        "flex flex-col transition-all h-full duration-300 ease-in-out bg-drawer shrink-0",
         isOpen ? "w-64" : "w-20",
       )}
     >

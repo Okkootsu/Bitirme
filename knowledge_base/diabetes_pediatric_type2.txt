@@ -1,0 +1,60 @@
+Type 2 Diabetes in Children and Adolescents
+Source: International Society for Pediatric and Adolescent Diabetes (ISPAD); ADA Standards of Care; Lancet Child and Adolescent Health
+
+A GROWING EPIDEMIC
+
+Type 2 diabetes in children was virtually unheard of 30 years ago. Today, it accounts for up to 45% of new diabetes cases in adolescents in some populations. This alarming trend directly mirrors the global rise in childhood obesity. The disease progresses more aggressively in youth than in adults, with faster beta cell decline and earlier onset of complications.
+
+Key statistics:
+- Incidence has increased by 4.8% per year over the past two decades
+- Peak onset: 13-16 years (coinciding with puberty-related insulin resistance)
+- 85% of affected youth are overweight or obese at diagnosis
+- Girls are more commonly affected than boys (ratio approximately 1.5:1)
+- Strong family history: 75-90% have a first or second-degree relative with type 2 diabetes
+- Minority populations are disproportionately affected
+- Turkey: childhood obesity rate has tripled in 20 years, driving increased pediatric type 2 diabetes
+
+RISK FACTORS
+
+Non-modifiable: Family history of type 2 diabetes, ethnicity (higher risk in certain populations), female sex, puberty (transient insulin resistance during adolescent growth).
+
+Modifiable: Obesity (especially abdominal), physical inactivity, poor diet (high sugar, processed foods, fast food), excessive screen time (more than 2 hours daily), inadequate sleep, maternal gestational diabetes or obesity.
+
+Signs of insulin resistance in children: Acanthosis nigricans (dark velvety patches on neck and armpits), polycystic ovary syndrome in girls, hypertension, abnormal lipid levels.
+
+DIAGNOSIS
+
+Same criteria as adults: Fasting glucose 126 mg/dL or higher, HbA1c 6.5% or higher, 2-hour OGTT glucose 200 mg/dL or higher, random glucose 200 mg/dL or higher with symptoms.
+
+Important: Distinguish from type 1 diabetes. Test for autoantibodies (GAD, IA-2, ZnT8) and C-peptide. Type 2 youth typically have negative autoantibodies and normal or elevated C-peptide. Misdiagnosis can lead to inappropriate treatment.
+
+Screening recommendations: Screen overweight children (BMI at or above 85th percentile) with one or more risk factors starting at age 10 or onset of puberty.
+
+TREATMENT APPROACH
+
+Lifestyle intervention is the foundation:
+- Family-based approach (entire family changes habits together)
+- Dietary changes: Eliminate sugar-sweetened beverages, reduce processed food, increase fruits and vegetables, portion control
+- Physical activity: Minimum 60 minutes daily of moderate-to-vigorous activity
+- Screen time reduction: Maximum 2 hours recreational screen time
+- Sleep: 9-12 hours for children 6-12, 8-10 hours for adolescents
+- Behavioral counseling and motivational interviewing
+
+Medications:
+- Metformin: Only oral medication approved for children with type 2 diabetes (age 10+). Starting dose 500 mg daily, titrate to 1000 mg twice daily. Monitor B12 levels annually.
+- Insulin: Required if HbA1c above 8.5% or ketosis present at diagnosis. May be temporary if lifestyle changes are successful.
+- Liraglutide: Approved for ages 10+ with type 2 diabetes. Improved glycemic control and weight management.
+
+COMPLICATIONS IN YOUTH
+
+Youth-onset type 2 diabetes leads to earlier and more severe complications than adult-onset:
+- Kidney disease develops faster (microalbuminuria in 15% within 5 years)
+- Retinopathy risk increases significantly after 5-10 years
+- Cardiovascular risk factors (hypertension, dyslipidemia) present at diagnosis in 25-50%
+- Non-alcoholic fatty liver disease in up to 50% of affected youth
+- Mental health: depression and diabetes distress more prevalent
+- Treatment adherence is especially challenging during adolescence
+
+PREVENTION STRATEGIES
+
+School-based programs: Healthier school meals, daily physical education, nutrition education. Community initiatives: Safe play spaces, affordable healthy food access, family cooking classes. Policy level: Regulation of marketing unhealthy foods to children, sugar tax on beverages, clear food labeling. Family level: Role modeling healthy behaviors, cooking together, active family outings, limiting screen time.

@@ -1,0 +1,34 @@
+Understanding Food Labels for Diabetes Management
+Source: FDA Nutrition Labeling Guidelines 2023; American Diabetes Association; European Food Safety Authority; Turkish Food Codex
+
+WHY FOOD LABELS MATTER FOR DIABETES
+
+Reading food labels is one of the most impactful skills a person with diabetes can develop. A 2021 study in the Journal of the American Dietetic Association found that people with diabetes who consistently read food labels had HbA1c levels 0.6% lower than non-readers. Labels reveal hidden sugars, true serving sizes, and carbohydrate content that directly affect blood glucose management. In the United States, the Nutrition Facts panel is mandatory on all packaged foods. In Turkey, food labeling follows the Turkish Food Codex which aligns with EU regulations requiring energy, fat, saturated fat, carbohydrate, sugar, protein, and salt per 100g.
+
+THE NUTRITION FACTS PANEL EXPLAINED
+
+Start at the top with Serving Size. All nutritional values on the label correspond to this specific amount, which is often smaller than what people actually eat. A bag of chips may list a serving as 15 chips (28g) while most people consume 2-3 servings in one sitting. If you eat double the serving size, you must double all the nutritional values. Next, check Total Carbohydrate, which is the most critical number for blood sugar management. This includes sugars, dietary fiber, and starch. One carb serving for diabetes counting equals 15 grams. A food with 30 grams of total carbohydrate counts as 2 carb servings.
+
+UNDERSTANDING CARBOHYDRATES ON LABELS
+
+Total Carbohydrate is broken down into Dietary Fiber, Total Sugars, and Added Sugars. Dietary fiber does not raise blood sugar and can be subtracted from total carbs to calculate net carbs. For example, a food with 25g total carbs and 8g fiber has 17g net carbs. Added Sugars, required on US labels since 2020, distinguish between naturally occurring sugars (in fruit, milk) and sugars added during processing. The ADA recommends minimizing added sugars. Sugar Alcohols (erythritol, sorbitol, xylitol) partially affect blood sugar. A common rule is to subtract half the sugar alcohol grams from total carbs, though erythritol can be fully subtracted as it has virtually zero glycemic impact.
+
+HIDDEN SUGAR NAMES ON INGREDIENT LISTS
+
+Manufacturers use over 60 different names for sugar in ingredient lists. Common disguises include: sucrose, high-fructose corn syrup, dextrose, maltose, maltodextrin, cane juice, evaporated cane juice, rice syrup, barley malt, agave nectar, coconut sugar, date syrup, fruit juice concentrate, honey, molasses, turbinado, muscovado, and invert sugar. Ingredients are listed in descending order by weight, so if any sugar variant appears in the first three ingredients, the product is sugar-heavy. Some products list multiple types of sugar to push each one further down the ingredient list, making the product appear less sugary than it truly is.
+
+MARKETING TRICKS TO RECOGNIZE
+
+Products labeled "sugar-free" may still contain significant carbohydrates from starches and sugar alcohols. "No added sugar" does not mean low sugar, as the food may be naturally high in sugar (like fruit juice). "Whole grain" on the front of packaging is meaningless unless whole grain is listed as the first ingredient. "Multigrain" simply means multiple grains are used, they may all be refined. "Light" or "lite" can refer to color, flavor, or texture rather than calories. "Natural" has no regulated definition and does not indicate health value. "Low-fat" products often compensate with added sugar: a low-fat yogurt may contain 25 grams of sugar versus 12 grams in the full-fat version. "Diabetic-friendly" is not an FDA-regulated claim and does not guarantee the product is appropriate.
+
+CARBOHYDRATE CALCULATION FOR REAL PORTIONS
+
+Always calculate carbs for the amount you actually eat, not the label serving size. If a cereal label says 30g carbs per 3/4 cup serving and you eat 1.5 cups, you are consuming 60g carbs (4 carb servings). For unlabeled foods like restaurant meals, use reference databases such as the USDA FoodData Central or apps like MyFitnessPal. Weighing food with a kitchen scale for 2-4 weeks calibrates your visual estimation skills. After practice, most people can estimate portions within 10-15% accuracy. For packaged foods with multiple servings, consider the entire package content if you might eat it all in one sitting.
+
+COMPARING PRODUCTS EFFECTIVELY
+
+When comparing similar products, use the per-100g column (standard in Turkish and EU labeling) rather than per-serving, as serving sizes differ between brands. For diabetes, prioritize products with lower total carbohydrates, higher fiber (aim for at least 3g per serving), lower added sugars, and higher protein. A useful benchmark: fiber should be at least 10% of total carbohydrate content. Compare sodium levels as well, since people with diabetes are at higher cardiovascular risk. Choose products with less than 600mg sodium per serving. Check the ingredient list length: generally, shorter lists indicate less processing. Products with ingredients you can recognize and pronounce are typically better choices.
+
+PRACTICAL LABEL READING ROUTINE
+
+Develop a systematic approach: first check serving size, then total carbohydrates, then fiber, then added sugars, then protein, then sodium. This 30-second scan becomes automatic with practice. Photograph labels of frequently purchased items for quick reference. When trying new products, check the label before purchasing, not after. Dedicate one grocery trip to comparing labels in categories you buy regularly, such as breads, yogurts, and cereals, and identify the best option in each category for future purchases.

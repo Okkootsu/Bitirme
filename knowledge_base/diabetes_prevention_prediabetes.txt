@@ -1,0 +1,141 @@
+Diabetes Prevention and Prediabetes Management
+Sources: Diabetes Prevention Program (DPP) Study, ADA Standards of Care 2024, Finnish Diabetes Prevention Study, Da Qing Study, WHO
+
+PREDIABETES - DEFINITION AND DIAGNOSIS
+
+Prediabetes is a metabolic state between normal glucose tolerance and diabetes. It indicates elevated blood glucose levels that are above normal but below the diagnostic threshold for diabetes. Prediabetes is a critical window for intervention, as lifestyle changes can prevent or significantly delay progression to Type 2 diabetes.
+
+Diagnostic Criteria:
+- Impaired Fasting Glucose (IFG): Fasting plasma glucose 100-125 mg/dL (5.6-6.9 mmol/L)
+- Impaired Glucose Tolerance (IGT): 2-hour OGTT glucose 140-199 mg/dL (7.8-11.0 mmol/L)
+- HbA1c: 5.7-6.4% (39-47 mmol/mol)
+- IFG + IGT combined confers highest risk of progression
+
+EPIDEMIOLOGY
+
+Global:
+- An estimated 720 million adults worldwide have prediabetes (IDF 2021)
+- Prevalence increasing rapidly, especially in low- and middle-income countries
+- Without intervention, 5-10% of people with prediabetes progress to T2DM annually
+- Up to 70% of people with prediabetes will eventually develop diabetes
+
+Turkey:
+- TURDEP-II study (2010): Prediabetes prevalence 30.8% in Turkish adults
+- Combined with diabetes prevalence of 13.7%, nearly half of the adult population has dysglycemia
+- Prevalence higher in women, urban populations, and those with obesity
+- TEMD (Turkish Society of Endocrinology and Metabolism) recommends screening from age 40
+
+Risk factors for progression:
+- Higher baseline glucose levels (combined IFG + IGT has 60-70% 5-year conversion rate)
+- Obesity (especially visceral/central obesity: waist >94cm men, >80cm women)
+- Family history of T2DM
+- History of gestational diabetes
+- Physical inactivity
+- Ethnicity (higher risk in South Asian, Middle Eastern, Hispanic populations)
+- Polycystic ovary syndrome (PCOS)
+- Sleep disorders (obstructive sleep apnea)
+
+LANDMARK PREVENTION TRIALS
+
+1. Diabetes Prevention Program (DPP) - USA, 2002:
+- 3,234 participants with prediabetes, mean age 51, mean BMI 34
+- Three arms: Intensive lifestyle intervention, metformin 850mg BID, placebo
+- Results at 2.8 years:
+  * Lifestyle intervention: 58% reduction in diabetes incidence
+  * Metformin: 31% reduction
+- Lifestyle intervention involved: 7% weight loss target, 150 min/week physical activity
+- DPP Outcomes Study (15-year follow-up): Lifestyle group maintained 27% reduction, metformin group 18% reduction
+- Cost-effective: Lifestyle intervention saves money long-term through prevented complications
+
+2. Finnish Diabetes Prevention Study (DPS) - 2001:
+- 522 overweight adults with IGT
+- Individualized counseling on weight reduction, dietary fat, fiber, exercise
+- Results: 58% reduction in diabetes risk (identical to DPP)
+- Even modest weight loss (3-5%) significantly reduced risk
+- Benefits persisted for 13+ years after active intervention ended
+
+3. Da Qing Study - China, 1997 (30-year follow-up published 2019):
+- 577 adults with IGT randomized to diet, exercise, diet + exercise, or control
+- 6-year active intervention, 30-year follow-up
+- Results: 39% reduction in diabetes incidence, 26% reduction in cardiovascular events, 33% reduction in all-cause mortality, delayed diabetes onset by average 3.96 years
+
+4. Indian Diabetes Prevention Programme (IDPP) - 2006:
+- Demonstrated effectiveness in Asian Indian population
+- Lifestyle modification: 28.5% reduction
+- Metformin: 26.4% reduction
+- Important because it showed benefits in a lean population (BMI ~26) with high genetic susceptibility
+
+LIFESTYLE INTERVENTIONS
+
+Weight Management:
+- Primary goal: 7% weight loss from baseline (DPP target)
+- Even 3-5% weight loss provides meaningful metabolic improvement
+- Weight loss reduces insulin resistance, hepatic fat, visceral fat
+- Every 1 kg weight loss associated with 16% reduction in diabetes risk
+- Sustained weight loss is more important than rapid weight loss
+- Caloric deficit of 500-750 kcal/day recommended
+
+Dietary Recommendations:
+- Mediterranean diet: Strongest evidence for diabetes prevention (PREDIMED trial: 52% reduction with Mediterranean diet + extra virgin olive oil)
+- DASH diet: Effective for both diabetes prevention and hypertension
+- Key principles:
+  * Reduce total caloric intake
+  * Limit saturated fat to <10% of calories
+  * Increase fiber (25-30 g/day): Whole grains, vegetables, legumes, fruits
+  * Replace refined carbohydrates with complex carbohydrates
+  * Include healthy fats: Olive oil, nuts, avocado, fatty fish
+  * Limit processed meats and red meat
+  * Reduce sugar-sweetened beverages (replaced with water, unsweetened tea/coffee)
+  * Moderate alcohol consumption (if any): ≤1 drink/day for women, ≤2 for men
+  * Coffee consumption (3-4 cups/day) associated with 25% lower diabetes risk
+
+Physical Activity:
+- ADA recommendation: 150 minutes/week moderate-intensity aerobic exercise (brisk walking, cycling, swimming)
+- Alternative: 75 minutes/week vigorous-intensity activity (running, interval training)
+- Resistance/strength training: 2-3 sessions per week (improves insulin sensitivity independent of aerobic exercise)
+- Reduce prolonged sitting: Break up sedentary time every 30 minutes with light activity
+- Exercise improves insulin sensitivity for 24-72 hours after activity
+- Combined aerobic + resistance training is more effective than either alone
+
+Sleep and Stress:
+- Aim for 7-9 hours of sleep per night
+- Short sleep (<6 hours) and poor sleep quality increase diabetes risk by 28%
+- Screen for and treat obstructive sleep apnea
+- Chronic stress management: Mindfulness, yoga, cognitive behavioral techniques
+- Cortisol dysregulation from chronic stress promotes insulin resistance
+
+PHARMACOLOGICAL PREVENTION
+
+Metformin:
+- Only medication with strong evidence for diabetes prevention
+- ADA recommends considering metformin for prediabetes especially in:
+  * BMI ≥35 kg/m²
+  * Age <60 years
+  * Women with prior gestational diabetes
+  * Rising HbA1c despite lifestyle intervention
+- Dose: 500-1700 mg/day
+- DPP study: Most effective in younger, heavier individuals (BMI >35)
+
+Other agents studied but not routinely recommended for prevention:
+- Acarbose (STOP-NIDDM trial): 25% reduction, but GI side effects limit use
+- Pioglitazone (ACT NOW trial): 72% reduction, but weight gain and fracture risk
+- GLP-1 receptor agonists: SCALE Insulin Resistance study showed benefit, not yet approved for prevention
+- SGLT2 inhibitors: Potential but not studied specifically for prevention
+- Orlistat: Modest benefit through weight loss
+
+SCREENING RECOMMENDATIONS
+
+ADA recommends screening for prediabetes/diabetes:
+- All adults aged ≥35 years
+- Any age if BMI ≥25 (≥23 in Asian Americans) with one or more risk factors:
+  * Physical inactivity
+  * First-degree relative with diabetes
+  * High-risk ethnicity
+  * History of GDM or baby >4 kg
+  * Hypertension (≥140/90 or on treatment)
+  * HDL <35 mg/dL or triglycerides >250 mg/dL
+  * PCOS
+  * HbA1c ≥5.7%, IFG, or IGT on previous testing
+  * Conditions associated with IR (severe obesity, acanthosis nigricans)
+  * History of CVD
+- Repeat every 3 years if normal, annually if prediabetes

@@ -1,0 +1,91 @@
+Non-Alcoholic Fatty Liver Disease (NAFLD/MASLD) and Diabetes
+Sources: EASL-EASD-EASO Clinical Practice Guidelines 2024, ADA Standards of Care 2024, Hepatology, Journal of Hepatology
+
+OVERVIEW AND NOMENCLATURE
+
+- NAFLD (Non-Alcoholic Fatty Liver Disease) has been renamed to MASLD (Metabolic Dysfunction-Associated Steatotic Liver Disease) in 2023 by international consensus
+- Defined as hepatic steatosis (≥5% fat) in the presence of at least one cardiometabolic risk factor, without significant alcohol consumption
+- Spectrum: Simple steatosis → NASH (Non-Alcoholic Steatohepatitis) / MASH → Fibrosis → Cirrhosis → Hepatocellular carcinoma (HCC)
+
+EPIDEMIOLOGY
+
+- Global prevalence: 25-30% of general population, 55-70% of people with Type 2 diabetes
+- NASH prevalence in T2DM: 35-40%
+- Advanced fibrosis (F3-F4) in T2DM with NAFLD: 15-20%
+- NAFLD is now the leading cause of chronic liver disease worldwide
+- In Turkey: NAFLD prevalence estimated at 30-40% in general population, higher in metabolic syndrome
+
+PATHOPHYSIOLOGY
+
+The "Multiple-Hit Hypothesis":
+1. Insulin resistance → increased hepatic de novo lipogenesis and impaired fatty acid oxidation → hepatic steatosis
+2. Lipotoxicity → oxidative stress, mitochondrial dysfunction, endoplasmic reticulum stress
+3. Inflammatory activation → Kupffer cell activation, cytokine release (TNF-α, IL-6)
+4. Gut microbiome dysbiosis → increased intestinal permeability → portal endotoxemia
+5. Genetic susceptibility → PNPLA3, TM6SF2 gene variants increase risk
+
+Bidirectional relationship:
+- Diabetes worsens NAFLD progression (hyperglycemia, hyperinsulinemia accelerate fibrosis)
+- NAFLD worsens diabetes (hepatic insulin resistance, impaired glycogen storage, gluconeogenesis dysregulation)
+- NAFLD independently increases cardiovascular disease risk by 1.5-2x
+
+SCREENING AND DIAGNOSIS
+
+Who to screen:
+- All patients with T2DM should be assessed for NAFLD (ADA 2024)
+- Patients with obesity, metabolic syndrome, elevated ALT
+
+Non-invasive assessment:
+- FIB-4 score: Age, AST, ALT, platelet count → stratifies fibrosis risk
+  * FIB-4 <1.3: Low risk (no further workup)
+  * FIB-4 1.3-2.67: Indeterminate (proceed to elastography)
+  * FIB-4 >2.67: High risk (refer to hepatology)
+- Transient elastography (FibroScan): Liver stiffness measurement
+  * <8 kPa: No significant fibrosis
+  * 8-12 kPa: Significant fibrosis possible
+  * >12 kPa: Advanced fibrosis/cirrhosis likely
+- NAFLD Fibrosis Score (NFS): Age, BMI, diabetes status, AST/ALT, platelet, albumin
+- Liver biopsy: Gold standard but invasive; reserved for diagnostic uncertainty
+
+Imaging:
+- Ultrasound: First-line screening (≥20% steatosis detectable)
+- MRI-PDFF (Proton Density Fat Fraction): Most accurate for steatosis quantification
+- CT scan: Less sensitive than ultrasound for mild steatosis
+
+TREATMENT
+
+Lifestyle intervention (FIRST LINE for all):
+- Weight loss of 7-10% improves steatosis, inflammation, and fibrosis
+- >10% weight loss may reverse established fibrosis
+- Mediterranean diet: Best evidence (reduces hepatic fat independent of weight loss)
+- Exercise: 150-200 min/week moderate-intensity; reduces hepatic fat even without weight loss
+- Coffee: 3-4 cups/day associated with reduced fibrosis and HCC risk
+
+Pharmacotherapy for NASH:
+- Pioglitazone: Only drug with RCT evidence for histological improvement in NASH (reduces inflammation and fibrosis)
+  * Dose: 30-45 mg/day
+  * Side effects: Weight gain, fluid retention, fracture risk
+  * Benefit persists in non-diabetic NASH patients
+- Vitamin E (800 IU/day): Improves NASH histology in non-diabetic patients; not recommended for diabetic NASH or cirrhosis
+- GLP-1 receptor agonists: Semaglutide (LEAN trial with liraglutide, phase 3 with semaglutide) — reduces NASH and improves fibrosis
+  * Semaglutide 2.4 mg weekly: NASH resolution in 59% vs 17% placebo
+- SGLT2 inhibitors: Reduce hepatic fat content by 20-30%; additional cardiorenal benefits
+- Resmetirom (Rezdiffra): First FDA-approved drug specifically for NASH with fibrosis (2024); thyroid hormone receptor beta agonist
+
+Agents to AVOID in NAFLD/cirrhosis:
+- Sulfonylureas in advanced cirrhosis (hypoglycemia risk due to impaired gluconeogenesis)
+- Metformin: Safe in NAFLD; previously contraindicated in cirrhosis but now considered safe if eGFR adequate; does NOT improve NASH histology
+
+HEPATOCELLULAR CARCINOMA RISK
+
+- NAFLD-related HCC can occur without cirrhosis (10-20% of NAFLD-HCC cases)
+- T2DM independently increases HCC risk by 2-3x
+- Surveillance: Ultrasound ± AFP every 6 months in patients with cirrhosis
+- Screening in non-cirrhotic NAFLD is not standardized but should be considered in high-risk patients
+
+CARDIOVASCULAR DISEASE AND NAFLD
+
+- Leading cause of death in NAFLD patients is cardiovascular disease (not liver disease)
+- NAFLD is an independent CV risk factor even after adjusting for traditional risk factors
+- Aggressive CV risk management recommended: Statins (safe in NAFLD, may improve liver histology), blood pressure control, antiplatelet therapy as indicated
+- Statins are SAFE in NAFLD and should NOT be withheld due to mildly elevated transaminases

@@ -1,0 +1,124 @@
+Diyabet ve Ramazan Orucu Yönetimi
+Kaynaklar: IDF-DAR (Diabetes and Ramadan) Pratik Kılavuzu 2021, TEMD Ramazan ve Diyabet Kılavuzu, Diabetes Care
+
+GİRİŞ
+
+Dünya genelinde yaklaşık 150 milyon diyabetli Müslüman Ramazan ayında oruç tutmaktadır. Türkiye'de yaklaşık 10 milyon diyabet hastasının önemli bir kısmı Ramazan'da oruç tutmak istemektedir. Oruç süresince 14-18 saat (yaz aylarında daha uzun) yeme-içme yasağı, diyabet yönetiminde özel dikkat gerektirmektedir.
+
+RİSK SINIFLANDIRMASI (IDF-DAR 2021)
+
+Kategori 1 — Çok Yüksek Risk (Oruç tutmamalı):
+- Son 3 ayda ağır hipoglisemi öyküsü
+- Son 3 ayda DKA veya HHS öyküsü
+- Tip 1 diyabet (kontrolsüz)
+- Akut hastalık
+- Hipoglisemi farkındalığı bozulmuş hastalar
+- Diyaliz hastaları
+- İleri gebelik + diyabet
+
+Kategori 2 — Yüksek Risk (Oruç tutmamalı, bireysel karar):
+- HbA1c >%9 veya sürekli yüksek kan şekeri
+- Böbrek yetmezliği (eGFR <45)
+- İleri makrovasküler komplikasyonlar
+- Yalnız yaşayan insülin kullanan hasta
+- Yoğun fiziksel iş yapanlar
+- Hipoglisemi riski yüksek ilaç kullananlar
+
+Kategori 3 — Orta Risk (Bireysel değerlendirme ile oruç tutabilir):
+- İyi kontrollü Tip 2 diyabet (oral ilaç veya bazal insülin)
+- HbA1c %7-8 arası
+- Stabil böbrek hastalığı (eGFR 45-60)
+
+Kategori 4 — Düşük Risk (Oruç tutabilir):
+- İyi kontrollü Tip 2 diyabet (yaşam tarzı değişikliği ± metformin)
+- HbA1c <%7
+- Hipoglisemi riski düşük ilaç kullanan
+
+RAMAZAN ÖNCESİ DEĞERLENDİRME
+
+Ramazan'dan 6-8 hafta önce:
+- Risk değerlendirmesi yapılmalı
+- HbA1c, böbrek fonksiyonları, kan basıncı kontrolü
+- İlaç düzenlemesi planlanmalı
+- Kan şekeri ölçüm sıklığı belirlenmeli
+- Hasta eğitimi: Hipoglisemi belirtileri, orucu bozma kriterleri, beslenme önerileri
+- Fiziksel aktivite planı
+- Sıvı alımı planı (iftar-sahur arası)
+
+İLAÇ DÜZENLEMELERİ
+
+Metformin:
+- Güvenli, hipoglisemi riski düşük
+- Toplam doz değişmez, zamanlama ayarlanır
+- 2x1 kullanıyorsa: İftarda tam doz, sahurda yarım doz
+- 3x1 kullanıyorsa: İftarda tam doz, sahurda tam doz (öğle dozu atlanır)
+- Uzun salınımlı form: İftarda tek doz
+
+Sülfonilüreler (SU):
+- HİPOGLİSEMİ RİSKİ YÜKSEK — dikkatli kullanım
+- Glibenklamid (glyburide): KULLANILMAMALI (uzun etkili, hipoglisemi riski çok yüksek)
+- Gliklazid MR: İftarda tam doz (güvenli profil)
+- Glimepirid: İftarda düşük doz, sahurda verilmemeli veya yarıya indirilmeli
+
+DPP-4 İnhibitörleri:
+- Güvenli, hipoglisemi riski çok düşük
+- Doz ve zamanlama değişikliği genelde gerekmez
+- Vildagliptin 2x1 kullanıyorsa: İftar ve sahurda devam
+
+GLP-1 Reseptör Agonistleri:
+- Güvenli, hipoglisemi riski düşük
+- Haftalık formlar (semaglutid, dulaglutid): Değişiklik gerekmez
+- Günlük formlar: İftarda uygulanabilir
+
+SGLT2 İnhibitörleri:
+- Dehidratasyon ve öglisemik DKA riski nedeniyle DİKKAT
+- Yeterli sıvı alımı sağlanamazsa doz azaltılmalı veya kesilmeli
+- Sıcak iklim ve uzun oruç süresinde risk artar
+- İftarda alınmalı (sahurda değil)
+
+Bazal İnsülin:
+- Doz %15-30 azaltılması düşünülebilir
+- Glarjin/degludek: İftarda uygulanabilir (akşam dozu)
+- NPH: İftarda tam doz, sahurda %50 azaltılmış doz
+
+Karışım (premixed) İnsülin:
+- İftarda normal doz, sahurda %25-50 azaltılmış doz
+- Bazal-bolus rejimi tercih edilirse: İftar bolusu tam, sahur bolusu azaltılmış, öğle bolusu atlanır
+
+ORUCU BOZMA KRİTERLERİ
+
+Aşağıdaki durumlarda DERHAL oruç bozulmalıdır:
+- Kan şekeri <70 mg/dL (hipoglisemi)
+- Kan şekeri >300 mg/dL
+- Hipoglisemi belirtileri (terleme, titreme, çarpıntı, baş dönmesi, bulanık görme)
+- Akut hastalık belirtileri
+- Şiddetli susuzluk veya dehidratasyon belirtileri
+
+BESLENME ÖNERİLERİ
+
+İftar:
+- Su ve 1-3 hurma ile açılması (geleneksel ve tıbbi olarak uygun — hızlı enerji + posa)
+- Aşırı karbonhidrat ve yağlı yiyeceklerden kaçınma
+- Dengeli öğün: Protein + kompleks karbonhidrat + sebze
+- Şekerli tatlılar ve şerbetli tatlılardan kaçınma
+- Kızartma yerine fırın veya ızgara tercih edilmeli
+- Yavaş yemek yeme (tokluk sinyali için 15-20 dk)
+
+Sahur:
+- Mümkün olduğunca geç sahur yapılmalı (imsak vaktine yakın)
+- Kompleks karbonhidratlar (tam tahıl, yulaf, kepekli ekmek)
+- Protein kaynağı (yumurta, peynir, yoğurt)
+- Bol su tüketimi (sahur-iftar arası en az 8 bardak)
+- Kafeinli içecekler sınırlandırılmalı (diüretik etki)
+
+İftar-sahur arası:
+- Bol sıvı alımı (su, ayran, çorbalar)
+- Hafif ara öğün alınabilir
+- Şekerli içecekler ve meyve suları yerine su tercih edilmeli
+
+FİZİKSEL AKTİVİTE
+
+- Oruçluyken ağır egzersiz yapılmamalı
+- Teravih namazı orta düzeyde fiziksel aktivite sayılabilir
+- Egzersiz iftardan 2-3 saat sonra yapılmalı
+- Hipoglisemi riski olan hastalarda egzersiz öncesi kan şekeri kontrolü

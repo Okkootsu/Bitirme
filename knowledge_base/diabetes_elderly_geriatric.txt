@@ -1,0 +1,105 @@
+Geriatric Diabetes Management (Adults ≥65 Years)
+Sources: ADA Standards of Care 2024, Endocrine Society Clinical Practice Guideline 2019, EDWPOP Position Statement
+
+EPIDEMIOLOGY
+
+- More than 25% of adults ≥65 years have diabetes
+- Fastest-growing demographic with diabetes worldwide
+- Prevalence in nursing homes: 25-35%
+- Diabetes in elderly is associated with higher rates of premature death, functional disability, and coexisting illnesses (hypertension, coronary heart disease, stroke)
+- In Turkey, diabetes prevalence in adults ≥60 years is approximately 30% (TURDEP-II)
+
+UNIQUE CHALLENGES IN OLDER ADULTS
+
+1. Heterogeneity: Older adults with diabetes range from healthy and independent to frail with multiple comorbidities
+2. Polypharmacy: Average elderly diabetic takes 7-10 medications; drug interactions and adverse effects are common
+3. Cognitive decline: Diabetes increases dementia risk by 50-100%; both hyperglycemia and hypoglycemia accelerate cognitive decline
+4. Fall risk: Hypoglycemia, neuropathy, polypharmacy, and orthostatic hypotension all increase fall risk
+5. Sarcopenia: Loss of muscle mass worsens insulin resistance and functional capacity
+6. Social isolation: May impair self-management, meal preparation, medication adherence
+7. Depression: Prevalence 2-3x higher than in non-diabetic elderly
+
+ADA FRAMEWORK FOR GLYCEMIC TARGETS
+
+1. Healthy (few coexisting chronic illnesses, intact cognitive and functional status):
+   - HbA1c target: <7.0-7.5%
+   - Fasting glucose: 80-130 mg/dL
+   - Bedtime glucose: 80-180 mg/dL
+   - Rationale: Longer life expectancy, can benefit from tighter control
+
+2. Complex/Intermediate (multiple coexisting chronic illnesses, 2+ ADL impairments, mild-moderate cognitive impairment):
+   - HbA1c target: <8.0%
+   - Fasting glucose: 90-150 mg/dL
+   - Bedtime glucose: 100-180 mg/dL
+   - Rationale: Hypoglycemia risk outweighs benefits of tight control
+
+3. Very Complex/Poor Health (end-stage chronic illness, moderate-severe cognitive impairment, 2+ ADL dependencies, long-term care facility):
+   - HbA1c target: <8.5% (avoid HbA1c >9%)
+   - Fasting glucose: 100-180 mg/dL
+   - Bedtime glucose: 110-200 mg/dL
+   - Rationale: Avoid symptomatic hyperglycemia and any hypoglycemia; comfort is priority
+
+MEDICATION CONSIDERATIONS
+
+Preferred agents in elderly:
+- Metformin: Generally safe; avoid if eGFR <30; watch for B12 deficiency
+- DPP-4 inhibitors: Low hypoglycemia risk, weight neutral, well tolerated
+- GLP-1 receptor agonists: CV and renal benefits; may cause nausea, weight loss (caution in frail elderly)
+- SGLT2 inhibitors: CV and renal benefits; risk of dehydration, UTI, euglycemic DKA; caution in very elderly
+
+Agents to use with caution:
+- Sulfonylureas: HIGH hypoglycemia risk; avoid glyburide entirely; if needed, use short-acting (glipizide)
+- Insulin: Simplify regimens; consider once-daily basal insulin (glargine, degludec); avoid complex basal-bolus in cognitively impaired patients
+- Thiazolidinediones: Fluid retention, heart failure exacerbation, fracture risk
+
+DEINTENSIFICATION OF THERAPY
+
+- Actively consider deintensification (reducing medications) when:
+  * HbA1c is well below individualized target
+  * Patient has experienced hypoglycemia
+  * Health status has declined
+  * Treatment burden is excessive
+  * Life expectancy is limited
+- Deintensification is an active clinical decision, not neglect
+- Stepwise approach: Remove sulfonylureas first, reduce insulin doses, simplify regimen
+
+HYPOGLYCEMIA IN ELDERLY
+
+- Hypoglycemia is the most dangerous acute complication in elderly diabetics
+- Consequences: Falls, fractures (hip fracture risk 70% higher), cardiac arrhythmias, seizures, cognitive decline, death
+- Hypoglycemia unawareness more common in elderly (impaired counterregulatory response)
+- All elderly patients on insulin or sulfonylureas should have glucose tablets and glucagon available
+- CGM (continuous glucose monitoring) increasingly used in elderly for hypoglycemia detection
+
+COGNITIVE SCREENING
+
+- Screen for cognitive impairment at diagnosis and periodically
+- Tools: Mini-Mental State Examination (MMSE), Montreal Cognitive Assessment (MoCA), Mini-Cog
+- Cognitive impairment affects ability to: manage medications, recognize hypoglycemia symptoms, prepare meals, perform glucose monitoring
+- Simplify self-management tasks; involve caregivers in diabetes education
+
+NURSING HOME AND LONG-TERM CARE
+
+- Sliding-scale insulin alone is NOT recommended (reactive, not proactive)
+- Basal insulin with correction doses is preferred
+- Consistent carbohydrate meal plans rather than restrictive diabetic diets
+- Avoid overly restrictive diets that reduce quality of life and caloric intake
+- Regular glucose monitoring schedule
+- Staff education on hypoglycemia recognition and treatment
+
+SCREENING FOR COMPLICATIONS
+
+- Continue screening for complications that would benefit from intervention
+- Consider discontinuing screening when treatment would not change (e.g., retinal screening in patient with limited life expectancy and no symptoms)
+- Annual foot exam remains important (neuropathy, ulcers, fall prevention)
+- Blood pressure target: <130/80 if tolerated; avoid aggressive lowering (orthostatic hypotension)
+- Statin therapy: Continue in established ASCVD; initiation in primary prevention is less clear after age 75
+
+EXERCISE IN ELDERLY WITH DIABETES
+
+- Balance and flexibility exercises to prevent falls (tai chi, yoga)
+- Resistance training to combat sarcopenia (2-3 sessions/week)
+- Aerobic activity as tolerated (walking, swimming, cycling)
+- Supervised exercise programs preferred
+- Check feet before and after exercise
+- Adjust medications to prevent exercise-induced hypoglycemia

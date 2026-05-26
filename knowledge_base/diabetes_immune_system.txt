@@ -1,0 +1,83 @@
+Diabetes and the Immune System: Immune Function, Vaccinations, Infection Prevention
+Source: ADA Immunization Recommendations 2024; CDC Vaccination Guidelines; WHO Infectious Disease and Diabetes Reports
+
+OVERVIEW
+
+Diabetes significantly impairs immune function, increasing both the risk and severity of
+infections. Individuals with diabetes are 2-3 times more likely to develop infections
+compared to non-diabetic individuals, and infections account for approximately 10-15%
+of diabetes-related deaths. Hyperglycemia directly suppresses immune cell function,
+impairs wound healing, and promotes pathogen growth. In Turkey, where infectious diseases
+and diabetes both present significant public health challenges, understanding the immune
+consequences of diabetes is vital for prevention and management.
+
+MECHANISMS OF IMMUNE DYSFUNCTION IN DIABETES
+
+Chronic hyperglycemia disrupts immune function through multiple pathways. Neutrophil
+dysfunction includes impaired chemotaxis (reduced ability to migrate to infection sites),
+decreased phagocytosis (reduced ability to engulf and kill pathogens), and impaired
+oxidative burst (reduced microbicidal capacity). These defects are proportional to the
+degree of hyperglycemia and largely reversible with improved glucose control. T-cell and
+B-cell function is also impaired, reducing adaptive immune responses. Complement system
+activation is altered, weakening the innate immune defense. Additionally, glycosylation of
+immunoglobulins reduces their effectiveness. The high-glucose environment directly
+promotes growth of certain pathogens, including Candida species and Staphylococcus aureus.
+
+COMMON INFECTIONS IN DIABETES
+
+Several infections occur with increased frequency and severity in diabetic patients.
+Respiratory infections including pneumonia, influenza, and COVID-19 are more severe in
+diabetes, with 2-3 times higher hospitalization and mortality rates. Urinary tract infections
+are 2-4 times more common in diabetic women due to glycosuria promoting bacterial growth
+and neurogenic bladder from autonomic neuropathy. Skin and soft tissue infections including
+cellulitis, abscesses, and diabetic foot infections are frequent and can progress rapidly.
+Fungal infections particularly oral and genital candidiasis affect up to 30% of poorly
+controlled diabetic patients. Tuberculosis risk is 2-3 times higher in diabetes, particularly
+relevant in Turkey where TB remains a public health concern. Periodontal disease affects
+up to 70% of diabetic individuals, creating a bidirectional relationship where gum disease
+worsens glycemic control.
+
+VACCINATION RECOMMENDATIONS
+
+Vaccination is a critical preventive strategy for diabetic individuals. Influenza vaccine
+should be given annually before each flu season. COVID-19 vaccination including boosters
+is strongly recommended as diabetes increases severe COVID risk 2-3 fold. Pneumococcal
+vaccination with PCV20 or PCV15 followed by PPSV23 is recommended for all diabetic
+adults. Hepatitis B vaccination is recommended for unvaccinated diabetic adults aged
+19-59 and considered for those over 60, as diabetes increases hepatitis B risk through
+shared glucose monitoring equipment. Tdap (tetanus, diphtheria, pertussis) should follow
+standard adult schedule with Td boosters every 10 years. Shingles vaccine (recombinant
+zoster vaccine) is recommended for adults over 50 with diabetes. In Turkey, the national
+immunization program covers influenza and pneumococcal vaccines for diabetic patients
+at no cost through family health centers.
+
+INFECTION PREVENTION STRATEGIES
+
+Daily foot inspection and proper foot care prevent diabetic foot infections, the most common
+cause of diabetes-related hospitalization. Skin care including moisturizing dry skin,
+treating cuts promptly, and avoiding barefoot walking reduces skin infection risk. Oral
+hygiene with regular dental check-ups every 6 months prevents periodontal disease.
+Optimal glycemic control (HbA1c below 7-8%) is the single most effective measure to
+improve immune function. Hand hygiene remains the simplest and most effective infection
+prevention method. Food safety practices prevent gastrointestinal infections.
+
+SURGICAL AND PROCEDURAL CONSIDERATIONS
+
+Diabetic patients have 2-5 times higher surgical site infection rates. Perioperative glucose
+management with target 140-180 mg/dL significantly reduces infection risk. Prophylactic
+antibiotics may be extended for diabetic patients undergoing certain procedures. Wound
+healing is delayed in diabetes, requiring careful postoperative monitoring.
+
+COVID-19 AND DIABETES SPECIFIC CONSIDERATIONS
+
+The COVID-19 pandemic highlighted the vulnerability of diabetic individuals to infectious
+diseases. Diabetic patients with COVID-19 have 2-3 times higher ICU admission rates,
+higher ventilation requirements, and 2-4 times higher mortality risk. Poorly controlled
+diabetes (HbA1c above 9%) further increases these risks. New-onset diabetes has been
+reported after COVID-19 infection, likely due to viral damage to pancreatic beta cells.
+
+CONCLUSION
+
+The immune dysfunction associated with diabetes is clinically significant but largely
+manageable through glycemic optimization, appropriate vaccination, infection prevention
+practices, and prompt treatment of infections when they occur.

@@ -1,0 +1,66 @@
+Diyabet Acil Durumlari: Hipoglisemi ve Hiperglisemi Müdahale Rehberi
+Source: ADA Hypoglycemia Position Statement; TEMD Acil Diyabet Rehberi; ISPAD Emergency Guidelines
+
+GIRIS
+
+Diyabetin akut komplikasyonlari hayati tehdit edebilir ve hizli müdahale gerektirir. Hipoglisemi
+(düsük kan sekeri) ve hiperglisemi (yüksek kan sekeri) en sık karşılaşılan acil durumlardır.
+Diyabetik ketoasidoz (DKA) ve hiperozmolar hiperglisemik durum (HHS) ise en ciddi tablolardır.
+Türkiye'de diyabet kaynakli acil servis basvurularinin yaklasik %15'i bu akut durumlardan
+kaynaklanmaktadir. Hasta ve yakinlarinin acil müdahale bilgisine sahip olmasi kritik öneme
+sahiptir.
+
+HIPOGLISEMI: TANIMLAMA VE BELIRTILER
+
+Hipoglisemi kan sekeri düzeyinin 70 mg/dL altina düsmesi olarak tanimlanir. Düzey 1 hipoglisemi
+54-70 mg/dL arasinda olup uyari semptomlari görülür. Düzey 2 hipoglisemi 54 mg/dL altinda
+olup ciddi hipoglisemidir. Düzey 3 hipoglisemi bilişsel bozulma ve disaridan yardim gerektiren
+durumdur. Erken belirtiler arasinda titreme, terleme, çarpinti, açlik, huzursuzluk ve solukluk
+yer alir. Geç belirtiler konfüzyon, konusma bozuklugu, koordinasyon kaybi, nöbet ve bilinç kaybi
+olabilir.
+
+HIPOGLISEMI ACIL MÜDAHALE PROTOKOLÜ
+
+Bilinçli hastada 15-15 kurali uygulanir: 15 gram hizli emilen karbonhidrat verilir (3-4 seker
+tableti, yarım bardak meyve suyu veya 1 yemek kasigi bal), 15 dakika beklenir ve kan sekeri
+tekrar ölçülür. Hâlâ 70 mg/dL altindaysa islem tekrarlanir. Düzeldikten sonra bir sonraki öğün
+1 saat içinde degilse atistirmalik verilir. Bilinci kapali hastada agizdan bir sey verilmez.
+Glukagon enjeksiyonu yapilir: erişkinlerde 1 mg intramusküler veya subkutan. Nazal glukagon
+da mevcuttur (3 mg). Hasta kurtarma pozisyonuna alinir ve 112 aranir.
+
+GLUKAGON KULLANIMI
+
+Her insülin kullanan diyabet hastasinin yaninda glukagon kiti bulunmalidir. Aile bireyleri ve
+yakin çevre glukagon kullanimi konusunda egitilmelidir. Glukagon kiti buzdolabinda saklanir
+ancak oda sicakliginda da belirli süre dayanır. Kullanim sonrasi hasta 15 dakika içinde
+uyanmazsa 112 aranmali ve ikinci doz düsünülmelidir. Hasta bilinci açildiktan sonra
+karbonhidrat içeren yiyecek verilmeli ve doktoru bilgilendirilmelidir.
+
+HIPERGLISEMI VE DIYABETIK KETOASIDOZ
+
+Kan sekeri 250 mg/dL üzerine çiktiginda ve idrarda keton pozitif oldugunda DKA gelisimi
+baslamis olabilir. Belirtiler arasinda asiri susama, sik idrara çikma, bulanti, kusma, karin
+agrisi, Kussmaul solunumu (derin ve hizli) ve meyve kokusu gelen nefes yer alir. DKA
+mortalite orani tedavi edilmezse %5-10 olup acil tibbi müdahale gerektirir. Evde yapilabilecekler
+arasinda bol su içmek, insülin dozunu gözden geçirmek ve her 2 saatte kan sekeri ve keton
+ölçmek yer alir. Kusma varsa, kan sekeri 300 mg/dL üzerinde kaliyorsa veya keton yüksekse
+derhal acil servise basvurulmalidir.
+
+112 ACIL YARDIM ARAMA KRITERLERI
+
+Su durumlarda derhal 112 aranmalidir: bilinç kaybi veya konfüzyon, glukagon sonrasi
+düzelmeyen hipoglisemi, tekrarlayan kusma ile sivi alamama, nefes darligi ve hizli solunum,
+göğüs agrisi ve çarpinti. 112 arandiginda operatöre hastanin diyabetli oldugu, kan sekeri
+degeri, bilinç durumu ve uygulanan müdahaleler bildirilmelidir.
+
+ACIL DURUM HAZIRLIGI
+
+Her diyabet hastasinin acil durum çantasi hazir olmalidir. Bu çantada glukometre ve yedek
+strip, hizli seker kaynaklari, glukagon kiti, hasta bilgi karti (diyabet tipi, ilaçlar, doktor
+iletisim bilgisi) ve yedek insülin veya ilaclar bulunmalidir. Medikal kimlik bilekligi takilmasi
+bilinci kapali hastalarda hayat kurtarici olabilir.
+
+SONUC
+
+Diyabet acil durumlarina hazirlikli olmak ve dogru müdahale bilgisine sahip olmak hayat
+kurtaricidir. Düzenli egitim ve acil plan güncellemesi her diyabet hastasi için zorunludur.

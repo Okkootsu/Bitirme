@@ -1,0 +1,51 @@
+IDF Diabetes Atlas 10th Edition - Key Messages
+Source: International Diabetes Federation (IDF), 2021
+
+GLOBAL DIABETES STATISTICS
+
+1. Approximately 537 million adults (20-79 years) are living with diabetes. This number is predicted to rise to 643 million by 2030 and 783 million by 2045.
+
+2. Over 3 in 4 adults with diabetes live in low- and middle-income countries.
+
+3. Diabetes caused 6.7 million deaths in 2021 – 1 every 5 seconds.
+
+4. Diabetes caused at least USD 966 billion in health expenditure – a 316% increase over the last 15 years.
+
+5. 541 million adults have Impaired Glucose Tolerance (IGT), which places them at high risk of type 2 diabetes.
+
+6. Over 1.2 million children and adolescents (0-19 years) live with type 1 diabetes.
+
+7. 1 in 6 live births (21 million) are affected by diabetes in pregnancy.
+
+8. Over 3 in 4 people with diabetes live in low- and middle-income countries.
+
+REGIONAL FINDINGS
+
+The Middle East and North Africa (MENA) region has the highest age-adjusted comparative diabetes prevalence at 16.2%. The South-East Asia region has the largest number of adults living with diabetes at 90 million.
+
+PREVENTION OF TYPE 2 DIABETES
+
+Evidence from several countries has demonstrated that type 2 diabetes can be prevented or delayed through lifestyle modifications. Key interventions include:
+
+- Weight management: Achieving and maintaining a healthy body weight (BMI < 25 kg/m²)
+- Physical activity: At least 150 minutes of moderate-intensity physical activity per week
+- Healthy eating: A balanced diet rich in whole grains, fruits, vegetables, and lean proteins
+- Smoking cessation: Tobacco use increases the risk of type 2 diabetes
+- Regular screening: Early detection in high-risk populations
+
+EARLY DETECTION AND MANAGEMENT
+
+Early detection is essential for the effective management of diabetes. Approximately 240 million people, or about 1 in 2 adults currently living with diabetes, are undiagnosed. Most of these have type 2 diabetes.
+
+Key recommendations for management:
+- Self-monitoring of blood glucose
+- Regular HbA1c testing (target < 7% for most adults)
+- Blood pressure control (target < 130/80 mmHg)
+- Lipid management
+- Regular foot examinations
+- Annual eye examinations
+- Kidney function monitoring
+
+DIABETES AND COVID-19
+
+People with diabetes are at higher risk of severe illness from COVID-19. Ensuring access to diabetes care and maintaining glycemic control remains critical during the pandemic and beyond.

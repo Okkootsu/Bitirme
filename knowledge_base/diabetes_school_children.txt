@@ -1,0 +1,34 @@
+Managing Diabetes in School-Age Children: A Guide for Parents, Teachers, and School Staff
+Source: International Society for Pediatric and Adolescent Diabetes (ISPAD); American Diabetes Association School Guidelines; Turkish Ministry of National Education Health Protocols
+
+PREVALENCE AND SCHOOL IMPACT
+
+Type 1 diabetes is one of the most common chronic diseases of childhood, affecting approximately 1.2 million children worldwide. In Turkey, the incidence of Type 1 diabetes in children under 15 has been increasing at a rate of 3-5% annually. On average, a school with 500 students will have 1-2 children with diabetes. These children spend approximately 6-8 hours per day at school, making the school environment critical for safe diabetes management. Poor diabetes management during school hours contributes to academic underperformance, with studies showing that children with HbA1c above 9% score 10-15% lower on standardized tests compared to peers with well-controlled diabetes.
+
+DIABETES MANAGEMENT PLAN FOR SCHOOLS
+
+Every child with diabetes should have an individualized Diabetes Medical Management Plan (DMMP) signed by their treating physician and shared with the school. This plan must include the child's blood glucose target range (typically 70-180 mg/dL), insulin regimen (type, dose, timing), carbohydrate-to-insulin ratio, correction factor, symptoms and treatment of hypoglycemia and hyperglycemia, meal and snack schedule, physical activity guidelines, and emergency contact numbers. The plan should be updated at least annually or whenever the treatment regimen changes. A copy should be kept in the school health office, the classroom, and with any after-school program staff.
+
+TEACHER AND STAFF TRAINING
+
+At least two staff members per school should be trained as designated diabetes care providers. Training should cover blood glucose monitoring, recognizing and treating hypoglycemia (including glucagon administration), insulin pen or pump operation basics, carbohydrate counting for school meals, and when to call emergency services. Training sessions should be conducted by a certified diabetes educator or school nurse and refreshed annually. Teachers should understand that a child may need to eat snacks during class, use the restroom frequently, or leave class to check blood glucose without being penalized. Academic accommodations may include extra time on tests if blood glucose is out of range and permission to have diabetes supplies at their desk.
+
+HYPOGLYCEMIA EMERGENCY PROTOCOL
+
+Hypoglycemia is the most immediate risk for children with diabetes at school. The school protocol should specify: if blood glucose is below 70 mg/dL, give 15 grams of fast-acting carbohydrate (3-4 glucose tablets, 120 mL of juice, or 1 tablespoon of honey). Recheck after 15 minutes. If still below 70 mg/dL, repeat treatment. If the child cannot swallow safely or loses consciousness, do NOT give food or liquids by mouth. Place the child on their side and administer glucagon (nasal glucagon does not require injection and is preferred for school settings). Call emergency services immediately. Never leave a hypoglycemic child alone. Never send them to the nurse's office unaccompanied.
+
+MEAL AND SNACK MANAGEMENT
+
+Children with diabetes on insulin therapy need to count carbohydrates at every meal and snack. School cafeterias should provide carbohydrate content information for meals. If this is not available, parents should work with the school to create a carbohydrate guide for common menu items. Young children (ages 5-8) typically need adult assistance with carbohydrate counting and insulin dosing. Older children (ages 9-12) can often manage with supervision. Adolescents may self-manage but still benefit from oversight. Birthday parties, class celebrations, and field trip snacks should be planned in advance. The goal is to include the child in all activities while maintaining glucose control, not to exclude them from treats and celebrations.
+
+PHYSICAL EDUCATION AND EXTRACURRICULAR ACTIVITIES
+
+Children with diabetes should participate fully in physical education and sports. However, exercise lowers blood glucose and adjustments are needed. Blood glucose should be checked before exercise: if below 100 mg/dL, a 15-gram carbohydrate snack is needed before activity. If below 70 mg/dL, treat the hypoglycemia first and delay exercise. If above 250 mg/dL with ketones, exercise should be postponed. During prolonged activity (more than 30 minutes), a snack may be needed every 30 minutes. Fast-acting glucose should be available at the field or gym at all times. Insulin pump users may need to reduce basal rates 30-60 minutes before planned exercise. Coaches and PE teachers must be included in the diabetes management team.
+
+PSYCHOSOCIAL CONSIDERATIONS
+
+Children with diabetes may face bullying, social isolation, or embarrassment about their condition. Studies show that 25% of children with Type 1 diabetes experience diabetes-related bullying. Schools should implement anti-bullying policies that specifically include chronic illness. Age-appropriate diabetes education for classmates (with the child's and parents' consent) can reduce stigma and build a supportive peer environment. Adolescents may skip insulin doses or avoid checking blood glucose in front of peers; discreet management options (such as insulin pens rather than syringes, and smartwatch-connected CGMs) can help. School counselors should be aware of the increased risk of depression and anxiety in diabetic youth and provide appropriate referrals.
+
+LEGAL RIGHTS AND ACCOMMODATIONS
+
+In Turkey, the Ministry of National Education circular on chronic illness management requires schools to accommodate students with diabetes. In the US, Section 504 of the Rehabilitation Act and the Individuals with Disabilities Education Act (IDEA) protect children with diabetes. These laws require schools to provide trained personnel, allow diabetes management activities during school hours, and ensure equal access to all school activities. Parents should formally request a 504 Plan or equivalent accommodation document at the beginning of each school year.
