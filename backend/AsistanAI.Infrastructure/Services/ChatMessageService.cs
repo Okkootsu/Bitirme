@@ -133,6 +133,7 @@ public class ChatMessageService : IChatMessageService
         var fullContent = new System.Text.StringBuilder();
         List<string> ragSources = new();
 
+        // ------------- Test için geçici olarak commentledim (Asıl çalışması gereken kod) ---------------
         var streamResult = await _aiService.StreamResponseAsync(messageDto.Content, history);
         if (streamResult != null)
         {
@@ -148,6 +149,19 @@ public class ChatMessageService : IChatMessageService
                 }, _jsonOptions);
             }
         }
+
+        // Test ederken çalıştırılacak kod
+        // string mockText = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+        // fullContent.Append(mockText);
+
+        // await Task.Delay(500); 
+
+        // yield return JsonSerializer.Serialize(new
+        // {
+        //     type = "chunk",
+        //     text = mockText
+        // }, _jsonOptions);
+        // 
 
         // 5. AI mesajini kaydet
         var aiText = fullContent.Length > 0 ? fullContent.ToString() : "Yanıt üretilemedi.";

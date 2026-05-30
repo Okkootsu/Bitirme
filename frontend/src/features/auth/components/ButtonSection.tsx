@@ -17,6 +17,7 @@ export const ButtonSection = ({
       <Button
         onClick={handleSubmit}
         className={cn(
+          "dark:text-black",
           formVariant === "login"
             ? "rounded-lg bg-green-400 hover:bg-green-500 active:bg-green-600"
             : "rounded-lg bg-blue-400 hover:bg-blue-500 active:bg-blue-600",
@@ -27,7 +28,7 @@ export const ButtonSection = ({
 
       <Button
         onClick={handleChangeVariantClick}
-        className="rounded-lg bg-white hover:bg-gray-100 active:bg-gray-200"
+        className="rounded-lg bg-white hover:bg-gray-100 active:bg-gray-200 dark:text-black dark:hover:bg-gray-300 dark:active:bg-gray-400"
       >
         {formVariant === "login" ? "Kayıt Ol" : "Giriş Ekranına Dön"}
       </Button>

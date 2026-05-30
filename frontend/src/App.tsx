@@ -15,10 +15,11 @@ function App() {
     <BrowserRouter>
       <AppRouter />
       <Toaster
-        position="top-right"
+        position="top-center"
         richColors
         toastOptions={{ duration: 3000 }}
         theme={darkMode ? "dark" : "light"}
+        style={{ zIndex: 9999 }}
       />
     </BrowserRouter>
   );

@@ -36,6 +36,8 @@ dist-ssr
 
 # Environment & secrets
 .env
+.env.development
+.env.production
 appsettings.Development.json
 
 # ML model/artifact files

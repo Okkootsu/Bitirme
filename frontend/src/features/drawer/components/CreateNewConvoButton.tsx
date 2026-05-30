@@ -18,9 +18,9 @@ export const CreateNewConvoButton = ({
       <Button
         variant="iconOutline"
         className={cn(
-          "bg-[#f5f5f5] hover:bg-[#dfdfdf]",
+          "bg-create-convo-primary hover:bg-create-convo-primary-hover",
           !isOpen && "gap-0 px-0",
-          isCreateConversationClicked && "bg-[#cfcece] hover:bg-[#c1bfbf]",
+          isCreateConversationClicked && "bg-create-convo-secondary hover:bg-create-convo-secondary-hover",
         )}
         icon={<Pencil />}
         onClick={onClick}

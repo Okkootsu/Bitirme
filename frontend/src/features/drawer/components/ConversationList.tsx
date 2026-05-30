@@ -33,7 +33,7 @@ export const ConversationList = ({
             className={cn(
               "pr-10",
               selectedConversation === chat.id &&
-                "bg-gray-900 hover:bg-gray-950 text-white",
+                "bg-gray-900 hover:bg-gray-950 text-white dark:bg-zinc-950 dark:hover:bg-black",
             )}
           >
             <span
