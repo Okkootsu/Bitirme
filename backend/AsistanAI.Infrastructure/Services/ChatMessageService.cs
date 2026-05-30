@@ -133,21 +133,35 @@ public class ChatMessageService : IChatMessageService
         var fullContent = new System.Text.StringBuilder();
         List<string> ragSources = new();
 
-        var streamResult = await _aiService.StreamResponseAsync(messageDto.Content, history);
-        if (streamResult != null)
-        {
-            ragSources = streamResult.Value.Context.RagSources;
+        // ------------- Test için geçici olarak commentledim (Asıl çalışması gereken kod) ---------------
+        // var streamResult = await _aiService.StreamResponseAsync(messageDto.Content, history);
+        // if (streamResult != null)
+        // {
+        //     ragSources = streamResult.Value.Context.RagSources;
 
-            await foreach (var chunk in streamResult.Value.TextStream)
-            {
-                fullContent.Append(chunk);
-                yield return JsonSerializer.Serialize(new
-                {
-                    type = "chunk",
-                    text = chunk
-                }, _jsonOptions);
-            }
-        }
+        //     await foreach (var chunk in streamResult.Value.TextStream)
+        //     {
+        //         fullContent.Append(chunk);
+        //         yield return JsonSerializer.Serialize(new
+        //         {
+        //             type = "chunk",
+        //             text = chunk
+        //         }, _jsonOptions);
+        //     }
+        // }
+
+        // +++++++++ SAHTE AI KODUNU EKLİYORUZ +++++++++ 
+        string mockText = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+        fullContent.Append(mockText);
+
+        await Task.Delay(500); 
+
+        yield return JsonSerializer.Serialize(new
+        {
+            type = "chunk",
+            text = mockText
+        }, _jsonOptions);
+        // +++++++++++++++++++++++++++++++++++++++++++++
 
         // 5. AI mesajini kaydet
         var aiText = fullContent.Length > 0 ? fullContent.ToString() : "Yanıt üretilemedi.";

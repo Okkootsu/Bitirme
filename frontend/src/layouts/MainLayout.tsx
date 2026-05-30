@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 export const MainLayout = () => {
   return (
-    <div className="relative min-h-screen flex">
+    <div className="relative  h-screen flex ">
       {/* Sayfanın sol tarafında kalan ve sohbetler/hesap-ayarları kısmını barındırır */}
       <DrawerInterface />
 

@@ -8,19 +8,16 @@ import { FormModal } from "@/features/auth/components/FormModal";
 import { useAuth } from "@/features/auth/hooks/useAuth";
 import { useConversationStore } from "@/store/conversationStore";
 import { SymptomForm } from "@/features/prediction/components/SymptomForm";
-import { Button } from "@/components/Button";
 import { Moon, Sun } from "lucide-react";
 
 export const ChatInterface = () => {
-  const {
-    setInput,
-    isChatStarted,
-    handleSendMessage,
-    endOfMessagesRef,
-  } = useChat();
+  const { setInput, isChatStarted, handleSendMessage, endOfMessagesRef } =
+    useChat();
 
   const { isDialogOpen, setIsDialogOpen } = useAuth();
-  const currentMessages = useConversationStore((state) => state.currentMessages);
+  const currentMessages = useConversationStore(
+    (state) => state.currentMessages,
+  );
   const darkMode = useConversationStore((state) => state.darkMode);
   const toggleDarkMode = useConversationStore((state) => state.toggleDarkMode);
   const [isSymptomFormOpen, setIsSymptomFormOpen] = useState(false);
@@ -30,7 +27,7 @@ export const ChatInterface = () => {
   return (
     <div
       className={cn(
-        "relative flex-1 flex flex-col bg-background overflow-hidden",
+        "relative flex-1 flex flex-col overflow-hidden bg-background",
         isChatStarted ? "justify-between" : "items-center justify-center gap-8",
       )}
     >
@@ -54,6 +51,7 @@ export const ChatInterface = () => {
       </div>
 
       {/* Mesaj Alanı */}
+
       {isChatStarted && (
         <ChatList
           maxWidthClass={maxWidthClass}
@@ -62,22 +60,19 @@ export const ChatInterface = () => {
         />
       )}
 
-      <div className={cn(
-        "flex flex-col items-center gap-3 w-full shrink-0 px-4 pb-8 pt-5 bg-background/30 backdrop-blur-3xl border-border/20",
-        isChatStarted && "border-t-3",
-      )}>
-        <div className={cn("w-full mx-auto flex flex-col gap-3", maxWidthClass)}>
-          <Button
-            variant="iconOutline"
-            onClick={() => setIsSymptomFormOpen(true)}
-            className="w-full text-sm py-2 rounded-xl border-blue-300 text-blue-600 hover:bg-blue-50 dark:border-blue-700 dark:text-blue-400 dark:hover:bg-blue-900/30"
-          >
-            Diyabet Risk Testi
-          </Button>
-
+      <div
+        className={cn(
+          "flex flex-col items-center gap-3 w-full shrink-0 px-4 pb-8 pt-5 bg-background/30 backdrop-blur-3xl border-border/20",
+          isChatStarted && "border-t-3",
+        )}
+      >
+        <div
+          className={cn("w-full mx-auto flex flex-col gap-3", maxWidthClass)}
+        >
           <ChatInput
             setInput={setInput}
             handleSendMessage={handleSendMessage}
+            onPlusClick={() => setIsSymptomFormOpen(true)}
           />
         </div>
       </div>

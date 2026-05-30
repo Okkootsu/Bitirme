@@ -40,7 +40,7 @@ export const ChatList = ({
   const isAiTyping = useConversationStore((state) => state.isAiTyping);
 
   return (
-    <div className="flex-1 overflow-y-auto no-scrollbar w-full">
+    <div className="flex flex-col flex-1 items-center absolute overflow-y-auto no-scrollbar pt-20 pb-34 w-full h-screen">
       <div className={cn("mx-auto w-full px-4 pt-4 pb-4", maxWidthClass)}>
         {messages.map((msg) => (
           <div key={msg.id} className="mb-3">
