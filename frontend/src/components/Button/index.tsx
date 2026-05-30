@@ -20,8 +20,8 @@ export const Button = ({
 
   const variants = {
     primary:
-      "w-full bg-button text-black border border-border hover:bg-button-hover ",
-    icon: "bg-transparent hover:bg-[#f0efeb] border border-transparent",
+      "w-full bg-button text-black border border-border hover:bg-button-hover dark:text-white ",
+    icon: "bg-transparent hover:bg-[#f0efeb] dark:hover:bg-[#27272a] border border-transparent",
     iconOutline:
       "w-full bg-transparent hover:bg-[#f0efeb] border border-border",
   };

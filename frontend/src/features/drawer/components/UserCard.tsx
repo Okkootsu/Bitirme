@@ -18,7 +18,7 @@ export const UserCard = ({ isOpen }: UserCardProps) => {
       <Button
         variant="primary"
         className={cn(
-          "flex justify-start bg-[#f0f0f0] hover:bg-[#e1e3e6] dark:bg-[#2a2b45] dark:hover:bg-[#35365a] cursor-pointer border border-border rounded-xl py-2 px-3 gap-3",
+          "flex justify-start bg-[#f0f0f0] hover:bg-[#e1e3e6] dark:bg-[#1d1e2b] dark:hover:bg-[#151523] cursor-pointer border border-border rounded-xl py-2 px-3 gap-3",
           !isOpen && "gap-0 px-0 py-1 justify-center",
         )}
         icon={
