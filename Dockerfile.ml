@@ -14,16 +14,15 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 # 2. RAG module
 COPY rag/ ./rag/
 
-# 3. Helper scripts (model download + entrypoint)
-COPY scripts/ ./scripts/
-RUN chmod +x ./scripts/entrypoint.sh
+# 3. Model files (local — no download needed)
+COPY diabetes_model.pkl ./
+COPY onnx_model/ ./onnx_model/
+COPY faiss_index/ ./faiss_index/
 
-# 4. Static config files
+# 5. Static config files
 COPY feature_importance.json model_report.json ./
 
-# 5. API code (changes most often — last layer for fast rebuilds)
+# 6. API code (changes most often — last layer for fast rebuilds)
 COPY api.py ./
 
-# Model files (onnx_model/, faiss_index/, diabetes_model.pkl) are downloaded
-# at first container start from GitHub Releases — see scripts/entrypoint.sh
-CMD ["./scripts/entrypoint.sh"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
