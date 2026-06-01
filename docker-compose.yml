@@ -27,6 +27,9 @@ services:
       - "8000:8000"
     volumes:
       - ./knowledge_base:/app/knowledge_base
+      - ml_models:/app/onnx_model
+      - ml_faiss:/app/faiss_index
+      - ml_pkl:/app/model_cache
     cpus: 1.5
     mem_limit: 1536m
     healthcheck:
@@ -34,7 +37,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 30s
+      start_period: 120s
 
   # 3. .NET 9 Backend
   backend:
@@ -78,3 +81,6 @@ services:
 
 volumes:
   pgdata:
+  ml_models:
+  ml_faiss:
+  ml_pkl:
