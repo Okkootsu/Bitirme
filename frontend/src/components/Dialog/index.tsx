@@ -39,7 +39,7 @@ export const Dialog = ({
       onClick={handleOverlayClick}
     >
       {/* Asıl dialog'u oluşturan kısım */}
-      <div className={cn("bg-card shadow-xl rounded-xl ")}>
+      <div className={cn("bg-card shadow-xl rounded-xl w-full max-w-lg m-4 flex flex-col max-h-[90vh]")}>
         {!isLocked && (
           <div className="relative min-h-14 flex justify-between gap-2 py-1 px-2 border-b-2 border-card-hover ">
             <h2 className="font-bold text-2xl flex flex-1 justify-center items-center ">

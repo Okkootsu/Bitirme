@@ -32,7 +32,6 @@ export const InputSection = ({
         label="E-posta"
         value={formValues.email}
         onChange={onChange}
-        className="min-w-70"
       />
 
       <Input

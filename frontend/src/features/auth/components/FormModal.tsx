@@ -17,7 +17,7 @@ export const FormModal = () => {
   } = useAuth();
 
   return (
-    <div className="flex flex-col py-12 px-14 gap-6">
+    <div className="flex flex-1 flex-col py-6 px-6 md:py-12 md:px-14 gap-6 overflow-y-auto">
       <InputSection
         formValues={formValues}
         showPassword={showPassword}

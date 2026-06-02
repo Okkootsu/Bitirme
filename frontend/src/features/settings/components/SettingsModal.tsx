@@ -6,7 +6,7 @@ export const SettingsModal = () => {
   const { handleLogout } = useAuth();
 
   return (
-    <div className="flex flex-col p-4 w-108 h-96 ">
+    <div className="flex flex-col p-4 w-full h-96">
       <Card className="w-full max-w-full flex justify-between items-center dark:bg-zinc-800 ">
         <span className="font-bold text-lg">Hesaptan Çıkış Yap?</span>
         <Button
