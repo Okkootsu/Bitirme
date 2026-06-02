@@ -8,7 +8,8 @@ import { FormModal } from "@/features/auth/components/FormModal";
 import { useAuth } from "@/features/auth/hooks/useAuth";
 import { useConversationStore } from "@/store/conversationStore";
 import { SymptomForm } from "@/features/prediction/components/SymptomForm";
-import { Moon, Sun } from "lucide-react";
+import { Menu, Moon, Sun } from "lucide-react";
+import { useDrawer } from "@/features/drawer/hooks/useDrawer";
 
 export const ChatInterface = () => {
   const { setInput, isChatStarted, handleSendMessage, endOfMessagesRef } =
@@ -24,6 +25,8 @@ export const ChatInterface = () => {
 
   const maxWidthClass = "max-w-4xl";
 
+  const { handleToggleButton } = useDrawer();
+
   return (
     <div
       className={cn(
@@ -33,11 +36,20 @@ export const ChatInterface = () => {
     >
       <div
         className={cn(
-          "z-10 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0",
+          "z-20 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0",
           isChatStarted && "border-b-3",
         )}
       >
-        <div />
+        <button
+          onClick={handleToggleButton}
+          className="md:hidden p-2 -ml-2 rounded-lg hover:bg-card text-gray-600 dark:text-gray-300 transition-colors"
+          title="Menüyü Aç"
+        >
+          <Menu size={24} />
+        </button>
+
+        <div className="hidden md:block w-8" />
+
         <h1 className="text-4xl font-extrabold text-gray-800 dark:text-gray-100 tracking-tight">
           Asistan.ai
         </h1>

@@ -36,7 +36,7 @@ export const SymptomForm = ({ isOpen, onClose }: Props) => {
 
   return (
     <Dialog isOpen={isOpen} isLocked={false} title="Diyabet Risk Testi" onClose={onClose}>
-      <div className="p-6 flex flex-col gap-5 w-[340px] sm:w-[520px] max-h-[80vh] overflow-y-auto">
+      <div className="p-6 flex flex-col gap-5 w-[340px] sm:w-[520px] max-h-[80vh] overflow-y-auto no-scrollbar">
         {/* Yaş ve Cinsiyet */}
         <div className="flex gap-4">
           <div className="flex flex-col gap-1 flex-1">
@@ -108,7 +108,7 @@ export const SymptomForm = ({ isOpen, onClose }: Props) => {
         </div>
 
         {/* Klinik Değerler */}
-        <div className="flex gap-4">
+        <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1 flex-1">
             <label className="text-sm font-medium text-gray-700">Açlık Kan Şekeri (mg/dL)</label>
             <input

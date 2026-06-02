@@ -44,14 +44,25 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
+// builder.Services.AddCors(options =>
+// {
+//     options.AddPolicy("ReactApp", policy =>
+//     {
+//         policy.WithOrigins("http://localhost:3000", "http://localhost:5173") // React adresi
+//               .AllowAnyHeader()
+//               .AllowAnyMethod()
+//               .AllowCredentials(); 
+//     });
+// });
+
+// Geçici kod, üstteki asıl kod -----------------------------------------------------------------------
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("ReactApp", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:5173") // React adresi
+        policy.AllowAnyOrigin()
               .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials(); 
+              .AllowAnyMethod();
     });
 });
 
@@ -125,7 +136,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("ReactApp"); 
+// ---------------------------------------------------------------------------------
+// app.UseCors("ReactApp"); 
+app.UseCors("AllowAll"); // Geçici olarak tüm kaynaklara izin ver, üstteki asıl kod
 
 app.UseAuthentication();
 

@@ -1,11 +1,8 @@
-import { useState } from "react";
+import { useDrawerStore } from "../store/drawerStore";
 
 export const useDrawer = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
-
-  const handleToggleButton = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const isOpen = useDrawerStore((state) => state.isOpen);
+  const handleToggleButton = useDrawerStore((state) => state.handleToggleButton);
 
   return {
     isOpen,
