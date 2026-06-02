@@ -238,6 +238,8 @@ class RetrievedChunk(BaseModel):
     text: str
     source: str
     score: float
+    category: Optional[str] = None
+    source_type: Optional[str] = None
 
 
 # =========================
@@ -559,11 +561,14 @@ def _calculate_clinical_score(glucose: Optional[float], hba1c: Optional[float]) 
 
 # =============================================
 # WEIGHTED FUSION ENGINE
-# Dynamic weights based on data availability:
-#   - Only risk factors     → ML 100%
-#   - Risk + symptoms       → ML 60% + Symptom 40%
-#   - Risk + clinical       → ML 50% + Clinical 50%
-#   - All three layers      → ML 40% + Symptom 30% + Clinical 30%
+# Headroom-scaled additive approach:
+#   1. ML score is the baseline — symptom/clinical data can only push UP.
+#   2. Boost is proportional to the remaining headroom (1 − ml_score),
+#      preventing overshoot when ML is already high.
+#   3. A single mild symptom (e.g. fatigue=12%) no longer dilutes a
+#      higher ML score, fixing the original "always 20-30%" bug.
+#
+# Formula: final = ml + headroom × Σ(weight_i × layer_i)
 # =============================================
 def _weighted_fusion(
     ml_score: float,
@@ -572,7 +577,8 @@ def _weighted_fusion(
     data: PatientInput,
 ) -> float:
     """
-    Combine layer scores with dynamic weights based on data availability.
+    Combine layer scores so that symptoms/clinical data can only
+    increase risk above the ML baseline, scaled by available headroom.
     """
     has_symptoms = any([
         data.polyuria, data.polydipsia, data.unexplained_weight_loss,
@@ -581,19 +587,18 @@ def _weighted_fusion(
     ])
     has_clinical = data.blood_glucose is not None or data.hba1c is not None
 
-    if has_symptoms and has_clinical:
-        # All three layers available
-        final = ml_score * 0.40 + symptom_score * 0.30 + clinical_score * 0.30
-    elif has_symptoms:
-        # Risk factors + symptoms
-        final = ml_score * 0.60 + symptom_score * 0.40
-    elif has_clinical:
-        # Risk factors + clinical labs
-        final = ml_score * 0.50 + clinical_score * 0.50
-    else:
-        # Only risk factors
-        final = ml_score
+    headroom = 1.0 - ml_score  # how much room above ML baseline
 
+    if has_symptoms and has_clinical:
+        boost = symptom_score * 0.40 + clinical_score * 0.60
+    elif has_symptoms:
+        boost = symptom_score * 0.55
+    elif has_clinical:
+        boost = clinical_score * 0.70
+    else:
+        return ml_score
+
+    final = ml_score + headroom * boost
     return min(1.0, max(0.0, final))
 
 

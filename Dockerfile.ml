@@ -24,6 +24,5 @@ COPY feature_importance.json model_report.json ./
 # 5. API code (changes most often — last layer for fast rebuilds)
 COPY api.py ./
 
-# Model files (onnx_model/, faiss_index/, diabetes_model.pkl) are downloaded
-# at first container start from GitHub Releases — see scripts/entrypoint.sh
+# Model files are downloaded at first start from GitHub Releases
 CMD ["./scripts/entrypoint.sh"]

@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 
-# Download model files if not present (first run only - volumes persist them)
-if [ ! -f /app/model_cache/diabetes_model.pkl ] || [ ! -f /app/onnx_model/model.onnx ]; then
-    echo "First run: downloading model files from GitHub Releases..."
+# Download model files from GitHub Releases if not present
+if [ ! -f /app/model_cache/diabetes_model.pkl ] || [ ! -f /app/onnx_model/model.onnx ] || [ ! -f /app/faiss_index/index.faiss ]; then
+    echo "Downloading model files from GitHub Releases..."
     python /app/scripts/download_models.py
 fi
 
-# Symlink pkl from volume to where api.py expects it
+# Symlink pkl to where api.py expects it
 if [ ! -f /app/diabetes_model.pkl ]; then
     ln -s /app/model_cache/diabetes_model.pkl /app/diabetes_model.pkl
 fi
