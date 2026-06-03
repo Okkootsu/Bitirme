@@ -10,6 +10,7 @@ import { useConversationStore } from "@/store/conversationStore";
 import { SymptomForm } from "@/features/prediction/components/SymptomForm";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useDrawer } from "@/features/drawer/hooks/useDrawer";
+import { InsulinReminderModal } from "@/features/reminder/components/InsulinReminderModal";
 
 export const ChatInterface = () => {
   const { setInput, isChatStarted, handleSendMessage, endOfMessagesRef } =
@@ -22,6 +23,7 @@ export const ChatInterface = () => {
   const darkMode = useConversationStore((state) => state.darkMode);
   const toggleDarkMode = useConversationStore((state) => state.toggleDarkMode);
   const [isSymptomFormOpen, setIsSymptomFormOpen] = useState(false);
+  const [isReminderFormOpen, setIsReminderFormOpen] = useState(false);
 
   const maxWidthClass = "max-w-4xl";
 
@@ -74,7 +76,7 @@ export const ChatInterface = () => {
 
       <div
         className={cn(
-          "flex flex-col items-center gap-3 w-full shrink-0 px-4 pb-8 pt-5 bg-background/30 backdrop-blur-3xl border-border/20",
+          "relative z-30 flex flex-col items-center gap-3 w-full shrink-0 px-4 pb-8 pt-5 bg-background/30 backdrop-blur-3xl border-border/20",
           isChatStarted && "border-t-3",
         )}
       >
@@ -84,7 +86,8 @@ export const ChatInterface = () => {
           <ChatInput
             setInput={setInput}
             handleSendMessage={handleSendMessage}
-            onPlusClick={() => setIsSymptomFormOpen(true)}
+            onOpenSymptomForm={() => setIsSymptomFormOpen(true)}
+            onOpenReminderForm={() => setIsReminderFormOpen(true)}
           />
         </div>
       </div>
@@ -103,6 +106,17 @@ export const ChatInterface = () => {
         isOpen={isSymptomFormOpen}
         onClose={() => setIsSymptomFormOpen(false)}
       />
+
+      <Dialog
+        isOpen={isReminderFormOpen}
+        onClose={() => setIsReminderFormOpen(false)}
+        title="İnsülin Hatırlatıcı"
+      >
+        <InsulinReminderModal
+          isOpen={isReminderFormOpen}
+          onClose={() => setIsReminderFormOpen(false)}
+        />
+      </Dialog>
     </div>
   );
 };
