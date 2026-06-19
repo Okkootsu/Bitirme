@@ -38,8 +38,8 @@ export const ChatInterface = () => {
     >
       <div
         className={cn(
-          "z-20 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0",
-          isChatStarted && "border-b-3",
+          "z-20 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0 ",
+          isChatStarted ? "border-b-3" : "mb-4",
         )}
       >
         <button
@@ -52,9 +52,18 @@ export const ChatInterface = () => {
 
         <div className="hidden md:block w-8" />
 
-        <h1 className="text-4xl font-extrabold text-gray-800 dark:text-gray-100 tracking-tight">
-          Asistan.ai
-        </h1>
+        {/* <h1 className="text-4xl font-extrabold text-gray-800 dark:text-gray-100 tracking-tight">
+          İnsülita
+        </h1> */}
+
+        <img 
+          src="/logo-full-2.png"
+          alt="İnsülita Logo" 
+          className={cn("w-auto object-contain drop-shadow-sm",
+            isChatStarted ? "h-12 md:h-14" : "h-18 md:h-36"
+          )}
+        />
+
         <button
           onClick={toggleDarkMode}
           className="p-2 rounded-lg hover:bg-card transition-colors text-gray-600 dark:text-gray-300"
