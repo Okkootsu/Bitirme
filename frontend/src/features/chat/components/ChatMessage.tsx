@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 import { useState } from "react";
 import Markdown from "react-markdown";
 import rehypeSanitize from "rehype-sanitize";
-import type { PredictionData } from "@/store/conversationStore";
+import type { PredictionData, RiskFactorCard } from "@/store/conversationStore";
 import { RiskDashboard } from "@/features/prediction/components/RiskDashboard";
 
 type ChatMessageProps = {
@@ -24,6 +24,197 @@ const formatTime = (dateStr?: string) => {
   }
 };
 
+const parsePredictionMessage = (content: string): PredictionData | undefined => {
+  try {
+    if (!content.includes("Diyabet Risk Değerlendirmesi")) return undefined;
+
+    // Check if there is hidden metadata
+    const commentMatch = content.match(/<!-- PREDICTION_DATA:(.*?) -->/);
+    if (commentMatch) {
+      try {
+        const data = JSON.parse(commentMatch[1]);
+        return {
+          riskProbability: data.riskProbability,
+          riskCategory: data.riskCategory,
+          confidenceLevel: data.confidenceLevel,
+          contributingFactors: data.contributingFactors || [],
+          mlScore: data.mlScore || 0,
+          symptomScore: data.symptomScore || 0,
+          clinicalScore: data.clinicalScore || 0,
+          activeSymptoms: data.activeSymptoms || [],
+          riskFactorCards: data.riskFactorCards || [],
+          shapValues: data.shapValues
+        };
+      } catch (jsonErr) {
+        console.error("Failed to parse prediction JSON metadata", jsonErr);
+      }
+    }
+
+    let riskCategory = "Medium";
+    const categoryMatch = content.match(/Risk Kategorisi:\s*\*\*(.*?)\*\*/);
+    if (categoryMatch) {
+      const cat = categoryMatch[1].trim();
+      if (cat.includes("Düşük")) riskCategory = "Low";
+      else if (cat.includes("Yüksek")) riskCategory = "High";
+      else riskCategory = "Medium";
+    }
+
+    let riskProbability = 0.5;
+    const probMatch = content.match(/Olasılık:\s*\*\*(.*?)\*\*/);
+    if (probMatch) {
+      const pct = parseInt(probMatch[1].replace(/[^0-9]/g, ""), 10);
+      if (!isNaN(pct)) riskProbability = pct / 100;
+    }
+
+    let confidenceLevel = "low";
+    const confMatch = content.match(/Güven Düzeyi:\s*(.*?)(\n|$)/);
+    if (confMatch) {
+      const conf = confMatch[1].trim();
+      if (conf.includes("Çok Yüksek")) confidenceLevel = "very_high";
+      else if (conf.includes("Yüksek")) confidenceLevel = "high";
+      else if (conf.includes("Orta")) confidenceLevel = "moderate";
+      else confidenceLevel = "low";
+    }
+
+    let mlScore = 0;
+    let symptomScore = 0;
+    let clinicalScore = 0;
+
+    const mlMatch = content.match(/ML Model:\s*%?([0-9]+)/);
+    if (mlMatch) mlScore = parseInt(mlMatch[1], 10) / 100;
+
+    const symptomMatch = content.match(/Semptom:\s*%?([0-9]+)/);
+    if (symptomMatch) symptomScore = parseInt(symptomMatch[1], 10) / 100;
+
+    const clinicalMatch = content.match(/Klinik:\s*%?([0-9]+)/);
+    if (clinicalMatch) clinicalScore = parseInt(clinicalMatch[1], 10) / 100;
+
+    const contributingFactors: string[] = [];
+    const activeSymptoms: string[] = [];
+    const riskFactorCards: RiskFactorCard[] = [];
+
+    const symptomList = [
+      "sık idrara çıkma (poliüri)",
+      "aşırı susama (polidipsi)",
+      "açıklanamayan kilo kaybı",
+      "yorgunluk / halsizlik",
+      "bulanık görme",
+      "yara iyileşme gecikmesi",
+      "sık enfeksiyon geçirme",
+      "karıncalanma / uyuşma"
+    ];
+
+    if (content.includes("Katkı yapan faktörler:")) {
+      const parts = content.split("Katkı yapan faktörler:");
+      if (parts.length > 1) {
+        const factorLines = parts[1].split("\n");
+        for (const line of factorLines) {
+          const trimmed = line.trim();
+          if (trimmed.startsWith("•") || trimmed.startsWith("-") || trimmed.startsWith("*")) {
+            let factor = trimmed.slice(1).trim();
+            // Remove markdown bold markings like **
+            factor = factor.replace(/^\*+|\*+$/g, "").trim();
+            if (!factor || factor.toLowerCase().includes("katkı yapan faktörler")) {
+              continue;
+            }
+            contributingFactors.push(factor);
+            const lowerFactor = factor.toLowerCase();
+
+            // Check if it's a symptom
+            if (symptomList.some(s => lowerFactor.includes(s) || s.includes(lowerFactor))) {
+              activeSymptoms.push(factor);
+            } else {
+              // Map to RiskFactorCard
+              let cardName = factor;
+              let cardValue = "Var";
+              let cardStatus: "risk" | "protective" | "neutral" = "risk";
+
+              if (lowerFactor.includes("tansiyon")) {
+                cardName = "Yüksek Tansiyon";
+                cardValue = "Var";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("kolesterol")) {
+                cardName = "Yüksek Kolesterol";
+                cardValue = "Var";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("sigara")) {
+                cardName = "Sigara Kullanımı";
+                cardValue = "Kullanıyor";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("kalp")) {
+                cardName = "Kalp Hastalığı";
+                cardValue = "Var";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("yürüme")) {
+                cardName = "Yürüme Zorluğu";
+                cardValue = "Var";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("alkol")) {
+                cardName = "Alkol Kullanımı";
+                cardValue = "Var";
+                cardStatus = "risk";
+              } else if (lowerFactor.includes("fiziksel")) {
+                cardName = "Fiziksel Aktivite";
+                cardValue = "Düzenli";
+                cardStatus = "protective";
+              } else if (lowerFactor.includes("meyve")) {
+                cardName = "Meyve Tüketimi";
+                cardValue = "Her gün";
+                cardStatus = "protective";
+              } else if (lowerFactor.includes("sebze")) {
+                cardName = "Sebze Tüketimi";
+                cardValue = "Her gün";
+                cardStatus = "protective";
+              } else if (lowerFactor.includes("sağlık")) {
+                cardName = "Genel Sağlık";
+                cardStatus = "neutral";
+                if (lowerFactor.includes("kötü")) {
+                  cardValue = "Kötü";
+                  cardStatus = "risk";
+                } else if (lowerFactor.includes("orta")) {
+                  cardValue = "Orta";
+                  cardStatus = "neutral";
+                } else if (lowerFactor.includes("iyi")) {
+                  cardValue = "İyi";
+                  cardStatus = "protective";
+                } else if (lowerFactor.includes("çok iyi")) {
+                  cardValue = "Çok İyi";
+                  cardStatus = "protective";
+                } else if (lowerFactor.includes("mükemmel")) {
+                  cardValue = "Mükemmel";
+                  cardStatus = "protective";
+                }
+              }
+
+              riskFactorCards.push({
+                name: cardName,
+                value: cardValue,
+                status: cardStatus,
+                detail: factor
+              });
+            }
+          }
+        }
+      }
+    }
+
+    return {
+      riskProbability,
+      riskCategory,
+      confidenceLevel,
+      contributingFactors,
+      mlScore,
+      symptomScore,
+      clinicalScore,
+      activeSymptoms,
+      riskFactorCards
+    };
+  } catch (e) {
+    console.error("Error parsing prediction message", e);
+    return undefined;
+  }
+};
+
 export const ChatMessage = ({
   message,
   isUser,
@@ -35,19 +226,23 @@ export const ChatMessage = ({
   const hasSources = !isUser && ragSources && ragSources.length > 0;
   const time = formatTime(createdAt);
 
+  const finalPredictionData = !predictionData && !isUser && message.includes("Diyabet Risk Değerlendirmesi")
+    ? parsePredictionMessage(message)
+    : predictionData;
+
   return (
     <div
       className={cn(
         "flex w-full",
-        predictionData ? "justify-center" : isUser ? "justify-end" : "justify-start"
+        finalPredictionData ? "justify-center" : isUser ? "justify-end" : "justify-start"
       )}
     >
       <div className={cn(
-        predictionData ? "w-full max-w-[520px]" : "max-w-[85%]",
-        !isUser && !predictionData && "min-w-[40%]"
+        finalPredictionData ? "w-full max-w-[520px]" : "max-w-[85%]",
+        !isUser && !finalPredictionData && "min-w-[40%]"
       )}>
-        {predictionData ? (
-          <RiskDashboard data={predictionData} />
+        {finalPredictionData ? (
+          <RiskDashboard data={finalPredictionData} />
         ) : (
           <Card
             className={cn(

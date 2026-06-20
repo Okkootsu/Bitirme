@@ -1,5 +1,6 @@
 using System.Net.Http.Json;
 using System.Text.Json;
+using System.Linq;
 using AsistanAI.Core.DTOs.Prediction;
 using AsistanAI.Core.Enums;
 using AsistanAI.Core.Interfaces.Prediction;
@@ -148,12 +149,36 @@ public class PredictionService : IPredictionService
                 $"• Klinik: %{(clinicalScore * 100):F0}";
 
             var formattedMessage =
-                $"{emoji} **Diyabet Risk Değerlendirmesi (Hybrid)**\n\n" +
+                $"{emoji} **Diyabet Risk Değerlendirmesi**\n\n" +
                 $"Risk Kategorisi: **{categoryTr}**\n" +
                 $"Olasılık: **{percentage}**\n" +
                 $"Güven Düzeyi: {confidenceTr}" +
                 layerText +
                 factorsText;
+
+            var metadata = new
+            {
+                riskProbability,
+                riskCategory,
+                confidenceLevel,
+                contributingFactors,
+                mlScore,
+                symptomScore,
+                clinicalScore,
+                activeSymptoms,
+                riskFactorCards = riskFactorCards.Select(c => new {
+                    name = c.Name,
+                    value = c.Value,
+                    status = c.Status,
+                    detail = c.Detail
+                }),
+                shapValues
+            };
+            var jsonMetadata = JsonSerializer.Serialize(metadata, new JsonSerializerOptions 
+            { 
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase 
+            });
+            formattedMessage += $"\n\n<!-- PREDICTION_DATA:{jsonMetadata} -->";
 
             var dto = new PredictionResponseDto
             {

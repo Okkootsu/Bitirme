@@ -38,7 +38,7 @@ export const ChatInterface = () => {
     >
       <div
         className={cn(
-          "z-20 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/30 border-border/20 shrink-0 ",
+          "z-20 h-16 backdrop-blur-3xl flex items-center justify-between px-6 top-0 w-full bg-background/60 border-border/20 shrink-0 ",
           isChatStarted ? "border-b-3" : "mb-4",
         )}
       >
