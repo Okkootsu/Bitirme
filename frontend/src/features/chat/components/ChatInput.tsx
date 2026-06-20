@@ -38,7 +38,7 @@ export const ChatInput = ({
       {/* DROPDOWN MENU */}
       <div
         className={cn(
-          "absolute bottom-16 left-2 bg-white dark:bg-zinc-800 border border-border rounded-xl shadow-xl flex flex-col p-2 gap-1 w-64 origin-bottom-left transition-all duration-200 z-50",
+          "absolute bottom-16 mb-2 left-2 bg-white dark:bg-zinc-800 border border-border rounded-xl shadow-xl flex flex-col p-2 gap-1 w-64 origin-bottom-left transition-all duration-200 z-[70]",
           isMenuOpen
             ? "scale-100 opacity-100"
             : "scale-95 opacity-0 pointer-events-none",
@@ -74,7 +74,7 @@ export const ChatInput = ({
       </div>
 
       <PlaceholdersAndVanishInput
-        className="h-14 w-full"
+        className="w-full shadow-md"
         placeholders={["Merak ettiklerinizi yazın..."]}
         onChange={(e) => setInput(e.target.value)}
         onSubmit={handleSendMessage}
