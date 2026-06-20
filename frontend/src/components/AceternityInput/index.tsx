@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion"; // motion/react kullanıyorsan öyle kalabilir
+import { AnimatePresence, motion } from "framer-motion"; 
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/utils/cn";
 
@@ -13,7 +13,7 @@ export function PlaceholdersAndVanishInput({
 }: {
   className?: string;
   placeholders: string[];
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   onPlusClick?: () => void;
 }) {
@@ -45,10 +45,22 @@ export function PlaceholdersAndVanishInput({
     };
   }, [placeholders]);
 
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
   const [value, setValue] = useState("");
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.style.height = "3.5rem";
+      const scrollHeight = inputRef.current.scrollHeight;
+      const fontSize = parseFloat(window.getComputedStyle(inputRef.current).fontSize) || 16;
+      const baseHeight = fontSize * 3.5; 
+      if (scrollHeight > baseHeight) {
+        inputRef.current.style.height = `${Math.min(scrollHeight, 156)}px`;
+      }
+    }
+  }, [value]);
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSubmitOriginal(e as any);
@@ -65,7 +77,7 @@ export function PlaceholdersAndVanishInput({
   return (
     <form
       className={cn(
-        "w-full relative max-w-2xl mx-auto bg-white dark:bg-zinc-800 h-14 rounded-full overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
+        "w-full relative max-w-2xl mx-auto bg-white dark:bg-zinc-800 min-h-[56px] rounded-[28px] overflow-hidden shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),_0px_1px_0px_0px_rgba(25,28,33,0.02),_0px_0px_0px_1px_rgba(25,28,33,0.08)] transition duration-200",
         value && "bg-gray-50",
         className,
       )}
@@ -75,7 +87,7 @@ export function PlaceholdersAndVanishInput({
         <button
           type="button"
           onClick={onPlusClick}
-          className="absolute left-2.5 top-1/2 z-[60] -translate-y-1/2 h-9 w-9 shrink-0 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-zinc-700 transition-colors duration-200 flex items-center justify-center text-gray-500 dark:text-gray-400 cursor-pointer"
+          className="absolute left-2.5 bottom-2.5 z-[60] h-9 w-9 shrink-0 rounded-full bg-transparent hover:bg-gray-100 dark:hover:bg-zinc-700 transition-colors duration-200 flex items-center justify-center text-gray-500 dark:text-gray-400 cursor-pointer"
           title="Diyabet Risk Testi"
         >
           <svg
@@ -95,7 +107,7 @@ export function PlaceholdersAndVanishInput({
         </button>
       )}
 
-      <input
+      <textarea
         onChange={(e) => {
           setValue(e.target.value);
           onChange && onChange(e);
@@ -103,9 +115,9 @@ export function PlaceholdersAndVanishInput({
         onKeyDown={handleKeyDown}
         ref={inputRef}
         value={value}
-        type="text"
+        rows={1}
         className={cn(
-          "w-full relative text-sm sm:text-base z-50 border-none dark:text-white bg-transparent text-black h-full rounded-full focus:outline-none focus:ring-0 pr-14",
+          "w-full block relative text-sm sm:text-base leading-[24px] z-50 border-none dark:text-white bg-transparent text-black focus:outline-none focus:ring-0 resize-none py-[16px] pr-14 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-600 [&::-webkit-scrollbar-thumb]:rounded-full",
           onPlusClick ? "pl-14 sm:pl-16" : "pl-6 sm:pl-12",
         )}
       />
@@ -113,7 +125,7 @@ export function PlaceholdersAndVanishInput({
       <button
         disabled={!value}
         type="submit"
-        className="absolute right-2.5 top-1/2 z-[60] -translate-y-1/2 h-9 w-9 shrink-0 rounded-full disabled:bg-gray-100 bg-black dark:bg-zinc-900 dark:disabled:bg-zinc-800 transition duration-200 flex items-center justify-center cursor-pointer"
+        className="absolute right-2.5 bottom-2.5 z-[60] h-9 w-9 shrink-0 rounded-full disabled:bg-gray-100 bg-black dark:bg-zinc-900 dark:disabled:bg-zinc-800 transition duration-200 flex items-center justify-center cursor-pointer"
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +159,7 @@ export function PlaceholdersAndVanishInput({
         </motion.svg>
       </button>
 
-      <div className="absolute inset-0 flex items-center rounded-full pointer-events-none z-40">
+      <div className="absolute top-0 left-0 right-0 h-14 flex items-center rounded-[28px] pointer-events-none z-40">
         <AnimatePresence mode="wait">
           {!value && (
             <motion.p
