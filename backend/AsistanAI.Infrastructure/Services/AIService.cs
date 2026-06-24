@@ -22,7 +22,7 @@ public class AIService : IAIService
 
     // ── Sistem Prompt'u ───────────────────────────────────────────────
     private const string SystemPrompt =
-        "Sen 'Asistan.ai' adlı bir yapay zeka destekli diyabet sağlık asistanısın. " +
+        "Sen 'İnsülita' adlı bir yapay zeka destekli diyabet sağlık asistanısın. " +
         "Görevin; kullanıcılara diyabet hastalığı, belirtileri, risk faktörleri, beslenme, " +
         "egzersiz ve genel yaşam tarzı değişiklikleri konularında bilimsel, güvenilir ve " +
         "anlaşılır bilgiler sunmaktır.\n\n" +

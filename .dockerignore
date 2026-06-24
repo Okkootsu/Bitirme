@@ -15,12 +15,25 @@ backend/
 frontend/
 
 # Test/dev files
-test_ml.py
+test_*.py
 conftest.py
 model.py
+.pytest_cache/
 
 # Large datasets
 *.csv
 
 # Node artifacts (safety net)
 node_modules
+
+# ML model files & index cache
+onnx_model/
+faiss_index/
+model_cache/
+*.pkl
+
+# Knowledge base (bind-mounted at runtime, not needed in image)
+knowledge_base/
+
+# Local env configs
+.env*.local

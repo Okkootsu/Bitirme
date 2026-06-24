@@ -1,7 +1,16 @@
-bin
-obj
-.git
-.vscode
-.vs
-*.user
-appsettings.Development.json
+# Ignore build folders
+**/bin/
+**/obj/
+
+# Ignore IDE files
+**/.vs/
+**/.vscode/
+**/.idea/
+**/*.user
+
+# Ignore configuration / local settings
+**/appsettings.Development.json
+**/*.local
+
+# Ignore logs and diagnostics
+**/*.log
