@@ -7,7 +7,7 @@ scenarios = [
     {
         "name": "1. Saglikli Genc (25Y, Kadin)",
         "expected_risk": "Low",
-        "expected_range": (0.0, 0.25),
+        "expected_range": (0.0, 0.20),
         "data": {
             "age": 25, "gender": "Female", "bmi": 22.0,
             "high_bp": False, "high_chol": False, "physical_activity": True,
@@ -23,7 +23,7 @@ scenarios = [
     {
         "name": "2. Prediyabet (48Y, Erkek, IFG + hafif semptom)",
         "expected_risk": "Medium",
-        "expected_range": (0.30, 0.65),
+        "expected_range": (0.30, 0.60),
         "data": {
             "age": 48, "gender": "Male", "bmi": 29.5,
             "high_bp": True, "high_chol": True, "physical_activity": False,
@@ -39,7 +39,7 @@ scenarios = [
     {
         "name": "3. Yeni Tani T2DM (55Y, Erkek, klasik triad + diyabet lab)",
         "expected_risk": "High",
-        "expected_range": (0.75, 1.0),
+        "expected_range": (0.80, 1.0),
         "data": {
             "age": 55, "gender": "Male", "bmi": 33.0,
             "high_bp": True, "high_chol": True, "physical_activity": False,
@@ -71,7 +71,7 @@ scenarios = [
     {
         "name": "5. Asemptomatik T2DM (52Y, Kadin, yuksek lab, semptom yok)",
         "expected_risk": "High",
-        "expected_range": (0.55, 0.85),
+        "expected_range": (0.60, 0.90),
         "data": {
             "age": 52, "gender": "Female", "bmi": 31.0,
             "high_bp": True, "high_chol": False, "physical_activity": False,
@@ -87,7 +87,7 @@ scenarios = [
     {
         "name": "6. Semptom Agirlikli (40Y, Erkek, klasik triad, lab yok)",
         "expected_risk": "Medium",
-        "expected_range": (0.25, 0.55),
+        "expected_range": (0.30, 0.59),
         "data": {
             "age": 40, "gender": "Male", "bmi": 27.0,
             "high_bp": False, "high_chol": False, "physical_activity": True,
@@ -102,7 +102,7 @@ scenarios = [
     {
         "name": "7. Yasli Yuksek Riskli (70Y, Erkek, cok risk, normal lab)",
         "expected_risk": "Medium",
-        "expected_range": (0.30, 0.65),
+        "expected_range": (0.25, 0.55),
         "data": {
             "age": 70, "gender": "Male", "bmi": 30.0,
             "high_bp": True, "high_chol": True, "physical_activity": False,
@@ -118,7 +118,7 @@ scenarios = [
     {
         "name": "8. Genc Obez (30Y, Kadin, BMI 38, baska risk yok)",
         "expected_risk": "Low",
-        "expected_range": (0.10, 0.40),
+        "expected_range": (0.05, 0.25),
         "data": {
             "age": 30, "gender": "Female", "bmi": 38.0,
             "high_bp": False, "high_chol": False, "physical_activity": True,
@@ -134,7 +134,7 @@ scenarios = [
     {
         "name": "9. GDM Riski (28Y, Kadin, hafif yuksek FBG + yorgunluk)",
         "expected_risk": "Low",
-        "expected_range": (0.15, 0.45),
+        "expected_range": (0.15, 0.40),
         "data": {
             "age": 28, "gender": "Female", "bmi": 26.0,
             "high_bp": False, "high_chol": False, "physical_activity": True,
@@ -158,7 +158,7 @@ scenarios = [
     {
         "name": "11. Sinir Prediyabet (50Y, Erkek, FBG=100, HbA1c=5.7)",
         "expected_risk": "Medium",
-        "expected_range": (0.25, 0.50),
+        "expected_range": (0.30, 0.55),
         "data": {
             "age": 50, "gender": "Male", "bmi": 28.0,
             "high_bp": True, "high_chol": False, "physical_activity": False,
@@ -171,7 +171,7 @@ scenarios = [
     {
         "name": "12. Noropati Profili (60Y, Erkek, karincalanma+bulanik gorme)",
         "expected_risk": "Medium",
-        "expected_range": (0.30, 0.65),
+        "expected_range": (0.35, 0.65),
         "data": {
             "age": 60, "gender": "Male", "bmi": 29.0,
             "high_bp": True, "high_chol": True, "physical_activity": False,
@@ -311,14 +311,16 @@ for r in results:
     has_sym = sym > 0
     has_clin = clin > 0
     if has_sym and has_clin:
-        expected = ml * 0.40 + sym * 0.30 + clin * 0.30
-        mode = "ML*0.40+Sym*0.30+Clin*0.30"
-    elif has_sym:
-        expected = ml * 0.60 + sym * 0.40
-        mode = "ML*0.60+Sym*0.40"
+        expected = ml * 0.35 + clin * 0.45 + sym * 0.20
+        mode = "ML*0.35+Clin*0.45+Sym*0.20"
     elif has_clin:
-        expected = ml * 0.50 + clin * 0.50
-        mode = "ML*0.50+Clin*0.50"
+        expected = ml * 0.35 + clin * 0.65
+        mode = "ML*0.35+Clin*0.65"
+    elif has_sym:
+        base = ml * 0.60 + sym * 0.40
+        ceiling = 0.40 + sym * 0.50
+        expected = min(base, ceiling)
+        mode = "min(ML*0.60+Sym*0.40,ceil)"
     else:
         expected = ml
         mode = "ML*1.00"

@@ -63,12 +63,15 @@ public class ChatMessageService : IChatMessageService
                 $"Yapay zeka servisine ulaşılamadı: {ex.Message}", ServiceResultType.Failure);
         }
 
-        // 4. AI mesajını oluştur ve kaydet
+        // 4. AI mesajını oluştur ve kaydet (RAG kaynakları dahil)
         var aiMessage = new ChatMessage
         {
             Content = aiResult.Content,
             IsUserMessage = false,
-            ChatSessionId = messageDto.ChatSessionId
+            ChatSessionId = messageDto.ChatSessionId,
+            RagSources = aiResult.RagSources.Count > 0
+                ? JsonSerializer.Serialize(aiResult.RagSources)
+                : null
         };
 
         await _messageRepo.CreateMessageAsync(aiMessage);
@@ -163,13 +166,16 @@ public class ChatMessageService : IChatMessageService
         // }, _jsonOptions);
         // 
 
-        // 5. AI mesajini kaydet
+        // 5. AI mesajini kaydet (RAG kaynakları dahil)
         var aiText = fullContent.Length > 0 ? fullContent.ToString() : "Yanıt üretilemedi.";
         var aiMessage = new ChatMessage
         {
             Content = aiText,
             IsUserMessage = false,
-            ChatSessionId = messageDto.ChatSessionId
+            ChatSessionId = messageDto.ChatSessionId,
+            RagSources = ragSources.Count > 0
+                ? JsonSerializer.Serialize(ragSources)
+                : null
         };
         await _messageRepo.CreateMessageAsync(aiMessage);
         await _messageRepo.SaveChangesAsync();

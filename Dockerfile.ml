@@ -16,7 +16,7 @@ COPY rag/ ./rag/
 
 # 3. Helper scripts (model download + entrypoint)
 COPY scripts/ ./scripts/
-RUN chmod +x ./scripts/entrypoint.sh
+RUN sed -i 's/\r$//' ./scripts/entrypoint.sh && chmod +x ./scripts/entrypoint.sh
 
 # 4. Static config files
 COPY feature_importance.json model_report.json ./

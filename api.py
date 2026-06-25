@@ -561,14 +561,23 @@ def _calculate_clinical_score(glucose: Optional[float], hba1c: Optional[float]) 
 
 # =============================================
 # WEIGHTED FUSION ENGINE
-# Headroom-scaled additive approach:
-#   1. ML score is the baseline — symptom/clinical data can only push UP.
-#   2. Boost is proportional to the remaining headroom (1 − ml_score),
-#      preventing overshoot when ML is already high.
-#   3. A single mild symptom (e.g. fatigue=12%) no longer dilutes a
-#      higher ML score, fixing the original "always 20-30%" bug.
+# Bidirectional weighted-average approach:
+#   1. When clinical (lab) data is available, it gets dominant weight
+#      (65% alone, 45% with symptoms) because FPG/HbA1c directly
+#      measure glycemic state — the ADA diagnostic gold standard.
+#   2. ML score (lifestyle risk factors) gets secondary weight (35%)
+#      when labs are present, allowing normal labs to PULL DOWN a
+#      high ML score.
+#   3. Without lab confirmation, symptoms can push ML score up
+#      moderately, but a ceiling prevents "High" classification
+#      unless symptom evidence is strong (e.g. classic triad).
 #
-# Formula: final = ml + headroom × Σ(weight_i × layer_i)
+# Formula:
+#   clinical+symptoms: final = 0.35·ml + 0.45·clin + 0.20·sym
+#   clinical only:     final = 0.35·ml + 0.65·clin
+#   symptoms only:     final = min(0.60·ml + 0.40·sym, 0.40 + 0.50·sym)
+#   neither:           final = ml
+#   diagnostic floor:  if clinical >= 0.90 (ADA diabetes) → final >= 0.60
 # =============================================
 def _weighted_fusion(
     ml_score: float,
@@ -577,8 +586,8 @@ def _weighted_fusion(
     data: PatientInput,
 ) -> float:
     """
-    Combine layer scores so that symptoms/clinical data can only
-    increase risk above the ML baseline, scaled by available headroom.
+    Combine layer scores using weighted averaging that allows clinical
+    data to move the final score both UP and DOWN from ML baseline.
     """
     has_symptoms = any([
         data.polyuria, data.polydipsia, data.unexplained_weight_loss,
@@ -587,18 +596,29 @@ def _weighted_fusion(
     ])
     has_clinical = data.blood_glucose is not None or data.hba1c is not None
 
-    headroom = 1.0 - ml_score  # how much room above ML baseline
+    if has_clinical:
+        if has_symptoms:
+            # All three layers — clinical dominant, ML secondary, symptoms supportive
+            final = ml_score * 0.35 + clinical_score * 0.45 + symptom_score * 0.20
+        else:
+            # Labs without symptoms — clinical dominant
+            final = ml_score * 0.35 + clinical_score * 0.65
 
-    if has_symptoms and has_clinical:
-        boost = symptom_score * 0.40 + clinical_score * 0.60
+        # Diagnostic floor: ADA diabetes-level labs (FPG>=126 or HbA1c>=6.5)
+        # guarantee at least High risk, regardless of low ML score.
+        if clinical_score >= 0.90:
+            final = max(final, 0.60)
     elif has_symptoms:
-        boost = symptom_score * 0.55
-    elif has_clinical:
-        boost = clinical_score * 0.70
+        # Symptoms without labs — limited confidence
+        base = ml_score * 0.60 + symptom_score * 0.40
+        # Without lab confirmation, cap result based on symptom severity.
+        # Mild symptoms (0.12) → ceiling 0.46, classic triad (0.91) → ceiling 0.86
+        no_lab_ceiling = 0.40 + symptom_score * 0.50
+        final = min(base, no_lab_ceiling)
     else:
+        # ML only (minimum data)
         return ml_score
 
-    final = ml_score + headroom * boost
     return min(1.0, max(0.0, final))
 
 

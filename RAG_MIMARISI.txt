@@ -1,0 +1,817 @@
+================================================================================
+     INSULITA - RAG (RETRIEVAL AUGMENTED GENERATION) KATMANI MIMARISI
+================================================================================
+
+  Proje:    Insulita - Yapay Zeka Destekli Diyabet Asistani
+  Versiyon: 3.0-hybrid
+  Tarih:    2026-06-25
+
+================================================================================
+  1. GENEL BAKIS
+================================================================================
+
+  RAG sistemi, kullanicinin sorularina diyabet bilgi tabanindan ilgili
+  referanslari bulup, bu referanslarla zenginlestirilmis yanitlar uretir.
+
+  Hibrit erisim motoru: Semantik (FAISS) + Anahtar kelime (BM25) aramasi
+  Capraz dil destegi: Turkce soru -> Ingilizce bilgi tabani eslemesi
+
+  UCTAN UCA AKIS:
+
+  +------------------+
+  | Kullanici Sorusu  |
+  +--------+---------+
+           |
+           v
+  +--------+---------+     +-------------------+
+  | .NET Backend      |---->| Python ML Servisi |
+  | (AIService.cs)    |     | POST /rag/retrieve|
+  +--------+---------+     +--------+----------+
+           |                         |
+           |                +--------v----------+
+           |                | 1. Sorgu Gomu      |
+           |                |    (query embedding)|
+           |                +--------+----------+
+           |                         |
+           |                +--------v----------+
+           |                | 2. Hibrit Arama    |
+           |                |  FAISS + BM25-lite |
+           |                +--------+----------+
+           |                         |
+           |                +--------v----------+
+           |                | 3. RRF Fuzyon      |
+           |                |  Skor birlestirme  |
+           |                +--------+----------+
+           |                         |
+           |                +--------v----------+
+           |                | Top-5 Chunk        |
+           |                | (metin + kaynak)   |
+           |                +--------+----------+
+           |                         |
+           v                         v
+  +--------+-------------------------+---------+
+  | Gemini System Prompt'una Enjeksiyon        |
+  | "[Kaynak: ...] referans metni..."          |
+  +--------+-----------------------------------+
+           |
+           v
+  +--------+---------+
+  | Gemini API        |
+  | (gemini-2.5-flash)|
+  +--------+---------+
+           |
+           v
+  +--------+---------+
+  | Yanitlanmis Mesaj |
+  | + RAG Kaynaklari  |
+  +------------------+
+
+
+================================================================================
+  2. BILGI TABANI (Knowledge Base)
+================================================================================
+
+  2.1. Genel Bilgiler
+  --------------------
+  Konum:        /knowledge_base/
+  Dosya Sayisi: 101 dokuman
+  Diller:       Ingilizce (91 dokuman) + Turkce (10 dokuman)
+  Formatlar:    .txt ve .md dosyalari
+  Metadata:     metadata.json (dosya adi, baslik, dil bilgisi)
+
+  2.2. Konu Dagilimi
+  -------------------
+  Kategori                          Dokuman Sayisi   Ornekler
+  ---------------------------------------------------------------------------
+  Klinik & Tibbi Kilavuzlar         ~30              ADA Standards 2024,
+                                                     TEMD Kilavuzu 2024,
+                                                     Tip 1 & 2 Yonetimi
+
+  Yasam Tarzi & Onleme              ~25              Egzersiz, Beslenme,
+                                                     Kilo Yonetimi, Stres,
+                                                     Uyku, Alkol, Sigara
+
+  Komplikasyonlar & Komorbidite     ~15              Retinopati, Nefropati,
+                                                     Noropati, KVH, Enfeksiyon,
+                                                     Depresyon, Kanser
+
+  Ozel Populasyonlar                ~10              Pediatrik, Geriatrik,
+                                                     Gebelik, Okul Cocuklari
+
+  Bolgesel / Kulturel               ~10              Ramazan Orucu, Turk
+                                                     Mutfagi, Turkiye Saglik
+                                                     Haklari, WHO/IDF
+
+  Teknoloji & Modern                ~8               CGM, Insulin Pompasi,
+                                                     Mobil Uygulamalar,
+                                                     Dijital Saglik
+
+  Diger                             ~3               Akunpunktur, Surucu
+                                                     Guvenligi, Seyahat
+
+  2.3. Metadata Yapisi (metadata.json)
+  -------------------------------------
+  [
+    {
+      "file": "ada_clinical_guidelines_summary.txt",
+      "title": "ADA Standards of Care in Diabetes 2024",
+      "language": "en"
+    },
+    {
+      "file": "temd_diyabet_kilavuzu_2024.txt",
+      "title": "TEMD Diyabet Tani ve Tedavi Kilavuzu 2024",
+      "language": "tr"
+    },
+    ...
+  ]
+
+
+================================================================================
+  3. DOKUMAN YUKLEME (Document Loader)
+================================================================================
+
+  Dosya: rag/document_loader.py
+
+  3.1. Desteklenen Formatlar
+  --------------------------
+  Format    Yukleme Yontemi          Aciklama
+  -----------------------------------------------------------
+  .pdf      pdfplumber               Sayfa sayfa metin cikarimi
+  .txt      open() + read()          Duz metin, UTF-8
+  .md       open() + read()          Markdown, UTF-8
+
+  3.2. Yukleme Algoritmasi
+  -------------------------
+  1. metadata.json dosyasi yuklenir (varsa)
+     -> {dosya_adi: {title, language}} esleme sozlugu
+  2. knowledge_base/ dizini listelenir
+  3. Her dosya icin:
+     a. Baslik: metadata'dan alinir, yoksa dosya adi kullanilir
+     b. PDF ise: sayfa sayfa extract_text() ile metin cikarilir
+     c. TXT/MD ise: tum dosya tek parca olarak okunur
+  4. Cikti formati:
+     {
+       "text":        str,    // Dokuman metni
+       "source":      str,    // Baslik (metadata veya dosya adi)
+       "page_number": int     // Sayfa numarasi (TXT/MD icin 1)
+     }
+
+  3.3. PDF Cikarimi
+  ------------------
+  - Kutuphane: pdfplumber
+  - Sayfa numarasi 1'den baslar (i+1)
+  - Bos sayfalar atlanir
+  - Hata durumunda uyari basilir, bos liste doner
+
+
+================================================================================
+  4. METIN PARCALAMA (Chunker)
+================================================================================
+
+  Dosya: rag/chunker.py
+
+  4.1. Parametreler
+  ------------------
+  CHUNK_SIZE    = 1024 karakter (maksimum parca boyutu)
+  CHUNK_OVERLAP = 128 karakter  (parcalar arasi ortusme)
+
+  4.2. Recursive Splitting Algoritmasi
+  -------------------------------------
+  Oncelik sirali ayiricilar kullanilir:
+
+  Oncelik   Ayirici     Aciklama
+  ----------------------------------------
+  1         "\n\n"      Paragraf sinirlari
+  2         "\n"        Satir sinirlari
+  3         ". "        Cumle sinirlari
+  4         " "         Kelime sinirlari (fallback)
+
+  Algoritma:
+  1. Metin uzunlugu <= CHUNK_SIZE ise -> direkt dondur
+  2. En yuksek oncelikli ayirici ile bol
+  3. Greedy birlestirme:
+     - Her parca icin:
+       * aday = mevcut_parca + ayirici + yeni_parca
+       * len(aday) <= CHUNK_SIZE ise -> birlestir
+       * degilse:
+         - Mevcut parcayi kaydet
+         - Ortusme bolgesini al: son 128 karakter
+         - Yeni parcayi baslat: ortusme + ayirici + yeni_parca
+  4. Hicbir ayirici bulunamazsa: Sert karakter bolmesi
+     - Her 1024 karakterde kes, 128 karakter geri git
+
+  4.3. Metadata On-eki
+  ---------------------
+  Her parca kaynak bilgisiyle on-eklenir:
+    "[Kaynak Basligi] parca metni..."
+
+  Amac: Gomme modelinin farkli bilgi kaynaklarini ayirt etmesi
+
+  4.4. Cikti Yapisi
+  ------------------
+  {
+    "chunk_id":     int,    // Benzersiz parca kimlik numarasi
+    "text":         str,    // "[kaynak] parca metni..."
+    "source":       str,    // Kaynak basligi
+    "page_number":  int     // Sayfa numarasi
+  }
+
+  4.5. Mevcut Istatistikler
+  --------------------------
+  Toplam parca sayisi: 698 chunk
+  Ortalama parca boyutu: ~900 karakter
+
+
+================================================================================
+  5. GOMME VEKTORLERI (Embeddings)
+================================================================================
+
+  Dosya: rag/embeddings.py
+
+  5.1. Model Bilgileri
+  ---------------------
+  Model:     intfloat/multilingual-e5-base
+  Boyut:     768 boyutlu vektorler
+  Dil:       100+ dil destegi (Turkce + Ingilizce dahil)
+  Ozellik:   Asimetrik arama icin optimize (query vs passage on-eki)
+
+  5.2. Dual Backend Mimarisi (Singleton Pattern)
+  -----------------------------------------------
+  Sistem, calisma ortamina gore otomatik backend secer:
+
+  +---------------------+     +---------------------+
+  | LOCAL BACKEND        |     | CONTAINER BACKEND   |
+  | (Indeks Olusturma)   |     | (Sorgu Cevaplama)   |
+  +---------------------+     +---------------------+
+  | sentence-transformers|     | onnxruntime         |
+  | ~1.1 GB              |     | + tokenizers        |
+  | GPU/CPU              |     | Sadece CPU           |
+  | embed_texts()        |     | embed_query()       |
+  | Toplu gomme          |     | Tekil gomme          |
+  +---------------------+     +---------------------+
+
+  Backend secimi (otomatik):
+    try:
+      from sentence_transformers import SentenceTransformer
+      BACKEND = "sentence-transformers"
+    except ImportError:
+      import onnxruntime
+      BACKEND = "onnx"
+
+  5.3. On-ek Kurali (E5 Modeli Gereksinimi)
+  ------------------------------------------
+  Metin Tipi    On-ek          Kullanim
+  -------------------------------------------------
+  Sorgu         "query: "      embed_query() icinde
+  Dokuman       "passage: "    embed_texts() icinde
+
+  Not: E5 modeli, asimetrik arama icin bu on-ekleri gerektirir.
+       On-eksiz kullanim performansi dusurur.
+
+  5.4. ONNX Inference Pipeline
+  -----------------------------
+  Adim 1: Tokenize
+    - Tokenizer: onnx_model/tokenizer.json
+    - pad_id = 1, pad_token = "<pad>"
+    - max_length = 512 token
+    - Padding ve truncation aktif
+
+  Adim 2: Model Cikarimi
+    - Girdi: input_ids (1, seq_len), attention_mask (1, seq_len)
+    - Cikti: last_hidden_state (1, seq_len, 768)
+    - Provider: CPUExecutionProvider
+
+  Adim 3: Mean Pooling
+    - token_embeddings = outputs[0]           // (1, seq_len, 768)
+    - mask = attention_mask[:,:,np.newaxis]    // (1, seq_len, 1)
+    - pooled = SUM(embeddings * mask) / SUM(mask)
+    - Sonuc: (1, 768)
+
+  Adim 4: L2 Normalizasyon
+    - norm = ||pooled||_2
+    - normalized = pooled / norm
+    - Sonuc: Birim vektoru (1, 768), dtype=float32
+
+  5.5. Model Dosyalari
+  ---------------------
+  Dosya                  Boyut        Aciklama
+  ----------------------------------------------------------
+  onnx_model/model.onnx       1.4 MB  ONNX model yapisi
+  onnx_model/model.onnx.data  1.1 GB  Model agirliklari
+  onnx_model/tokenizer.json   17 MB   Hizli tokenizer
+  onnx_model/tokenizer_config.json     Tokenizer ayarlari
+
+
+================================================================================
+  6. VEKTOR DEPOSU (FAISS Vector Store)
+================================================================================
+
+  Dosya: rag/vector_store.py
+
+  6.1. Indeks Tipi
+  -----------------
+  FAISS IndexFlatIP (Inner Product / Ic Carpim)
+
+  Neden Inner Product?
+  - Vektorler L2-normalize edilmis oldugu icin:
+    inner_product(a, b) = cosine_similarity(a, b)
+  - Tam arama (brute-force), yaklasik degil -> %100 recall
+  - 698 vektor icin yeterli performans
+
+  6.2. Depolama Yapisi
+  ---------------------
+  Dosya               Boyut     Icerik
+  ----------------------------------------------------------
+  faiss_index/index.faiss   2.1 MB   FAISS binary indeksi
+  faiss_index/chunks.json   678 KB   Chunk metadata (JSON)
+
+  chunks.json formati:
+  [
+    {
+      "chunk_id": 0,
+      "text": "[ADA Standards] HbA1c >= 6.5%...",
+      "source": "ADA Standards of Care 2024",
+      "page_number": 1
+    },
+    ...
+  ]
+
+  6.3. Arama Algoritmasi
+  -----------------------
+  search(query_embedding, top_k=5):
+    1. Sorgu vektoru: (1, 768) float32
+    2. FAISS arama: index.search(query_embedding, top_k)
+    3. Donus: [(chunk_dict, similarity_score), ...]
+    4. Gecersiz indeksler filtrelenir (idx < 0)
+
+  6.4. Mevcut Istatistikler
+  --------------------------
+  Toplam vektor: 698
+  Boyut: 768
+  Indeks tipi: Tam arama (Flat)
+  Arama suresi: ~1-2ms (698 vektor icin)
+
+
+================================================================================
+  7. HIBRIT ERISIM MOTORU (Hybrid Retriever)
+================================================================================
+
+  Dosya: rag/retriever.py
+
+  3 asamali hibrit erisim: Semantik + Anahtar Kelime + RRF Fuzyon
+
+  7.1. Asama 1: Semantik Arama (FAISS)
+  --------------------------------------
+  - Aday sayisi: fetch_k = min(top_k * 6, 60)
+  - Sorgu gomu: embed_query(query) -> (1, 768)
+  - FAISS arama: vector_store.search(embedding, fetch_k)
+  - Donus: [(chunk, cosine_similarity_score), ...]
+  - Agirlik: SEMANTIC_WEIGHT = 0.55
+
+  Guc: Anlamsal benzerlik yakalar
+       "seker hastaligi" <-> "diabetes mellitus" eslesmesi
+
+  7.2. Asama 2: Anahtar Kelime Aramasi (BM25-lite)
+  -------------------------------------------------
+  BM25 Parametreleri:
+    k1     = 1.5    (Terim frekansi doygunluk noktasi)
+    b      = 0.75   (Uzunluk normalizasyon faktoru)
+    avg_dl = otomatik hesaplanir (ortalama dokuman uzunlugu)
+
+  BM25 Formulu:
+    skor = SUM_i [ IDF(q_i) * TF_norm(q_i) ]
+
+    IDF(q_i) = log( (N - df + 0.5) / (df + 0.5) + 1.0 )
+      N  = toplam dokuman sayisi (698)
+      df = terimi iceren dokuman sayisi
+
+    TF_norm(q_i) = (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * dl / avg_dl))
+      tf     = terimin dokumandaki frekansi
+      dl     = dokuman uzunlugu (token sayisi)
+      avg_dl = ortalama dokuman uzunlugu
+
+  Onisleme:
+    1. Turkce karakter normalizasyonu: cgiosu -> cgiosu
+    2. Kucuk harfe cevirme
+    3. Token cikarimi: regex [a-z0-9]+
+    4. Filtreleme: uzunluk > 2 olan tokenlar
+    5. Capraz dil genisletme (Bolum 8'e bakiniz)
+
+  Agirlik: KEYWORD_WEIGHT = 0.45
+
+  Guc: Tam kelime eslesmesi yakalar
+       "HbA1c" gibi tibbi terimler icin etkili
+
+  7.3. Asama 3: RRF Fuzyon (Reciprocal Rank Fusion)
+  --------------------------------------------------
+  Iki arama sonucunu tek bir siraya birlestiren algoritma.
+
+  RRF Parametresi:
+    rrf_k = 60 (yumusatma sabiti)
+
+  Formul:
+    Semantik sonuclar icin (rank 0'dan baslayarak):
+      rrf_skor += SEMANTIC_WEIGHT / (rrf_k + rank + 1)
+      rrf_skor += 0.55 / (60 + rank + 1)
+
+    BM25 sonuclar icin:
+      base_rrf = KEYWORD_WEIGHT / (rrf_k + rank + 1)
+      base_rrf = 0.45 / (60 + rank + 1)
+
+      Eger chunk SADECE BM25'te bulunduysa (semantikte yok):
+        base_rrf *= 2.5   (capraz dil esleme bonusu)
+
+      rrf_skor += base_rrf
+
+  RRF Ornegi:
+    Chunk A: Semantik rank=0, BM25 rank=2
+      rrf = 0.55/(60+1) + 0.45/(60+3) = 0.00902 + 0.00714 = 0.01616
+
+    Chunk B: Sadece BM25 rank=0 (capraz dil esleme)
+      rrf = 0.45/(60+1) * 2.5 = 0.01844
+
+  7.4. Kaynak Cesitliligi
+  ------------------------
+  Siradan sonra: Her kaynaktan maksimum 2 chunk secilir.
+  Amac: Farkli kaynaklardan bilgi sunarak cevabin kapsamini genisletmek.
+
+  7.5. Minimum Skor Esigi
+  -------------------------
+  MIN_SCORE_THRESHOLD = 0.45
+  Bu esik altindaki sonuclar filtrelenir.
+
+  7.6. Final Cikti
+  -----------------
+  top_k = 5 sonuc (varsayilan)
+
+  Her sonuc:
+  {
+    "text":   str,     // Chunk metni
+    "source": str,     // Kaynak basligi
+    "score":  float    // RRF skoru (yuvarlanmis, 4 basamak)
+  }
+
+
+================================================================================
+  8. TURKCE-INGILIZCE CAPRAZ DIL DESTEGI
+================================================================================
+
+  Dosya: rag/retriever.py
+
+  8.1. Amac
+  ----------
+  Bilgi tabani agirlikli olarak Ingilizce (91/101 dokuman).
+  Kullanici Turkce soru sorar -> BM25 anahtar kelime aramasi
+  Ingilizce dokumanlarda esleme bulamaz.
+
+  Cozum: Turkce sorgu tokenlarini Ingilizce esdegerleriyle genisletme.
+
+  8.2. Turkce Karakter Normalizasyonu
+  ------------------------------------
+  _normalize_turkish(text):
+    c -> c,  g -> g,  i -> i,  o -> o,  s -> s,  u -> u
+    C -> C,  G -> G,  I -> I,  O -> O,  S -> S,  U -> U
+
+  Ornek: "seker hastaligi" -> "seker hastaligi" (zaten ASCII)
+         "bobregin" -> "bobregin"
+
+  8.3. Sinonim Sozlugu (44 Tibbi Terim Cifti)
+  ---------------------------------------------
+  Turkce Anahtar     Ingilizce Esdegeleri
+  -----------------------------------------------------------
+  belirti            symptom, symptoms, sign, signs, semptom
+  beslenme           nutrition, diet, dietary, food, eating
+  egzersiz           exercise, physical, activity, workout
+  tedavi             treatment, therapy, management
+  insulin            insulin
+  tani               diagnosis, diagnostic, screening
+  komplikasyon       complication, complications
+  hamilelik          pregnancy, pregnant, gestational, gebelik
+  risk               risk, factor, factors
+  ilac               medication, drug, pharmacotherapy
+  kan                blood, glucose, glycemic
+  seker              sugar, glucose, glycemic
+  ayak               foot, feet, podiatric
+  goz                eye, retinopathy, vision, ophthalmic
+  bobrek             kidney, renal, nephropathy
+  kalp               heart, cardiac, cardiovascular
+  obezite            obesity, obese, overweight, bmi
+  stres              stress, anxiety, psychological, mental
+  agri               pain, neuropathy, tingling, numbness
+  kilo               weight, loss, gain, bmi
+  tip                type, type1, type2
+  cocuk              children, pediatric, child, school
+  yasli              elderly, geriatric, aging, older
+  oruc               fasting, ramadan
+  seyahat            travel, traveling, trip
+  cilt               skin, dermatology, dermal
+  dis                dental, oral, teeth
+  yorgunluk          fatigue, tiredness, exhaustion
+  susuzluk           thirst, polydipsia, dehydration
+  idrar              urination, polyuria, urine
+  bulanik            blurred, vision, blurry
+  yara               wound, healing, ulcer
+  ... ve 12 terim daha
+
+  8.4. Sorgu Genisletme Algoritmasi
+  ----------------------------------
+  _expand_query_tokens(tokens):
+
+  1. Her sorgu tokeni icin:
+  2.   Her Turkce anahtar icin:
+  3.     Esleme uzunlugu = min(len(token), len(anahtar), 4)
+  4.     Eger esleme >= 3 karakter:
+  5.       token[:esleme] == anahtar[:esleme] ise:
+  6.         Tum Ingilizce sinonimleri genisletilmis listeye ekle
+
+  Ornek:
+    Sorgu: "diyabette beslenme nasil olmali"
+    Tokenlar: ["diyabette", "beslenme", "nasil", "olmali"]
+
+    "beslenme" -> kok "bes" eslesmesi:
+      -> ["nutrition", "diet", "dietary", "food", "eating"] eklenir
+
+    Genisletilmis tokenlar:
+      ["diyabette", "beslenme", "nasil", "olmali",
+       "nutrition", "diet", "dietary", "food", "eating"]
+
+
+================================================================================
+  9. BACKEND ENTEGRASYONU (.NET)
+================================================================================
+
+  Dosya: backend/AsistanAI.Infrastructure/Services/AIService.cs
+
+  9.1. RAG Erisim Akisi
+  ----------------------
+  RetrieveRAGContextAsync(userMessage):
+    1. HTTP POST -> {MLServiceUrl}/rag/retrieve
+       Body: {"query": userMessage, "top_k": 5}
+    2. Yanit: JSON dizisi [{text, source}, ...]
+    3. Baglamsal metin olustur:
+       "[Kaynak: {source1}]\n{text1}\n\n---\n\n[Kaynak: {source2}]\n{text2}"
+    4. Kaynak listesi cikar:
+       ["source1", "source2", ...]
+    5. Donus: (ragContext, ragSources)
+
+  9.2. Gemini System Prompt'una Enjeksiyon
+  -----------------------------------------
+  BuildFullSystemPrompt(ragContext):
+
+    System prompt sonu:
+    """
+    BILGI TABANI REFERANSLARI:
+    Asagida kullancinin sorusuyla dogrudan ilgili bilgi tabanindan
+    alinmis referans bilgiler var.
+
+    KULLANIM KURALLARI:
+    1. Yanitini ONCELIKLE bu referans bilgilere dayandir
+    2. Genel bilgi yerine referanslardaki SOMUT bilgiyi kullan
+       (orn: "ADA/TEMD kilavuzuna gore...")
+    3. Bilgiyi hangi kaynaktan aldigini parantez icinde belirt
+       (Kaynak: ...)
+    4. Referanslarda BULUNMAYAN bir bilgi veriyorsan, bunu kendi
+       genel bilgin olarak belirt
+    5. Tum referanslari listeleme, sadece soruyla en ilgili
+       kisimlarini kullan
+
+    {ragContext}
+    """
+
+  9.3. RAG Kaynaklarinin Saklanmasi
+  ----------------------------------
+  ChatMessage entity'si:
+    RagSources: string? (JSON serilesilmis List<string>)
+
+  Veritabani formati:
+    '["TEMD Diyabet Kilavuzu 2024", "ADA Standards of Care"]'
+
+  DTO formati:
+    RagSources: List<string>? (deserialize edilmis)
+
+  Mapping (AutoMapper):
+    ChatMessage.RagSources (JSON string) <-> ChatMessageDto.RagSources (List)
+    4 ozel resolver ile cift yonlu donusum
+
+  9.4. Gemini Entegrasyonu
+  -------------------------
+  Model: gemini-2.5-flash
+  Endpoint: streamGenerateContent?alt=sse (streaming)
+  maxOutputTokens: 8192
+  Araclar: assess_diabetes_risk fonksiyon cagrisi (tool use)
+
+
+================================================================================
+  10. ONNX MODEL DISA AKTARIM
+================================================================================
+
+  Dosya: scripts/export_onnx.py
+
+  Pipeline:
+  1. SentenceTransformer modeli yukle (intfloat/multilingual-e5-base)
+  2. Transformer katmanini cikar
+  3. Tokenizer'i kaydet
+  4. ONNX'e aktart:
+     - Girdi: input_ids (batch, sequence), attention_mask (batch, sequence)
+     - Cikti: last_hidden_state (batch, sequence, 768)
+     - Dinamik eksenler: batch ve sequence boyutu degisken
+     - ONNX opset versiyonu: 14
+  5. Dosyalar:
+     onnx_model/model.onnx          (1.4 MB - yapi)
+     onnx_model/model.onnx.data     (1.1 GB - agirliklar)
+     onnx_model/tokenizer.json      (17 MB - tokenizer)
+
+
+================================================================================
+  11. INDEKS OLUSTURMA
+================================================================================
+
+  Dosya: scripts/build_index.py
+
+  4 Asamali Pipeline:
+
+  Asama 1: Dokuman Yukleme
+    load_documents(KNOWLEDGE_BASE_DIR)
+    -> 101 dosyadan dokuman sayfalari yuklenir
+
+  Asama 2: Metin Parcalama
+    chunk_documents(documents)
+    -> 698 chunk olusturulur (1024 karakter, 128 ortusme)
+
+  Asama 3: Gomme Vektoru Uretimi
+    embedding_service.embed_texts(texts)
+    -> 698 adet (768,) boyutlu vektor uretilir
+    -> sentence-transformers backend kullanilir (local)
+    -> "passage: " on-eki ile
+
+  Asama 4: FAISS Indeksi Olustur ve Kaydet
+    vector_store.build_index(chunks, embeddings)
+    vector_store.save()
+    -> faiss_index/index.faiss (2.1 MB)
+    -> faiss_index/chunks.json (678 KB)
+
+  Not: Bu islem LOCAL ortamda calistirilir (sentence-transformers gerekli).
+       Container icinde ONNX backend kullanildigi icin indeks olusturulamaz.
+
+
+================================================================================
+  12. API ENDPOINTS
+================================================================================
+
+  12.1. POST /rag/retrieve
+  -------------------------
+  Amac: Sorgu ile ilgili dokuman parcalarini getir
+
+  Girdi (RAGQuery):
+    {
+      "query":  str,     // Arama sorgusu (zorunlu)
+      "top_k":  int      // Sonuc sayisi (varsayilan: 5, aralik: 1-20)
+    }
+
+  Cikti (List[RetrievedChunk]):
+    [
+      {
+        "text":        str,           // Chunk metni
+        "source":      str,           // Kaynak basligi
+        "score":       float,         // RRF skoru
+        "category":    str | null,    // Kategori (opsiyonel)
+        "source_type": str | null     // Kaynak tipi (opsiyonel)
+      },
+      ...
+    ]
+
+  12.2. GET /rag/status
+  ----------------------
+  Amac: RAG sistemi durumunu sorgula
+
+  Cikti:
+    {
+      "ready":          bool,     // Sistem hazir mi
+      "indexed_chunks": int,     // Indekslenmis parca sayisi
+      "embedding_model": str     // Kullanilan gomme modeli adi
+    }
+
+  Ornek cikti:
+    {
+      "ready": true,
+      "indexed_chunks": 698,
+      "embedding_model": "intfloat/multilingual-e5-base"
+    }
+
+
+================================================================================
+  13. KONFIGURASYON PARAMETRELERI
+================================================================================
+
+  Dosya: rag/config.py
+
+  Parametre              Deger                           Aciklama
+  ---------------------------------------------------------------------------
+  EMBEDDING_MODEL        intfloat/multilingual-e5-base   Gomme modeli
+  EMBEDDING_DIM          768                             Vektor boyutu
+  CHUNK_SIZE             1024                            Maks parca boyutu
+  CHUNK_OVERLAP          128                             Parcalar arasi ortusme
+  TOP_K                  5                               Varsayilan sonuc sayisi
+  MIN_SCORE_THRESHOLD    0.45                            Minimum skor esigi
+  SEMANTIC_WEIGHT        0.55                            FAISS agirligi
+  KEYWORD_WEIGHT         0.45                            BM25 agirligi
+
+  BM25 Parametreleri (retriever.py):
+  k1                     1.5                             TF doygunluk noktasi
+  b                      0.75                            Uzunluk normalizasyonu
+  rrf_k                  60                              RRF yumusatma sabiti
+
+  Dosya Yollari:
+  FAISS_INDEX_PATH       faiss_index/index.faiss
+  CHUNKS_PATH            faiss_index/chunks.json
+  KNOWLEDGE_BASE_DIR     knowledge_base/
+  ONNX_MODEL_DIR         onnx_model/
+
+
+================================================================================
+  14. UCTAN UCA ORNEK AKIS
+================================================================================
+
+  Kullanici sorusu: "Diyabette ayak bakimi nasil olmali?"
+
+  ADIM 1: .NET Backend (AIService.cs)
+  ------------------------------------
+  RetrieveRAGContextAsync("Diyabette ayak bakimi nasil olmali?")
+  -> POST http://ml:8000/rag/retrieve
+     {"query": "Diyabette ayak bakimi nasil olmali?", "top_k": 5}
+
+  ADIM 2: Python ML Servisi - Sorgu Gomme
+  -----------------------------------------
+  embed_query("query: Diyabette ayak bakimi nasil olmali?")
+  -> Tokenize -> ONNX inference -> Mean pooling -> L2 norm
+  -> (1, 768) float32 vektor
+
+  ADIM 3: Semantik Arama (FAISS)
+  --------------------------------
+  vector_store.search(query_embedding, fetch_k=30)
+  -> FAISS inner product araması
+  -> Ilk 30 sonuc: [(chunk, cosine_sim), ...]
+
+  ADIM 4: Anahtar Kelime Aramasi (BM25)
+  ---------------------------------------
+  Tokenlar: ["diyabette", "ayak", "bakimi", "nasil", "olmali"]
+  Turkce genisletme:
+    "ayak" -> ["foot", "feet", "podiatric"]
+  Genisletilmis: [..., "foot", "feet", "podiatric"]
+  BM25 skorlama: Tum 698 chunk uzerinde
+  -> Ilk 30 sonuc: [(chunk, bm25_score), ...]
+
+  ADIM 5: RRF Fuzyon
+  --------------------
+  Semantik rank=0: rrf += 0.55/(60+1) = 0.00902
+  BM25 rank=0:     rrf += 0.45/(60+1) = 0.00738
+  Birlesik skor:   0.01640
+
+  Kaynak cesitliligi: Her kaynaktan maks 2 chunk
+  Top-5 secim
+
+  ADIM 6: Sonuclar .NET'e Donuyor
+  ---------------------------------
+  [
+    {"text": "[Diabetic Foot Care] Inspect feet daily...",
+     "source": "Diabetic Foot Care Guide", "score": 0.0164},
+    {"text": "[ADA Standards] Comprehensive foot exam...",
+     "source": "ADA Standards of Care 2024", "score": 0.0142},
+    ...
+  ]
+
+  ADIM 7: Gemini System Prompt Enjeksiyonu
+  ------------------------------------------
+  System prompt += """
+  BILGI TABANI REFERANSLARI:
+  [Kaynak: Diabetic Foot Care Guide]
+  Inspect feet daily for cuts, blisters, redness...
+
+  ---
+
+  [Kaynak: ADA Standards of Care 2024]
+  Comprehensive foot exam annually for all patients...
+  """
+
+  ADIM 8: Gemini API Cagrisi
+  ----------------------------
+  Gemini, RAG referanslarini kullanarak Turkce yanit uretir:
+  "Diyabette ayak bakimi cok onemlidir. ADA 2024 kilavuzuna gore,
+   tum diyabet hastalarinin yillik kapsamli ayak muayenesi olmalidir
+   (Kaynak: ADA Standards of Care 2024). Gunluk olarak ayaklarinizi
+   kesik, su toplama ve kizariklik acisindan kontrol etmelisiniz
+   (Kaynak: Diabetic Foot Care Guide)..."
+
+  ADIM 9: Yanit ve Kaynaklar Kaydedilir
+  ----------------------------------------
+  ChatMessage:
+    Content = "Diyabette ayak bakimi cok onemlidir..."
+    RagSources = '["Diabetic Foot Care Guide", "ADA Standards of Care 2024"]'
+
+  ADIM 10: Frontend'e Iletilir
+  ------------------------------
+  SSE stream:
+    data: {"type":"chunk","text":"Diyabette ayak bakimi..."}
+    data: {"type":"done","aiMessage":{...},"ragSources":["...","..."]}
+
+================================================================================

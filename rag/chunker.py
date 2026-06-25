@@ -19,9 +19,12 @@ def chunk_documents(documents: List[Dict]) -> List[Dict]:
         chunks = _recursive_split(text, CHUNK_SIZE, CHUNK_OVERLAP)
 
         for chunk_text in chunks:
+            # Kaynak başlığını chunk'a prefix olarak ekle
+            # Bu, embedding modelinin konuyu daha iyi ayırt etmesini sağlar
+            prefixed_text = f"[{source}] {chunk_text}"
             all_chunks.append({
                 "chunk_id": chunk_id,
-                "text": chunk_text,
+                "text": prefixed_text,
                 "source": source,
                 "page_number": page_number,
             })

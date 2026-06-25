@@ -66,7 +66,7 @@ export const usePrediction = (onClose: () => void) => {
   const [symptoms, setSymptoms] = useState<SymptomValues>(defaultSymptoms);
   const [isLoading, setIsLoading] = useState(false);
 
-  const { selectedConversation, addMessage, setIsChatStarted } =
+  const { selectedConversation, addMessage, setIsChatStarted, setSkipNextFetch } =
     useConversationStore();
   const { createConversation } = useConversations();
 
@@ -84,6 +84,7 @@ export const usePrediction = (onClose: () => void) => {
       let sessionId = selectedConversation;
 
       if (!sessionId) {
+        setSkipNextFetch(true);
         sessionId = await createConversation();
         if (!sessionId) return;
         setIsChatStarted(true);

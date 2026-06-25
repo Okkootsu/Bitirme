@@ -7,6 +7,7 @@ RUN --mount=type=cache,target=/root/.npm \
     npm ci --prefer-offline
 
 COPY . .
+ENV VITE_API_URL=/api
 RUN npm run build
 
 FROM nginx:alpine

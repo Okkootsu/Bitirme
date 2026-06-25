@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using AsistanAI.Core.DTOs.ChatMessage;
 using AsistanAI.Core.DTOs.ChatSession;
@@ -47,20 +48,25 @@ public class ChatSessionRepository : IChatSessionRepository
 
     public async Task<List<ChatMessageDto>?> GetMessagesAsync(int sessionId, int userId)
     {
-        // return await _context.ChatSessions.Include(s => s.Messages.OrderBy(m => m.CreatedAt))
-        // .Where(s => s.Id == sessionId && s.UserId == userId).Select(s => s.Messages).FirstOrDefaultAsync();
+        var messages = await _context.ChatSessions
+            .Where(s => s.Id == sessionId && s.UserId == userId)
+            .SelectMany(s => s.Messages)
+            .OrderBy(m => m.CreatedAt)
+            .Select(m => new { m.Id, m.Content, m.IsUserMessage, m.RagSources })
+            .ToListAsync();
 
-        return await _context.ChatSessions
-        .Where(s => s.Id == sessionId && s.UserId == userId)
-        .SelectMany(s => s.Messages)
-        .OrderBy(m => m.CreatedAt)
-        .Select(m => new ChatMessageDto
+        if (messages == null || messages.Count == 0)
+            return null;
+
+        return messages.Select(m => new ChatMessageDto
         {
             Id = m.Id,
             Content = m.Content,
             IsUserMessage = m.IsUserMessage,
-        })
-        .ToListAsync();
+            RagSources = string.IsNullOrEmpty(m.RagSources)
+                ? null
+                : JsonSerializer.Deserialize<List<string>>(m.RagSources),
+        }).ToList();
     }
 
     public async Task<bool> SaveChangesAsync()

@@ -1,11 +1,21 @@
 #!/bin/bash
 set -e
 
-# Download model files from GitHub Releases if not present
-if [ ! -f /app/model_cache/diabetes_model.pkl ] || [ ! -f /app/onnx_model/model.onnx ] || [ ! -f /app/faiss_index/index.faiss ]; then
-    echo "Downloading model files from GitHub Releases..."
-    python /app/scripts/download_models.py
+# Verify model files are present (mounted from local ./models/)
+if [ ! -f /app/model_cache/diabetes_model.pkl ]; then
+    echo "ERROR: diabetes_model.pkl not found. Place model files in ./models/ directory." >&2
+    exit 1
 fi
+if [ ! -f /app/onnx_model/model.onnx ]; then
+    echo "ERROR: model.onnx not found. Place model files in ./models/ directory." >&2
+    exit 1
+fi
+if [ ! -f /app/faiss_index/index.faiss ]; then
+    echo "ERROR: index.faiss not found. Place model files in ./models/ directory." >&2
+    exit 1
+fi
+
+echo "All model files found locally."
 
 # Symlink pkl to where api.py expects it
 if [ ! -f /app/diabetes_model.pkl ]; then

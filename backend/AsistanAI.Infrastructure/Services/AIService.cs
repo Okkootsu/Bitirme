@@ -1,6 +1,7 @@
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using System.Text.RegularExpressions;
 using AsistanAI.Core.DTOs.ChatMessage;
 using AsistanAI.Core.DTOs.Prediction;
 using AsistanAI.Core.Interfaces.AI;
@@ -50,7 +51,12 @@ public class AIService : IAIService
         "- Risk skorunu kullanıcıya yüzde olarak bildir.\n" +
         "- Sonucu kısaca yorumla: en önemli 2-3 risk faktörünü vurgula.\n" +
         "- Kısa ve uygulanabilir öneriler sun.\n" +
-        "- Kullanıcıyı mutlaka doktor kontrolüne yönlendir.\n\n" +
+        "- Kullanıcıyı mutlaka doktor kontrolüne yönlendir.\n" +
+        "- Sohbet geçmişinde daha önce yapılmış bir diyabet risk değerlendirmesi varsa " +
+        "(risk kategorisi, olasılık, katman skorları içeren mesaj), kullanıcı bu skor hakkında " +
+        "soru sorduğunda o değerlendirmeyi referans alarak yorum yap. " +
+        "'Skor sunmadım' veya 'geçmişte değerlendirme yok' gibi yanıtlar VERME — " +
+        "geçmişteki değerlendirme senin tarafından yapılmış kabul et ve yorumla.\n\n" +
 
         "GENEL KURALLAR:\n" +
         "1. Yalnızca Türkçe yanıt ver.\n" +
@@ -135,10 +141,11 @@ public class AIService : IAIService
         var recentHistory = history.TakeLast(10).ToList();
         foreach (var msg in recentHistory)
         {
+            var msgText = StripPredictionMetadata(msg.Content);
             contents.Add(new JsonObject
             {
                 ["role"] = msg.IsUserMessage ? "user" : "model",
-                ["parts"] = new JsonArray { new JsonObject { ["text"] = msg.Content } }
+                ["parts"] = new JsonArray { new JsonObject { ["text"] = msgText } }
             });
         }
 
@@ -176,10 +183,11 @@ public class AIService : IAIService
         var recentHistory = history.TakeLast(10).ToList();
         foreach (var msg in recentHistory)
         {
+            var msgText = StripPredictionMetadata(msg.Content);
             contents.Add(new JsonObject
             {
                 ["role"] = msg.IsUserMessage ? "user" : "model",
-                ["parts"] = new JsonArray { new JsonObject { ["text"] = msg.Content } }
+                ["parts"] = new JsonArray { new JsonObject { ["text"] = msgText } }
             });
         }
 
@@ -197,19 +205,7 @@ public class AIService : IAIService
     // ── Gemini Streaming API ──────────────────────────────────────────
     private async IAsyncEnumerable<string> StreamGeminiAsync(JsonArray contents, string ragContext = "")
     {
-        var fullSystemPrompt = SystemPrompt;
-        if (!string.IsNullOrEmpty(ragContext))
-        {
-            fullSystemPrompt += "\n\n" +
-                "BİLGİ TABANI REFERANSLARI:\n" +
-                "Aşağıda kullanıcının sorusuyla ilgili bilgi tabanından alınmış referans bilgiler var.\n" +
-                "ÖNCELİKLE bu referans bilgileri kullanarak yanıt ver. Kendi genel bilginle değil, " +
-                "bilgi tabanındaki verilerle cevap oluştur. Bilgi tabanında yeterli bilgi yoksa " +
-                "bunu belirt ve kendi bilginle tamamla.\n" +
-                "Yanıtında bilgiyi hangi kaynaktan aldığını parantez içinde kısaca belirt, örn: (Kaynak: diabetes_nutrition_guidelines).\n" +
-                "Tüm referansları yanıta dökme, sadece soruyla en ilgili kısımları özetle ve sohbet havasında aktar.\n\n" +
-                ragContext;
-        }
+        var fullSystemPrompt = BuildFullSystemPrompt(ragContext);
 
         var requestBody = new JsonObject
         {
@@ -251,9 +247,7 @@ public class AIService : IAIService
         while (!reader.EndOfStream)
         {
             var line = await reader.ReadLineAsync();
-            if (line == null) continue;
-
-            if (!line.StartsWith("data: ")) continue;
+            if (line == null || !line.StartsWith("data: ")) continue;
 
             var jsonStr = line["data: ".Length..];
             if (string.IsNullOrWhiteSpace(jsonStr)) continue;
@@ -267,6 +261,55 @@ public class AIService : IAIService
                 yield return text;
         }
     }
+
+    // ── Sistem Prompt Oluşturucu ──────────────────────────────────────
+    private string BuildFullSystemPrompt(string ragContext)
+    {
+        var fullSystemPrompt = SystemPrompt;
+        if (!string.IsNullOrEmpty(ragContext))
+        {
+            fullSystemPrompt += "\n\n" +
+                "BİLGİ TABANI REFERANSLARI:\n" +
+                "Aşağıda kullanıcının sorusuyla doğrudan ilgili bilgi tabanından alınmış referans bilgiler var.\n\n" +
+                "KULLANIM KURALLARI:\n" +
+                "1. Yanıtını ÖNCELİKLE bu referans bilgilere dayandır. Referanslardaki spesifik verileri " +
+                "(eşik değerler, yüzdeler, kılavuz önerileri, Türkiye'ye özgü bilgiler) yanıtına dahil et.\n" +
+                "2. Genel bilgi yerine referanslardaki SOMUT bilgiyi kullan. Örneğin 'kan şekeri yüksek olabilir' yerine " +
+                "'ADA/TEMD kılavuzuna göre açlık kan şekeri ≥126 mg/dL diyabet tanı eşiğidir' gibi spesifik değerler ver.\n" +
+                "3. Bilgiyi hangi kaynaktan aldığını parantez içinde belirt, örn: (Kaynak: TEMD Diyabet Kılavuzu 2024).\n" +
+                "4. Referanslarda BULUNMAYAN bir bilgi veriyorsan, bunu kendi genel bilgin olarak belirt.\n" +
+                "5. Tüm referansları listeleme, sadece soruyla en ilgili kısımları sohbet havasında aktar.\n\n" +
+                ragContext;
+        }
+        return fullSystemPrompt;
+    }
+
+    // ── Geçmiş mesajlardan frontend metadata'sını temizle ──────────────
+    private static string StripPredictionMetadata(string content) =>
+        Regex.Replace(content, @"\s*<!--\s*PREDICTION_DATA:.*?-->", "", RegexOptions.Singleline).TrimEnd();
+
+    // ── Prediction Request Oluşturucu ─────────────────────────────────
+    private static PredictionRequestDto BuildPredictionRequest(JsonNode args) => new()
+    {
+        Age = GetIntArg(args, "age", 40),
+        Gender = GetStringArg(args, "gender", "Male"),
+        Bmi = GetNullableDoubleArg(args, "bmi"),
+        HighBp = GetNullableBoolArg(args, "high_bp"),
+        HighChol = GetNullableBoolArg(args, "high_chol"),
+        PhysicalActivity = GetNullableBoolArg(args, "physical_activity"),
+        GenHealth = GetNullableIntArg(args, "gen_health"),
+        DiffWalking = GetNullableBoolArg(args, "diff_walking"),
+        Smoker = GetNullableBoolArg(args, "smoker"),
+        HeartDisease = GetNullableBoolArg(args, "heart_disease"),
+        FruitsDaily = GetNullableBoolArg(args, "fruits_daily"),
+        VeggiesDaily = GetNullableBoolArg(args, "veggies_daily"),
+        HeavyAlcohol = GetNullableBoolArg(args, "heavy_alcohol"),
+        BloodGlucose = GetNullableDoubleArg(args, "blood_glucose"),
+        Hba1c = GetNullableDoubleArg(args, "hba1c"),
+        HeightCm = GetNullableDoubleArg(args, "height_cm"),
+        WeightKg = GetNullableDoubleArg(args, "weight_kg"),
+        ChatSessionId = 0
+    };
 
     // ── RAG Retrieval ─────────────────────────────────────────────────
     private async Task<(string Context, List<string> Sources)> RetrieveRAGContextAsync(string query)
@@ -315,27 +358,7 @@ public class AIService : IAIService
             return "Bilinmeyen fonksiyon çağrısı.";
 
         // a) Argümanlardan PredictionRequestDto oluştur
-        var predictionRequest = new PredictionRequestDto
-        {
-            Age = GetIntArg(args, "age", 40),
-            Gender = GetStringArg(args, "gender", "Male"),
-            Bmi = GetNullableDoubleArg(args, "bmi"),
-            HighBp = GetNullableBoolArg(args, "high_bp"),
-            HighChol = GetNullableBoolArg(args, "high_chol"),
-            PhysicalActivity = GetNullableBoolArg(args, "physical_activity"),
-            GenHealth = GetNullableIntArg(args, "gen_health"),
-            DiffWalking = GetNullableBoolArg(args, "diff_walking"),
-            Smoker = GetNullableBoolArg(args, "smoker"),
-            HeartDisease = GetNullableBoolArg(args, "heart_disease"),
-            FruitsDaily = GetNullableBoolArg(args, "fruits_daily"),
-            VeggiesDaily = GetNullableBoolArg(args, "veggies_daily"),
-            HeavyAlcohol = GetNullableBoolArg(args, "heavy_alcohol"),
-            BloodGlucose = GetNullableDoubleArg(args, "blood_glucose"),
-            Hba1c = GetNullableDoubleArg(args, "hba1c"),
-            HeightCm = GetNullableDoubleArg(args, "height_cm"),
-            WeightKg = GetNullableDoubleArg(args, "weight_kg"),
-            ChatSessionId = 0
-        };
+        var predictionRequest = BuildPredictionRequest(args);
 
         // b) ML API'ye gönder
         var predictionResult = await _predictionService.PredictAsync(predictionRequest);
@@ -406,20 +429,7 @@ public class AIService : IAIService
     // ── Gemini API Çağrısı ────────────────────────────────────────────
     private async Task<JsonNode?> CallGeminiAsync(JsonArray contents, string ragContext = "")
     {
-        // RAG context varsa system prompt'a ekle
-        var fullSystemPrompt = SystemPrompt;
-        if (!string.IsNullOrEmpty(ragContext))
-        {
-            fullSystemPrompt += "\n\n" +
-                "BİLGİ TABANI REFERANSLARI:\n" +
-                "Aşağıda kullanıcının sorusuyla ilgili bilgi tabanından alınmış referans bilgiler var.\n" +
-                "ÖNCELİKLE bu referans bilgileri kullanarak yanıt ver. Kendi genel bilginle değil, " +
-                "bilgi tabanındaki verilerle cevap oluştur. Bilgi tabanında yeterli bilgi yoksa " +
-                "bunu belirt ve kendi bilginle tamamla.\n" +
-                "Yanıtında bilgiyi hangi kaynaktan aldığını parantez içinde kısaca belirt, örn: (Kaynak: diabetes_nutrition_guidelines).\n" +
-                "Tüm referansları yanıta dökme, sadece soruyla en ilgili kısımları özetle ve sohbet havasında aktar.\n\n" +
-                ragContext;
-        }
+        var fullSystemPrompt = BuildFullSystemPrompt(ragContext);
 
         var requestBody = new JsonObject
         {
@@ -431,11 +441,7 @@ public class AIService : IAIService
             ["tools"] = new JsonArray { GetToolDefinition() },
             ["generationConfig"] = new JsonObject
             {
-                ["maxOutputTokens"] = 8192,
-                ["thinkingConfig"] = new JsonObject
-                {
-                    ["thinkingBudget"] = 0
-                }
+                ["maxOutputTokens"] = 8192
             }
         };
 
@@ -448,8 +454,7 @@ public class AIService : IAIService
         {
             var response = await _httpClient.PostAsJsonAsync(url, requestBody, jsonOptions);
 
-            if ((response.StatusCode == System.Net.HttpStatusCode.TooManyRequests ||
-                 response.StatusCode == System.Net.HttpStatusCode.ServiceUnavailable) && attempt < delaysMs.Length)
+            if (response.StatusCode == System.Net.HttpStatusCode.ServiceUnavailable && attempt < delaysMs.Length)
             {
                 await Task.Delay(delaysMs[attempt]);
                 continue;

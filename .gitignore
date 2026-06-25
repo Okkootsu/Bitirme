@@ -42,6 +42,7 @@ appsettings.Development.json
 
 # ML model/artifact files
 *.pkl
+models/
 
 # Python cache
 __pycache__/

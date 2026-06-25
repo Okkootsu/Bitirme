@@ -1,0 +1,440 @@
+================================================================================
+       INSULITA - DIYABET RISK DEGERLENDIRME MODELI MIMARISI
+================================================================================
+
+  Proje:    Insulita - Yapay Zeka Destekli Diyabet Asistani
+  Versiyon: 3.0-hybrid
+  Tarih:    2026-06-25
+
+================================================================================
+  1. GENEL BAKIS
+================================================================================
+
+  Model, 3 katmanli hibrit bir mimari kullanir:
+
+    +-------------------+     +-------------------+     +-------------------+
+    |   KATMAN 1        |     |   KATMAN 2        |     |   KATMAN 3        |
+    |   ML MODEL SKORU  |     |   SEMPTOM SKORU   |     |   KLINIK SKOR     |
+    |   (BRFSS verisi)  |     |   (Kural tabanli) |     |   (ADA esikleri)  |
+    +--------+----------+     +--------+----------+     +--------+----------+
+             |                         |                         |
+             +-------------------------+-------------------------+
+                                       |
+                              +--------v----------+
+                              |   WEIGHTED FUSION  |
+                              |   (Agirlikli       |
+                              |    Birlestirme)    |
+                              +--------+----------+
+                                       |
+                              +--------v----------+
+                              |   FINAL RISK       |
+                              |   (0.0 - 1.0)      |
+                              +--------------------+
+
+
+================================================================================
+  2. KATMAN 1: ML MODEL SKORU (ml_score)
+================================================================================
+
+  2.1. Veri Seti
+  -------------
+  - Kaynak:  BRFSS Diabetes Health Indicators 2015 (CDC)
+  - Boyut:   70,692 ornek (50/50 dengeli sinif dagilimi)
+  - Bolme:   %80 egitim, %20 test (stratified)
+
+  2.2. Ozellikler (13 adet)
+  -------------------------
+  Ozellik                    Aciklama                          Onem (RF)
+  ---------------------------------------------------------------------------
+  GenHlth                    Genel saglik durumu (1-5)         0.2326
+  HighBP                     Yuksek tansiyon (0/1)             0.1862
+  BMI                        Vucut kitle indeksi               0.1768
+  Age                        Yas kategorisi (1-13, BRFSS)      0.1307
+  HighChol                   Yuksek kolesterol (0/1)           0.0896
+  DiffWalk                   Yurume zorlugu (0/1)              0.0542
+  HeartDiseaseorAttack       Kalp hastaligi oykusu (0/1)       0.0329
+  PhysActivity               Fiziksel aktivite (0/1)           0.0188
+  Sex                        Cinsiyet (0=Kadin, 1=Erkek)       0.0181
+  HvyAlcoholConsump          Agir alkol kullanimi (0/1)        0.0156
+  Fruits                     Gunluk meyve tuketimi (0/1)       0.0152
+  Smoker                     Sigara kullanimi (0/1)            0.0152
+  Veggies                    Gunluk sebze tuketimi (0/1)       0.0142
+
+  Not: Yas, gercek yastan BRFSS kategorisine donusturulur:
+       1=18-24, 2=25-29, 3=30-34, ..., 13=80+
+
+  2.3. Model Egitim Pipeline'i
+  ----------------------------
+  Adim 1: 6 temel model egitilir (5-Fold Stratified CV):
+
+    Model               AUC-ROC   Accuracy   Precision   Recall   F1
+    -----------------------------------------------------------------------
+    RandomForest         0.8256    0.7488     0.7298      0.7902   0.7588
+    XGBoost              0.8235    0.7465     0.7270      0.7896   0.7570
+    LogisticRegression   0.8223    0.7458     0.7368      0.7647   0.7505
+    DecisionTree         0.8162    0.7407     0.7245      0.7774   0.7498
+    NaiveBayes           0.7963    0.7313     0.7346      0.7242   0.7294
+    SVM                  0.6719    0.5721     0.5488      0.8617   0.6676
+
+  Adim 2: AUC-ROC'a gore en iyi 3 model secilir:
+          RandomForest, XGBoost, LogisticRegression
+
+  Adim 3: Stacking Ensemble olusturulur:
+          - Temel modeller: RandomForest, XGBoost, LogisticRegression
+          - Meta-learner: LogisticRegression
+          - Stack yontemi: predict_proba (olasilik ciktisi)
+          - CV: 5-Fold
+
+  Adim 4: Olasilik Kalibrasyonu (Isotonic Regression):
+          - CalibratedClassifierCV ile olasiliklar kalibre edilir
+          - Brier Score: 0.169 (dusuk = iyi kalibrasyon)
+
+  2.4. Final Test Metrikleri
+  --------------------------
+  Accuracy:   0.7477
+  Precision:  0.7259
+  Recall:     0.7960
+  F1-Score:   0.7593
+  AUC-ROC:    0.8263
+  Brier:      0.1690
+
+  2.5. SHAP Aciklanabilirlik
+  --------------------------
+  - XGBoost alt modeli uzerinden TreeExplainer kullanilir
+  - Girdi verisi once StandardScaler ile olceklenir
+  - Sadece kullanicinin girdigi ozellikler icin SHAP degeri dondurulur
+  - Cikti: Her ozelligin final tahmine katkisi (pozitif = risk artisi)
+
+  2.6. Cikti
+  ----------
+  ml_score = model.predict_proba(input)[0][1]   (0.0 - 1.0 arasi)
+
+
+================================================================================
+  3. KATMAN 2: SEMPTOM SKORU (symptom_score)
+================================================================================
+
+  3.1. Yontem
+  -----------
+  Kural tabanli agirlikli toplam. Agirliklar klinik kanita dayanir.
+
+  3.2. Kaynaklar
+  --------------
+  - ADA Standards of Care 2024/2025 (Tablo 2.1)
+  - WHO klasik diyabet semptomlari siniflandirmasi
+  - PMC9676132: ML semptom onemi (n=520, SVC modeli)
+  - PMC12332044: Yeni T2DM'de semptom prevalansi (n=50)
+  - IDF Tip 1 Diyabet semptomlari
+
+  3.3. Semptom Agirliklari
+  ------------------------
+  Semptom                    Agirlik   Prevalans   Aciklama
+  ---------------------------------------------------------------------------
+  Poliuri (sik idrara cikma) 0.20      %60         En yuksek ML korelasyonu
+  Polidipsi (asiri susama)   0.20      %56         En yuksek SVC agirligi
+  Aciklanamayan kilo kaybi   0.18      %38         Klasik uclu (triad) parcasi
+  Yorgunluk / halsizlik      0.12      %50         Glikoz kullanim bozuklugu
+  Bulanik gorme              0.12      %26         Lens ozmotik degisiklikleri
+  Yara iyilesme gecikmesi    0.10      %16         Mikrovaskuler bozukluk
+  Sik enfeksiyon gecirme     0.05      -           Immun disfonksiyon belirteci
+  Karincalanma / uyusma      0.03      -           Periferik noropati, gec bulgu
+                             ----
+  TOPLAM                     1.00
+
+  3.4. Hesaplama Algoritmasi
+  --------------------------
+  1. Aktif semptomlar belirlenir (kullanici tarafindan True olarak isaretlenen)
+  2. Aktif semptomlarin agirliklari toplanir:
+     skor = SUM(agirlik[s]) for s in aktif_semptomlar
+  3. Klasik uclu bonusu kontrol edilir:
+     Eger poliuri + polidipsi + kilo_kaybi hepsi aktifse:
+       skor = min(1.0, skor * 1.30)   (%30 bonus)
+  4. Skor 0.0-1.0 arasina sinirlandirilir
+
+  3.5. Ornekler
+  -------------
+  - Sadece yorgunluk:                   0.12
+  - Poliuri + polidipsi:                0.40
+  - Klasik uclu (poliuri+polidipsi+kilo): (0.20+0.20+0.18)*1.30 = 0.754
+  - Tum semptomlar aktif:               1.00
+  - Hicbir semptom girilmemis:          0.00
+
+
+================================================================================
+  4. KATMAN 3: KLINIK SKOR (clinical_score)
+================================================================================
+
+  4.1. Yontem
+  -----------
+  ADA 2024/2025 tani esiklerine dayali deterministik puanlama.
+
+  4.2. Kaynaklar
+  --------------
+  - ADA 2024/2025 Standards of Care Tablo 2.1 & 2.2
+  - IDF 2024 Position Statement
+  - TEMD 2024 Kilavuzu (Turkiye'de ayni ADA esikleri)
+
+  4.3. ADA Tani Esikleri
+  ----------------------
+  Kategori       Aclik Kan Sekeri (FPG)    HbA1c
+  ---------------------------------------------------
+  Normal         < 100 mg/dL               < %5.7
+  Prediyabet     100 - 125 mg/dL           %5.7 - %6.4
+  Diyabet        >= 126 mg/dL              >= %6.5
+
+  4.4. Aclik Kan Sekeri (FPG) Puanlamasi
+  ---------------------------------------
+  FPG >= 126 mg/dL (Diyabet esigi):
+    glikoz_skoru = 0.90
+
+  FPG 100-125 mg/dL (Prediyabet - IFG):
+    glikoz_skoru = 0.40 + (FPG - 100) / (125 - 100) * 0.30
+    Yani: 0.40'tan 0.70'e lineer interpolasyon
+    Ornek: FPG=112 -> 0.40 + 12/25 * 0.30 = 0.544
+
+  FPG < 100 mg/dL (Normal):
+    glikoz_skoru = max(0.0, FPG / 100 * 0.15)
+    Yani: 0'dan 0.15'e kadar hafif baz
+    Ornek: FPG=85 -> 85/100 * 0.15 = 0.1275
+
+  4.5. HbA1c Puanlamasi
+  ---------------------
+  HbA1c >= 6.5% (Diyabet esigi):
+    hba1c_skoru = 0.95
+
+  HbA1c 5.7-6.4% (Prediyabet):
+    hba1c_skoru = 0.40 + (HbA1c - 5.7) / (6.4 - 5.7) * 0.30
+    Yani: 0.40'tan 0.70'e lineer interpolasyon
+    Ornek: HbA1c=6.0 -> 0.40 + 0.3/0.7 * 0.30 = 0.529
+
+  HbA1c < 5.7% (Normal):
+    hba1c_skoru = max(0.0, HbA1c / 5.7 * 0.15)
+    Ornek: HbA1c=5.0 -> 5.0/5.7 * 0.15 = 0.132
+
+  4.6. Birlestirme Kurali
+  -----------------------
+  - Her iki deger de varsa: max(glikoz_skoru, hba1c_skoru)  (en kotu gosterge)
+  - Sadece FPG varsa: glikoz_skoru
+  - Sadece HbA1c varsa: hba1c_skoru
+  - Hicbiri yoksa: 0.0
+
+
+================================================================================
+  5. WEIGHTED FUSION (AGIRLIKLI BIRLESTIRME)
+================================================================================
+
+  5.1. Tasarim Felsefesi
+  ----------------------
+  - Klinik lab verileri (FPG/HbA1c) ADA tani altin standardi oldugu icin
+    dominant agirlik alir.
+  - ML skoru yasam tarzi risk faktorlerini yansitir, ikincil agirlik alir.
+  - Normal lab sonuclari yuksek ML skorunu ASAGI cekebilir (bidirectional).
+  - Lab dogrulamasi olmadan semptomlar sinirli etkiye sahiptir.
+
+  5.2. Fusion Formulleri
+  ----------------------
+
+  DURUM 1: Klinik + Semptom verisi var
+  ------------------------------------
+    final = 0.35 * ml_score + 0.45 * clinical_score + 0.20 * symptom_score
+
+    Ornek: ml=0.85, clin=0.95, sym=1.00
+    final = 0.35*0.85 + 0.45*0.95 + 0.20*1.00
+          = 0.2975 + 0.4275 + 0.20 = 0.925
+
+  DURUM 2: Sadece klinik veri var (semptom yok)
+  ---------------------------------------------
+    final = 0.35 * ml_score + 0.65 * clinical_score
+
+    Ornek: ml=0.54, clin=0.95 (asemptomatik diyabet labi)
+    final = 0.35*0.54 + 0.65*0.95
+          = 0.189 + 0.6175 = 0.807
+
+  DURUM 3: Sadece semptom var (lab yok)
+  -------------------------------------
+    base = 0.60 * ml_score + 0.40 * symptom_score
+    tavan = 0.40 + 0.50 * symptom_score
+    final = min(base, tavan)
+
+    Ornek: ml=0.15, sym=0.91 (klasik uclu, lab yok)
+    base  = 0.60*0.15 + 0.40*0.91 = 0.09 + 0.364 = 0.454
+    tavan = 0.40 + 0.50*0.91 = 0.855
+    final = min(0.454, 0.855) = 0.454  (Medium)
+
+    Not: Tavan mekanizmasi, lab dogrulamasi olmadan asiri yuksek
+         risk siniflandirmasini onler.
+
+  DURUM 4: Ne klinik ne semptom (sadece ML)
+  ------------------------------------------
+    final = ml_score
+
+  5.3. Tani Tabani (Diagnostic Floor)
+  ------------------------------------
+  Klinik skor >= 0.90 ise (ADA diyabet esigi: FPG>=126 veya HbA1c>=6.5):
+    final = max(final, 0.60)
+
+  Bu kural, dusuk ML skoru olsa bile diyabet seviyesi lab sonuclari
+  olan hastalarin en az "High" risk kategorisine girmesini garanti eder.
+
+  5.4. Agirlik Tablosu Ozeti
+  --------------------------
+  Durum                ML Agirligi   Klinik Agirligi   Semptom Agirligi
+  -----------------------------------------------------------------------
+  Klinik + Semptom     0.35          0.45              0.20
+  Sadece Klinik        0.35          0.65              -
+  Sadece Semptom       0.60          -                 0.40 (tavanli)
+  Hicbiri (min veri)   1.00          -                 -
+
+
+================================================================================
+  6. RISK KATEGORISI
+================================================================================
+
+  Final olasilik -> Kategori donusumu:
+
+    Olasilik          Kategori
+    ---------------------------------
+    < 0.30            Low   (Dusuk)
+    0.30 - 0.59       Medium (Orta)
+    >= 0.60           High  (Yuksek)
+
+
+================================================================================
+  7. GUVEN SEVIYESI (confidence_level)
+================================================================================
+
+  Veri tamligi bazli guven seviyesi:
+
+    Durum                        Guven Seviyesi
+    --------------------------------------------------
+    Semptom + Klinik veri var    very_high
+    Sadece klinik veri var       high
+    Sadece semptom var           moderate
+    Hicbiri yok (min veri)       low
+
+
+================================================================================
+  8. CIKTI YAPISI (PredictionResponse)
+================================================================================
+
+  {
+    "risk_probability":   0.9240,     // Final risk skoru (0.0-1.0)
+    "risk_category":      "High",     // Low / Medium / High
+    "confidence_level":   "very_high",// low / moderate / high / very_high
+    "ml_score":           0.8480,     // Katman 1: ML model skoru
+    "symptom_score":      1.0000,     // Katman 2: Semptom skoru
+    "clinical_score":     0.9500,     // Katman 3: Klinik skor
+    "active_symptoms":    ["Sik idrara cikma", ...],  // Aktif semptomlar
+    "contributing_factors": ["Yuksek tansiyon", ...],  // Risk faktorleri
+    "shap_values":        {"Yuksek tansiyon": 0.23, ...}, // SHAP degerleri
+    "risk_factor_cards":  [...]       // Detayli risk karti listesi
+  }
+
+
+================================================================================
+  9. GIRDI YAPISI (PatientInput)
+================================================================================
+
+  Zorunlu Alanlar:
+    age:    int   (1-120)     Gercek yas
+    gender: str   (Male/Female)
+
+  Tier 1 - Yasam Tarzi & Saglik Gecmisi:
+    bmi:               float   Vucut kitle indeksi
+    high_bp:           bool    Yuksek tansiyon
+    high_chol:         bool    Yuksek kolesterol
+    physical_activity: bool    Duzeli fiziksel aktivite
+    gen_health:        int     Genel saglik (1=Mukemmel, 5=Kotu)
+    diff_walking:      bool    Yurume zorlugu
+    smoker:            bool    Sigara kullanimi
+
+  Tier 2 - Opsiyonel:
+    heart_disease:     bool    Kalp hastaligi oykusu
+    fruits_daily:      bool    Gunluk meyve tuketimi
+    veggies_daily:     bool    Gunluk sebze tuketimi
+    heavy_alcohol:     bool    Agir alkol kullanimi
+
+  Klinik Degerler:
+    blood_glucose:     float   Aclik kan sekeri (mg/dL)
+    hba1c:             float   HbA1c (%)
+
+  Semptomlar:
+    polyuria:                  bool   Sik idrara cikma
+    polydipsia:                bool   Asiri susama
+    unexplained_weight_loss:   bool   Aciklanamayan kilo kaybi
+    fatigue:                   bool   Yorgunluk
+    blurred_vision:            bool   Bulanik gorme
+    slow_healing:              bool   Yara iyilesme gecikmesi
+    frequent_infections:       bool   Sik enfeksiyon
+    tingling_numbness:         bool   Karincalanma / uyusma
+
+  Yardimci:
+    height_cm:  float   Boy (cm) - BMI hesaplamasi icin
+    weight_kg:  float   Kilo (kg) - BMI hesaplamasi icin
+
+  Not: Verilmeyen opsiyonel alanlar icin varsayilan degerler kullanilir:
+       bool -> 0.0 (False), BMI -> 28.0 (BRFSS medyani), GenHlth -> 3.0
+
+
+================================================================================
+  10. UCTAN UCA ORNEK AKIS
+================================================================================
+
+  Girdi:
+    age=55, gender=Male, bmi=33.0, high_bp=True, high_chol=True,
+    physical_activity=False, gen_health=4, smoker=True,
+    blood_glucose=185, hba1c=7.8,
+    polyuria=True, polydipsia=True, unexplained_weight_loss=True,
+    fatigue=True, blurred_vision=True
+
+  Adim 1 - ML Skoru:
+    Yas -> BRFSS kategori 8 (55-59)
+    Cinsiyet -> 1.0 (Male)
+    Ozellik vektoru olusturulur
+    ml_score = model.predict_proba(input)[0][1] = 0.848
+
+  Adim 2 - Semptom Skoru:
+    Aktif: poliuri(0.20) + polidipsi(0.20) + kilo_kaybi(0.18)
+           + yorgunluk(0.12) + bulanik_gorme(0.12) = 0.82
+    Klasik uclu aktif -> bonus: 0.82 * 1.30 = 1.066 -> min(1.0) = 1.00
+    symptom_score = 1.00
+
+  Adim 3 - Klinik Skor:
+    FPG = 185 >= 126 -> glikoz_skoru = 0.90
+    HbA1c = 7.8 >= 6.5 -> hba1c_skoru = 0.95
+    clinical_score = max(0.90, 0.95) = 0.95
+
+  Adim 4 - Weighted Fusion:
+    Durum: Klinik + Semptom var
+    final = 0.35*0.848 + 0.45*0.95 + 0.20*1.00
+          = 0.2968 + 0.4275 + 0.20
+          = 0.9243
+
+  Adim 5 - Kategori:
+    0.9243 >= 0.60 -> "High"
+
+  Adim 6 - Guven:
+    Semptom + Klinik var -> "very_high"
+
+  Sonuc: risk_probability=0.9243, risk_category=High, confidence=very_high
+
+
+================================================================================
+  11. TEST SONUCLARI (24 SENARYO)
+================================================================================
+
+  Hybrid Model Testi: 12/12 PASS
+  Klinik Senaryo Testi: 12/12 PASS
+  Fusion Dogruluk: 12/12 OK
+
+  Model, asagidaki senaryolari dogru siniflandirmaktadir:
+  - Saglikli bireyler -> Low
+  - Prediyabet hastalari -> Medium
+  - Yeni tani T2DM -> High
+  - Asemptomatik diyabet (lab ile) -> High
+  - Semptomlu ama lab'siz -> Medium (tavanli)
+  - Sadece risk faktorlu (normal lab) -> Medium
+  - Minimum veri (yas+cinsiyet) -> Low (dusuk guvenle)
+  - ADA sinir degerleri -> Dogru gecis
+
+================================================================================

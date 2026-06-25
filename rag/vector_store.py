@@ -19,6 +19,10 @@ class VectorStore:
     def chunk_count(self) -> int:
         return len(self._chunks)
 
+    @property
+    def chunks(self) -> List[Dict]:
+        return self._chunks
+
     def build_index(self, chunks: List[Dict], embeddings: np.ndarray) -> None:
         """Build FAISS index from chunk embeddings."""
         self._index = faiss.IndexFlatIP(EMBEDDING_DIM)

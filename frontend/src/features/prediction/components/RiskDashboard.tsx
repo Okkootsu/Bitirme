@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Info } from "lucide-react";
+import { Dialog } from "@/components/Dialog";
 import type { PredictionData, RiskFactorCard } from "@/store/conversationStore";
 
 type Props = {
@@ -20,15 +23,12 @@ const confidenceLabels: Record<string, string> = {
 const RiskGauge = ({ probability, category }: { probability: number; category: string }) => {
   const config = categoryConfig[category as keyof typeof categoryConfig] ?? categoryConfig.Medium;
   const percentage = Math.round(probability * 100);
-  const radius = 70;
-  const circumference = Math.PI * radius;
-  const strokeDashoffset = circumference * (1 - probability);
 
   return (
     <div className="flex flex-col items-center">
-      <svg width="180" height="100" viewBox="0 0 180 100">
+      <svg width="200" height="110" viewBox="0 0 200 110">
         <path
-          d="M 10 90 A 70 70 0 0 1 170 90"
+          d="M 20 100 A 80 80 0 0 1 180 100"
           fill="none"
           stroke="currentColor"
           strokeWidth="12"
@@ -36,18 +36,19 @@ const RiskGauge = ({ probability, category }: { probability: number; category: s
           strokeLinecap="round"
         />
         <path
-          d="M 10 90 A 70 70 0 0 1 170 90"
+          d="M 20 100 A 80 80 0 0 1 180 100"
           fill="none"
           stroke={config.color}
           strokeWidth="12"
           strokeLinecap="round"
-          strokeDasharray={`${circumference}`}
-          strokeDashoffset={strokeDashoffset}
+          pathLength={1}
+          strokeDasharray="1"
+          strokeDashoffset={1 - probability}
           style={{ transition: "stroke-dashoffset 1s ease-out" }}
         />
         <text
-          x="90"
-          y="75"
+          x="100"
+          y="85"
           textAnchor="middle"
           className="fill-gray-800 dark:fill-gray-100"
           fontSize="28"
@@ -55,8 +56,8 @@ const RiskGauge = ({ probability, category }: { probability: number; category: s
         >
           %{percentage}
         </text>
-        <text x="10" y="98" textAnchor="start" fontSize="9" className="fill-gray-400">Düşük</text>
-        <text x="170" y="98" textAnchor="end" fontSize="9" className="fill-gray-400">Yüksek</text>
+        <text x="20" y="108" textAnchor="start" fontSize="9" className="fill-gray-400">Düşük</text>
+        <text x="180" y="108" textAnchor="end" fontSize="9" className="fill-gray-400">Yüksek</text>
       </svg>
       <span
         className="mt-1 px-3 py-1 rounded-full text-sm font-semibold text-white"
@@ -104,7 +105,110 @@ const FactorCard = ({ card }: { card: RiskFactorCard }) => {
   );
 };
 
+const ModelInfoContent = () => (
+  <div className="p-4 space-y-4 text-sm text-gray-700 dark:text-gray-300 overflow-y-auto max-h-[70vh]">
+    {/* Model Nedir */}
+    <section>
+      <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1.5 flex items-center gap-1.5">
+        <span className="w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-xs font-bold text-indigo-600 dark:text-indigo-400">1</span>
+        Model Nedir?
+      </h4>
+      <p className="text-xs leading-relaxed ml-8">
+        CDC'nin <strong>70.000+ kişilik</strong> sağlık anketi verisinde (BRFSS) eğitilmiş bir yapay zeka modelidir.
+        Üç farklı algoritmanın (<strong>RandomForest</strong>, <strong>XGBoost</strong>, <strong>LogisticRegression</strong>)
+        birleştirilmesiyle oluşturulan bir topluluk modeli kullanılır.
+      </p>
+    </section>
+
+    {/* 3 Katmanlı Skorlama */}
+    <section>
+      <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1.5 flex items-center gap-1.5">
+        <span className="w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-xs font-bold text-indigo-600 dark:text-indigo-400">2</span>
+        3 Katmanlı Skorlama
+      </h4>
+      <div className="ml-8 space-y-1.5">
+        <div className="flex items-start gap-2">
+          <span className="w-3 h-3 rounded-full bg-indigo-500 shrink-0 mt-0.5" />
+          <p className="text-xs"><strong>ML Model:</strong> Yaş, BMI, tansiyon, kolesterol gibi 13 risk faktöründen hesaplanan yapay zeka skoru</p>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="w-3 h-3 rounded-full bg-red-500 shrink-0 mt-0.5" />
+          <p className="text-xs"><strong>Klinik:</strong> Açlık kan şekeri ve HbA1c değerlerinden ADA 2024 tanı eşiklerine göre hesaplanan skor</p>
+        </div>
+        <div className="flex items-start gap-2">
+          <span className="w-3 h-3 rounded-full bg-amber-500 shrink-0 mt-0.5" />
+          <p className="text-xs"><strong>Semptom:</strong> Sık idrara çıkma, aşırı susama gibi bildirilen belirtilerden hesaplanan skor</p>
+        </div>
+      </div>
+    </section>
+
+    {/* Final Skor Formülü */}
+    <section>
+      <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1.5 flex items-center gap-1.5">
+        <span className="w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-xs font-bold text-indigo-600 dark:text-indigo-400">3</span>
+        Final Skor Nasıl Hesaplanır?
+      </h4>
+      <div className="ml-8 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden text-xs">
+        <table className="w-full">
+          <thead>
+            <tr className="bg-gray-100 dark:bg-gray-800">
+              <th className="text-left px-2.5 py-1.5 font-semibold">Mevcut Veri</th>
+              <th className="text-left px-2.5 py-1.5 font-semibold">Formül</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+            <tr>
+              <td className="px-2.5 py-1.5">Klinik + Semptom</td>
+              <td className="px-2.5 py-1.5 font-mono text-[11px]">0.35×ML + 0.45×Klinik + 0.20×Semptom</td>
+            </tr>
+            <tr>
+              <td className="px-2.5 py-1.5">Sadece Klinik</td>
+              <td className="px-2.5 py-1.5 font-mono text-[11px]">0.35×ML + 0.65×Klinik</td>
+            </tr>
+            <tr>
+              <td className="px-2.5 py-1.5">Sadece Semptom</td>
+              <td className="px-2.5 py-1.5 font-mono text-[11px]">0.60×ML + 0.40×Semptom (tavanlı)</td>
+            </tr>
+            <tr>
+              <td className="px-2.5 py-1.5">Hiçbiri</td>
+              <td className="px-2.5 py-1.5 font-mono text-[11px]">ML skoru direkt</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1 ml-8">
+        Klinik veri (lab sonuçları) ADA tanı standardı olduğundan en yüksek ağırlığı alır.
+      </p>
+    </section>
+
+    {/* Risk Kategorileri */}
+    <section>
+      <h4 className="font-bold text-gray-900 dark:text-gray-100 mb-1.5 flex items-center gap-1.5">
+        <span className="w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-xs font-bold text-indigo-600 dark:text-indigo-400">4</span>
+        Risk Kategorileri
+      </h4>
+      <div className="ml-8 flex gap-2">
+        <span className="flex-1 text-center rounded-lg py-1.5 text-xs font-semibold bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 border border-green-200 dark:border-green-800">
+          &lt; %30 — Düşük
+        </span>
+        <span className="flex-1 text-center rounded-lg py-1.5 text-xs font-semibold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+          %30-59 — Orta
+        </span>
+        <span className="flex-1 text-center rounded-lg py-1.5 text-xs font-semibold bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400 border border-red-200 dark:border-red-800">
+          &ge; %60 — Yüksek
+        </span>
+      </div>
+    </section>
+
+    {/* Disclaimer */}
+    <p className="text-[10px] text-gray-400 text-center pt-2 border-t border-gray-200 dark:border-gray-700">
+      Bu değerlendirme tıbbi tanı yerine geçmez. Sonuçlarınız hakkında mutlaka doktorunuza danışın.
+    </p>
+  </div>
+);
+
 export const RiskDashboard = ({ data }: Props) => {
+  const [isInfoOpen, setIsInfoOpen] = useState(false);
   const config = categoryConfig[data.riskCategory as keyof typeof categoryConfig] ?? categoryConfig.Medium;
 
   const hasSymptoms = data.symptomScore > 0;
@@ -113,9 +217,22 @@ export const RiskDashboard = ({ data }: Props) => {
   return (
     <div className={`rounded-2xl p-5 ${config.bg} border border-border w-full`}>
       {/* Header */}
-      <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-4 text-center">
-        Diyabet Risk Değerlendirmesi
-      </h3>
+      <div className="relative mb-4">
+        <button
+          onClick={() => setIsInfoOpen(true)}
+          className="absolute -top-1 -right-1 w-7 h-7 rounded-full border-2 border-amber-400 dark:border-amber-500 bg-white dark:bg-gray-800 flex items-center justify-center hover:bg-amber-50 dark:hover:bg-amber-900/30 transition-colors"
+          title="Nasıl hesaplanıyor?"
+        >
+          <Info className="w-4 h-4 text-amber-500 dark:text-amber-400" />
+        </button>
+        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 text-center">
+          Diyabet Risk Değerlendirmesi
+        </h3>
+      </div>
+
+      <Dialog isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} title="Nasıl Hesaplanıyor?">
+        <ModelInfoContent />
+      </Dialog>
 
       {/* Gauge */}
       <RiskGauge probability={data.riskProbability} category={data.riskCategory} />
